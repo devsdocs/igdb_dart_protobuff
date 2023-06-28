@@ -12,8 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
-import 'igdb.pbenum.dart';
-import 'timestamp.pb.dart' as $0;
+import 'package:igdb_dart_protobuff/src/igdb.pbenum.dart';
+import 'package:igdb_dart_protobuff/src/timestamp.pb.dart' as $0;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 export 'igdb.pbenum.dart';
