@@ -1,0 +1,16 @@
+name: igdb_dart_protobuff
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+repository: https://github.com/devsdocs/my_repo
+
+environment:
+  sdk: ^3.0.5
+
+# Add regular dependencies here.
+dependencies:
+  fixnum: ^1.1.0
+  protobuf: ^3.0.0
+  protoc_plugin: ^21.0.2
+
+dev_dependencies:
+  lints: ^2.0.0
