@@ -1,5 +1,5 @@
 name: igdb_dart_protobuff
-description: A starting point for Dart libraries or applications.
+description: IGDB Generated Protobuf for Dart
 version: 1.0.1
 repository: https://github.com/devsdocs/igdb_dart_protobuff
 
