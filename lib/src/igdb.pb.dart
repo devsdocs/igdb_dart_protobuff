@@ -1,10 +1,10 @@
 //
 //  Generated code. Do not modify.
-//  source: igdb.proto
+//  source: .devs/igdb.proto
 //
 // @dart = 2.12
 
-// ignore_for_file: annotate_overrides, camel_case_types, prefer_constructors_over_static_methods
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references, prefer_constructors_over_static_methods
 // ignore_for_file: constant_identifier_names, library_prefixes
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
@@ -19,7 +19,15 @@ import 'package:protobuf/protobuf.dart' as $pb;
 export 'igdb.pbenum.dart';
 
 class Count extends $pb.GeneratedMessage {
-  factory Count() => create();
+  factory Count({
+    $fixnum.Int64? count,
+  }) {
+    final $result = create();
+    if (count != null) {
+      $result.count = count;
+    }
+    return $result;
+  }
   Count._() : super();
   factory Count.fromBuffer(
     $core.List<$core.int> i, [
@@ -75,7 +83,23 @@ class Count extends $pb.GeneratedMessage {
 }
 
 class MultiQueryResult extends $pb.GeneratedMessage {
-  factory MultiQueryResult() => create();
+  factory MultiQueryResult({
+    $core.String? name,
+    $core.Iterable<$core.List<$core.int>>? results,
+    $fixnum.Int64? count,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    if (results != null) {
+      $result.results.addAll(results);
+    }
+    if (count != null) {
+      $result.count = count;
+    }
+    return $result;
+  }
   MultiQueryResult._() : super();
   factory MultiQueryResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -154,7 +178,15 @@ class MultiQueryResult extends $pb.GeneratedMessage {
 }
 
 class MultiQueryResultArray extends $pb.GeneratedMessage {
-  factory MultiQueryResultArray() => create();
+  factory MultiQueryResultArray({
+    $core.Iterable<MultiQueryResult>? result,
+  }) {
+    final $result = create();
+    if (result != null) {
+      $result.result.addAll(result);
+    }
+    return $result;
+  }
   MultiQueryResultArray._() : super();
   factory MultiQueryResultArray.fromBuffer(
     $core.List<$core.int> i, [
@@ -211,7 +243,15 @@ class MultiQueryResultArray extends $pb.GeneratedMessage {
 }
 
 class AgeRatingResult extends $pb.GeneratedMessage {
-  factory AgeRatingResult() => create();
+  factory AgeRatingResult({
+    $core.Iterable<AgeRating>? ageratings,
+  }) {
+    final $result = create();
+    if (ageratings != null) {
+      $result.ageratings.addAll(ageratings);
+    }
+    return $result;
+  }
   AgeRatingResult._() : super();
   factory AgeRatingResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -265,7 +305,39 @@ class AgeRatingResult extends $pb.GeneratedMessage {
 }
 
 class AgeRating extends $pb.GeneratedMessage {
-  factory AgeRating() => create();
+  factory AgeRating({
+    $fixnum.Int64? id,
+    AgeRatingCategoryEnum? category,
+    $core.Iterable<AgeRatingContentDescription>? contentDescriptions,
+    AgeRatingRatingEnum? rating,
+    $core.String? ratingCoverUrl,
+    $core.String? synopsis,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (contentDescriptions != null) {
+      $result.contentDescriptions.addAll(contentDescriptions);
+    }
+    if (rating != null) {
+      $result.rating = rating;
+    }
+    if (ratingCoverUrl != null) {
+      $result.ratingCoverUrl = ratingCoverUrl;
+    }
+    if (synopsis != null) {
+      $result.synopsis = synopsis;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   AgeRating._() : super();
   factory AgeRating.fromBuffer(
     $core.List<$core.int> i, [
@@ -415,7 +487,15 @@ class AgeRating extends $pb.GeneratedMessage {
 }
 
 class AgeRatingContentDescriptionResult extends $pb.GeneratedMessage {
-  factory AgeRatingContentDescriptionResult() => create();
+  factory AgeRatingContentDescriptionResult({
+    $core.Iterable<AgeRatingContentDescription>? ageratingcontentdescriptions,
+  }) {
+    final $result = create();
+    if (ageratingcontentdescriptions != null) {
+      $result.ageratingcontentdescriptions.addAll(ageratingcontentdescriptions);
+    }
+    return $result;
+  }
   AgeRatingContentDescriptionResult._() : super();
   factory AgeRatingContentDescriptionResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -477,7 +557,27 @@ class AgeRatingContentDescriptionResult extends $pb.GeneratedMessage {
 }
 
 class AgeRatingContentDescription extends $pb.GeneratedMessage {
-  factory AgeRatingContentDescription() => create();
+  factory AgeRatingContentDescription({
+    $fixnum.Int64? id,
+    AgeRatingContentDescriptionCategoryEnum? category,
+    $core.String? description,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   AgeRatingContentDescription._() : super();
   factory AgeRatingContentDescription.fromBuffer(
     $core.List<$core.int> i, [
@@ -592,7 +692,15 @@ class AgeRatingContentDescription extends $pb.GeneratedMessage {
 }
 
 class AlternativeNameResult extends $pb.GeneratedMessage {
-  factory AlternativeNameResult() => create();
+  factory AlternativeNameResult({
+    $core.Iterable<AlternativeName>? alternativenames,
+  }) {
+    final $result = create();
+    if (alternativenames != null) {
+      $result.alternativenames.addAll(alternativenames);
+    }
+    return $result;
+  }
   AlternativeNameResult._() : super();
   factory AlternativeNameResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -649,7 +757,31 @@ class AlternativeNameResult extends $pb.GeneratedMessage {
 }
 
 class AlternativeName extends $pb.GeneratedMessage {
-  factory AlternativeName() => create();
+  factory AlternativeName({
+    $fixnum.Int64? id,
+    $core.String? comment,
+    Game? game,
+    $core.String? name,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (comment != null) {
+      $result.comment = comment;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   AlternativeName._() : super();
   factory AlternativeName.fromBuffer(
     $core.List<$core.int> i, [
@@ -766,7 +898,15 @@ class AlternativeName extends $pb.GeneratedMessage {
 }
 
 class ArtworkResult extends $pb.GeneratedMessage {
-  factory ArtworkResult() => create();
+  factory ArtworkResult({
+    $core.Iterable<Artwork>? artworks,
+  }) {
+    final $result = create();
+    if (artworks != null) {
+      $result.artworks.addAll(artworks);
+    }
+    return $result;
+  }
   ArtworkResult._() : super();
   factory ArtworkResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -820,7 +960,47 @@ class ArtworkResult extends $pb.GeneratedMessage {
 }
 
 class Artwork extends $pb.GeneratedMessage {
-  factory Artwork() => create();
+  factory Artwork({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    Game? game,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Artwork._() : super();
   factory Artwork.fromBuffer(
     $core.List<$core.int> i, [
@@ -987,7 +1167,15 @@ class Artwork extends $pb.GeneratedMessage {
 }
 
 class CharacterResult extends $pb.GeneratedMessage {
-  factory CharacterResult() => create();
+  factory CharacterResult({
+    $core.Iterable<Character>? characters,
+  }) {
+    final $result = create();
+    if (characters != null) {
+      $result.characters.addAll(characters);
+    }
+    return $result;
+  }
   CharacterResult._() : super();
   factory CharacterResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -1041,7 +1229,67 @@ class CharacterResult extends $pb.GeneratedMessage {
 }
 
 class Character extends $pb.GeneratedMessage {
-  factory Character() => create();
+  factory Character({
+    $fixnum.Int64? id,
+    $core.Iterable<$core.String>? akas,
+    $core.String? countryName,
+    $0.Timestamp? createdAt,
+    $core.String? description,
+    $core.Iterable<Game>? games,
+    GenderGenderEnum? gender,
+    CharacterMugShot? mugShot,
+    $core.String? name,
+    $core.String? slug,
+    CharacterSpeciesEnum? species,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (akas != null) {
+      $result.akas.addAll(akas);
+    }
+    if (countryName != null) {
+      $result.countryName = countryName;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    if (gender != null) {
+      $result.gender = gender;
+    }
+    if (mugShot != null) {
+      $result.mugShot = mugShot;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (species != null) {
+      $result.species = species;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Character._() : super();
   factory Character.fromBuffer(
     $core.List<$core.int> i, [
@@ -1290,7 +1538,15 @@ class Character extends $pb.GeneratedMessage {
 }
 
 class CharacterMugShotResult extends $pb.GeneratedMessage {
-  factory CharacterMugShotResult() => create();
+  factory CharacterMugShotResult({
+    $core.Iterable<CharacterMugShot>? charactermugshots,
+  }) {
+    final $result = create();
+    if (charactermugshots != null) {
+      $result.charactermugshots.addAll(charactermugshots);
+    }
+    return $result;
+  }
   CharacterMugShotResult._() : super();
   factory CharacterMugShotResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -1347,7 +1603,43 @@ class CharacterMugShotResult extends $pb.GeneratedMessage {
 }
 
 class CharacterMugShot extends $pb.GeneratedMessage {
-  factory CharacterMugShot() => create();
+  factory CharacterMugShot({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   CharacterMugShot._() : super();
   factory CharacterMugShot.fromBuffer(
     $core.List<$core.int> i, [
@@ -1501,7 +1793,15 @@ class CharacterMugShot extends $pb.GeneratedMessage {
 }
 
 class CollectionResult extends $pb.GeneratedMessage {
-  factory CollectionResult() => create();
+  factory CollectionResult({
+    $core.Iterable<Collection>? collections,
+  }) {
+    final $result = create();
+    if (collections != null) {
+      $result.collections.addAll(collections);
+    }
+    return $result;
+  }
   CollectionResult._() : super();
   factory CollectionResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -1555,7 +1855,43 @@ class CollectionResult extends $pb.GeneratedMessage {
 }
 
 class Collection extends $pb.GeneratedMessage {
-  factory Collection() => create();
+  factory Collection({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.Iterable<Game>? games,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Collection._() : super();
   factory Collection.fromBuffer(
     $core.List<$core.int> i, [
@@ -1715,7 +2051,15 @@ class Collection extends $pb.GeneratedMessage {
 }
 
 class CompanyResult extends $pb.GeneratedMessage {
-  factory CompanyResult() => create();
+  factory CompanyResult({
+    $core.Iterable<Company>? companies,
+  }) {
+    final $result = create();
+    if (companies != null) {
+      $result.companies.addAll(companies);
+    }
+    return $result;
+  }
   CompanyResult._() : super();
   factory CompanyResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -1769,7 +2113,87 @@ class CompanyResult extends $pb.GeneratedMessage {
 }
 
 class Company extends $pb.GeneratedMessage {
-  factory Company() => create();
+  factory Company({
+    $fixnum.Int64? id,
+    $0.Timestamp? changeDate,
+    DateFormatChangeDateCategoryEnum? changeDateCategory,
+    Company? changedCompanyId,
+    $core.int? country,
+    $0.Timestamp? createdAt,
+    $core.String? description,
+    $core.Iterable<Game>? developed,
+    CompanyLogo? logo,
+    $core.String? name,
+    Company? parent,
+    $core.Iterable<Game>? published,
+    $core.String? slug,
+    $0.Timestamp? startDate,
+    DateFormatChangeDateCategoryEnum? startDateCategory,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.Iterable<CompanyWebsite>? websites,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (changeDate != null) {
+      $result.changeDate = changeDate;
+    }
+    if (changeDateCategory != null) {
+      $result.changeDateCategory = changeDateCategory;
+    }
+    if (changedCompanyId != null) {
+      $result.changedCompanyId = changedCompanyId;
+    }
+    if (country != null) {
+      $result.country = country;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (developed != null) {
+      $result.developed.addAll(developed);
+    }
+    if (logo != null) {
+      $result.logo = logo;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (parent != null) {
+      $result.parent = parent;
+    }
+    if (published != null) {
+      $result.published.addAll(published);
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (startDate != null) {
+      $result.startDate = startDate;
+    }
+    if (startDateCategory != null) {
+      $result.startDateCategory = startDateCategory;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (websites != null) {
+      $result.websites.addAll(websites);
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Company._() : super();
   factory Company.fromBuffer(
     $core.List<$core.int> i, [
@@ -2108,7 +2532,15 @@ class Company extends $pb.GeneratedMessage {
 }
 
 class CompanyLogoResult extends $pb.GeneratedMessage {
-  factory CompanyLogoResult() => create();
+  factory CompanyLogoResult({
+    $core.Iterable<CompanyLogo>? companylogos,
+  }) {
+    final $result = create();
+    if (companylogos != null) {
+      $result.companylogos.addAll(companylogos);
+    }
+    return $result;
+  }
   CompanyLogoResult._() : super();
   factory CompanyLogoResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -2162,7 +2594,43 @@ class CompanyLogoResult extends $pb.GeneratedMessage {
 }
 
 class CompanyLogo extends $pb.GeneratedMessage {
-  factory CompanyLogo() => create();
+  factory CompanyLogo({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   CompanyLogo._() : super();
   factory CompanyLogo.fromBuffer(
     $core.List<$core.int> i, [
@@ -2315,7 +2783,15 @@ class CompanyLogo extends $pb.GeneratedMessage {
 }
 
 class CompanyWebsiteResult extends $pb.GeneratedMessage {
-  factory CompanyWebsiteResult() => create();
+  factory CompanyWebsiteResult({
+    $core.Iterable<CompanyWebsite>? companywebsites,
+  }) {
+    final $result = create();
+    if (companywebsites != null) {
+      $result.companywebsites.addAll(companywebsites);
+    }
+    return $result;
+  }
   CompanyWebsiteResult._() : super();
   factory CompanyWebsiteResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -2370,7 +2846,31 @@ class CompanyWebsiteResult extends $pb.GeneratedMessage {
 }
 
 class CompanyWebsite extends $pb.GeneratedMessage {
-  factory CompanyWebsite() => create();
+  factory CompanyWebsite({
+    $fixnum.Int64? id,
+    WebsiteCategoryEnum? category,
+    $core.bool? trusted,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (trusted != null) {
+      $result.trusted = trusted;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   CompanyWebsite._() : super();
   factory CompanyWebsite.fromBuffer(
     $core.List<$core.int> i, [
@@ -2492,7 +2992,15 @@ class CompanyWebsite extends $pb.GeneratedMessage {
 }
 
 class CoverResult extends $pb.GeneratedMessage {
-  factory CoverResult() => create();
+  factory CoverResult({
+    $core.Iterable<Cover>? covers,
+  }) {
+    final $result = create();
+    if (covers != null) {
+      $result.covers.addAll(covers);
+    }
+    return $result;
+  }
   CoverResult._() : super();
   factory CoverResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -2545,7 +3053,51 @@ class CoverResult extends $pb.GeneratedMessage {
 }
 
 class Cover extends $pb.GeneratedMessage {
-  factory Cover() => create();
+  factory Cover({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    Game? game,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+    GameLocalization? gameLocalization,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    if (gameLocalization != null) {
+      $result.gameLocalization = gameLocalization;
+    }
+    return $result;
+  }
   Cover._() : super();
   factory Cover.fromBuffer(
     $core.List<$core.int> i, [
@@ -2731,7 +3283,15 @@ class Cover extends $pb.GeneratedMessage {
 }
 
 class ExternalGameResult extends $pb.GeneratedMessage {
-  factory ExternalGameResult() => create();
+  factory ExternalGameResult({
+    $core.Iterable<ExternalGame>? externalgames,
+  }) {
+    final $result = create();
+    if (externalgames != null) {
+      $result.externalgames.addAll(externalgames);
+    }
+    return $result;
+  }
   ExternalGameResult._() : super();
   factory ExternalGameResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -2785,7 +3345,63 @@ class ExternalGameResult extends $pb.GeneratedMessage {
 }
 
 class ExternalGame extends $pb.GeneratedMessage {
-  factory ExternalGame() => create();
+  factory ExternalGame({
+    $fixnum.Int64? id,
+    ExternalGameCategoryEnum? category,
+    $0.Timestamp? createdAt,
+    Game? game,
+    $core.String? name,
+    $core.String? uid,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.int? year,
+    ExternalGameMediaEnum? media,
+    Platform? platform,
+    $core.Iterable<$core.int>? countries,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (uid != null) {
+      $result.uid = uid;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (year != null) {
+      $result.year = year;
+    }
+    if (media != null) {
+      $result.media = media;
+    }
+    if (platform != null) {
+      $result.platform = platform;
+    }
+    if (countries != null) {
+      $result.countries.addAll(countries);
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   ExternalGame._() : super();
   factory ExternalGame.fromBuffer(
     $core.List<$core.int> i, [
@@ -3029,7 +3645,15 @@ class ExternalGame extends $pb.GeneratedMessage {
 }
 
 class FranchiseResult extends $pb.GeneratedMessage {
-  factory FranchiseResult() => create();
+  factory FranchiseResult({
+    $core.Iterable<Franchise>? franchises,
+  }) {
+    final $result = create();
+    if (franchises != null) {
+      $result.franchises.addAll(franchises);
+    }
+    return $result;
+  }
   FranchiseResult._() : super();
   factory FranchiseResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -3083,7 +3707,43 @@ class FranchiseResult extends $pb.GeneratedMessage {
 }
 
 class Franchise extends $pb.GeneratedMessage {
-  factory Franchise() => create();
+  factory Franchise({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.Iterable<Game>? games,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Franchise._() : super();
   factory Franchise.fromBuffer(
     $core.List<$core.int> i, [
@@ -3243,7 +3903,15 @@ class Franchise extends $pb.GeneratedMessage {
 }
 
 class GameResult extends $pb.GeneratedMessage {
-  factory GameResult() => create();
+  factory GameResult({
+    $core.Iterable<Game>? games,
+  }) {
+    final $result = create();
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    return $result;
+  }
   GameResult._() : super();
   factory GameResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -3295,7 +3963,239 @@ class GameResult extends $pb.GeneratedMessage {
 }
 
 class Game extends $pb.GeneratedMessage {
-  factory Game() => create();
+  factory Game({
+    $fixnum.Int64? id,
+    $core.Iterable<AgeRating>? ageRatings,
+    $core.double? aggregatedRating,
+    $core.int? aggregatedRatingCount,
+    $core.Iterable<AlternativeName>? alternativeNames,
+    $core.Iterable<Artwork>? artworks,
+    $core.Iterable<Game>? bundles,
+    GameCategoryEnum? category,
+    Collection? collection,
+    Cover? cover,
+    $0.Timestamp? createdAt,
+    $core.Iterable<Game>? dlcs,
+    $core.Iterable<Game>? expansions,
+    $core.Iterable<ExternalGame>? externalGames,
+    $0.Timestamp? firstReleaseDate,
+    $core.int? follows,
+    Franchise? franchise,
+    $core.Iterable<Franchise>? franchises,
+    $core.Iterable<GameEngine>? gameEngines,
+    $core.Iterable<GameMode>? gameModes,
+    $core.Iterable<Genre>? genres,
+    $core.int? hypes,
+    $core.Iterable<InvolvedCompany>? involvedCompanies,
+    $core.Iterable<Keyword>? keywords,
+    $core.Iterable<MultiplayerMode>? multiplayerModes,
+    $core.String? name,
+    Game? parentGame,
+    $core.Iterable<Platform>? platforms,
+    $core.Iterable<PlayerPerspective>? playerPerspectives,
+    $core.double? rating,
+    $core.int? ratingCount,
+    $core.Iterable<ReleaseDate>? releaseDates,
+    $core.Iterable<Screenshot>? screenshots,
+    $core.Iterable<Game>? similarGames,
+    $core.String? slug,
+    $core.Iterable<Game>? standaloneExpansions,
+    GameStatusEnum? status,
+    $core.String? storyline,
+    $core.String? summary,
+    $core.Iterable<$core.int>? tags,
+    $core.Iterable<Theme>? themes,
+    $core.double? totalRating,
+    $core.int? totalRatingCount,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    Game? versionParent,
+    $core.String? versionTitle,
+    $core.Iterable<GameVideo>? videos,
+    $core.Iterable<Website>? websites,
+    $core.String? checksum,
+    $core.Iterable<Game>? remakes,
+    $core.Iterable<Game>? remasters,
+    $core.Iterable<Game>? expandedGames,
+    $core.Iterable<Game>? ports,
+    $core.Iterable<Game>? forks,
+    $core.Iterable<LanguageSupport>? languageSupports,
+    $core.Iterable<GameLocalization>? gameLocalizations,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (ageRatings != null) {
+      $result.ageRatings.addAll(ageRatings);
+    }
+    if (aggregatedRating != null) {
+      $result.aggregatedRating = aggregatedRating;
+    }
+    if (aggregatedRatingCount != null) {
+      $result.aggregatedRatingCount = aggregatedRatingCount;
+    }
+    if (alternativeNames != null) {
+      $result.alternativeNames.addAll(alternativeNames);
+    }
+    if (artworks != null) {
+      $result.artworks.addAll(artworks);
+    }
+    if (bundles != null) {
+      $result.bundles.addAll(bundles);
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (collection != null) {
+      $result.collection = collection;
+    }
+    if (cover != null) {
+      $result.cover = cover;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (dlcs != null) {
+      $result.dlcs.addAll(dlcs);
+    }
+    if (expansions != null) {
+      $result.expansions.addAll(expansions);
+    }
+    if (externalGames != null) {
+      $result.externalGames.addAll(externalGames);
+    }
+    if (firstReleaseDate != null) {
+      $result.firstReleaseDate = firstReleaseDate;
+    }
+    if (follows != null) {
+      $result.follows = follows;
+    }
+    if (franchise != null) {
+      $result.franchise = franchise;
+    }
+    if (franchises != null) {
+      $result.franchises.addAll(franchises);
+    }
+    if (gameEngines != null) {
+      $result.gameEngines.addAll(gameEngines);
+    }
+    if (gameModes != null) {
+      $result.gameModes.addAll(gameModes);
+    }
+    if (genres != null) {
+      $result.genres.addAll(genres);
+    }
+    if (hypes != null) {
+      $result.hypes = hypes;
+    }
+    if (involvedCompanies != null) {
+      $result.involvedCompanies.addAll(involvedCompanies);
+    }
+    if (keywords != null) {
+      $result.keywords.addAll(keywords);
+    }
+    if (multiplayerModes != null) {
+      $result.multiplayerModes.addAll(multiplayerModes);
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (parentGame != null) {
+      $result.parentGame = parentGame;
+    }
+    if (platforms != null) {
+      $result.platforms.addAll(platforms);
+    }
+    if (playerPerspectives != null) {
+      $result.playerPerspectives.addAll(playerPerspectives);
+    }
+    if (rating != null) {
+      $result.rating = rating;
+    }
+    if (ratingCount != null) {
+      $result.ratingCount = ratingCount;
+    }
+    if (releaseDates != null) {
+      $result.releaseDates.addAll(releaseDates);
+    }
+    if (screenshots != null) {
+      $result.screenshots.addAll(screenshots);
+    }
+    if (similarGames != null) {
+      $result.similarGames.addAll(similarGames);
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (standaloneExpansions != null) {
+      $result.standaloneExpansions.addAll(standaloneExpansions);
+    }
+    if (status != null) {
+      $result.status = status;
+    }
+    if (storyline != null) {
+      $result.storyline = storyline;
+    }
+    if (summary != null) {
+      $result.summary = summary;
+    }
+    if (tags != null) {
+      $result.tags.addAll(tags);
+    }
+    if (themes != null) {
+      $result.themes.addAll(themes);
+    }
+    if (totalRating != null) {
+      $result.totalRating = totalRating;
+    }
+    if (totalRatingCount != null) {
+      $result.totalRatingCount = totalRatingCount;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (versionParent != null) {
+      $result.versionParent = versionParent;
+    }
+    if (versionTitle != null) {
+      $result.versionTitle = versionTitle;
+    }
+    if (videos != null) {
+      $result.videos.addAll(videos);
+    }
+    if (websites != null) {
+      $result.websites.addAll(websites);
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    if (remakes != null) {
+      $result.remakes.addAll(remakes);
+    }
+    if (remasters != null) {
+      $result.remasters.addAll(remasters);
+    }
+    if (expandedGames != null) {
+      $result.expandedGames.addAll(expandedGames);
+    }
+    if (ports != null) {
+      $result.ports.addAll(ports);
+    }
+    if (forks != null) {
+      $result.forks.addAll(forks);
+    }
+    if (languageSupports != null) {
+      $result.languageSupports.addAll(languageSupports);
+    }
+    if (gameLocalizations != null) {
+      $result.gameLocalizations.addAll(gameLocalizations);
+    }
+    return $result;
+  }
   Game._() : super();
   factory Game.fromBuffer(
     $core.List<$core.int> i, [
@@ -4029,7 +4929,15 @@ class Game extends $pb.GeneratedMessage {
 }
 
 class GameEngineResult extends $pb.GeneratedMessage {
-  factory GameEngineResult() => create();
+  factory GameEngineResult({
+    $core.Iterable<GameEngine>? gameengines,
+  }) {
+    final $result = create();
+    if (gameengines != null) {
+      $result.gameengines.addAll(gameengines);
+    }
+    return $result;
+  }
   GameEngineResult._() : super();
   factory GameEngineResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -4083,7 +4991,55 @@ class GameEngineResult extends $pb.GeneratedMessage {
 }
 
 class GameEngine extends $pb.GeneratedMessage {
-  factory GameEngine() => create();
+  factory GameEngine({
+    $fixnum.Int64? id,
+    $core.Iterable<Company>? companies,
+    $0.Timestamp? createdAt,
+    $core.String? description,
+    GameEngineLogo? logo,
+    $core.String? name,
+    $core.Iterable<Platform>? platforms,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (companies != null) {
+      $result.companies.addAll(companies);
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (logo != null) {
+      $result.logo = logo;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (platforms != null) {
+      $result.platforms.addAll(platforms);
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameEngine._() : super();
   factory GameEngine.fromBuffer(
     $core.List<$core.int> i, [
@@ -4284,7 +5240,15 @@ class GameEngine extends $pb.GeneratedMessage {
 }
 
 class GameEngineLogoResult extends $pb.GeneratedMessage {
-  factory GameEngineLogoResult() => create();
+  factory GameEngineLogoResult({
+    $core.Iterable<GameEngineLogo>? gameenginelogos,
+  }) {
+    final $result = create();
+    if (gameenginelogos != null) {
+      $result.gameenginelogos.addAll(gameenginelogos);
+    }
+    return $result;
+  }
   GameEngineLogoResult._() : super();
   factory GameEngineLogoResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -4339,7 +5303,43 @@ class GameEngineLogoResult extends $pb.GeneratedMessage {
 }
 
 class GameEngineLogo extends $pb.GeneratedMessage {
-  factory GameEngineLogo() => create();
+  factory GameEngineLogo({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameEngineLogo._() : super();
   factory GameEngineLogo.fromBuffer(
     $core.List<$core.int> i, [
@@ -4493,7 +5493,15 @@ class GameEngineLogo extends $pb.GeneratedMessage {
 }
 
 class GameLocalizationResult extends $pb.GeneratedMessage {
-  factory GameLocalizationResult() => create();
+  factory GameLocalizationResult({
+    $core.Iterable<GameLocalization>? gamelocalizations,
+  }) {
+    final $result = create();
+    if (gamelocalizations != null) {
+      $result.gamelocalizations.addAll(gamelocalizations);
+    }
+    return $result;
+  }
   GameLocalizationResult._() : super();
   factory GameLocalizationResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -4550,7 +5558,43 @@ class GameLocalizationResult extends $pb.GeneratedMessage {
 }
 
 class GameLocalization extends $pb.GeneratedMessage {
-  factory GameLocalization() => create();
+  factory GameLocalization({
+    $fixnum.Int64? id,
+    $core.String? name,
+    Cover? cover,
+    Game? game,
+    Region? region,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (cover != null) {
+      $result.cover = cover;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (region != null) {
+      $result.region = region;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameLocalization._() : super();
   factory GameLocalization.fromBuffer(
     $core.List<$core.int> i, [
@@ -4722,7 +5766,15 @@ class GameLocalization extends $pb.GeneratedMessage {
 }
 
 class GameModeResult extends $pb.GeneratedMessage {
-  factory GameModeResult() => create();
+  factory GameModeResult({
+    $core.Iterable<GameMode>? gamemodes,
+  }) {
+    final $result = create();
+    if (gamemodes != null) {
+      $result.gamemodes.addAll(gamemodes);
+    }
+    return $result;
+  }
   GameModeResult._() : super();
   factory GameModeResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -4776,7 +5828,39 @@ class GameModeResult extends $pb.GeneratedMessage {
 }
 
 class GameMode extends $pb.GeneratedMessage {
-  factory GameMode() => create();
+  factory GameMode({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameMode._() : super();
   factory GameMode.fromBuffer(
     $core.List<$core.int> i, [
@@ -4927,7 +6011,15 @@ class GameMode extends $pb.GeneratedMessage {
 }
 
 class GameVersionResult extends $pb.GeneratedMessage {
-  factory GameVersionResult() => create();
+  factory GameVersionResult({
+    $core.Iterable<GameVersion>? gameversions,
+  }) {
+    final $result = create();
+    if (gameversions != null) {
+      $result.gameversions.addAll(gameversions);
+    }
+    return $result;
+  }
   GameVersionResult._() : super();
   factory GameVersionResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -4981,7 +6073,43 @@ class GameVersionResult extends $pb.GeneratedMessage {
 }
 
 class GameVersion extends $pb.GeneratedMessage {
-  factory GameVersion() => create();
+  factory GameVersion({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.Iterable<GameVersionFeature>? features,
+    Game? game,
+    $core.Iterable<Game>? games,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (features != null) {
+      $result.features.addAll(features);
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameVersion._() : super();
   factory GameVersion.fromBuffer(
     $core.List<$core.int> i, [
@@ -5140,7 +6268,15 @@ class GameVersion extends $pb.GeneratedMessage {
 }
 
 class GameVersionFeatureResult extends $pb.GeneratedMessage {
-  factory GameVersionFeatureResult() => create();
+  factory GameVersionFeatureResult({
+    $core.Iterable<GameVersionFeature>? gameversionfeatures,
+  }) {
+    final $result = create();
+    if (gameversionfeatures != null) {
+      $result.gameversionfeatures.addAll(gameversionfeatures);
+    }
+    return $result;
+  }
   GameVersionFeatureResult._() : super();
   factory GameVersionFeatureResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -5197,7 +6333,39 @@ class GameVersionFeatureResult extends $pb.GeneratedMessage {
 }
 
 class GameVersionFeature extends $pb.GeneratedMessage {
-  factory GameVersionFeature() => create();
+  factory GameVersionFeature({
+    $fixnum.Int64? id,
+    GameVersionFeatureCategoryEnum? category,
+    $core.String? description,
+    $core.int? position,
+    $core.String? title,
+    $core.Iterable<GameVersionFeatureValue>? values,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (position != null) {
+      $result.position = position;
+    }
+    if (title != null) {
+      $result.title = title;
+    }
+    if (values != null) {
+      $result.values.addAll(values);
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameVersionFeature._() : super();
   factory GameVersionFeature.fromBuffer(
     $core.List<$core.int> i, [
@@ -5341,7 +6509,15 @@ class GameVersionFeature extends $pb.GeneratedMessage {
 }
 
 class GameVersionFeatureValueResult extends $pb.GeneratedMessage {
-  factory GameVersionFeatureValueResult() => create();
+  factory GameVersionFeatureValueResult({
+    $core.Iterable<GameVersionFeatureValue>? gameversionfeaturevalues,
+  }) {
+    final $result = create();
+    if (gameversionfeaturevalues != null) {
+      $result.gameversionfeaturevalues.addAll(gameversionfeaturevalues);
+    }
+    return $result;
+  }
   GameVersionFeatureValueResult._() : super();
   factory GameVersionFeatureValueResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -5401,7 +6577,35 @@ class GameVersionFeatureValueResult extends $pb.GeneratedMessage {
 }
 
 class GameVersionFeatureValue extends $pb.GeneratedMessage {
-  factory GameVersionFeatureValue() => create();
+  factory GameVersionFeatureValue({
+    $fixnum.Int64? id,
+    Game? game,
+    GameVersionFeature? gameFeature,
+    GameVersionFeatureValueIncludedFeatureEnum? includedFeature,
+    $core.String? note,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (gameFeature != null) {
+      $result.gameFeature = gameFeature;
+    }
+    if (includedFeature != null) {
+      $result.includedFeature = includedFeature;
+    }
+    if (note != null) {
+      $result.note = note;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameVersionFeatureValue._() : super();
   factory GameVersionFeatureValue.fromBuffer(
     $core.List<$core.int> i, [
@@ -5547,7 +6751,15 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
 }
 
 class GameVideoResult extends $pb.GeneratedMessage {
-  factory GameVideoResult() => create();
+  factory GameVideoResult({
+    $core.Iterable<GameVideo>? gamevideos,
+  }) {
+    final $result = create();
+    if (gamevideos != null) {
+      $result.gamevideos.addAll(gamevideos);
+    }
+    return $result;
+  }
   GameVideoResult._() : super();
   factory GameVideoResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -5601,7 +6813,31 @@ class GameVideoResult extends $pb.GeneratedMessage {
 }
 
 class GameVideo extends $pb.GeneratedMessage {
-  factory GameVideo() => create();
+  factory GameVideo({
+    $fixnum.Int64? id,
+    Game? game,
+    $core.String? name,
+    $core.String? videoId,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (videoId != null) {
+      $result.videoId = videoId;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   GameVideo._() : super();
   factory GameVideo.fromBuffer(
     $core.List<$core.int> i, [
@@ -5716,7 +6952,15 @@ class GameVideo extends $pb.GeneratedMessage {
 }
 
 class GenreResult extends $pb.GeneratedMessage {
-  factory GenreResult() => create();
+  factory GenreResult({
+    $core.Iterable<Genre>? genres,
+  }) {
+    final $result = create();
+    if (genres != null) {
+      $result.genres.addAll(genres);
+    }
+    return $result;
+  }
   GenreResult._() : super();
   factory GenreResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -5769,7 +7013,39 @@ class GenreResult extends $pb.GeneratedMessage {
 }
 
 class Genre extends $pb.GeneratedMessage {
-  factory Genre() => create();
+  factory Genre({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Genre._() : super();
   factory Genre.fromBuffer(
     $core.List<$core.int> i, [
@@ -5920,7 +7196,15 @@ class Genre extends $pb.GeneratedMessage {
 }
 
 class InvolvedCompanyResult extends $pb.GeneratedMessage {
-  factory InvolvedCompanyResult() => create();
+  factory InvolvedCompanyResult({
+    $core.Iterable<InvolvedCompany>? involvedcompanies,
+  }) {
+    final $result = create();
+    if (involvedcompanies != null) {
+      $result.involvedcompanies.addAll(involvedcompanies);
+    }
+    return $result;
+  }
   InvolvedCompanyResult._() : super();
   factory InvolvedCompanyResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -5977,7 +7261,51 @@ class InvolvedCompanyResult extends $pb.GeneratedMessage {
 }
 
 class InvolvedCompany extends $pb.GeneratedMessage {
-  factory InvolvedCompany() => create();
+  factory InvolvedCompany({
+    $fixnum.Int64? id,
+    Company? company,
+    $0.Timestamp? createdAt,
+    $core.bool? developer,
+    Game? game,
+    $core.bool? porting,
+    $core.bool? publisher,
+    $core.bool? supporting,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (company != null) {
+      $result.company = company;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (developer != null) {
+      $result.developer = developer;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (porting != null) {
+      $result.porting = porting;
+    }
+    if (publisher != null) {
+      $result.publisher = publisher;
+    }
+    if (supporting != null) {
+      $result.supporting = supporting;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   InvolvedCompany._() : super();
   factory InvolvedCompany.fromBuffer(
     $core.List<$core.int> i, [
@@ -6177,7 +7505,15 @@ class InvolvedCompany extends $pb.GeneratedMessage {
 }
 
 class KeywordResult extends $pb.GeneratedMessage {
-  factory KeywordResult() => create();
+  factory KeywordResult({
+    $core.Iterable<Keyword>? keywords,
+  }) {
+    final $result = create();
+    if (keywords != null) {
+      $result.keywords.addAll(keywords);
+    }
+    return $result;
+  }
   KeywordResult._() : super();
   factory KeywordResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -6231,7 +7567,39 @@ class KeywordResult extends $pb.GeneratedMessage {
 }
 
 class Keyword extends $pb.GeneratedMessage {
-  factory Keyword() => create();
+  factory Keyword({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Keyword._() : super();
   factory Keyword.fromBuffer(
     $core.List<$core.int> i, [
@@ -6382,7 +7750,15 @@ class Keyword extends $pb.GeneratedMessage {
 }
 
 class LanguageResult extends $pb.GeneratedMessage {
-  factory LanguageResult() => create();
+  factory LanguageResult({
+    $core.Iterable<Language>? languages,
+  }) {
+    final $result = create();
+    if (languages != null) {
+      $result.languages.addAll(languages);
+    }
+    return $result;
+  }
   LanguageResult._() : super();
   factory LanguageResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -6436,7 +7812,39 @@ class LanguageResult extends $pb.GeneratedMessage {
 }
 
 class Language extends $pb.GeneratedMessage {
-  factory Language() => create();
+  factory Language({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? nativeName,
+    $core.String? locale,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (nativeName != null) {
+      $result.nativeName = nativeName;
+    }
+    if (locale != null) {
+      $result.locale = locale;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Language._() : super();
   factory Language.fromBuffer(
     $core.List<$core.int> i, [
@@ -6587,7 +7995,15 @@ class Language extends $pb.GeneratedMessage {
 }
 
 class LanguageSupportResult extends $pb.GeneratedMessage {
-  factory LanguageSupportResult() => create();
+  factory LanguageSupportResult({
+    $core.Iterable<LanguageSupport>? languagesupports,
+  }) {
+    final $result = create();
+    if (languagesupports != null) {
+      $result.languagesupports.addAll(languagesupports);
+    }
+    return $result;
+  }
   LanguageSupportResult._() : super();
   factory LanguageSupportResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -6644,7 +8060,39 @@ class LanguageSupportResult extends $pb.GeneratedMessage {
 }
 
 class LanguageSupport extends $pb.GeneratedMessage {
-  factory LanguageSupport() => create();
+  factory LanguageSupport({
+    $fixnum.Int64? id,
+    Game? game,
+    Language? language,
+    LanguageSupportType? languageSupportType,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (language != null) {
+      $result.language = language;
+    }
+    if (languageSupportType != null) {
+      $result.languageSupportType = languageSupportType;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   LanguageSupport._() : super();
   factory LanguageSupport.fromBuffer(
     $core.List<$core.int> i, [
@@ -6811,7 +8259,15 @@ class LanguageSupport extends $pb.GeneratedMessage {
 }
 
 class LanguageSupportTypeResult extends $pb.GeneratedMessage {
-  factory LanguageSupportTypeResult() => create();
+  factory LanguageSupportTypeResult({
+    $core.Iterable<LanguageSupportType>? languagesupporttypes,
+  }) {
+    final $result = create();
+    if (languagesupporttypes != null) {
+      $result.languagesupporttypes.addAll(languagesupporttypes);
+    }
+    return $result;
+  }
   LanguageSupportTypeResult._() : super();
   factory LanguageSupportTypeResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -6868,7 +8324,31 @@ class LanguageSupportTypeResult extends $pb.GeneratedMessage {
 }
 
 class LanguageSupportType extends $pb.GeneratedMessage {
-  factory LanguageSupportType() => create();
+  factory LanguageSupportType({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   LanguageSupportType._() : super();
   factory LanguageSupportType.fromBuffer(
     $core.List<$core.int> i, [
@@ -6995,7 +8475,15 @@ class LanguageSupportType extends $pb.GeneratedMessage {
 }
 
 class MultiplayerModeResult extends $pb.GeneratedMessage {
-  factory MultiplayerModeResult() => create();
+  factory MultiplayerModeResult({
+    $core.Iterable<MultiplayerMode>? multiplayermodes,
+  }) {
+    final $result = create();
+    if (multiplayermodes != null) {
+      $result.multiplayermodes.addAll(multiplayermodes);
+    }
+    return $result;
+  }
   MultiplayerModeResult._() : super();
   factory MultiplayerModeResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -7052,7 +8540,71 @@ class MultiplayerModeResult extends $pb.GeneratedMessage {
 }
 
 class MultiplayerMode extends $pb.GeneratedMessage {
-  factory MultiplayerMode() => create();
+  factory MultiplayerMode({
+    $fixnum.Int64? id,
+    $core.bool? campaigncoop,
+    $core.bool? dropin,
+    Game? game,
+    $core.bool? lancoop,
+    $core.bool? offlinecoop,
+    $core.int? offlinecoopmax,
+    $core.int? offlinemax,
+    $core.bool? onlinecoop,
+    $core.int? onlinecoopmax,
+    $core.int? onlinemax,
+    Platform? platform,
+    $core.bool? splitscreen,
+    $core.bool? splitscreenonline,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (campaigncoop != null) {
+      $result.campaigncoop = campaigncoop;
+    }
+    if (dropin != null) {
+      $result.dropin = dropin;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (lancoop != null) {
+      $result.lancoop = lancoop;
+    }
+    if (offlinecoop != null) {
+      $result.offlinecoop = offlinecoop;
+    }
+    if (offlinecoopmax != null) {
+      $result.offlinecoopmax = offlinecoopmax;
+    }
+    if (offlinemax != null) {
+      $result.offlinemax = offlinemax;
+    }
+    if (onlinecoop != null) {
+      $result.onlinecoop = onlinecoop;
+    }
+    if (onlinecoopmax != null) {
+      $result.onlinecoopmax = onlinecoopmax;
+    }
+    if (onlinemax != null) {
+      $result.onlinemax = onlinemax;
+    }
+    if (platform != null) {
+      $result.platform = platform;
+    }
+    if (splitscreen != null) {
+      $result.splitscreen = splitscreen;
+    }
+    if (splitscreenonline != null) {
+      $result.splitscreenonline = splitscreenonline;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   MultiplayerMode._() : super();
   factory MultiplayerMode.fromBuffer(
     $core.List<$core.int> i, [
@@ -7313,7 +8865,15 @@ class MultiplayerMode extends $pb.GeneratedMessage {
 }
 
 class PlatformResult extends $pb.GeneratedMessage {
-  factory PlatformResult() => create();
+  factory PlatformResult({
+    $core.Iterable<Platform>? platforms,
+  }) {
+    final $result = create();
+    if (platforms != null) {
+      $result.platforms.addAll(platforms);
+    }
+    return $result;
+  }
   PlatformResult._() : super();
   factory PlatformResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -7367,7 +8927,75 @@ class PlatformResult extends $pb.GeneratedMessage {
 }
 
 class Platform extends $pb.GeneratedMessage {
-  factory Platform() => create();
+  factory Platform({
+    $fixnum.Int64? id,
+    $core.String? abbreviation,
+    $core.String? alternativeName,
+    PlatformCategoryEnum? category,
+    $0.Timestamp? createdAt,
+    $core.int? generation,
+    $core.String? name,
+    PlatformLogo? platformLogo,
+    PlatformFamily? platformFamily,
+    $core.String? slug,
+    $core.String? summary,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.Iterable<PlatformVersion>? versions,
+    $core.Iterable<PlatformWebsite>? websites,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (abbreviation != null) {
+      $result.abbreviation = abbreviation;
+    }
+    if (alternativeName != null) {
+      $result.alternativeName = alternativeName;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (generation != null) {
+      $result.generation = generation;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (platformLogo != null) {
+      $result.platformLogo = platformLogo;
+    }
+    if (platformFamily != null) {
+      $result.platformFamily = platformFamily;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (summary != null) {
+      $result.summary = summary;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (versions != null) {
+      $result.versions.addAll(versions);
+    }
+    if (websites != null) {
+      $result.websites.addAll(websites);
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Platform._() : super();
   factory Platform.fromBuffer(
     $core.List<$core.int> i, [
@@ -7646,7 +9274,15 @@ class Platform extends $pb.GeneratedMessage {
 }
 
 class PlatformFamilyResult extends $pb.GeneratedMessage {
-  factory PlatformFamilyResult() => create();
+  factory PlatformFamilyResult({
+    $core.Iterable<PlatformFamily>? platformfamilies,
+  }) {
+    final $result = create();
+    if (platformfamilies != null) {
+      $result.platformfamilies.addAll(platformfamilies);
+    }
+    return $result;
+  }
   PlatformFamilyResult._() : super();
   factory PlatformFamilyResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -7701,7 +9337,27 @@ class PlatformFamilyResult extends $pb.GeneratedMessage {
 }
 
 class PlatformFamily extends $pb.GeneratedMessage {
-  factory PlatformFamily() => create();
+  factory PlatformFamily({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? slug,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformFamily._() : super();
   factory PlatformFamily.fromBuffer(
     $core.List<$core.int> i, [
@@ -7803,7 +9459,15 @@ class PlatformFamily extends $pb.GeneratedMessage {
 }
 
 class PlatformLogoResult extends $pb.GeneratedMessage {
-  factory PlatformLogoResult() => create();
+  factory PlatformLogoResult({
+    $core.Iterable<PlatformLogo>? platformlogos,
+  }) {
+    final $result = create();
+    if (platformlogos != null) {
+      $result.platformlogos.addAll(platformlogos);
+    }
+    return $result;
+  }
   PlatformLogoResult._() : super();
   factory PlatformLogoResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -7857,7 +9521,43 @@ class PlatformLogoResult extends $pb.GeneratedMessage {
 }
 
 class PlatformLogo extends $pb.GeneratedMessage {
-  factory PlatformLogo() => create();
+  factory PlatformLogo({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformLogo._() : super();
   factory PlatformLogo.fromBuffer(
     $core.List<$core.int> i, [
@@ -8011,7 +9711,15 @@ class PlatformLogo extends $pb.GeneratedMessage {
 }
 
 class PlatformVersionResult extends $pb.GeneratedMessage {
-  factory PlatformVersionResult() => create();
+  factory PlatformVersionResult({
+    $core.Iterable<PlatformVersion>? platformversions,
+  }) {
+    final $result = create();
+    if (platformversions != null) {
+      $result.platformversions.addAll(platformversions);
+    }
+    return $result;
+  }
   PlatformVersionResult._() : super();
   factory PlatformVersionResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -8068,7 +9776,95 @@ class PlatformVersionResult extends $pb.GeneratedMessage {
 }
 
 class PlatformVersion extends $pb.GeneratedMessage {
-  factory PlatformVersion() => create();
+  factory PlatformVersion({
+    $fixnum.Int64? id,
+    $core.Iterable<PlatformVersionCompany>? companies,
+    $core.String? connectivity,
+    $core.String? cpu,
+    $core.String? graphics,
+    PlatformVersionCompany? mainManufacturer,
+    $core.String? media,
+    $core.String? memory,
+    $core.String? name,
+    $core.String? online,
+    $core.String? os,
+    $core.String? output,
+    PlatformLogo? platformLogo,
+    $core.Iterable<PlatformVersionReleaseDate>? platformVersionReleaseDates,
+    $core.String? resolutions,
+    $core.String? slug,
+    $core.String? sound,
+    $core.String? storage,
+    $core.String? summary,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (companies != null) {
+      $result.companies.addAll(companies);
+    }
+    if (connectivity != null) {
+      $result.connectivity = connectivity;
+    }
+    if (cpu != null) {
+      $result.cpu = cpu;
+    }
+    if (graphics != null) {
+      $result.graphics = graphics;
+    }
+    if (mainManufacturer != null) {
+      $result.mainManufacturer = mainManufacturer;
+    }
+    if (media != null) {
+      $result.media = media;
+    }
+    if (memory != null) {
+      $result.memory = memory;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (online != null) {
+      $result.online = online;
+    }
+    if (os != null) {
+      $result.os = os;
+    }
+    if (output != null) {
+      $result.output = output;
+    }
+    if (platformLogo != null) {
+      $result.platformLogo = platformLogo;
+    }
+    if (platformVersionReleaseDates != null) {
+      $result.platformVersionReleaseDates.addAll(platformVersionReleaseDates);
+    }
+    if (resolutions != null) {
+      $result.resolutions = resolutions;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (sound != null) {
+      $result.sound = sound;
+    }
+    if (storage != null) {
+      $result.storage = storage;
+    }
+    if (summary != null) {
+      $result.summary = summary;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformVersion._() : super();
   factory PlatformVersion.fromBuffer(
     $core.List<$core.int> i, [
@@ -8396,7 +10192,15 @@ class PlatformVersion extends $pb.GeneratedMessage {
 }
 
 class PlatformVersionCompanyResult extends $pb.GeneratedMessage {
-  factory PlatformVersionCompanyResult() => create();
+  factory PlatformVersionCompanyResult({
+    $core.Iterable<PlatformVersionCompany>? platformversioncompanies,
+  }) {
+    final $result = create();
+    if (platformversioncompanies != null) {
+      $result.platformversioncompanies.addAll(platformversioncompanies);
+    }
+    return $result;
+  }
   PlatformVersionCompanyResult._() : super();
   factory PlatformVersionCompanyResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -8456,7 +10260,35 @@ class PlatformVersionCompanyResult extends $pb.GeneratedMessage {
 }
 
 class PlatformVersionCompany extends $pb.GeneratedMessage {
-  factory PlatformVersionCompany() => create();
+  factory PlatformVersionCompany({
+    $fixnum.Int64? id,
+    $core.String? comment,
+    Company? company,
+    $core.bool? developer,
+    $core.bool? manufacturer,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (comment != null) {
+      $result.comment = comment;
+    }
+    if (company != null) {
+      $result.company = company;
+    }
+    if (developer != null) {
+      $result.developer = developer;
+    }
+    if (manufacturer != null) {
+      $result.manufacturer = manufacturer;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformVersionCompany._() : super();
   factory PlatformVersionCompany.fromBuffer(
     $core.List<$core.int> i, [
@@ -8593,7 +10425,15 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
 }
 
 class PlatformVersionReleaseDateResult extends $pb.GeneratedMessage {
-  factory PlatformVersionReleaseDateResult() => create();
+  factory PlatformVersionReleaseDateResult({
+    $core.Iterable<PlatformVersionReleaseDate>? platformversionreleasedates,
+  }) {
+    final $result = create();
+    if (platformversionreleasedates != null) {
+      $result.platformversionreleasedates.addAll(platformversionreleasedates);
+    }
+    return $result;
+  }
   PlatformVersionReleaseDateResult._() : super();
   factory PlatformVersionReleaseDateResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -8655,7 +10495,55 @@ class PlatformVersionReleaseDateResult extends $pb.GeneratedMessage {
 }
 
 class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
-  factory PlatformVersionReleaseDate() => create();
+  factory PlatformVersionReleaseDate({
+    $fixnum.Int64? id,
+    DateFormatChangeDateCategoryEnum? category,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? date,
+    $core.String? human,
+    $core.int? m,
+    PlatformVersion? platformVersion,
+    RegionRegionEnum? region,
+    $0.Timestamp? updatedAt,
+    $core.int? y,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (date != null) {
+      $result.date = date;
+    }
+    if (human != null) {
+      $result.human = human;
+    }
+    if (m != null) {
+      $result.m = m;
+    }
+    if (platformVersion != null) {
+      $result.platformVersion = platformVersion;
+    }
+    if (region != null) {
+      $result.region = region;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (y != null) {
+      $result.y = y;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformVersionReleaseDate._() : super();
   factory PlatformVersionReleaseDate.fromBuffer(
     $core.List<$core.int> i, [
@@ -8890,7 +10778,15 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
 }
 
 class PlatformWebsiteResult extends $pb.GeneratedMessage {
-  factory PlatformWebsiteResult() => create();
+  factory PlatformWebsiteResult({
+    $core.Iterable<PlatformWebsite>? platformwebsites,
+  }) {
+    final $result = create();
+    if (platformwebsites != null) {
+      $result.platformwebsites.addAll(platformwebsites);
+    }
+    return $result;
+  }
   PlatformWebsiteResult._() : super();
   factory PlatformWebsiteResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -8947,7 +10843,31 @@ class PlatformWebsiteResult extends $pb.GeneratedMessage {
 }
 
 class PlatformWebsite extends $pb.GeneratedMessage {
-  factory PlatformWebsite() => create();
+  factory PlatformWebsite({
+    $fixnum.Int64? id,
+    WebsiteCategoryEnum? category,
+    $core.bool? trusted,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (trusted != null) {
+      $result.trusted = trusted;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlatformWebsite._() : super();
   factory PlatformWebsite.fromBuffer(
     $core.List<$core.int> i, [
@@ -9069,7 +10989,15 @@ class PlatformWebsite extends $pb.GeneratedMessage {
 }
 
 class PlayerPerspectiveResult extends $pb.GeneratedMessage {
-  factory PlayerPerspectiveResult() => create();
+  factory PlayerPerspectiveResult({
+    $core.Iterable<PlayerPerspective>? playerperspectives,
+  }) {
+    final $result = create();
+    if (playerperspectives != null) {
+      $result.playerperspectives.addAll(playerperspectives);
+    }
+    return $result;
+  }
   PlayerPerspectiveResult._() : super();
   factory PlayerPerspectiveResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -9126,7 +11054,39 @@ class PlayerPerspectiveResult extends $pb.GeneratedMessage {
 }
 
 class PlayerPerspective extends $pb.GeneratedMessage {
-  factory PlayerPerspective() => create();
+  factory PlayerPerspective({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   PlayerPerspective._() : super();
   factory PlayerPerspective.fromBuffer(
     $core.List<$core.int> i, [
@@ -9279,7 +11239,15 @@ class PlayerPerspective extends $pb.GeneratedMessage {
 }
 
 class RegionResult extends $pb.GeneratedMessage {
-  factory RegionResult() => create();
+  factory RegionResult({
+    $core.Iterable<Region>? regions,
+  }) {
+    final $result = create();
+    if (regions != null) {
+      $result.regions.addAll(regions);
+    }
+    return $result;
+  }
   RegionResult._() : super();
   factory RegionResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -9333,7 +11301,39 @@ class RegionResult extends $pb.GeneratedMessage {
 }
 
 class Region extends $pb.GeneratedMessage {
-  factory Region() => create();
+  factory Region({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? category,
+    $core.String? identifier,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (identifier != null) {
+      $result.identifier = identifier;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Region._() : super();
   factory Region.fromBuffer(
     $core.List<$core.int> i, [
@@ -9484,7 +11484,15 @@ class Region extends $pb.GeneratedMessage {
 }
 
 class ReleaseDateResult extends $pb.GeneratedMessage {
-  factory ReleaseDateResult() => create();
+  factory ReleaseDateResult({
+    $core.Iterable<ReleaseDate>? releasedates,
+  }) {
+    final $result = create();
+    if (releasedates != null) {
+      $result.releasedates.addAll(releasedates);
+    }
+    return $result;
+  }
   ReleaseDateResult._() : super();
   factory ReleaseDateResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -9538,7 +11546,63 @@ class ReleaseDateResult extends $pb.GeneratedMessage {
 }
 
 class ReleaseDate extends $pb.GeneratedMessage {
-  factory ReleaseDate() => create();
+  factory ReleaseDate({
+    $fixnum.Int64? id,
+    DateFormatChangeDateCategoryEnum? category,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? date,
+    Game? game,
+    $core.String? human,
+    $core.int? m,
+    Platform? platform,
+    RegionRegionEnum? region,
+    $0.Timestamp? updatedAt,
+    $core.int? y,
+    $core.String? checksum,
+    ReleaseDateStatus? status,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (date != null) {
+      $result.date = date;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (human != null) {
+      $result.human = human;
+    }
+    if (m != null) {
+      $result.m = m;
+    }
+    if (platform != null) {
+      $result.platform = platform;
+    }
+    if (region != null) {
+      $result.region = region;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (y != null) {
+      $result.y = y;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    if (status != null) {
+      $result.status = status;
+    }
+    return $result;
+  }
   ReleaseDate._() : super();
   factory ReleaseDate.fromBuffer(
     $core.List<$core.int> i, [
@@ -9802,7 +11866,15 @@ class ReleaseDate extends $pb.GeneratedMessage {
 }
 
 class ReleaseDateStatusResult extends $pb.GeneratedMessage {
-  factory ReleaseDateStatusResult() => create();
+  factory ReleaseDateStatusResult({
+    $core.Iterable<ReleaseDateStatus>? releasedatestatuses,
+  }) {
+    final $result = create();
+    if (releasedatestatuses != null) {
+      $result.releasedatestatuses.addAll(releasedatestatuses);
+    }
+    return $result;
+  }
   ReleaseDateStatusResult._() : super();
   factory ReleaseDateStatusResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -9859,7 +11931,35 @@ class ReleaseDateStatusResult extends $pb.GeneratedMessage {
 }
 
 class ReleaseDateStatus extends $pb.GeneratedMessage {
-  factory ReleaseDateStatus() => create();
+  factory ReleaseDateStatus({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? description,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   ReleaseDateStatus._() : super();
   factory ReleaseDateStatus.fromBuffer(
     $core.List<$core.int> i, [
@@ -9999,7 +12099,15 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
 }
 
 class ScreenshotResult extends $pb.GeneratedMessage {
-  factory ScreenshotResult() => create();
+  factory ScreenshotResult({
+    $core.Iterable<Screenshot>? screenshots,
+  }) {
+    final $result = create();
+    if (screenshots != null) {
+      $result.screenshots.addAll(screenshots);
+    }
+    return $result;
+  }
   ScreenshotResult._() : super();
   factory ScreenshotResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -10053,7 +12161,47 @@ class ScreenshotResult extends $pb.GeneratedMessage {
 }
 
 class Screenshot extends $pb.GeneratedMessage {
-  factory Screenshot() => create();
+  factory Screenshot({
+    $fixnum.Int64? id,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    Game? game,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Screenshot._() : super();
   factory Screenshot.fromBuffer(
     $core.List<$core.int> i, [
@@ -10220,7 +12368,15 @@ class Screenshot extends $pb.GeneratedMessage {
 }
 
 class SearchResult extends $pb.GeneratedMessage {
-  factory SearchResult() => create();
+  factory SearchResult({
+    $core.Iterable<Search>? searches,
+  }) {
+    final $result = create();
+    if (searches != null) {
+      $result.searches.addAll(searches);
+    }
+    return $result;
+  }
   SearchResult._() : super();
   factory SearchResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -10274,7 +12430,63 @@ class SearchResult extends $pb.GeneratedMessage {
 }
 
 class Search extends $pb.GeneratedMessage {
-  factory Search() => create();
+  factory Search({
+    $fixnum.Int64? id,
+    $core.String? alternativeName,
+    Character? character,
+    Collection? collection,
+    Company? company,
+    $core.String? description,
+    Game? game,
+    $core.String? name,
+    Platform? platform,
+    $0.Timestamp? publishedAt,
+    TestDummy? testDummy,
+    Theme? theme,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (alternativeName != null) {
+      $result.alternativeName = alternativeName;
+    }
+    if (character != null) {
+      $result.character = character;
+    }
+    if (collection != null) {
+      $result.collection = collection;
+    }
+    if (company != null) {
+      $result.company = company;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (platform != null) {
+      $result.platform = platform;
+    }
+    if (publishedAt != null) {
+      $result.publishedAt = publishedAt;
+    }
+    if (testDummy != null) {
+      $result.testDummy = testDummy;
+    }
+    if (theme != null) {
+      $result.theme = theme;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Search._() : super();
   factory Search.fromBuffer(
     $core.List<$core.int> i, [
@@ -10531,7 +12743,15 @@ class Search extends $pb.GeneratedMessage {
 }
 
 class TestDummyResult extends $pb.GeneratedMessage {
-  factory TestDummyResult() => create();
+  factory TestDummyResult({
+    $core.Iterable<TestDummy>? testdummies,
+  }) {
+    final $result = create();
+    if (testdummies != null) {
+      $result.testdummies.addAll(testdummies);
+    }
+    return $result;
+  }
   TestDummyResult._() : super();
   factory TestDummyResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -10585,7 +12805,83 @@ class TestDummyResult extends $pb.GeneratedMessage {
 }
 
 class TestDummy extends $pb.GeneratedMessage {
-  factory TestDummy() => create();
+  factory TestDummy({
+    $fixnum.Int64? id,
+    $core.bool? boolValue,
+    $0.Timestamp? createdAt,
+    TestDummyEnumTestEnum? enumTest,
+    $core.double? floatValue,
+    Game? game,
+    $core.Iterable<$core.int>? integerArray,
+    $core.int? integerValue,
+    $core.String? name,
+    $core.int? newIntegerValue,
+    $core.bool? private,
+    $core.String? slug,
+    $core.Iterable<$core.String>? stringArray,
+    $core.Iterable<TestDummy>? testDummies,
+    TestDummy? testDummy,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (boolValue != null) {
+      $result.boolValue = boolValue;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (enumTest != null) {
+      $result.enumTest = enumTest;
+    }
+    if (floatValue != null) {
+      $result.floatValue = floatValue;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (integerArray != null) {
+      $result.integerArray.addAll(integerArray);
+    }
+    if (integerValue != null) {
+      $result.integerValue = integerValue;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (newIntegerValue != null) {
+      $result.newIntegerValue = newIntegerValue;
+    }
+    if (private != null) {
+      $result.private = private;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (stringArray != null) {
+      $result.stringArray.addAll(stringArray);
+    }
+    if (testDummies != null) {
+      $result.testDummies.addAll(testDummies);
+    }
+    if (testDummy != null) {
+      $result.testDummy = testDummy;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   TestDummy._() : super();
   factory TestDummy.fromBuffer(
     $core.List<$core.int> i, [
@@ -10880,7 +13176,15 @@ class TestDummy extends $pb.GeneratedMessage {
 }
 
 class ThemeResult extends $pb.GeneratedMessage {
-  factory ThemeResult() => create();
+  factory ThemeResult({
+    $core.Iterable<Theme>? themes,
+  }) {
+    final $result = create();
+    if (themes != null) {
+      $result.themes.addAll(themes);
+    }
+    return $result;
+  }
   ThemeResult._() : super();
   factory ThemeResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -10933,7 +13237,39 @@ class ThemeResult extends $pb.GeneratedMessage {
 }
 
 class Theme extends $pb.GeneratedMessage {
-  factory Theme() => create();
+  factory Theme({
+    $fixnum.Int64? id,
+    $0.Timestamp? createdAt,
+    $core.String? name,
+    $core.String? slug,
+    $0.Timestamp? updatedAt,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Theme._() : super();
   factory Theme.fromBuffer(
     $core.List<$core.int> i, [
@@ -11084,7 +13420,15 @@ class Theme extends $pb.GeneratedMessage {
 }
 
 class WebsiteResult extends $pb.GeneratedMessage {
-  factory WebsiteResult() => create();
+  factory WebsiteResult({
+    $core.Iterable<Website>? websites,
+  }) {
+    final $result = create();
+    if (websites != null) {
+      $result.websites.addAll(websites);
+    }
+    return $result;
+  }
   WebsiteResult._() : super();
   factory WebsiteResult.fromBuffer(
     $core.List<$core.int> i, [
@@ -11138,7 +13482,35 @@ class WebsiteResult extends $pb.GeneratedMessage {
 }
 
 class Website extends $pb.GeneratedMessage {
-  factory Website() => create();
+  factory Website({
+    $fixnum.Int64? id,
+    WebsiteCategoryEnum? category,
+    Game? game,
+    $core.bool? trusted,
+    $core.String? url,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (category != null) {
+      $result.category = category;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (trusted != null) {
+      $result.trusted = trusted;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
   Website._() : super();
   factory Website.fromBuffer(
     $core.List<$core.int> i, [

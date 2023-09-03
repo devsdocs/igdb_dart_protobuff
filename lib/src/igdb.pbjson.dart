@@ -1,10 +1,10 @@
 //
 //  Generated code. Do not modify.
-//  source: igdb.proto
+//  source: .devs/igdb.proto
 //
 // @dart = 2.12
 
-// ignore_for_file: annotate_overrides, camel_case_types
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
@@ -564,7 +564,7 @@ const MultiQueryResultArray$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.MultiQueryResult',
-      '10': 'result'
+      '10': 'result',
     },
   ],
 };
@@ -584,7 +584,7 @@ const AgeRatingResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AgeRating',
-      '10': 'ageratings'
+      '10': 'ageratings',
     },
   ],
 };
@@ -605,7 +605,7 @@ const AgeRating$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.AgeRatingCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'content_descriptions',
@@ -613,7 +613,7 @@ const AgeRating$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AgeRatingContentDescription',
-      '10': 'contentDescriptions'
+      '10': 'contentDescriptions',
     },
     {
       '1': 'rating',
@@ -621,7 +621,7 @@ const AgeRating$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.AgeRatingRatingEnum',
-      '10': 'rating'
+      '10': 'rating',
     },
     {'1': 'rating_cover_url', '3': 5, '4': 1, '5': 9, '10': 'ratingCoverUrl'},
     {'1': 'synopsis', '3': 6, '4': 1, '5': 9, '10': 'synopsis'},
@@ -648,7 +648,7 @@ const AgeRatingContentDescriptionResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AgeRatingContentDescription',
-      '10': 'ageratingcontentdescriptions'
+      '10': 'ageratingcontentdescriptions',
     },
   ],
 };
@@ -671,7 +671,7 @@ const AgeRatingContentDescription$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.AgeRatingContentDescriptionCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'checksum', '3': 4, '4': 1, '5': 9, '10': 'checksum'},
@@ -695,7 +695,7 @@ const AlternativeNameResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AlternativeName',
-      '10': 'alternativenames'
+      '10': 'alternativenames',
     },
   ],
 };
@@ -733,7 +733,7 @@ const ArtworkResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Artwork',
-      '10': 'artworks'
+      '10': 'artworks',
     },
   ],
 };
@@ -777,7 +777,7 @@ const CharacterResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Character',
-      '10': 'characters'
+      '10': 'characters',
     },
   ],
 };
@@ -800,7 +800,7 @@ const Character$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'games', '3': 6, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
@@ -810,7 +810,7 @@ const Character$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.GenderGenderEnum',
-      '10': 'gender'
+      '10': 'gender',
     },
     {
       '1': 'mug_shot',
@@ -818,7 +818,7 @@ const Character$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.CharacterMugShot',
-      '10': 'mugShot'
+      '10': 'mugShot',
     },
     {'1': 'name', '3': 9, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 10, '4': 1, '5': 9, '10': 'slug'},
@@ -828,7 +828,7 @@ const Character$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.CharacterSpeciesEnum',
-      '10': 'species'
+      '10': 'species',
     },
     {
       '1': 'updated_at',
@@ -836,7 +836,7 @@ const Character$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 13, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 14, '4': 1, '5': 9, '10': 'checksum'},
@@ -866,7 +866,7 @@ const CharacterMugShotResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.CharacterMugShot',
-      '10': 'charactermugshots'
+      '10': 'charactermugshots',
     },
   ],
 };
@@ -909,7 +909,7 @@ const CollectionResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Collection',
-      '10': 'collections'
+      '10': 'collections',
     },
   ],
 };
@@ -930,7 +930,7 @@ const Collection$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'games', '3': 3, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
@@ -941,7 +941,7 @@ const Collection$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
@@ -966,7 +966,7 @@ const CompanyResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'companies'
+      '10': 'companies',
     },
   ],
 };
@@ -987,7 +987,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'changeDate'
+      '10': 'changeDate',
     },
     {
       '1': 'change_date_category',
@@ -995,7 +995,7 @@ const Company$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'changeDateCategory'
+      '10': 'changeDateCategory',
     },
     {
       '1': 'changed_company_id',
@@ -1003,7 +1003,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'changedCompanyId'
+      '10': 'changedCompanyId',
     },
     {'1': 'country', '3': 5, '4': 1, '5': 5, '10': 'country'},
     {
@@ -1012,7 +1012,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
     {
@@ -1021,7 +1021,7 @@ const Company$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'developed'
+      '10': 'developed',
     },
     {
       '1': 'logo',
@@ -1029,7 +1029,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.CompanyLogo',
-      '10': 'logo'
+      '10': 'logo',
     },
     {'1': 'name', '3': 10, '4': 1, '5': 9, '10': 'name'},
     {
@@ -1038,7 +1038,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'parent'
+      '10': 'parent',
     },
     {
       '1': 'published',
@@ -1046,7 +1046,7 @@ const Company$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'published'
+      '10': 'published',
     },
     {'1': 'slug', '3': 13, '4': 1, '5': 9, '10': 'slug'},
     {
@@ -1055,7 +1055,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'startDate'
+      '10': 'startDate',
     },
     {
       '1': 'start_date_category',
@@ -1063,7 +1063,7 @@ const Company$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'startDateCategory'
+      '10': 'startDateCategory',
     },
     {
       '1': 'updated_at',
@@ -1071,7 +1071,7 @@ const Company$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 17, '4': 1, '5': 9, '10': 'url'},
     {
@@ -1080,7 +1080,7 @@ const Company$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.CompanyWebsite',
-      '10': 'websites'
+      '10': 'websites',
     },
     {'1': 'checksum', '3': 19, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -1115,7 +1115,7 @@ const CompanyLogoResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.CompanyLogo',
-      '10': 'companylogos'
+      '10': 'companylogos',
     },
   ],
 };
@@ -1157,7 +1157,7 @@ const CompanyWebsiteResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.CompanyWebsite',
-      '10': 'companywebsites'
+      '10': 'companywebsites',
     },
   ],
 };
@@ -1178,7 +1178,7 @@ const CompanyWebsite$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {'1': 'trusted', '3': 3, '4': 1, '5': 8, '10': 'trusted'},
     {'1': 'url', '3': 4, '4': 1, '5': 9, '10': 'url'},
@@ -1202,7 +1202,7 @@ const CoverResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Cover',
-      '10': 'covers'
+      '10': 'covers',
     },
   ],
 };
@@ -1231,7 +1231,7 @@ const Cover$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.GameLocalization',
-      '10': 'gameLocalization'
+      '10': 'gameLocalization',
     },
   ],
 };
@@ -1255,7 +1255,7 @@ const ExternalGameResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.ExternalGame',
-      '10': 'externalgames'
+      '10': 'externalgames',
     },
   ],
 };
@@ -1276,7 +1276,7 @@ const ExternalGame$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.ExternalGameCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'created_at',
@@ -1284,7 +1284,7 @@ const ExternalGame$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'game', '3': 4, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'name', '3': 5, '4': 1, '5': 9, '10': 'name'},
@@ -1295,7 +1295,7 @@ const ExternalGame$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 8, '4': 1, '5': 9, '10': 'url'},
     {'1': 'year', '3': 9, '4': 1, '5': 5, '10': 'year'},
@@ -1305,7 +1305,7 @@ const ExternalGame$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.ExternalGameMediaEnum',
-      '10': 'media'
+      '10': 'media',
     },
     {
       '1': 'platform',
@@ -1313,7 +1313,7 @@ const ExternalGame$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platform'
+      '10': 'platform',
     },
     {'1': 'countries', '3': 12, '4': 3, '5': 5, '10': 'countries'},
     {'1': 'checksum', '3': 13, '4': 1, '5': 9, '10': 'checksum'},
@@ -1342,7 +1342,7 @@ const FranchiseResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Franchise',
-      '10': 'franchises'
+      '10': 'franchises',
     },
   ],
 };
@@ -1363,7 +1363,7 @@ const Franchise$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'games', '3': 3, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
@@ -1374,7 +1374,7 @@ const Franchise$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
@@ -1413,21 +1413,21 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AgeRating',
-      '10': 'ageRatings'
+      '10': 'ageRatings',
     },
     {
       '1': 'aggregated_rating',
       '3': 3,
       '4': 1,
       '5': 1,
-      '10': 'aggregatedRating'
+      '10': 'aggregatedRating',
     },
     {
       '1': 'aggregated_rating_count',
       '3': 4,
       '4': 1,
       '5': 5,
-      '10': 'aggregatedRatingCount'
+      '10': 'aggregatedRatingCount',
     },
     {
       '1': 'alternative_names',
@@ -1435,7 +1435,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.AlternativeName',
-      '10': 'alternativeNames'
+      '10': 'alternativeNames',
     },
     {
       '1': 'artworks',
@@ -1443,7 +1443,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Artwork',
-      '10': 'artworks'
+      '10': 'artworks',
     },
     {
       '1': 'bundles',
@@ -1451,7 +1451,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'bundles'
+      '10': 'bundles',
     },
     {
       '1': 'category',
@@ -1459,7 +1459,7 @@ const Game$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.GameCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'collection',
@@ -1467,7 +1467,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Collection',
-      '10': 'collection'
+      '10': 'collection',
     },
     {
       '1': 'cover',
@@ -1475,7 +1475,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Cover',
-      '10': 'cover'
+      '10': 'cover',
     },
     {
       '1': 'created_at',
@@ -1483,7 +1483,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'dlcs', '3': 12, '4': 3, '5': 11, '6': '.proto.Game', '10': 'dlcs'},
     {
@@ -1492,7 +1492,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'expansions'
+      '10': 'expansions',
     },
     {
       '1': 'external_games',
@@ -1500,7 +1500,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.ExternalGame',
-      '10': 'externalGames'
+      '10': 'externalGames',
     },
     {
       '1': 'first_release_date',
@@ -1508,7 +1508,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'firstReleaseDate'
+      '10': 'firstReleaseDate',
     },
     {'1': 'follows', '3': 16, '4': 1, '5': 5, '10': 'follows'},
     {
@@ -1517,7 +1517,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Franchise',
-      '10': 'franchise'
+      '10': 'franchise',
     },
     {
       '1': 'franchises',
@@ -1525,7 +1525,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Franchise',
-      '10': 'franchises'
+      '10': 'franchises',
     },
     {
       '1': 'game_engines',
@@ -1533,7 +1533,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameEngine',
-      '10': 'gameEngines'
+      '10': 'gameEngines',
     },
     {
       '1': 'game_modes',
@@ -1541,7 +1541,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameMode',
-      '10': 'gameModes'
+      '10': 'gameModes',
     },
     {
       '1': 'genres',
@@ -1549,7 +1549,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Genre',
-      '10': 'genres'
+      '10': 'genres',
     },
     {'1': 'hypes', '3': 22, '4': 1, '5': 5, '10': 'hypes'},
     {
@@ -1558,7 +1558,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.InvolvedCompany',
-      '10': 'involvedCompanies'
+      '10': 'involvedCompanies',
     },
     {
       '1': 'keywords',
@@ -1566,7 +1566,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Keyword',
-      '10': 'keywords'
+      '10': 'keywords',
     },
     {
       '1': 'multiplayer_modes',
@@ -1574,7 +1574,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.MultiplayerMode',
-      '10': 'multiplayerModes'
+      '10': 'multiplayerModes',
     },
     {'1': 'name', '3': 26, '4': 1, '5': 9, '10': 'name'},
     {
@@ -1583,7 +1583,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'parentGame'
+      '10': 'parentGame',
     },
     {
       '1': 'platforms',
@@ -1591,7 +1591,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platforms'
+      '10': 'platforms',
     },
     {
       '1': 'player_perspectives',
@@ -1599,7 +1599,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlayerPerspective',
-      '10': 'playerPerspectives'
+      '10': 'playerPerspectives',
     },
     {'1': 'rating', '3': 30, '4': 1, '5': 1, '10': 'rating'},
     {'1': 'rating_count', '3': 31, '4': 1, '5': 5, '10': 'ratingCount'},
@@ -1609,7 +1609,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.ReleaseDate',
-      '10': 'releaseDates'
+      '10': 'releaseDates',
     },
     {
       '1': 'screenshots',
@@ -1617,7 +1617,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Screenshot',
-      '10': 'screenshots'
+      '10': 'screenshots',
     },
     {
       '1': 'similar_games',
@@ -1625,7 +1625,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'similarGames'
+      '10': 'similarGames',
     },
     {'1': 'slug', '3': 35, '4': 1, '5': 9, '10': 'slug'},
     {
@@ -1634,7 +1634,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'standaloneExpansions'
+      '10': 'standaloneExpansions',
     },
     {
       '1': 'status',
@@ -1642,7 +1642,7 @@ const Game$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.GameStatusEnum',
-      '10': 'status'
+      '10': 'status',
     },
     {'1': 'storyline', '3': 38, '4': 1, '5': 9, '10': 'storyline'},
     {'1': 'summary', '3': 39, '4': 1, '5': 9, '10': 'summary'},
@@ -1653,7 +1653,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Theme',
-      '10': 'themes'
+      '10': 'themes',
     },
     {'1': 'total_rating', '3': 42, '4': 1, '5': 1, '10': 'totalRating'},
     {
@@ -1661,7 +1661,7 @@ const Game$json = {
       '3': 43,
       '4': 1,
       '5': 5,
-      '10': 'totalRatingCount'
+      '10': 'totalRatingCount',
     },
     {
       '1': 'updated_at',
@@ -1669,7 +1669,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 45, '4': 1, '5': 9, '10': 'url'},
     {
@@ -1678,7 +1678,7 @@ const Game$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'versionParent'
+      '10': 'versionParent',
     },
     {'1': 'version_title', '3': 47, '4': 1, '5': 9, '10': 'versionTitle'},
     {
@@ -1687,7 +1687,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVideo',
-      '10': 'videos'
+      '10': 'videos',
     },
     {
       '1': 'websites',
@@ -1695,7 +1695,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Website',
-      '10': 'websites'
+      '10': 'websites',
     },
     {'1': 'checksum', '3': 50, '4': 1, '5': 9, '10': 'checksum'},
     {
@@ -1704,7 +1704,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'remakes'
+      '10': 'remakes',
     },
     {
       '1': 'remasters',
@@ -1712,7 +1712,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'remasters'
+      '10': 'remasters',
     },
     {
       '1': 'expanded_games',
@@ -1720,7 +1720,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Game',
-      '10': 'expandedGames'
+      '10': 'expandedGames',
     },
     {'1': 'ports', '3': 54, '4': 3, '5': 11, '6': '.proto.Game', '10': 'ports'},
     {'1': 'forks', '3': 55, '4': 3, '5': 11, '6': '.proto.Game', '10': 'forks'},
@@ -1730,7 +1730,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.LanguageSupport',
-      '10': 'languageSupports'
+      '10': 'languageSupports',
     },
     {
       '1': 'game_localizations',
@@ -1738,7 +1738,7 @@ const Game$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameLocalization',
-      '10': 'gameLocalizations'
+      '10': 'gameLocalizations',
     },
   ],
 };
@@ -1803,7 +1803,7 @@ const GameEngineResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameEngine',
-      '10': 'gameengines'
+      '10': 'gameengines',
     },
   ],
 };
@@ -1824,7 +1824,7 @@ const GameEngine$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'companies'
+      '10': 'companies',
     },
     {
       '1': 'created_at',
@@ -1832,7 +1832,7 @@ const GameEngine$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
     {
@@ -1841,7 +1841,7 @@ const GameEngine$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.GameEngineLogo',
-      '10': 'logo'
+      '10': 'logo',
     },
     {'1': 'name', '3': 6, '4': 1, '5': 9, '10': 'name'},
     {
@@ -1850,7 +1850,7 @@ const GameEngine$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platforms'
+      '10': 'platforms',
     },
     {'1': 'slug', '3': 8, '4': 1, '5': 9, '10': 'slug'},
     {
@@ -1859,7 +1859,7 @@ const GameEngine$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 10, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 11, '4': 1, '5': 9, '10': 'checksum'},
@@ -1887,7 +1887,7 @@ const GameEngineLogoResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameEngineLogo',
-      '10': 'gameenginelogos'
+      '10': 'gameenginelogos',
     },
   ],
 };
@@ -1929,7 +1929,7 @@ const GameLocalizationResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameLocalization',
-      '10': 'gamelocalizations'
+      '10': 'gamelocalizations',
     },
   ],
 };
@@ -1954,7 +1954,7 @@ const GameLocalization$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Region',
-      '10': 'region'
+      '10': 'region',
     },
     {
       '1': 'created_at',
@@ -1962,7 +1962,7 @@ const GameLocalization$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -1970,7 +1970,7 @@ const GameLocalization$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -1995,7 +1995,7 @@ const GameModeResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameMode',
-      '10': 'gamemodes'
+      '10': 'gamemodes',
     },
   ],
 };
@@ -2016,7 +2016,7 @@ const GameMode$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
@@ -2026,7 +2026,7 @@ const GameMode$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -2051,7 +2051,7 @@ const GameVersionResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVersion',
-      '10': 'gameversions'
+      '10': 'gameversions',
     },
   ],
 };
@@ -2072,7 +2072,7 @@ const GameVersion$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'features',
@@ -2080,7 +2080,7 @@ const GameVersion$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVersionFeature',
-      '10': 'features'
+      '10': 'features',
     },
     {'1': 'game', '3': 4, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'games', '3': 5, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
@@ -2090,7 +2090,7 @@ const GameVersion$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
@@ -2116,7 +2116,7 @@ const GameVersionFeatureResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVersionFeature',
-      '10': 'gameversionfeatures'
+      '10': 'gameversionfeatures',
     },
   ],
 };
@@ -2138,7 +2138,7 @@ const GameVersionFeature$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.GameVersionFeatureCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'position', '3': 4, '4': 1, '5': 5, '10': 'position'},
@@ -2149,7 +2149,7 @@ const GameVersionFeature$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVersionFeatureValue',
-      '10': 'values'
+      '10': 'values',
     },
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2173,7 +2173,7 @@ const GameVersionFeatureValueResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVersionFeatureValue',
-      '10': 'gameversionfeaturevalues'
+      '10': 'gameversionfeaturevalues',
     },
   ],
 };
@@ -2197,7 +2197,7 @@ const GameVersionFeatureValue$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.GameVersionFeature',
-      '10': 'gameFeature'
+      '10': 'gameFeature',
     },
     {
       '1': 'included_feature',
@@ -2205,7 +2205,7 @@ const GameVersionFeatureValue$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.GameVersionFeatureValueIncludedFeatureEnum',
-      '10': 'includedFeature'
+      '10': 'includedFeature',
     },
     {'1': 'note', '3': 5, '4': 1, '5': 9, '10': 'note'},
     {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
@@ -2231,7 +2231,7 @@ const GameVideoResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.GameVideo',
-      '10': 'gamevideos'
+      '10': 'gamevideos',
     },
   ],
 };
@@ -2269,7 +2269,7 @@ const GenreResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Genre',
-      '10': 'genres'
+      '10': 'genres',
     },
   ],
 };
@@ -2290,7 +2290,7 @@ const Genre$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
@@ -2300,7 +2300,7 @@ const Genre$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -2325,7 +2325,7 @@ const InvolvedCompanyResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.InvolvedCompany',
-      '10': 'involvedcompanies'
+      '10': 'involvedcompanies',
     },
   ],
 };
@@ -2346,7 +2346,7 @@ const InvolvedCompany$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'company'
+      '10': 'company',
     },
     {
       '1': 'created_at',
@@ -2354,7 +2354,7 @@ const InvolvedCompany$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'developer', '3': 4, '4': 1, '5': 8, '10': 'developer'},
     {'1': 'game', '3': 5, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
@@ -2367,7 +2367,7 @@ const InvolvedCompany$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 10, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2393,7 +2393,7 @@ const KeywordResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Keyword',
-      '10': 'keywords'
+      '10': 'keywords',
     },
   ],
 };
@@ -2414,7 +2414,7 @@ const Keyword$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
@@ -2424,7 +2424,7 @@ const Keyword$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -2449,7 +2449,7 @@ const LanguageResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Language',
-      '10': 'languages'
+      '10': 'languages',
     },
   ],
 };
@@ -2473,7 +2473,7 @@ const Language$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -2481,7 +2481,7 @@ const Language$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2505,7 +2505,7 @@ const LanguageSupportResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.LanguageSupport',
-      '10': 'languagesupports'
+      '10': 'languagesupports',
     },
   ],
 };
@@ -2527,7 +2527,7 @@ const LanguageSupport$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Language',
-      '10': 'language'
+      '10': 'language',
     },
     {
       '1': 'language_support_type',
@@ -2535,7 +2535,7 @@ const LanguageSupport$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.LanguageSupportType',
-      '10': 'languageSupportType'
+      '10': 'languageSupportType',
     },
     {
       '1': 'created_at',
@@ -2543,7 +2543,7 @@ const LanguageSupport$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -2551,7 +2551,7 @@ const LanguageSupport$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2577,7 +2577,7 @@ const LanguageSupportTypeResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.LanguageSupportType',
-      '10': 'languagesupporttypes'
+      '10': 'languagesupporttypes',
     },
   ],
 };
@@ -2600,7 +2600,7 @@ const LanguageSupportType$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -2608,7 +2608,7 @@ const LanguageSupportType$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 5, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2631,7 +2631,7 @@ const MultiplayerModeResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.MultiplayerMode',
-      '10': 'multiplayermodes'
+      '10': 'multiplayermodes',
     },
   ],
 };
@@ -2662,7 +2662,7 @@ const MultiplayerMode$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platform'
+      '10': 'platform',
     },
     {'1': 'splitscreen', '3': 13, '4': 1, '5': 8, '10': 'splitscreen'},
     {
@@ -2670,7 +2670,7 @@ const MultiplayerMode$json = {
       '3': 14,
       '4': 1,
       '5': 8,
-      '10': 'splitscreenonline'
+      '10': 'splitscreenonline',
     },
     {'1': 'checksum', '3': 15, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2699,7 +2699,7 @@ const PlatformResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platforms'
+      '10': 'platforms',
     },
   ],
 };
@@ -2722,7 +2722,7 @@ const Platform$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.PlatformCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'created_at',
@@ -2730,7 +2730,7 @@ const Platform$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'generation', '3': 6, '4': 1, '5': 5, '10': 'generation'},
     {'1': 'name', '3': 7, '4': 1, '5': 9, '10': 'name'},
@@ -2740,7 +2740,7 @@ const Platform$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.PlatformLogo',
-      '10': 'platformLogo'
+      '10': 'platformLogo',
     },
     {
       '1': 'platform_family',
@@ -2748,7 +2748,7 @@ const Platform$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.PlatformFamily',
-      '10': 'platformFamily'
+      '10': 'platformFamily',
     },
     {'1': 'slug', '3': 10, '4': 1, '5': 9, '10': 'slug'},
     {'1': 'summary', '3': 11, '4': 1, '5': 9, '10': 'summary'},
@@ -2758,7 +2758,7 @@ const Platform$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 13, '4': 1, '5': 9, '10': 'url'},
     {
@@ -2767,7 +2767,7 @@ const Platform$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersion',
-      '10': 'versions'
+      '10': 'versions',
     },
     {
       '1': 'websites',
@@ -2775,7 +2775,7 @@ const Platform$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformWebsite',
-      '10': 'websites'
+      '10': 'websites',
     },
     {'1': 'checksum', '3': 16, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2806,7 +2806,7 @@ const PlatformFamilyResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformFamily',
-      '10': 'platformfamilies'
+      '10': 'platformfamilies',
     },
   ],
 };
@@ -2842,7 +2842,7 @@ const PlatformLogoResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformLogo',
-      '10': 'platformlogos'
+      '10': 'platformlogos',
     },
   ],
 };
@@ -2884,7 +2884,7 @@ const PlatformVersionResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersion',
-      '10': 'platformversions'
+      '10': 'platformversions',
     },
   ],
 };
@@ -2905,7 +2905,7 @@ const PlatformVersion$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersionCompany',
-      '10': 'companies'
+      '10': 'companies',
     },
     {'1': 'connectivity', '3': 3, '4': 1, '5': 9, '10': 'connectivity'},
     {'1': 'cpu', '3': 4, '4': 1, '5': 9, '10': 'cpu'},
@@ -2916,7 +2916,7 @@ const PlatformVersion$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.PlatformVersionCompany',
-      '10': 'mainManufacturer'
+      '10': 'mainManufacturer',
     },
     {'1': 'media', '3': 7, '4': 1, '5': 9, '10': 'media'},
     {'1': 'memory', '3': 8, '4': 1, '5': 9, '10': 'memory'},
@@ -2930,7 +2930,7 @@ const PlatformVersion$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.PlatformLogo',
-      '10': 'platformLogo'
+      '10': 'platformLogo',
     },
     {
       '1': 'platform_version_release_dates',
@@ -2938,7 +2938,7 @@ const PlatformVersion$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersionReleaseDate',
-      '10': 'platformVersionReleaseDates'
+      '10': 'platformVersionReleaseDates',
     },
     {'1': 'resolutions', '3': 15, '4': 1, '5': 9, '10': 'resolutions'},
     {'1': 'slug', '3': 16, '4': 1, '5': 9, '10': 'slug'},
@@ -2976,7 +2976,7 @@ const PlatformVersionCompanyResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersionCompany',
-      '10': 'platformversioncompanies'
+      '10': 'platformversioncompanies',
     },
   ],
 };
@@ -3000,7 +3000,7 @@ const PlatformVersionCompany$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'company'
+      '10': 'company',
     },
     {'1': 'developer', '3': 4, '4': 1, '5': 8, '10': 'developer'},
     {'1': 'manufacturer', '3': 5, '4': 1, '5': 8, '10': 'manufacturer'},
@@ -3025,7 +3025,7 @@ const PlatformVersionReleaseDateResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformVersionReleaseDate',
-      '10': 'platformversionreleasedates'
+      '10': 'platformversionreleasedates',
     },
   ],
 };
@@ -3048,7 +3048,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'created_at',
@@ -3056,7 +3056,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'date',
@@ -3064,7 +3064,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'date'
+      '10': 'date',
     },
     {'1': 'human', '3': 5, '4': 1, '5': 9, '10': 'human'},
     {'1': 'm', '3': 6, '4': 1, '5': 5, '10': 'm'},
@@ -3074,7 +3074,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.PlatformVersion',
-      '10': 'platformVersion'
+      '10': 'platformVersion',
     },
     {
       '1': 'region',
@@ -3082,7 +3082,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.RegionRegionEnum',
-      '10': 'region'
+      '10': 'region',
     },
     {
       '1': 'updated_at',
@@ -3090,7 +3090,7 @@ const PlatformVersionReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'y', '3': 10, '4': 1, '5': 5, '10': 'y'},
     {'1': 'checksum', '3': 11, '4': 1, '5': 9, '10': 'checksum'},
@@ -3119,7 +3119,7 @@ const PlatformWebsiteResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlatformWebsite',
-      '10': 'platformwebsites'
+      '10': 'platformwebsites',
     },
   ],
 };
@@ -3140,7 +3140,7 @@ const PlatformWebsite$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {'1': 'trusted', '3': 3, '4': 1, '5': 8, '10': 'trusted'},
     {'1': 'url', '3': 4, '4': 1, '5': 9, '10': 'url'},
@@ -3164,7 +3164,7 @@ const PlayerPerspectiveResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.PlayerPerspective',
-      '10': 'playerperspectives'
+      '10': 'playerperspectives',
     },
   ],
 };
@@ -3186,7 +3186,7 @@ const PlayerPerspective$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
@@ -3196,7 +3196,7 @@ const PlayerPerspective$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -3221,7 +3221,7 @@ const RegionResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Region',
-      '10': 'regions'
+      '10': 'regions',
     },
   ],
 };
@@ -3245,7 +3245,7 @@ const Region$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -3253,7 +3253,7 @@ const Region$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3277,7 +3277,7 @@ const ReleaseDateResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.ReleaseDate',
-      '10': 'releasedates'
+      '10': 'releasedates',
     },
   ],
 };
@@ -3298,7 +3298,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {
       '1': 'created_at',
@@ -3306,7 +3306,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'date',
@@ -3314,7 +3314,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'date'
+      '10': 'date',
     },
     {'1': 'game', '3': 5, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'human', '3': 6, '4': 1, '5': 9, '10': 'human'},
@@ -3325,7 +3325,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platform'
+      '10': 'platform',
     },
     {
       '1': 'region',
@@ -3333,7 +3333,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.RegionRegionEnum',
-      '10': 'region'
+      '10': 'region',
     },
     {
       '1': 'updated_at',
@@ -3341,7 +3341,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'y', '3': 11, '4': 1, '5': 5, '10': 'y'},
     {'1': 'checksum', '3': 12, '4': 1, '5': 9, '10': 'checksum'},
@@ -3351,7 +3351,7 @@ const ReleaseDate$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.ReleaseDateStatus',
-      '10': 'status'
+      '10': 'status',
     },
   ],
 };
@@ -3379,7 +3379,7 @@ const ReleaseDateStatusResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.ReleaseDateStatus',
-      '10': 'releasedatestatuses'
+      '10': 'releasedatestatuses',
     },
   ],
 };
@@ -3403,7 +3403,7 @@ const ReleaseDateStatus$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'updated_at',
@@ -3411,7 +3411,7 @@ const ReleaseDateStatus$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3435,7 +3435,7 @@ const ScreenshotResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Screenshot',
-      '10': 'screenshots'
+      '10': 'screenshots',
     },
   ],
 };
@@ -3479,7 +3479,7 @@ const SearchResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Search',
-      '10': 'searches'
+      '10': 'searches',
     },
   ],
 };
@@ -3501,7 +3501,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Character',
-      '10': 'character'
+      '10': 'character',
     },
     {
       '1': 'collection',
@@ -3509,7 +3509,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Collection',
-      '10': 'collection'
+      '10': 'collection',
     },
     {
       '1': 'company',
@@ -3517,7 +3517,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Company',
-      '10': 'company'
+      '10': 'company',
     },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'game', '3': 7, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
@@ -3528,7 +3528,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Platform',
-      '10': 'platform'
+      '10': 'platform',
     },
     {
       '1': 'published_at',
@@ -3536,7 +3536,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'publishedAt'
+      '10': 'publishedAt',
     },
     {
       '1': 'test_dummy',
@@ -3544,7 +3544,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.TestDummy',
-      '10': 'testDummy'
+      '10': 'testDummy',
     },
     {
       '1': 'theme',
@@ -3552,7 +3552,7 @@ const Search$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.Theme',
-      '10': 'theme'
+      '10': 'theme',
     },
     {'1': 'checksum', '3': 13, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3581,7 +3581,7 @@ const TestDummyResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.TestDummy',
-      '10': 'testdummies'
+      '10': 'testdummies',
     },
   ],
 };
@@ -3603,7 +3603,7 @@ const TestDummy$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {
       '1': 'enum_test',
@@ -3611,7 +3611,7 @@ const TestDummy$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.TestDummyEnumTestEnum',
-      '10': 'enumTest'
+      '10': 'enumTest',
     },
     {'1': 'float_value', '3': 5, '4': 1, '5': 1, '10': 'floatValue'},
     {'1': 'game', '3': 6, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
@@ -3623,7 +3623,7 @@ const TestDummy$json = {
       '3': 10,
       '4': 1,
       '5': 5,
-      '10': 'newIntegerValue'
+      '10': 'newIntegerValue',
     },
     {'1': 'private', '3': 11, '4': 1, '5': 8, '10': 'private'},
     {'1': 'slug', '3': 12, '4': 1, '5': 9, '10': 'slug'},
@@ -3634,7 +3634,7 @@ const TestDummy$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.TestDummy',
-      '10': 'testDummies'
+      '10': 'testDummies',
     },
     {
       '1': 'test_dummy',
@@ -3642,7 +3642,7 @@ const TestDummy$json = {
       '4': 1,
       '5': 11,
       '6': '.proto.TestDummy',
-      '10': 'testDummy'
+      '10': 'testDummy',
     },
     {
       '1': 'updated_at',
@@ -3650,7 +3650,7 @@ const TestDummy$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 17, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 18, '4': 1, '5': 9, '10': 'checksum'},
@@ -3683,7 +3683,7 @@ const ThemeResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Theme',
-      '10': 'themes'
+      '10': 'themes',
     },
   ],
 };
@@ -3704,7 +3704,7 @@ const Theme$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt'
+      '10': 'createdAt',
     },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
@@ -3714,7 +3714,7 @@ const Theme$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt'
+      '10': 'updatedAt',
     },
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -3739,7 +3739,7 @@ const WebsiteResult$json = {
       '4': 3,
       '5': 11,
       '6': '.proto.Website',
-      '10': 'websites'
+      '10': 'websites',
     },
   ],
 };
@@ -3760,7 +3760,7 @@ const Website$json = {
       '4': 1,
       '5': 14,
       '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category'
+      '10': 'category',
     },
     {'1': 'game', '3': 3, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'trusted', '3': 4, '4': 1, '5': 8, '10': 'trusted'},
