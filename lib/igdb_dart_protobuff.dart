@@ -4,3 +4,4 @@
 library igdb_dart_protobuff;
 
 export 'src/igdb.pbserver.dart';
+export 'src/timestamp.pbserver.dart';

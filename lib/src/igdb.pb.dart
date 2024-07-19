@@ -4,7 +4,7 @@
 //
 // @dart = 2.12
 
-// ignore_for_file: annotate_overrides, camel_case_types, comment_references, prefer_constructors_over_static_methods
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
@@ -12,9 +12,10 @@
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
-import 'package:igdb_dart_protobuff/src/igdb.pbenum.dart';
-import 'package:igdb_dart_protobuff/src/timestamp.pb.dart' as $0;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+import 'timestamp.pb.dart' as $0;
+import 'igdb.pbenum.dart';
 
 export 'igdb.pbenum.dart';
 
@@ -29,34 +30,24 @@ class Count extends $pb.GeneratedMessage {
     return $result;
   }
   Count._() : super();
-  factory Count.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Count.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Count.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Count',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'count')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Count clone() => Count()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Count copyWith(void Function(Count) updates) =>
-      super.copyWith((message) => updates(message as Count)) as Count;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Count copyWith(void Function(Count) updates) => super.copyWith((message) => updates(message as Count)) as Count;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -65,17 +56,13 @@ class Count extends $pb.GeneratedMessage {
   Count createEmptyInstance() => create();
   static $pb.PbList<Count> createRepeated() => $pb.PbList<Count>();
   @$core.pragma('dart2js:noInline')
-  static Count getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Count>(create);
+  static Count getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Count>(create);
   static Count? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get count => $_getI64(0);
   @$pb.TagNumber(1)
-  set count($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set count($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
@@ -101,61 +88,41 @@ class MultiQueryResult extends $pb.GeneratedMessage {
     return $result;
   }
   MultiQueryResult._() : super();
-  factory MultiQueryResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MultiQueryResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory MultiQueryResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MultiQueryResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'MultiQueryResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MultiQueryResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..p<$core.List<$core.int>>(
-      2,
-      _omitFieldNames ? '' : 'results',
-      $pb.PbFieldType.PY,
-    )
+    ..p<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PY)
     ..aInt64(3, _omitFieldNames ? '' : 'count')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   MultiQueryResult clone() => MultiQueryResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  MultiQueryResult copyWith(void Function(MultiQueryResult) updates) =>
-      super.copyWith((message) => updates(message as MultiQueryResult))
-          as MultiQueryResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MultiQueryResult copyWith(void Function(MultiQueryResult) updates) => super.copyWith((message) => updates(message as MultiQueryResult)) as MultiQueryResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MultiQueryResult create() => MultiQueryResult._();
   MultiQueryResult createEmptyInstance() => create();
-  static $pb.PbList<MultiQueryResult> createRepeated() =>
-      $pb.PbList<MultiQueryResult>();
+  static $pb.PbList<MultiQueryResult> createRepeated() => $pb.PbList<MultiQueryResult>();
   @$core.pragma('dart2js:noInline')
-  static MultiQueryResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<MultiQueryResult>(create);
+  static MultiQueryResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MultiQueryResult>(create);
   static MultiQueryResult? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) {
-    $_setString(0, v);
-  }
-
+  set name($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -167,10 +134,7 @@ class MultiQueryResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get count => $_getI64(2);
   @$pb.TagNumber(3)
-  set count($fixnum.Int64 v) {
-    $_setInt64(2, v);
-  }
-
+  set count($fixnum.Int64 v) { $_setInt64(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -188,54 +152,33 @@ class MultiQueryResultArray extends $pb.GeneratedMessage {
     return $result;
   }
   MultiQueryResultArray._() : super();
-  factory MultiQueryResultArray.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MultiQueryResultArray.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory MultiQueryResultArray.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MultiQueryResultArray.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'MultiQueryResultArray',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<MultiQueryResult>(
-      1,
-      _omitFieldNames ? '' : 'result',
-      $pb.PbFieldType.PM,
-      subBuilder: MultiQueryResult.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MultiQueryResultArray', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<MultiQueryResult>(1, _omitFieldNames ? '' : 'result', $pb.PbFieldType.PM, subBuilder: MultiQueryResult.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  MultiQueryResultArray clone() =>
-      MultiQueryResultArray()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  MultiQueryResultArray copyWith(
-    void Function(MultiQueryResultArray) updates,
-  ) =>
-      super.copyWith((message) => updates(message as MultiQueryResultArray))
-          as MultiQueryResultArray;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MultiQueryResultArray clone() => MultiQueryResultArray()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MultiQueryResultArray copyWith(void Function(MultiQueryResultArray) updates) => super.copyWith((message) => updates(message as MultiQueryResultArray)) as MultiQueryResultArray;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MultiQueryResultArray create() => MultiQueryResultArray._();
   MultiQueryResultArray createEmptyInstance() => create();
-  static $pb.PbList<MultiQueryResultArray> createRepeated() =>
-      $pb.PbList<MultiQueryResultArray>();
+  static $pb.PbList<MultiQueryResultArray> createRepeated() => $pb.PbList<MultiQueryResultArray>();
   @$core.pragma('dart2js:noInline')
-  static MultiQueryResultArray getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<MultiQueryResultArray>(create);
+  static MultiQueryResultArray getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MultiQueryResultArray>(create);
   static MultiQueryResultArray? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -253,51 +196,33 @@ class AgeRatingResult extends $pb.GeneratedMessage {
     return $result;
   }
   AgeRatingResult._() : super();
-  factory AgeRatingResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AgeRatingResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AgeRatingResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AgeRatingResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AgeRatingResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<AgeRating>(
-      1,
-      _omitFieldNames ? '' : 'ageratings',
-      $pb.PbFieldType.PM,
-      subBuilder: AgeRating.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgeRatingResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<AgeRating>(1, _omitFieldNames ? '' : 'ageratings', $pb.PbFieldType.PM, subBuilder: AgeRating.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   AgeRatingResult clone() => AgeRatingResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AgeRatingResult copyWith(void Function(AgeRatingResult) updates) =>
-      super.copyWith((message) => updates(message as AgeRatingResult))
-          as AgeRatingResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AgeRatingResult copyWith(void Function(AgeRatingResult) updates) => super.copyWith((message) => updates(message as AgeRatingResult)) as AgeRatingResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AgeRatingResult create() => AgeRatingResult._();
   AgeRatingResult createEmptyInstance() => create();
-  static $pb.PbList<AgeRatingResult> createRepeated() =>
-      $pb.PbList<AgeRatingResult>();
+  static $pb.PbList<AgeRatingResult> createRepeated() => $pb.PbList<AgeRatingResult>();
   @$core.pragma('dart2js:noInline')
-  static AgeRatingResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<AgeRatingResult>(create);
+  static AgeRatingResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgeRatingResult>(create);
   static AgeRatingResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -339,64 +264,30 @@ class AgeRating extends $pb.GeneratedMessage {
     return $result;
   }
   AgeRating._() : super();
-  factory AgeRating.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AgeRating.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AgeRating.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AgeRating.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AgeRating',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<AgeRatingCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: AgeRatingCategoryEnum.AGERATING_CATEGORY_NULL,
-      valueOf: AgeRatingCategoryEnum.valueOf,
-      enumValues: AgeRatingCategoryEnum.values,
-    )
-    ..pc<AgeRatingContentDescription>(
-      3,
-      _omitFieldNames ? '' : 'contentDescriptions',
-      $pb.PbFieldType.PM,
-      subBuilder: AgeRatingContentDescription.create,
-    )
-    ..e<AgeRatingRatingEnum>(
-      4,
-      _omitFieldNames ? '' : 'rating',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: AgeRatingRatingEnum.AGERATING_RATING_NULL,
-      valueOf: AgeRatingRatingEnum.valueOf,
-      enumValues: AgeRatingRatingEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgeRating', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<AgeRatingCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: AgeRatingCategoryEnum.AGERATING_CATEGORY_NULL, valueOf: AgeRatingCategoryEnum.valueOf, enumValues: AgeRatingCategoryEnum.values)
+    ..pc<AgeRatingContentDescription>(3, _omitFieldNames ? '' : 'contentDescriptions', $pb.PbFieldType.PM, subBuilder: AgeRatingContentDescription.create)
+    ..e<AgeRatingRatingEnum>(4, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OE, defaultOrMaker: AgeRatingRatingEnum.AGERATING_RATING_NULL, valueOf: AgeRatingRatingEnum.valueOf, enumValues: AgeRatingRatingEnum.values)
     ..aOS(5, _omitFieldNames ? '' : 'ratingCoverUrl')
     ..aOS(6, _omitFieldNames ? '' : 'synopsis')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   AgeRating clone() => AgeRating()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AgeRating copyWith(void Function(AgeRating) updates) =>
-      super.copyWith((message) => updates(message as AgeRating)) as AgeRating;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AgeRating copyWith(void Function(AgeRating) updates) => super.copyWith((message) => updates(message as AgeRating)) as AgeRating;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -405,17 +296,13 @@ class AgeRating extends $pb.GeneratedMessage {
   AgeRating createEmptyInstance() => create();
   static $pb.PbList<AgeRating> createRepeated() => $pb.PbList<AgeRating>();
   @$core.pragma('dart2js:noInline')
-  static AgeRating getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgeRating>(create);
+  static AgeRating getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgeRating>(create);
   static AgeRating? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -424,26 +311,19 @@ class AgeRating extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AgeRatingCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(AgeRatingCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(AgeRatingCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
   void clearCategory() => clearField(2);
 
   @$pb.TagNumber(3)
-  $core.List<AgeRatingContentDescription> get contentDescriptions =>
-      $_getList(2);
+  $core.List<AgeRatingContentDescription> get contentDescriptions => $_getList(2);
 
   @$pb.TagNumber(4)
   AgeRatingRatingEnum get rating => $_getN(3);
   @$pb.TagNumber(4)
-  set rating(AgeRatingRatingEnum v) {
-    setField(4, v);
-  }
-
+  set rating(AgeRatingRatingEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRating() => $_has(3);
   @$pb.TagNumber(4)
@@ -452,10 +332,7 @@ class AgeRating extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get ratingCoverUrl => $_getSZ(4);
   @$pb.TagNumber(5)
-  set ratingCoverUrl($core.String v) {
-    $_setString(4, v);
-  }
-
+  set ratingCoverUrl($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasRatingCoverUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -464,10 +341,7 @@ class AgeRating extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get synopsis => $_getSZ(5);
   @$pb.TagNumber(6)
-  set synopsis($core.String v) {
-    $_setString(5, v);
-  }
-
+  set synopsis($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasSynopsis() => $_has(5);
   @$pb.TagNumber(6)
@@ -476,10 +350,7 @@ class AgeRating extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -497,63 +368,37 @@ class AgeRatingContentDescriptionResult extends $pb.GeneratedMessage {
     return $result;
   }
   AgeRatingContentDescriptionResult._() : super();
-  factory AgeRatingContentDescriptionResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AgeRatingContentDescriptionResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AgeRatingContentDescriptionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AgeRatingContentDescriptionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AgeRatingContentDescriptionResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<AgeRatingContentDescription>(
-      1,
-      _omitFieldNames ? '' : 'ageratingcontentdescriptions',
-      $pb.PbFieldType.PM,
-      subBuilder: AgeRatingContentDescription.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgeRatingContentDescriptionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<AgeRatingContentDescription>(1, _omitFieldNames ? '' : 'ageratingcontentdescriptions', $pb.PbFieldType.PM, subBuilder: AgeRatingContentDescription.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  AgeRatingContentDescriptionResult clone() =>
-      AgeRatingContentDescriptionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AgeRatingContentDescriptionResult copyWith(
-    void Function(AgeRatingContentDescriptionResult) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as AgeRatingContentDescriptionResult),
-      ) as AgeRatingContentDescriptionResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AgeRatingContentDescriptionResult clone() => AgeRatingContentDescriptionResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AgeRatingContentDescriptionResult copyWith(void Function(AgeRatingContentDescriptionResult) updates) => super.copyWith((message) => updates(message as AgeRatingContentDescriptionResult)) as AgeRatingContentDescriptionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AgeRatingContentDescriptionResult create() =>
-      AgeRatingContentDescriptionResult._();
+  static AgeRatingContentDescriptionResult create() => AgeRatingContentDescriptionResult._();
   AgeRatingContentDescriptionResult createEmptyInstance() => create();
-  static $pb.PbList<AgeRatingContentDescriptionResult> createRepeated() =>
-      $pb.PbList<AgeRatingContentDescriptionResult>();
+  static $pb.PbList<AgeRatingContentDescriptionResult> createRepeated() => $pb.PbList<AgeRatingContentDescriptionResult>();
   @$core.pragma('dart2js:noInline')
-  static AgeRatingContentDescriptionResult getDefault() => _defaultInstance ??=
-          $pb.GeneratedMessage.$_defaultFor<AgeRatingContentDescriptionResult>(
-        create,
-      );
+  static AgeRatingContentDescriptionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgeRatingContentDescriptionResult>(create);
   static AgeRatingContentDescriptionResult? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<AgeRatingContentDescription> get ageratingcontentdescriptions =>
-      $_getList(0);
+  $core.List<AgeRatingContentDescription> get ageratingcontentdescriptions => $_getList(0);
 }
 
 class AgeRatingContentDescription extends $pb.GeneratedMessage {
@@ -579,76 +424,42 @@ class AgeRatingContentDescription extends $pb.GeneratedMessage {
     return $result;
   }
   AgeRatingContentDescription._() : super();
-  factory AgeRatingContentDescription.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AgeRatingContentDescription.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AgeRatingContentDescription.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AgeRatingContentDescription.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AgeRatingContentDescription',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<AgeRatingContentDescriptionCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: AgeRatingContentDescriptionCategoryEnum
-          .AGERATINGCONTENTDESCRIPTION_CATEGORY_NULL,
-      valueOf: AgeRatingContentDescriptionCategoryEnum.valueOf,
-      enumValues: AgeRatingContentDescriptionCategoryEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgeRatingContentDescription', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<AgeRatingContentDescriptionCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: AgeRatingContentDescriptionCategoryEnum.AGERATINGCONTENTDESCRIPTION_CATEGORY_NULL, valueOf: AgeRatingContentDescriptionCategoryEnum.valueOf, enumValues: AgeRatingContentDescriptionCategoryEnum.values)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  AgeRatingContentDescription clone() =>
-      AgeRatingContentDescription()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AgeRatingContentDescription copyWith(
-    void Function(AgeRatingContentDescription) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as AgeRatingContentDescription),
-      ) as AgeRatingContentDescription;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AgeRatingContentDescription clone() => AgeRatingContentDescription()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AgeRatingContentDescription copyWith(void Function(AgeRatingContentDescription) updates) => super.copyWith((message) => updates(message as AgeRatingContentDescription)) as AgeRatingContentDescription;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AgeRatingContentDescription create() =>
-      AgeRatingContentDescription._();
+  static AgeRatingContentDescription create() => AgeRatingContentDescription._();
   AgeRatingContentDescription createEmptyInstance() => create();
-  static $pb.PbList<AgeRatingContentDescription> createRepeated() =>
-      $pb.PbList<AgeRatingContentDescription>();
+  static $pb.PbList<AgeRatingContentDescription> createRepeated() => $pb.PbList<AgeRatingContentDescription>();
   @$core.pragma('dart2js:noInline')
-  static AgeRatingContentDescription getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<AgeRatingContentDescription>(create);
+  static AgeRatingContentDescription getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AgeRatingContentDescription>(create);
   static AgeRatingContentDescription? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -657,10 +468,7 @@ class AgeRatingContentDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AgeRatingContentDescriptionCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(AgeRatingContentDescriptionCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(AgeRatingContentDescriptionCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -669,10 +477,7 @@ class AgeRatingContentDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -681,10 +486,7 @@ class AgeRatingContentDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get checksum => $_getSZ(3);
   @$pb.TagNumber(4)
-  set checksum($core.String v) {
-    $_setString(3, v);
-  }
-
+  set checksum($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasChecksum() => $_has(3);
   @$pb.TagNumber(4)
@@ -702,54 +504,33 @@ class AlternativeNameResult extends $pb.GeneratedMessage {
     return $result;
   }
   AlternativeNameResult._() : super();
-  factory AlternativeNameResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlternativeNameResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AlternativeNameResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AlternativeNameResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AlternativeNameResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<AlternativeName>(
-      1,
-      _omitFieldNames ? '' : 'alternativenames',
-      $pb.PbFieldType.PM,
-      subBuilder: AlternativeName.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlternativeNameResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<AlternativeName>(1, _omitFieldNames ? '' : 'alternativenames', $pb.PbFieldType.PM, subBuilder: AlternativeName.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  AlternativeNameResult clone() =>
-      AlternativeNameResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AlternativeNameResult copyWith(
-    void Function(AlternativeNameResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as AlternativeNameResult))
-          as AlternativeNameResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AlternativeNameResult clone() => AlternativeNameResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AlternativeNameResult copyWith(void Function(AlternativeNameResult) updates) => super.copyWith((message) => updates(message as AlternativeNameResult)) as AlternativeNameResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlternativeNameResult create() => AlternativeNameResult._();
   AlternativeNameResult createEmptyInstance() => create();
-  static $pb.PbList<AlternativeNameResult> createRepeated() =>
-      $pb.PbList<AlternativeNameResult>();
+  static $pb.PbList<AlternativeNameResult> createRepeated() => $pb.PbList<AlternativeNameResult>();
   @$core.pragma('dart2js:noInline')
-  static AlternativeNameResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<AlternativeNameResult>(create);
+  static AlternativeNameResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlternativeNameResult>(create);
   static AlternativeNameResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -783,64 +564,43 @@ class AlternativeName extends $pb.GeneratedMessage {
     return $result;
   }
   AlternativeName._() : super();
-  factory AlternativeName.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlternativeName.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory AlternativeName.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AlternativeName.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'AlternativeName',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AlternativeName', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'comment')
     ..aOM<Game>(3, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   AlternativeName clone() => AlternativeName()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  AlternativeName copyWith(void Function(AlternativeName) updates) =>
-      super.copyWith((message) => updates(message as AlternativeName))
-          as AlternativeName;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AlternativeName copyWith(void Function(AlternativeName) updates) => super.copyWith((message) => updates(message as AlternativeName)) as AlternativeName;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AlternativeName create() => AlternativeName._();
   AlternativeName createEmptyInstance() => create();
-  static $pb.PbList<AlternativeName> createRepeated() =>
-      $pb.PbList<AlternativeName>();
+  static $pb.PbList<AlternativeName> createRepeated() => $pb.PbList<AlternativeName>();
   @$core.pragma('dart2js:noInline')
-  static AlternativeName getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<AlternativeName>(create);
+  static AlternativeName getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AlternativeName>(create);
   static AlternativeName? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -849,10 +609,7 @@ class AlternativeName extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get comment => $_getSZ(1);
   @$pb.TagNumber(2)
-  set comment($core.String v) {
-    $_setString(1, v);
-  }
-
+  set comment($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasComment() => $_has(1);
   @$pb.TagNumber(2)
@@ -861,10 +618,7 @@ class AlternativeName extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Game get game => $_getN(2);
   @$pb.TagNumber(3)
-  set game(Game v) {
-    setField(3, v);
-  }
-
+  set game(Game v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGame() => $_has(2);
   @$pb.TagNumber(3)
@@ -875,10 +629,7 @@ class AlternativeName extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) {
-    $_setString(3, v);
-  }
-
+  set name($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -887,10 +638,7 @@ class AlternativeName extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
   @$pb.TagNumber(5)
-  set checksum($core.String v) {
-    $_setString(4, v);
-  }
-
+  set checksum($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
@@ -908,51 +656,33 @@ class ArtworkResult extends $pb.GeneratedMessage {
     return $result;
   }
   ArtworkResult._() : super();
-  factory ArtworkResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ArtworkResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ArtworkResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ArtworkResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ArtworkResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Artwork>(
-      1,
-      _omitFieldNames ? '' : 'artworks',
-      $pb.PbFieldType.PM,
-      subBuilder: Artwork.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ArtworkResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Artwork>(1, _omitFieldNames ? '' : 'artworks', $pb.PbFieldType.PM, subBuilder: Artwork.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ArtworkResult clone() => ArtworkResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ArtworkResult copyWith(void Function(ArtworkResult) updates) =>
-      super.copyWith((message) => updates(message as ArtworkResult))
-          as ArtworkResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ArtworkResult copyWith(void Function(ArtworkResult) updates) => super.copyWith((message) => updates(message as ArtworkResult)) as ArtworkResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ArtworkResult create() => ArtworkResult._();
   ArtworkResult createEmptyInstance() => create();
-  static $pb.PbList<ArtworkResult> createRepeated() =>
-      $pb.PbList<ArtworkResult>();
+  static $pb.PbList<ArtworkResult> createRepeated() => $pb.PbList<ArtworkResult>();
   @$core.pragma('dart2js:noInline')
-  static ArtworkResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ArtworkResult>(create);
+  static ArtworkResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ArtworkResult>(create);
   static ArtworkResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1002,28 +732,11 @@ class Artwork extends $pb.GeneratedMessage {
     return $result;
   }
   Artwork._() : super();
-  factory Artwork.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Artwork.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Artwork.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Artwork.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Artwork',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Artwork', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
@@ -1032,17 +745,19 @@ class Artwork extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Artwork clone() => Artwork()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Artwork copyWith(void Function(Artwork) updates) =>
-      super.copyWith((message) => updates(message as Artwork)) as Artwork;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Artwork copyWith(void Function(Artwork) updates) => super.copyWith((message) => updates(message as Artwork)) as Artwork;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1051,17 +766,13 @@ class Artwork extends $pb.GeneratedMessage {
   Artwork createEmptyInstance() => create();
   static $pb.PbList<Artwork> createRepeated() => $pb.PbList<Artwork>();
   @$core.pragma('dart2js:noInline')
-  static Artwork getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Artwork>(create);
+  static Artwork getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Artwork>(create);
   static Artwork? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1070,10 +781,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -1082,10 +790,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -1094,10 +799,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -1108,10 +810,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get height => $_getIZ(4);
   @$pb.TagNumber(5)
-  set height($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(5)
@@ -1120,10 +819,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get imageId => $_getSZ(5);
   @$pb.TagNumber(6)
-  set imageId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set imageId($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasImageId() => $_has(5);
   @$pb.TagNumber(6)
@@ -1132,10 +828,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -1144,10 +837,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get width => $_getIZ(7);
   @$pb.TagNumber(8)
-  set width($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasWidth() => $_has(7);
   @$pb.TagNumber(8)
@@ -1156,10 +846,7 @@ class Artwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get checksum => $_getSZ(8);
   @$pb.TagNumber(9)
-  set checksum($core.String v) {
-    $_setString(8, v);
-  }
-
+  set checksum($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasChecksum() => $_has(8);
   @$pb.TagNumber(9)
@@ -1177,51 +864,33 @@ class CharacterResult extends $pb.GeneratedMessage {
     return $result;
   }
   CharacterResult._() : super();
-  factory CharacterResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CharacterResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CharacterResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CharacterResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CharacterResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Character>(
-      1,
-      _omitFieldNames ? '' : 'characters',
-      $pb.PbFieldType.PM,
-      subBuilder: Character.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CharacterResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Character>(1, _omitFieldNames ? '' : 'characters', $pb.PbFieldType.PM, subBuilder: Character.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CharacterResult clone() => CharacterResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CharacterResult copyWith(void Function(CharacterResult) updates) =>
-      super.copyWith((message) => updates(message as CharacterResult))
-          as CharacterResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CharacterResult copyWith(void Function(CharacterResult) updates) => super.copyWith((message) => updates(message as CharacterResult)) as CharacterResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CharacterResult create() => CharacterResult._();
   CharacterResult createEmptyInstance() => create();
-  static $pb.PbList<CharacterResult> createRepeated() =>
-      $pb.PbList<CharacterResult>();
+  static $pb.PbList<CharacterResult> createRepeated() => $pb.PbList<CharacterResult>();
   @$core.pragma('dart2js:noInline')
-  static CharacterResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CharacterResult>(create);
+  static CharacterResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CharacterResult>(create);
   static CharacterResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1291,83 +960,37 @@ class Character extends $pb.GeneratedMessage {
     return $result;
   }
   Character._() : super();
-  factory Character.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Character.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Character.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Character.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Character',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Character', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..pPS(2, _omitFieldNames ? '' : 'akas')
     ..aOS(3, _omitFieldNames ? '' : 'countryName')
-    ..aOM<$0.Timestamp>(
-      4,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..pc<Game>(
-      6,
-      _omitFieldNames ? '' : 'games',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..e<GenderGenderEnum>(
-      7,
-      _omitFieldNames ? '' : 'gender',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: GenderGenderEnum.MALE,
-      valueOf: GenderGenderEnum.valueOf,
-      enumValues: GenderGenderEnum.values,
-    )
-    ..aOM<CharacterMugShot>(
-      8,
-      _omitFieldNames ? '' : 'mugShot',
-      subBuilder: CharacterMugShot.create,
-    )
+    ..pc<Game>(6, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..e<GenderGenderEnum>(7, _omitFieldNames ? '' : 'gender', $pb.PbFieldType.OE, defaultOrMaker: GenderGenderEnum.MALE, valueOf: GenderGenderEnum.valueOf, enumValues: GenderGenderEnum.values)
+    ..aOM<CharacterMugShot>(8, _omitFieldNames ? '' : 'mugShot', subBuilder: CharacterMugShot.create)
     ..aOS(9, _omitFieldNames ? '' : 'name')
     ..aOS(10, _omitFieldNames ? '' : 'slug')
-    ..e<CharacterSpeciesEnum>(
-      11,
-      _omitFieldNames ? '' : 'species',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: CharacterSpeciesEnum.CHARACTER_SPECIES_NULL,
-      valueOf: CharacterSpeciesEnum.valueOf,
-      enumValues: CharacterSpeciesEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      12,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..e<CharacterSpeciesEnum>(11, _omitFieldNames ? '' : 'species', $pb.PbFieldType.OE, defaultOrMaker: CharacterSpeciesEnum.CHARACTER_SPECIES_NULL, valueOf: CharacterSpeciesEnum.valueOf, enumValues: CharacterSpeciesEnum.values)
+    ..aOM<$0.Timestamp>(12, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'url')
     ..aOS(14, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Character clone() => Character()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Character copyWith(void Function(Character) updates) =>
-      super.copyWith((message) => updates(message as Character)) as Character;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Character copyWith(void Function(Character) updates) => super.copyWith((message) => updates(message as Character)) as Character;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1376,17 +999,13 @@ class Character extends $pb.GeneratedMessage {
   Character createEmptyInstance() => create();
   static $pb.PbList<Character> createRepeated() => $pb.PbList<Character>();
   @$core.pragma('dart2js:noInline')
-  static Character getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Character>(create);
+  static Character getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Character>(create);
   static Character? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1398,10 +1017,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get countryName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set countryName($core.String v) {
-    $_setString(2, v);
-  }
-
+  set countryName($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasCountryName() => $_has(2);
   @$pb.TagNumber(3)
@@ -1410,10 +1026,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Timestamp get createdAt => $_getN(3);
   @$pb.TagNumber(4)
-  set createdAt($0.Timestamp v) {
-    setField(4, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreatedAt() => $_has(3);
   @$pb.TagNumber(4)
@@ -1424,10 +1037,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) {
-    $_setString(4, v);
-  }
-
+  set description($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -1439,10 +1049,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   GenderGenderEnum get gender => $_getN(6);
   @$pb.TagNumber(7)
-  set gender(GenderGenderEnum v) {
-    setField(7, v);
-  }
-
+  set gender(GenderGenderEnum v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGender() => $_has(6);
   @$pb.TagNumber(7)
@@ -1451,10 +1058,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   CharacterMugShot get mugShot => $_getN(7);
   @$pb.TagNumber(8)
-  set mugShot(CharacterMugShot v) {
-    setField(8, v);
-  }
-
+  set mugShot(CharacterMugShot v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMugShot() => $_has(7);
   @$pb.TagNumber(8)
@@ -1465,10 +1069,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get name => $_getSZ(8);
   @$pb.TagNumber(9)
-  set name($core.String v) {
-    $_setString(8, v);
-  }
-
+  set name($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasName() => $_has(8);
   @$pb.TagNumber(9)
@@ -1477,10 +1078,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get slug => $_getSZ(9);
   @$pb.TagNumber(10)
-  set slug($core.String v) {
-    $_setString(9, v);
-  }
-
+  set slug($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasSlug() => $_has(9);
   @$pb.TagNumber(10)
@@ -1489,10 +1087,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   CharacterSpeciesEnum get species => $_getN(10);
   @$pb.TagNumber(11)
-  set species(CharacterSpeciesEnum v) {
-    setField(11, v);
-  }
-
+  set species(CharacterSpeciesEnum v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSpecies() => $_has(10);
   @$pb.TagNumber(11)
@@ -1501,10 +1096,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $0.Timestamp get updatedAt => $_getN(11);
   @$pb.TagNumber(12)
-  set updatedAt($0.Timestamp v) {
-    setField(12, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdatedAt() => $_has(11);
   @$pb.TagNumber(12)
@@ -1515,10 +1107,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get url => $_getSZ(12);
   @$pb.TagNumber(13)
-  set url($core.String v) {
-    $_setString(12, v);
-  }
-
+  set url($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasUrl() => $_has(12);
   @$pb.TagNumber(13)
@@ -1527,10 +1116,7 @@ class Character extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get checksum => $_getSZ(13);
   @$pb.TagNumber(14)
-  set checksum($core.String v) {
-    $_setString(13, v);
-  }
-
+  set checksum($core.String v) { $_setString(13, v); }
   @$pb.TagNumber(14)
   $core.bool hasChecksum() => $_has(13);
   @$pb.TagNumber(14)
@@ -1548,54 +1134,33 @@ class CharacterMugShotResult extends $pb.GeneratedMessage {
     return $result;
   }
   CharacterMugShotResult._() : super();
-  factory CharacterMugShotResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CharacterMugShotResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CharacterMugShotResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CharacterMugShotResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CharacterMugShotResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<CharacterMugShot>(
-      1,
-      _omitFieldNames ? '' : 'charactermugshots',
-      $pb.PbFieldType.PM,
-      subBuilder: CharacterMugShot.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CharacterMugShotResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CharacterMugShot>(1, _omitFieldNames ? '' : 'charactermugshots', $pb.PbFieldType.PM, subBuilder: CharacterMugShot.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  CharacterMugShotResult clone() =>
-      CharacterMugShotResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CharacterMugShotResult copyWith(
-    void Function(CharacterMugShotResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as CharacterMugShotResult))
-          as CharacterMugShotResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CharacterMugShotResult clone() => CharacterMugShotResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CharacterMugShotResult copyWith(void Function(CharacterMugShotResult) updates) => super.copyWith((message) => updates(message as CharacterMugShotResult)) as CharacterMugShotResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CharacterMugShotResult create() => CharacterMugShotResult._();
   CharacterMugShotResult createEmptyInstance() => create();
-  static $pb.PbList<CharacterMugShotResult> createRepeated() =>
-      $pb.PbList<CharacterMugShotResult>();
+  static $pb.PbList<CharacterMugShotResult> createRepeated() => $pb.PbList<CharacterMugShotResult>();
   @$core.pragma('dart2js:noInline')
-  static CharacterMugShotResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CharacterMugShotResult>(create);
+  static CharacterMugShotResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CharacterMugShotResult>(create);
   static CharacterMugShotResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1641,28 +1206,11 @@ class CharacterMugShot extends $pb.GeneratedMessage {
     return $result;
   }
   CharacterMugShot._() : super();
-  factory CharacterMugShot.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CharacterMugShot.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CharacterMugShot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CharacterMugShot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CharacterMugShot',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CharacterMugShot', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
@@ -1670,38 +1218,34 @@ class CharacterMugShot extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CharacterMugShot clone() => CharacterMugShot()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CharacterMugShot copyWith(void Function(CharacterMugShot) updates) =>
-      super.copyWith((message) => updates(message as CharacterMugShot))
-          as CharacterMugShot;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CharacterMugShot copyWith(void Function(CharacterMugShot) updates) => super.copyWith((message) => updates(message as CharacterMugShot)) as CharacterMugShot;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CharacterMugShot create() => CharacterMugShot._();
   CharacterMugShot createEmptyInstance() => create();
-  static $pb.PbList<CharacterMugShot> createRepeated() =>
-      $pb.PbList<CharacterMugShot>();
+  static $pb.PbList<CharacterMugShot> createRepeated() => $pb.PbList<CharacterMugShot>();
   @$core.pragma('dart2js:noInline')
-  static CharacterMugShot getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CharacterMugShot>(create);
+  static CharacterMugShot getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CharacterMugShot>(create);
   static CharacterMugShot? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1710,10 +1254,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -1722,10 +1263,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -1734,10 +1272,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get height => $_getIZ(3);
   @$pb.TagNumber(4)
-  set height($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasHeight() => $_has(3);
   @$pb.TagNumber(4)
@@ -1746,10 +1281,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get imageId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set imageId($core.String v) {
-    $_setString(4, v);
-  }
-
+  set imageId($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageId() => $_has(4);
   @$pb.TagNumber(5)
@@ -1758,10 +1290,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -1770,10 +1299,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get width => $_getIZ(6);
   @$pb.TagNumber(7)
-  set width($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasWidth() => $_has(6);
   @$pb.TagNumber(7)
@@ -1782,10 +1308,7 @@ class CharacterMugShot extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -1803,51 +1326,33 @@ class CollectionResult extends $pb.GeneratedMessage {
     return $result;
   }
   CollectionResult._() : super();
-  factory CollectionResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CollectionResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CollectionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CollectionResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Collection>(
-      1,
-      _omitFieldNames ? '' : 'collections',
-      $pb.PbFieldType.PM,
-      subBuilder: Collection.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Collection>(1, _omitFieldNames ? '' : 'collections', $pb.PbFieldType.PM, subBuilder: Collection.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CollectionResult clone() => CollectionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CollectionResult copyWith(void Function(CollectionResult) updates) =>
-      super.copyWith((message) => updates(message as CollectionResult))
-          as CollectionResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionResult copyWith(void Function(CollectionResult) updates) => super.copyWith((message) => updates(message as CollectionResult)) as CollectionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CollectionResult create() => CollectionResult._();
   CollectionResult createEmptyInstance() => create();
-  static $pb.PbList<CollectionResult> createRepeated() =>
-      $pb.PbList<CollectionResult>();
+  static $pb.PbList<CollectionResult> createRepeated() => $pb.PbList<CollectionResult>();
   @$core.pragma('dart2js:noInline')
-  static CollectionResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CollectionResult>(create);
+  static CollectionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionResult>(create);
   static CollectionResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1864,6 +1369,9 @@ class Collection extends $pb.GeneratedMessage {
     $0.Timestamp? updatedAt,
     $core.String? url,
     $core.String? checksum,
+    CollectionType? type,
+    $core.Iterable<CollectionRelation>? asParentRelations,
+    $core.Iterable<CollectionRelation>? asChildRelations,
   }) {
     final $result = create();
     if (id != null) {
@@ -1890,62 +1398,46 @@ class Collection extends $pb.GeneratedMessage {
     if (checksum != null) {
       $result.checksum = checksum;
     }
+    if (type != null) {
+      $result.type = type;
+    }
+    if (asParentRelations != null) {
+      $result.asParentRelations.addAll(asParentRelations);
+    }
+    if (asChildRelations != null) {
+      $result.asChildRelations.addAll(asChildRelations);
+    }
     return $result;
   }
   Collection._() : super();
-  factory Collection.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Collection.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Collection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Collection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Collection',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..pc<Game>(
-      3,
-      _omitFieldNames ? '' : 'games',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Collection', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..pc<Game>(3, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..aOM<CollectionType>(9, _omitFieldNames ? '' : 'type', subBuilder: CollectionType.create)
+    ..pc<CollectionRelation>(10, _omitFieldNames ? '' : 'asParentRelations', $pb.PbFieldType.PM, subBuilder: CollectionRelation.create)
+    ..pc<CollectionRelation>(11, _omitFieldNames ? '' : 'asChildRelations', $pb.PbFieldType.PM, subBuilder: CollectionRelation.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Collection clone() => Collection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Collection copyWith(void Function(Collection) updates) =>
-      super.copyWith((message) => updates(message as Collection)) as Collection;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Collection copyWith(void Function(Collection) updates) => super.copyWith((message) => updates(message as Collection)) as Collection;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1954,17 +1446,13 @@ class Collection extends $pb.GeneratedMessage {
   Collection createEmptyInstance() => create();
   static $pb.PbList<Collection> createRepeated() => $pb.PbList<Collection>();
   @$core.pragma('dart2js:noInline')
-  static Collection getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<Collection>(create);
+  static Collection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Collection>(create);
   static Collection? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -1973,10 +1461,7 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -1990,10 +1475,7 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) {
-    $_setString(3, v);
-  }
-
+  set name($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -2002,10 +1484,7 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get slug => $_getSZ(4);
   @$pb.TagNumber(5)
-  set slug($core.String v) {
-    $_setString(4, v);
-  }
-
+  set slug($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasSlug() => $_has(4);
   @$pb.TagNumber(5)
@@ -2014,10 +1493,7 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -2028,10 +1504,7 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -2040,14 +1513,956 @@ class Collection extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
   void clearChecksum() => clearField(8);
+
+  @$pb.TagNumber(9)
+  CollectionType get type => $_getN(8);
+  @$pb.TagNumber(9)
+  set type(CollectionType v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasType() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearType() => clearField(9);
+  @$pb.TagNumber(9)
+  CollectionType ensureType() => $_ensure(8);
+
+  @$pb.TagNumber(10)
+  $core.List<CollectionRelation> get asParentRelations => $_getList(9);
+
+  @$pb.TagNumber(11)
+  $core.List<CollectionRelation> get asChildRelations => $_getList(10);
+}
+
+class CollectionMembershipResult extends $pb.GeneratedMessage {
+  factory CollectionMembershipResult({
+    $core.Iterable<CollectionMembership>? collectionmemberships,
+  }) {
+    final $result = create();
+    if (collectionmemberships != null) {
+      $result.collectionmemberships.addAll(collectionmemberships);
+    }
+    return $result;
+  }
+  CollectionMembershipResult._() : super();
+  factory CollectionMembershipResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionMembershipResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionMembershipResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CollectionMembership>(1, _omitFieldNames ? '' : 'collectionmemberships', $pb.PbFieldType.PM, subBuilder: CollectionMembership.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipResult clone() => CollectionMembershipResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipResult copyWith(void Function(CollectionMembershipResult) updates) => super.copyWith((message) => updates(message as CollectionMembershipResult)) as CollectionMembershipResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipResult create() => CollectionMembershipResult._();
+  CollectionMembershipResult createEmptyInstance() => create();
+  static $pb.PbList<CollectionMembershipResult> createRepeated() => $pb.PbList<CollectionMembershipResult>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionMembershipResult>(create);
+  static CollectionMembershipResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<CollectionMembership> get collectionmemberships => $_getList(0);
+}
+
+class CollectionMembership extends $pb.GeneratedMessage {
+  factory CollectionMembership({
+    $fixnum.Int64? id,
+    Game? game,
+    Collection? collection,
+    CollectionMembershipType? type,
+    $0.Timestamp? updatedAt,
+    $0.Timestamp? createdAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (game != null) {
+      $result.game = game;
+    }
+    if (collection != null) {
+      $result.collection = collection;
+    }
+    if (type != null) {
+      $result.type = type;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  CollectionMembership._() : super();
+  factory CollectionMembership.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionMembership.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionMembership', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<Game>(2, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
+    ..aOM<Collection>(3, _omitFieldNames ? '' : 'collection', subBuilder: Collection.create)
+    ..aOM<CollectionMembershipType>(4, _omitFieldNames ? '' : 'type', subBuilder: CollectionMembershipType.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOS(7, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionMembership clone() => CollectionMembership()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionMembership copyWith(void Function(CollectionMembership) updates) => super.copyWith((message) => updates(message as CollectionMembership)) as CollectionMembership;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembership create() => CollectionMembership._();
+  CollectionMembership createEmptyInstance() => create();
+  static $pb.PbList<CollectionMembership> createRepeated() => $pb.PbList<CollectionMembership>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembership getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionMembership>(create);
+  static CollectionMembership? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  Game get game => $_getN(1);
+  @$pb.TagNumber(2)
+  set game(Game v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasGame() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearGame() => clearField(2);
+  @$pb.TagNumber(2)
+  Game ensureGame() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  Collection get collection => $_getN(2);
+  @$pb.TagNumber(3)
+  set collection(Collection v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasCollection() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearCollection() => clearField(3);
+  @$pb.TagNumber(3)
+  Collection ensureCollection() => $_ensure(2);
+
+  @$pb.TagNumber(4)
+  CollectionMembershipType get type => $_getN(3);
+  @$pb.TagNumber(4)
+  set type(CollectionMembershipType v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasType() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearType() => clearField(4);
+  @$pb.TagNumber(4)
+  CollectionMembershipType ensureType() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get updatedAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set updatedAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUpdatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearUpdatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get createdAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set createdAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasCreatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearCreatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureCreatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get checksum => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set checksum($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasChecksum() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearChecksum() => clearField(7);
+}
+
+class CollectionMembershipTypeResult extends $pb.GeneratedMessage {
+  factory CollectionMembershipTypeResult({
+    $core.Iterable<CollectionMembershipType>? collectionmembershiptypes,
+  }) {
+    final $result = create();
+    if (collectionmembershiptypes != null) {
+      $result.collectionmembershiptypes.addAll(collectionmembershiptypes);
+    }
+    return $result;
+  }
+  CollectionMembershipTypeResult._() : super();
+  factory CollectionMembershipTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionMembershipTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionMembershipTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CollectionMembershipType>(1, _omitFieldNames ? '' : 'collectionmembershiptypes', $pb.PbFieldType.PM, subBuilder: CollectionMembershipType.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipTypeResult clone() => CollectionMembershipTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipTypeResult copyWith(void Function(CollectionMembershipTypeResult) updates) => super.copyWith((message) => updates(message as CollectionMembershipTypeResult)) as CollectionMembershipTypeResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipTypeResult create() => CollectionMembershipTypeResult._();
+  CollectionMembershipTypeResult createEmptyInstance() => create();
+  static $pb.PbList<CollectionMembershipTypeResult> createRepeated() => $pb.PbList<CollectionMembershipTypeResult>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionMembershipTypeResult>(create);
+  static CollectionMembershipTypeResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<CollectionMembershipType> get collectionmembershiptypes => $_getList(0);
+}
+
+class CollectionMembershipType extends $pb.GeneratedMessage {
+  factory CollectionMembershipType({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? description,
+    CollectionType? allowedCollectionType,
+    $0.Timestamp? updatedAt,
+    $0.Timestamp? createdAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (allowedCollectionType != null) {
+      $result.allowedCollectionType = allowedCollectionType;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  CollectionMembershipType._() : super();
+  factory CollectionMembershipType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionMembershipType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionMembershipType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOS(3, _omitFieldNames ? '' : 'description')
+    ..aOM<CollectionType>(4, _omitFieldNames ? '' : 'allowedCollectionType', subBuilder: CollectionType.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOS(7, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipType clone() => CollectionMembershipType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionMembershipType copyWith(void Function(CollectionMembershipType) updates) => super.copyWith((message) => updates(message as CollectionMembershipType)) as CollectionMembershipType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipType create() => CollectionMembershipType._();
+  CollectionMembershipType createEmptyInstance() => create();
+  static $pb.PbList<CollectionMembershipType> createRepeated() => $pb.PbList<CollectionMembershipType>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionMembershipType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionMembershipType>(create);
+  static CollectionMembershipType? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get name => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set name($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearName() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get description => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set description($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasDescription() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescription() => clearField(3);
+
+  @$pb.TagNumber(4)
+  CollectionType get allowedCollectionType => $_getN(3);
+  @$pb.TagNumber(4)
+  set allowedCollectionType(CollectionType v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasAllowedCollectionType() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAllowedCollectionType() => clearField(4);
+  @$pb.TagNumber(4)
+  CollectionType ensureAllowedCollectionType() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get updatedAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set updatedAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUpdatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearUpdatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get createdAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set createdAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasCreatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearCreatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureCreatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get checksum => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set checksum($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasChecksum() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearChecksum() => clearField(7);
+}
+
+class CollectionRelationResult extends $pb.GeneratedMessage {
+  factory CollectionRelationResult({
+    $core.Iterable<CollectionRelation>? collectionrelations,
+  }) {
+    final $result = create();
+    if (collectionrelations != null) {
+      $result.collectionrelations.addAll(collectionrelations);
+    }
+    return $result;
+  }
+  CollectionRelationResult._() : super();
+  factory CollectionRelationResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionRelationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionRelationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CollectionRelation>(1, _omitFieldNames ? '' : 'collectionrelations', $pb.PbFieldType.PM, subBuilder: CollectionRelation.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionRelationResult clone() => CollectionRelationResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionRelationResult copyWith(void Function(CollectionRelationResult) updates) => super.copyWith((message) => updates(message as CollectionRelationResult)) as CollectionRelationResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationResult create() => CollectionRelationResult._();
+  CollectionRelationResult createEmptyInstance() => create();
+  static $pb.PbList<CollectionRelationResult> createRepeated() => $pb.PbList<CollectionRelationResult>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionRelationResult>(create);
+  static CollectionRelationResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<CollectionRelation> get collectionrelations => $_getList(0);
+}
+
+class CollectionRelation extends $pb.GeneratedMessage {
+  factory CollectionRelation({
+    $fixnum.Int64? id,
+    Collection? childCollection,
+    Collection? parentCollection,
+    CollectionRelationType? type,
+    $0.Timestamp? updatedAt,
+    $0.Timestamp? createdAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (childCollection != null) {
+      $result.childCollection = childCollection;
+    }
+    if (parentCollection != null) {
+      $result.parentCollection = parentCollection;
+    }
+    if (type != null) {
+      $result.type = type;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  CollectionRelation._() : super();
+  factory CollectionRelation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionRelation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionRelation', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<Collection>(2, _omitFieldNames ? '' : 'childCollection', subBuilder: Collection.create)
+    ..aOM<Collection>(3, _omitFieldNames ? '' : 'parentCollection', subBuilder: Collection.create)
+    ..aOM<CollectionRelationType>(4, _omitFieldNames ? '' : 'type', subBuilder: CollectionRelationType.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOS(7, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionRelation clone() => CollectionRelation()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionRelation copyWith(void Function(CollectionRelation) updates) => super.copyWith((message) => updates(message as CollectionRelation)) as CollectionRelation;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelation create() => CollectionRelation._();
+  CollectionRelation createEmptyInstance() => create();
+  static $pb.PbList<CollectionRelation> createRepeated() => $pb.PbList<CollectionRelation>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionRelation>(create);
+  static CollectionRelation? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  Collection get childCollection => $_getN(1);
+  @$pb.TagNumber(2)
+  set childCollection(Collection v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasChildCollection() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearChildCollection() => clearField(2);
+  @$pb.TagNumber(2)
+  Collection ensureChildCollection() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  Collection get parentCollection => $_getN(2);
+  @$pb.TagNumber(3)
+  set parentCollection(Collection v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasParentCollection() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearParentCollection() => clearField(3);
+  @$pb.TagNumber(3)
+  Collection ensureParentCollection() => $_ensure(2);
+
+  @$pb.TagNumber(4)
+  CollectionRelationType get type => $_getN(3);
+  @$pb.TagNumber(4)
+  set type(CollectionRelationType v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasType() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearType() => clearField(4);
+  @$pb.TagNumber(4)
+  CollectionRelationType ensureType() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get updatedAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set updatedAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUpdatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearUpdatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get createdAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set createdAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasCreatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearCreatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureCreatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get checksum => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set checksum($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasChecksum() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearChecksum() => clearField(7);
+}
+
+class CollectionRelationTypeResult extends $pb.GeneratedMessage {
+  factory CollectionRelationTypeResult({
+    $core.Iterable<CollectionRelationType>? collectionrelationtypes,
+  }) {
+    final $result = create();
+    if (collectionrelationtypes != null) {
+      $result.collectionrelationtypes.addAll(collectionrelationtypes);
+    }
+    return $result;
+  }
+  CollectionRelationTypeResult._() : super();
+  factory CollectionRelationTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionRelationTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionRelationTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CollectionRelationType>(1, _omitFieldNames ? '' : 'collectionrelationtypes', $pb.PbFieldType.PM, subBuilder: CollectionRelationType.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionRelationTypeResult clone() => CollectionRelationTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionRelationTypeResult copyWith(void Function(CollectionRelationTypeResult) updates) => super.copyWith((message) => updates(message as CollectionRelationTypeResult)) as CollectionRelationTypeResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationTypeResult create() => CollectionRelationTypeResult._();
+  CollectionRelationTypeResult createEmptyInstance() => create();
+  static $pb.PbList<CollectionRelationTypeResult> createRepeated() => $pb.PbList<CollectionRelationTypeResult>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionRelationTypeResult>(create);
+  static CollectionRelationTypeResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<CollectionRelationType> get collectionrelationtypes => $_getList(0);
+}
+
+class CollectionRelationType extends $pb.GeneratedMessage {
+  factory CollectionRelationType({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? description,
+    CollectionType? allowedChildType,
+    CollectionType? allowedParentType,
+    $0.Timestamp? updatedAt,
+    $0.Timestamp? createdAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (allowedChildType != null) {
+      $result.allowedChildType = allowedChildType;
+    }
+    if (allowedParentType != null) {
+      $result.allowedParentType = allowedParentType;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  CollectionRelationType._() : super();
+  factory CollectionRelationType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionRelationType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionRelationType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOS(3, _omitFieldNames ? '' : 'description')
+    ..aOM<CollectionType>(4, _omitFieldNames ? '' : 'allowedChildType', subBuilder: CollectionType.create)
+    ..aOM<CollectionType>(5, _omitFieldNames ? '' : 'allowedParentType', subBuilder: CollectionType.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOS(8, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionRelationType clone() => CollectionRelationType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionRelationType copyWith(void Function(CollectionRelationType) updates) => super.copyWith((message) => updates(message as CollectionRelationType)) as CollectionRelationType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationType create() => CollectionRelationType._();
+  CollectionRelationType createEmptyInstance() => create();
+  static $pb.PbList<CollectionRelationType> createRepeated() => $pb.PbList<CollectionRelationType>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionRelationType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionRelationType>(create);
+  static CollectionRelationType? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get name => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set name($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearName() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get description => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set description($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasDescription() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescription() => clearField(3);
+
+  @$pb.TagNumber(4)
+  CollectionType get allowedChildType => $_getN(3);
+  @$pb.TagNumber(4)
+  set allowedChildType(CollectionType v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasAllowedChildType() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAllowedChildType() => clearField(4);
+  @$pb.TagNumber(4)
+  CollectionType ensureAllowedChildType() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  CollectionType get allowedParentType => $_getN(4);
+  @$pb.TagNumber(5)
+  set allowedParentType(CollectionType v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasAllowedParentType() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearAllowedParentType() => clearField(5);
+  @$pb.TagNumber(5)
+  CollectionType ensureAllowedParentType() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get updatedAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set updatedAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasUpdatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearUpdatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $0.Timestamp get createdAt => $_getN(6);
+  @$pb.TagNumber(7)
+  set createdAt($0.Timestamp v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasCreatedAt() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearCreatedAt() => clearField(7);
+  @$pb.TagNumber(7)
+  $0.Timestamp ensureCreatedAt() => $_ensure(6);
+
+  @$pb.TagNumber(8)
+  $core.String get checksum => $_getSZ(7);
+  @$pb.TagNumber(8)
+  set checksum($core.String v) { $_setString(7, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasChecksum() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearChecksum() => clearField(8);
+}
+
+class CollectionTypeResult extends $pb.GeneratedMessage {
+  factory CollectionTypeResult({
+    $core.Iterable<CollectionType>? collectiontypes,
+  }) {
+    final $result = create();
+    if (collectiontypes != null) {
+      $result.collectiontypes.addAll(collectiontypes);
+    }
+    return $result;
+  }
+  CollectionTypeResult._() : super();
+  factory CollectionTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CollectionType>(1, _omitFieldNames ? '' : 'collectiontypes', $pb.PbFieldType.PM, subBuilder: CollectionType.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionTypeResult clone() => CollectionTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionTypeResult copyWith(void Function(CollectionTypeResult) updates) => super.copyWith((message) => updates(message as CollectionTypeResult)) as CollectionTypeResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionTypeResult create() => CollectionTypeResult._();
+  CollectionTypeResult createEmptyInstance() => create();
+  static $pb.PbList<CollectionTypeResult> createRepeated() => $pb.PbList<CollectionTypeResult>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionTypeResult>(create);
+  static CollectionTypeResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<CollectionType> get collectiontypes => $_getList(0);
+}
+
+class CollectionType extends $pb.GeneratedMessage {
+  factory CollectionType({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? description,
+    $0.Timestamp? updatedAt,
+    $0.Timestamp? createdAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  CollectionType._() : super();
+  factory CollectionType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CollectionType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CollectionType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOS(3, _omitFieldNames ? '' : 'description')
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOS(6, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CollectionType clone() => CollectionType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CollectionType copyWith(void Function(CollectionType) updates) => super.copyWith((message) => updates(message as CollectionType)) as CollectionType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CollectionType create() => CollectionType._();
+  CollectionType createEmptyInstance() => create();
+  static $pb.PbList<CollectionType> createRepeated() => $pb.PbList<CollectionType>();
+  @$core.pragma('dart2js:noInline')
+  static CollectionType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CollectionType>(create);
+  static CollectionType? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get name => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set name($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearName() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get description => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set description($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasDescription() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescription() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $0.Timestamp get updatedAt => $_getN(3);
+  @$pb.TagNumber(4)
+  set updatedAt($0.Timestamp v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasUpdatedAt() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearUpdatedAt() => clearField(4);
+  @$pb.TagNumber(4)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get createdAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set createdAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasCreatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearCreatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureCreatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $core.String get checksum => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set checksum($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasChecksum() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearChecksum() => clearField(6);
 }
 
 class CompanyResult extends $pb.GeneratedMessage {
@@ -2061,51 +2476,33 @@ class CompanyResult extends $pb.GeneratedMessage {
     return $result;
   }
   CompanyResult._() : super();
-  factory CompanyResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CompanyResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CompanyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CompanyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CompanyResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Company>(
-      1,
-      _omitFieldNames ? '' : 'companies',
-      $pb.PbFieldType.PM,
-      subBuilder: Company.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompanyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Company>(1, _omitFieldNames ? '' : 'companies', $pb.PbFieldType.PM, subBuilder: Company.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CompanyResult clone() => CompanyResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CompanyResult copyWith(void Function(CompanyResult) updates) =>
-      super.copyWith((message) => updates(message as CompanyResult))
-          as CompanyResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CompanyResult copyWith(void Function(CompanyResult) updates) => super.copyWith((message) => updates(message as CompanyResult)) as CompanyResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompanyResult create() => CompanyResult._();
   CompanyResult createEmptyInstance() => create();
-  static $pb.PbList<CompanyResult> createRepeated() =>
-      $pb.PbList<CompanyResult>();
+  static $pb.PbList<CompanyResult> createRepeated() => $pb.PbList<CompanyResult>();
   @$core.pragma('dart2js:noInline')
-  static CompanyResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CompanyResult>(create);
+  static CompanyResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompanyResult>(create);
   static CompanyResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2195,114 +2592,42 @@ class Company extends $pb.GeneratedMessage {
     return $result;
   }
   Company._() : super();
-  factory Company.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Company.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Company.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Company.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Company',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'changeDate',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..e<DateFormatChangeDateCategoryEnum>(
-      3,
-      _omitFieldNames ? '' : 'changeDateCategory',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD,
-      valueOf: DateFormatChangeDateCategoryEnum.valueOf,
-      enumValues: DateFormatChangeDateCategoryEnum.values,
-    )
-    ..aOM<Company>(
-      4,
-      _omitFieldNames ? '' : 'changedCompanyId',
-      subBuilder: Company.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Company', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'changeDate', subBuilder: $0.Timestamp.create)
+    ..e<DateFormatChangeDateCategoryEnum>(3, _omitFieldNames ? '' : 'changeDateCategory', $pb.PbFieldType.OE, defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD, valueOf: DateFormatChangeDateCategoryEnum.valueOf, enumValues: DateFormatChangeDateCategoryEnum.values)
+    ..aOM<Company>(4, _omitFieldNames ? '' : 'changedCompanyId', subBuilder: Company.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'country', $pb.PbFieldType.O3)
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'description')
-    ..pc<Game>(
-      8,
-      _omitFieldNames ? '' : 'developed',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..aOM<CompanyLogo>(
-      9,
-      _omitFieldNames ? '' : 'logo',
-      subBuilder: CompanyLogo.create,
-    )
+    ..pc<Game>(8, _omitFieldNames ? '' : 'developed', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..aOM<CompanyLogo>(9, _omitFieldNames ? '' : 'logo', subBuilder: CompanyLogo.create)
     ..aOS(10, _omitFieldNames ? '' : 'name')
-    ..aOM<Company>(
-      11,
-      _omitFieldNames ? '' : 'parent',
-      subBuilder: Company.create,
-    )
-    ..pc<Game>(
-      12,
-      _omitFieldNames ? '' : 'published',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
+    ..aOM<Company>(11, _omitFieldNames ? '' : 'parent', subBuilder: Company.create)
+    ..pc<Game>(12, _omitFieldNames ? '' : 'published', $pb.PbFieldType.PM, subBuilder: Game.create)
     ..aOS(13, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      14,
-      _omitFieldNames ? '' : 'startDate',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..e<DateFormatChangeDateCategoryEnum>(
-      15,
-      _omitFieldNames ? '' : 'startDateCategory',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD,
-      valueOf: DateFormatChangeDateCategoryEnum.valueOf,
-      enumValues: DateFormatChangeDateCategoryEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      16,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(14, _omitFieldNames ? '' : 'startDate', subBuilder: $0.Timestamp.create)
+    ..e<DateFormatChangeDateCategoryEnum>(15, _omitFieldNames ? '' : 'startDateCategory', $pb.PbFieldType.OE, defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD, valueOf: DateFormatChangeDateCategoryEnum.valueOf, enumValues: DateFormatChangeDateCategoryEnum.values)
+    ..aOM<$0.Timestamp>(16, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(17, _omitFieldNames ? '' : 'url')
-    ..pc<CompanyWebsite>(
-      18,
-      _omitFieldNames ? '' : 'websites',
-      $pb.PbFieldType.PM,
-      subBuilder: CompanyWebsite.create,
-    )
+    ..pc<CompanyWebsite>(18, _omitFieldNames ? '' : 'websites', $pb.PbFieldType.PM, subBuilder: CompanyWebsite.create)
     ..aOS(19, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Company clone() => Company()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Company copyWith(void Function(Company) updates) =>
-      super.copyWith((message) => updates(message as Company)) as Company;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Company copyWith(void Function(Company) updates) => super.copyWith((message) => updates(message as Company)) as Company;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2311,17 +2636,13 @@ class Company extends $pb.GeneratedMessage {
   Company createEmptyInstance() => create();
   static $pb.PbList<Company> createRepeated() => $pb.PbList<Company>();
   @$core.pragma('dart2js:noInline')
-  static Company getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Company>(create);
+  static Company getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Company>(create);
   static Company? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2330,10 +2651,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get changeDate => $_getN(1);
   @$pb.TagNumber(2)
-  set changeDate($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set changeDate($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasChangeDate() => $_has(1);
   @$pb.TagNumber(2)
@@ -2344,10 +2662,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   DateFormatChangeDateCategoryEnum get changeDateCategory => $_getN(2);
   @$pb.TagNumber(3)
-  set changeDateCategory(DateFormatChangeDateCategoryEnum v) {
-    setField(3, v);
-  }
-
+  set changeDateCategory(DateFormatChangeDateCategoryEnum v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasChangeDateCategory() => $_has(2);
   @$pb.TagNumber(3)
@@ -2356,10 +2671,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Company get changedCompanyId => $_getN(3);
   @$pb.TagNumber(4)
-  set changedCompanyId(Company v) {
-    setField(4, v);
-  }
-
+  set changedCompanyId(Company v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasChangedCompanyId() => $_has(3);
   @$pb.TagNumber(4)
@@ -2370,10 +2682,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get country => $_getIZ(4);
   @$pb.TagNumber(5)
-  set country($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set country($core.int v) { $_setSignedInt32(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasCountry() => $_has(4);
   @$pb.TagNumber(5)
@@ -2382,10 +2691,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get createdAt => $_getN(5);
   @$pb.TagNumber(6)
-  set createdAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -2396,10 +2702,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get description => $_getSZ(6);
   @$pb.TagNumber(7)
-  set description($core.String v) {
-    $_setString(6, v);
-  }
-
+  set description($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
@@ -2411,10 +2714,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   CompanyLogo get logo => $_getN(8);
   @$pb.TagNumber(9)
-  set logo(CompanyLogo v) {
-    setField(9, v);
-  }
-
+  set logo(CompanyLogo v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasLogo() => $_has(8);
   @$pb.TagNumber(9)
@@ -2425,10 +2725,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get name => $_getSZ(9);
   @$pb.TagNumber(10)
-  set name($core.String v) {
-    $_setString(9, v);
-  }
-
+  set name($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasName() => $_has(9);
   @$pb.TagNumber(10)
@@ -2437,10 +2734,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Company get parent => $_getN(10);
   @$pb.TagNumber(11)
-  set parent(Company v) {
-    setField(11, v);
-  }
-
+  set parent(Company v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasParent() => $_has(10);
   @$pb.TagNumber(11)
@@ -2454,10 +2748,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get slug => $_getSZ(12);
   @$pb.TagNumber(13)
-  set slug($core.String v) {
-    $_setString(12, v);
-  }
-
+  set slug($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasSlug() => $_has(12);
   @$pb.TagNumber(13)
@@ -2466,10 +2757,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $0.Timestamp get startDate => $_getN(13);
   @$pb.TagNumber(14)
-  set startDate($0.Timestamp v) {
-    setField(14, v);
-  }
-
+  set startDate($0.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasStartDate() => $_has(13);
   @$pb.TagNumber(14)
@@ -2480,10 +2768,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   DateFormatChangeDateCategoryEnum get startDateCategory => $_getN(14);
   @$pb.TagNumber(15)
-  set startDateCategory(DateFormatChangeDateCategoryEnum v) {
-    setField(15, v);
-  }
-
+  set startDateCategory(DateFormatChangeDateCategoryEnum v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasStartDateCategory() => $_has(14);
   @$pb.TagNumber(15)
@@ -2492,10 +2777,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $0.Timestamp get updatedAt => $_getN(15);
   @$pb.TagNumber(16)
-  set updatedAt($0.Timestamp v) {
-    setField(16, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasUpdatedAt() => $_has(15);
   @$pb.TagNumber(16)
@@ -2506,10 +2788,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get url => $_getSZ(16);
   @$pb.TagNumber(17)
-  set url($core.String v) {
-    $_setString(16, v);
-  }
-
+  set url($core.String v) { $_setString(16, v); }
   @$pb.TagNumber(17)
   $core.bool hasUrl() => $_has(16);
   @$pb.TagNumber(17)
@@ -2521,10 +2800,7 @@ class Company extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get checksum => $_getSZ(18);
   @$pb.TagNumber(19)
-  set checksum($core.String v) {
-    $_setString(18, v);
-  }
-
+  set checksum($core.String v) { $_setString(18, v); }
   @$pb.TagNumber(19)
   $core.bool hasChecksum() => $_has(18);
   @$pb.TagNumber(19)
@@ -2542,51 +2818,33 @@ class CompanyLogoResult extends $pb.GeneratedMessage {
     return $result;
   }
   CompanyLogoResult._() : super();
-  factory CompanyLogoResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CompanyLogoResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CompanyLogoResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CompanyLogoResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CompanyLogoResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<CompanyLogo>(
-      1,
-      _omitFieldNames ? '' : 'companylogos',
-      $pb.PbFieldType.PM,
-      subBuilder: CompanyLogo.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompanyLogoResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CompanyLogo>(1, _omitFieldNames ? '' : 'companylogos', $pb.PbFieldType.PM, subBuilder: CompanyLogo.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CompanyLogoResult clone() => CompanyLogoResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CompanyLogoResult copyWith(void Function(CompanyLogoResult) updates) =>
-      super.copyWith((message) => updates(message as CompanyLogoResult))
-          as CompanyLogoResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CompanyLogoResult copyWith(void Function(CompanyLogoResult) updates) => super.copyWith((message) => updates(message as CompanyLogoResult)) as CompanyLogoResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompanyLogoResult create() => CompanyLogoResult._();
   CompanyLogoResult createEmptyInstance() => create();
-  static $pb.PbList<CompanyLogoResult> createRepeated() =>
-      $pb.PbList<CompanyLogoResult>();
+  static $pb.PbList<CompanyLogoResult> createRepeated() => $pb.PbList<CompanyLogoResult>();
   @$core.pragma('dart2js:noInline')
-  static CompanyLogoResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CompanyLogoResult>(create);
+  static CompanyLogoResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompanyLogoResult>(create);
   static CompanyLogoResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2632,28 +2890,11 @@ class CompanyLogo extends $pb.GeneratedMessage {
     return $result;
   }
   CompanyLogo._() : super();
-  factory CompanyLogo.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CompanyLogo.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CompanyLogo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CompanyLogo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CompanyLogo',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompanyLogo', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
@@ -2661,18 +2902,19 @@ class CompanyLogo extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CompanyLogo clone() => CompanyLogo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CompanyLogo copyWith(void Function(CompanyLogo) updates) =>
-      super.copyWith((message) => updates(message as CompanyLogo))
-          as CompanyLogo;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CompanyLogo copyWith(void Function(CompanyLogo) updates) => super.copyWith((message) => updates(message as CompanyLogo)) as CompanyLogo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2681,17 +2923,13 @@ class CompanyLogo extends $pb.GeneratedMessage {
   CompanyLogo createEmptyInstance() => create();
   static $pb.PbList<CompanyLogo> createRepeated() => $pb.PbList<CompanyLogo>();
   @$core.pragma('dart2js:noInline')
-  static CompanyLogo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CompanyLogo>(create);
+  static CompanyLogo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompanyLogo>(create);
   static CompanyLogo? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2700,10 +2938,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -2712,10 +2947,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -2724,10 +2956,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get height => $_getIZ(3);
   @$pb.TagNumber(4)
-  set height($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasHeight() => $_has(3);
   @$pb.TagNumber(4)
@@ -2736,10 +2965,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get imageId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set imageId($core.String v) {
-    $_setString(4, v);
-  }
-
+  set imageId($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageId() => $_has(4);
   @$pb.TagNumber(5)
@@ -2748,10 +2974,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -2760,10 +2983,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get width => $_getIZ(6);
   @$pb.TagNumber(7)
-  set width($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasWidth() => $_has(6);
   @$pb.TagNumber(7)
@@ -2772,10 +2992,7 @@ class CompanyLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -2793,52 +3010,33 @@ class CompanyWebsiteResult extends $pb.GeneratedMessage {
     return $result;
   }
   CompanyWebsiteResult._() : super();
-  factory CompanyWebsiteResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CompanyWebsiteResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CompanyWebsiteResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CompanyWebsiteResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CompanyWebsiteResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<CompanyWebsite>(
-      1,
-      _omitFieldNames ? '' : 'companywebsites',
-      $pb.PbFieldType.PM,
-      subBuilder: CompanyWebsite.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompanyWebsiteResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<CompanyWebsite>(1, _omitFieldNames ? '' : 'companywebsites', $pb.PbFieldType.PM, subBuilder: CompanyWebsite.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  CompanyWebsiteResult clone() =>
-      CompanyWebsiteResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CompanyWebsiteResult copyWith(void Function(CompanyWebsiteResult) updates) =>
-      super.copyWith((message) => updates(message as CompanyWebsiteResult))
-          as CompanyWebsiteResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CompanyWebsiteResult clone() => CompanyWebsiteResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CompanyWebsiteResult copyWith(void Function(CompanyWebsiteResult) updates) => super.copyWith((message) => updates(message as CompanyWebsiteResult)) as CompanyWebsiteResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompanyWebsiteResult create() => CompanyWebsiteResult._();
   CompanyWebsiteResult createEmptyInstance() => create();
-  static $pb.PbList<CompanyWebsiteResult> createRepeated() =>
-      $pb.PbList<CompanyWebsiteResult>();
+  static $pb.PbList<CompanyWebsiteResult> createRepeated() => $pb.PbList<CompanyWebsiteResult>();
   @$core.pragma('dart2js:noInline')
-  static CompanyWebsiteResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CompanyWebsiteResult>(create);
+  static CompanyWebsiteResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompanyWebsiteResult>(create);
   static CompanyWebsiteResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2872,71 +3070,43 @@ class CompanyWebsite extends $pb.GeneratedMessage {
     return $result;
   }
   CompanyWebsite._() : super();
-  factory CompanyWebsite.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CompanyWebsite.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CompanyWebsite.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CompanyWebsite.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CompanyWebsite',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<WebsiteCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL,
-      valueOf: WebsiteCategoryEnum.valueOf,
-      enumValues: WebsiteCategoryEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompanyWebsite', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<WebsiteCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL, valueOf: WebsiteCategoryEnum.valueOf, enumValues: WebsiteCategoryEnum.values)
     ..aOB(3, _omitFieldNames ? '' : 'trusted')
     ..aOS(4, _omitFieldNames ? '' : 'url')
     ..aOS(5, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CompanyWebsite clone() => CompanyWebsite()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CompanyWebsite copyWith(void Function(CompanyWebsite) updates) =>
-      super.copyWith((message) => updates(message as CompanyWebsite))
-          as CompanyWebsite;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CompanyWebsite copyWith(void Function(CompanyWebsite) updates) => super.copyWith((message) => updates(message as CompanyWebsite)) as CompanyWebsite;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CompanyWebsite create() => CompanyWebsite._();
   CompanyWebsite createEmptyInstance() => create();
-  static $pb.PbList<CompanyWebsite> createRepeated() =>
-      $pb.PbList<CompanyWebsite>();
+  static $pb.PbList<CompanyWebsite> createRepeated() => $pb.PbList<CompanyWebsite>();
   @$core.pragma('dart2js:noInline')
-  static CompanyWebsite getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CompanyWebsite>(create);
+  static CompanyWebsite getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CompanyWebsite>(create);
   static CompanyWebsite? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -2945,10 +3115,7 @@ class CompanyWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   WebsiteCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(WebsiteCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(WebsiteCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -2957,10 +3124,7 @@ class CompanyWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get trusted => $_getBF(2);
   @$pb.TagNumber(3)
-  set trusted($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set trusted($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasTrusted() => $_has(2);
   @$pb.TagNumber(3)
@@ -2969,10 +3133,7 @@ class CompanyWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get url => $_getSZ(3);
   @$pb.TagNumber(4)
-  set url($core.String v) {
-    $_setString(3, v);
-  }
-
+  set url($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -2981,10 +3142,7 @@ class CompanyWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
   @$pb.TagNumber(5)
-  set checksum($core.String v) {
-    $_setString(4, v);
-  }
-
+  set checksum($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
@@ -3002,40 +3160,24 @@ class CoverResult extends $pb.GeneratedMessage {
     return $result;
   }
   CoverResult._() : super();
-  factory CoverResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CoverResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory CoverResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CoverResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'CoverResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Cover>(
-      1,
-      _omitFieldNames ? '' : 'covers',
-      $pb.PbFieldType.PM,
-      subBuilder: Cover.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CoverResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Cover>(1, _omitFieldNames ? '' : 'covers', $pb.PbFieldType.PM, subBuilder: Cover.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   CoverResult clone() => CoverResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  CoverResult copyWith(void Function(CoverResult) updates) =>
-      super.copyWith((message) => updates(message as CoverResult))
-          as CoverResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CoverResult copyWith(void Function(CoverResult) updates) => super.copyWith((message) => updates(message as CoverResult)) as CoverResult;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3044,8 +3186,7 @@ class CoverResult extends $pb.GeneratedMessage {
   CoverResult createEmptyInstance() => create();
   static $pb.PbList<CoverResult> createRepeated() => $pb.PbList<CoverResult>();
   @$core.pragma('dart2js:noInline')
-  static CoverResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CoverResult>(create);
+  static CoverResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CoverResult>(create);
   static CoverResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3099,28 +3240,11 @@ class Cover extends $pb.GeneratedMessage {
     return $result;
   }
   Cover._() : super();
-  factory Cover.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Cover.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Cover.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Cover.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Cover',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cover', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
@@ -3129,22 +3253,20 @@ class Cover extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'checksum')
-    ..aOM<GameLocalization>(
-      10,
-      _omitFieldNames ? '' : 'gameLocalization',
-      subBuilder: GameLocalization.create,
-    )
-    ..hasRequiredFields = false;
+    ..aOM<GameLocalization>(10, _omitFieldNames ? '' : 'gameLocalization', subBuilder: GameLocalization.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Cover clone() => Cover()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Cover copyWith(void Function(Cover) updates) =>
-      super.copyWith((message) => updates(message as Cover)) as Cover;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Cover copyWith(void Function(Cover) updates) => super.copyWith((message) => updates(message as Cover)) as Cover;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3153,17 +3275,13 @@ class Cover extends $pb.GeneratedMessage {
   Cover createEmptyInstance() => create();
   static $pb.PbList<Cover> createRepeated() => $pb.PbList<Cover>();
   @$core.pragma('dart2js:noInline')
-  static Cover getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cover>(create);
+  static Cover getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cover>(create);
   static Cover? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -3172,10 +3290,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -3184,10 +3299,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -3196,10 +3308,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -3210,10 +3319,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get height => $_getIZ(4);
   @$pb.TagNumber(5)
-  set height($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(5)
@@ -3222,10 +3328,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get imageId => $_getSZ(5);
   @$pb.TagNumber(6)
-  set imageId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set imageId($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasImageId() => $_has(5);
   @$pb.TagNumber(6)
@@ -3234,10 +3337,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -3246,10 +3346,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get width => $_getIZ(7);
   @$pb.TagNumber(8)
-  set width($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasWidth() => $_has(7);
   @$pb.TagNumber(8)
@@ -3258,10 +3355,7 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get checksum => $_getSZ(8);
   @$pb.TagNumber(9)
-  set checksum($core.String v) {
-    $_setString(8, v);
-  }
-
+  set checksum($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasChecksum() => $_has(8);
   @$pb.TagNumber(9)
@@ -3270,16 +3364,721 @@ class Cover extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   GameLocalization get gameLocalization => $_getN(9);
   @$pb.TagNumber(10)
-  set gameLocalization(GameLocalization v) {
-    setField(10, v);
-  }
-
+  set gameLocalization(GameLocalization v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasGameLocalization() => $_has(9);
   @$pb.TagNumber(10)
   void clearGameLocalization() => clearField(10);
   @$pb.TagNumber(10)
   GameLocalization ensureGameLocalization() => $_ensure(9);
+}
+
+class EventResult extends $pb.GeneratedMessage {
+  factory EventResult({
+    $core.Iterable<Event>? events,
+  }) {
+    final $result = create();
+    if (events != null) {
+      $result.events.addAll(events);
+    }
+    return $result;
+  }
+  EventResult._() : super();
+  factory EventResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EventResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Event>(1, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: Event.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  EventResult clone() => EventResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  EventResult copyWith(void Function(EventResult) updates) => super.copyWith((message) => updates(message as EventResult)) as EventResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EventResult create() => EventResult._();
+  EventResult createEmptyInstance() => create();
+  static $pb.PbList<EventResult> createRepeated() => $pb.PbList<EventResult>();
+  @$core.pragma('dart2js:noInline')
+  static EventResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventResult>(create);
+  static EventResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<Event> get events => $_getList(0);
+}
+
+class Event extends $pb.GeneratedMessage {
+  factory Event({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.String? description,
+    $core.String? slug,
+    EventLogo? eventLogo,
+    $0.Timestamp? startTime,
+    $core.String? timeZone,
+    $0.Timestamp? endTime,
+    $core.String? liveStreamUrl,
+    $core.Iterable<Game>? games,
+    $core.Iterable<GameVideo>? videos,
+    $core.Iterable<EventNetwork>? eventNetworks,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (slug != null) {
+      $result.slug = slug;
+    }
+    if (eventLogo != null) {
+      $result.eventLogo = eventLogo;
+    }
+    if (startTime != null) {
+      $result.startTime = startTime;
+    }
+    if (timeZone != null) {
+      $result.timeZone = timeZone;
+    }
+    if (endTime != null) {
+      $result.endTime = endTime;
+    }
+    if (liveStreamUrl != null) {
+      $result.liveStreamUrl = liveStreamUrl;
+    }
+    if (games != null) {
+      $result.games.addAll(games);
+    }
+    if (videos != null) {
+      $result.videos.addAll(videos);
+    }
+    if (eventNetworks != null) {
+      $result.eventNetworks.addAll(eventNetworks);
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  Event._() : super();
+  factory Event.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Event.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aOS(3, _omitFieldNames ? '' : 'description')
+    ..aOS(4, _omitFieldNames ? '' : 'slug')
+    ..aOM<EventLogo>(5, _omitFieldNames ? '' : 'eventLogo', subBuilder: EventLogo.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $0.Timestamp.create)
+    ..aOS(7, _omitFieldNames ? '' : 'timeZone')
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $0.Timestamp.create)
+    ..aOS(9, _omitFieldNames ? '' : 'liveStreamUrl')
+    ..pc<Game>(10, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<GameVideo>(11, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: GameVideo.create)
+    ..pc<EventNetwork>(12, _omitFieldNames ? '' : 'eventNetworks', $pb.PbFieldType.PM, subBuilder: EventNetwork.create)
+    ..aOM<$0.Timestamp>(13, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(14, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(15, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  Event clone() => Event()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Event copyWith(void Function(Event) updates) => super.copyWith((message) => updates(message as Event)) as Event;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Event create() => Event._();
+  Event createEmptyInstance() => create();
+  static $pb.PbList<Event> createRepeated() => $pb.PbList<Event>();
+  @$core.pragma('dart2js:noInline')
+  static Event getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Event>(create);
+  static Event? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get name => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set name($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearName() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get description => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set description($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasDescription() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescription() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.String get slug => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set slug($core.String v) { $_setString(3, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasSlug() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearSlug() => clearField(4);
+
+  @$pb.TagNumber(5)
+  EventLogo get eventLogo => $_getN(4);
+  @$pb.TagNumber(5)
+  set eventLogo(EventLogo v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasEventLogo() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearEventLogo() => clearField(5);
+  @$pb.TagNumber(5)
+  EventLogo ensureEventLogo() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get startTime => $_getN(5);
+  @$pb.TagNumber(6)
+  set startTime($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasStartTime() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearStartTime() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureStartTime() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get timeZone => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set timeZone($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasTimeZone() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearTimeZone() => clearField(7);
+
+  @$pb.TagNumber(8)
+  $0.Timestamp get endTime => $_getN(7);
+  @$pb.TagNumber(8)
+  set endTime($0.Timestamp v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasEndTime() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearEndTime() => clearField(8);
+  @$pb.TagNumber(8)
+  $0.Timestamp ensureEndTime() => $_ensure(7);
+
+  @$pb.TagNumber(9)
+  $core.String get liveStreamUrl => $_getSZ(8);
+  @$pb.TagNumber(9)
+  set liveStreamUrl($core.String v) { $_setString(8, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasLiveStreamUrl() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearLiveStreamUrl() => clearField(9);
+
+  @$pb.TagNumber(10)
+  $core.List<Game> get games => $_getList(9);
+
+  @$pb.TagNumber(11)
+  $core.List<GameVideo> get videos => $_getList(10);
+
+  @$pb.TagNumber(12)
+  $core.List<EventNetwork> get eventNetworks => $_getList(11);
+
+  @$pb.TagNumber(13)
+  $0.Timestamp get createdAt => $_getN(12);
+  @$pb.TagNumber(13)
+  set createdAt($0.Timestamp v) { setField(13, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasCreatedAt() => $_has(12);
+  @$pb.TagNumber(13)
+  void clearCreatedAt() => clearField(13);
+  @$pb.TagNumber(13)
+  $0.Timestamp ensureCreatedAt() => $_ensure(12);
+
+  @$pb.TagNumber(14)
+  $0.Timestamp get updatedAt => $_getN(13);
+  @$pb.TagNumber(14)
+  set updatedAt($0.Timestamp v) { setField(14, v); }
+  @$pb.TagNumber(14)
+  $core.bool hasUpdatedAt() => $_has(13);
+  @$pb.TagNumber(14)
+  void clearUpdatedAt() => clearField(14);
+  @$pb.TagNumber(14)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(13);
+
+  @$pb.TagNumber(15)
+  $core.String get checksum => $_getSZ(14);
+  @$pb.TagNumber(15)
+  set checksum($core.String v) { $_setString(14, v); }
+  @$pb.TagNumber(15)
+  $core.bool hasChecksum() => $_has(14);
+  @$pb.TagNumber(15)
+  void clearChecksum() => clearField(15);
+}
+
+class EventLogoResult extends $pb.GeneratedMessage {
+  factory EventLogoResult({
+    $core.Iterable<EventLogo>? eventlogos,
+  }) {
+    final $result = create();
+    if (eventlogos != null) {
+      $result.eventlogos.addAll(eventlogos);
+    }
+    return $result;
+  }
+  EventLogoResult._() : super();
+  factory EventLogoResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EventLogoResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventLogoResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<EventLogo>(1, _omitFieldNames ? '' : 'eventlogos', $pb.PbFieldType.PM, subBuilder: EventLogo.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  EventLogoResult clone() => EventLogoResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  EventLogoResult copyWith(void Function(EventLogoResult) updates) => super.copyWith((message) => updates(message as EventLogoResult)) as EventLogoResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EventLogoResult create() => EventLogoResult._();
+  EventLogoResult createEmptyInstance() => create();
+  static $pb.PbList<EventLogoResult> createRepeated() => $pb.PbList<EventLogoResult>();
+  @$core.pragma('dart2js:noInline')
+  static EventLogoResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventLogoResult>(create);
+  static EventLogoResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<EventLogo> get eventlogos => $_getList(0);
+}
+
+class EventLogo extends $pb.GeneratedMessage {
+  factory EventLogo({
+    $fixnum.Int64? id,
+    Event? event,
+    $core.bool? alphaChannel,
+    $core.bool? animated,
+    $core.int? height,
+    $core.String? imageId,
+    $core.String? url,
+    $core.int? width,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (event != null) {
+      $result.event = event;
+    }
+    if (alphaChannel != null) {
+      $result.alphaChannel = alphaChannel;
+    }
+    if (animated != null) {
+      $result.animated = animated;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (imageId != null) {
+      $result.imageId = imageId;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (width != null) {
+      $result.width = width;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  EventLogo._() : super();
+  factory EventLogo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EventLogo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventLogo', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<Event>(2, _omitFieldNames ? '' : 'event', subBuilder: Event.create)
+    ..aOB(3, _omitFieldNames ? '' : 'alphaChannel')
+    ..aOB(4, _omitFieldNames ? '' : 'animated')
+    ..a<$core.int>(5, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
+    ..aOS(6, _omitFieldNames ? '' : 'imageId')
+    ..aOS(7, _omitFieldNames ? '' : 'url')
+    ..a<$core.int>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(11, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  EventLogo clone() => EventLogo()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  EventLogo copyWith(void Function(EventLogo) updates) => super.copyWith((message) => updates(message as EventLogo)) as EventLogo;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EventLogo create() => EventLogo._();
+  EventLogo createEmptyInstance() => create();
+  static $pb.PbList<EventLogo> createRepeated() => $pb.PbList<EventLogo>();
+  @$core.pragma('dart2js:noInline')
+  static EventLogo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventLogo>(create);
+  static EventLogo? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  Event get event => $_getN(1);
+  @$pb.TagNumber(2)
+  set event(Event v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasEvent() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEvent() => clearField(2);
+  @$pb.TagNumber(2)
+  Event ensureEvent() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  $core.bool get alphaChannel => $_getBF(2);
+  @$pb.TagNumber(3)
+  set alphaChannel($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasAlphaChannel() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearAlphaChannel() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.bool get animated => $_getBF(3);
+  @$pb.TagNumber(4)
+  set animated($core.bool v) { $_setBool(3, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasAnimated() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAnimated() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.int get height => $_getIZ(4);
+  @$pb.TagNumber(5)
+  set height($core.int v) { $_setSignedInt32(4, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasHeight() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearHeight() => clearField(5);
+
+  @$pb.TagNumber(6)
+  $core.String get imageId => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set imageId($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasImageId() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearImageId() => clearField(6);
+
+  @$pb.TagNumber(7)
+  $core.String get url => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set url($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasUrl() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearUrl() => clearField(7);
+
+  @$pb.TagNumber(8)
+  $core.int get width => $_getIZ(7);
+  @$pb.TagNumber(8)
+  set width($core.int v) { $_setSignedInt32(7, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasWidth() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearWidth() => clearField(8);
+
+  @$pb.TagNumber(9)
+  $0.Timestamp get createdAt => $_getN(8);
+  @$pb.TagNumber(9)
+  set createdAt($0.Timestamp v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasCreatedAt() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearCreatedAt() => clearField(9);
+  @$pb.TagNumber(9)
+  $0.Timestamp ensureCreatedAt() => $_ensure(8);
+
+  @$pb.TagNumber(10)
+  $0.Timestamp get updatedAt => $_getN(9);
+  @$pb.TagNumber(10)
+  set updatedAt($0.Timestamp v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasUpdatedAt() => $_has(9);
+  @$pb.TagNumber(10)
+  void clearUpdatedAt() => clearField(10);
+  @$pb.TagNumber(10)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(9);
+
+  @$pb.TagNumber(11)
+  $core.String get checksum => $_getSZ(10);
+  @$pb.TagNumber(11)
+  set checksum($core.String v) { $_setString(10, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasChecksum() => $_has(10);
+  @$pb.TagNumber(11)
+  void clearChecksum() => clearField(11);
+}
+
+class EventNetworkResult extends $pb.GeneratedMessage {
+  factory EventNetworkResult({
+    $core.Iterable<EventNetwork>? eventnetworks,
+  }) {
+    final $result = create();
+    if (eventnetworks != null) {
+      $result.eventnetworks.addAll(eventnetworks);
+    }
+    return $result;
+  }
+  EventNetworkResult._() : super();
+  factory EventNetworkResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EventNetworkResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventNetworkResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<EventNetwork>(1, _omitFieldNames ? '' : 'eventnetworks', $pb.PbFieldType.PM, subBuilder: EventNetwork.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  EventNetworkResult clone() => EventNetworkResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  EventNetworkResult copyWith(void Function(EventNetworkResult) updates) => super.copyWith((message) => updates(message as EventNetworkResult)) as EventNetworkResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EventNetworkResult create() => EventNetworkResult._();
+  EventNetworkResult createEmptyInstance() => create();
+  static $pb.PbList<EventNetworkResult> createRepeated() => $pb.PbList<EventNetworkResult>();
+  @$core.pragma('dart2js:noInline')
+  static EventNetworkResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventNetworkResult>(create);
+  static EventNetworkResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<EventNetwork> get eventnetworks => $_getList(0);
+}
+
+class EventNetwork extends $pb.GeneratedMessage {
+  factory EventNetwork({
+    $fixnum.Int64? id,
+    Event? event,
+    $core.String? url,
+    NetworkType? networkType,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (event != null) {
+      $result.event = event;
+    }
+    if (url != null) {
+      $result.url = url;
+    }
+    if (networkType != null) {
+      $result.networkType = networkType;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  EventNetwork._() : super();
+  factory EventNetwork.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EventNetwork.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventNetwork', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<Event>(2, _omitFieldNames ? '' : 'event', subBuilder: Event.create)
+    ..aOS(3, _omitFieldNames ? '' : 'url')
+    ..aOM<NetworkType>(4, _omitFieldNames ? '' : 'networkType', subBuilder: NetworkType.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(7, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  EventNetwork clone() => EventNetwork()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  EventNetwork copyWith(void Function(EventNetwork) updates) => super.copyWith((message) => updates(message as EventNetwork)) as EventNetwork;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EventNetwork create() => EventNetwork._();
+  EventNetwork createEmptyInstance() => create();
+  static $pb.PbList<EventNetwork> createRepeated() => $pb.PbList<EventNetwork>();
+  @$core.pragma('dart2js:noInline')
+  static EventNetwork getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventNetwork>(create);
+  static EventNetwork? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  Event get event => $_getN(1);
+  @$pb.TagNumber(2)
+  set event(Event v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasEvent() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEvent() => clearField(2);
+  @$pb.TagNumber(2)
+  Event ensureEvent() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  $core.String get url => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set url($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasUrl() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearUrl() => clearField(3);
+
+  @$pb.TagNumber(4)
+  NetworkType get networkType => $_getN(3);
+  @$pb.TagNumber(4)
+  set networkType(NetworkType v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasNetworkType() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearNetworkType() => clearField(4);
+  @$pb.TagNumber(4)
+  NetworkType ensureNetworkType() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get createdAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set createdAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasCreatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearCreatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureCreatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get updatedAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set updatedAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasUpdatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearUpdatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get checksum => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set checksum($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasChecksum() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearChecksum() => clearField(7);
 }
 
 class ExternalGameResult extends $pb.GeneratedMessage {
@@ -3293,51 +4092,33 @@ class ExternalGameResult extends $pb.GeneratedMessage {
     return $result;
   }
   ExternalGameResult._() : super();
-  factory ExternalGameResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ExternalGameResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ExternalGameResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ExternalGameResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ExternalGameResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<ExternalGame>(
-      1,
-      _omitFieldNames ? '' : 'externalgames',
-      $pb.PbFieldType.PM,
-      subBuilder: ExternalGame.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalGameResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<ExternalGame>(1, _omitFieldNames ? '' : 'externalgames', $pb.PbFieldType.PM, subBuilder: ExternalGame.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ExternalGameResult clone() => ExternalGameResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ExternalGameResult copyWith(void Function(ExternalGameResult) updates) =>
-      super.copyWith((message) => updates(message as ExternalGameResult))
-          as ExternalGameResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ExternalGameResult copyWith(void Function(ExternalGameResult) updates) => super.copyWith((message) => updates(message as ExternalGameResult)) as ExternalGameResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExternalGameResult create() => ExternalGameResult._();
   ExternalGameResult createEmptyInstance() => create();
-  static $pb.PbList<ExternalGameResult> createRepeated() =>
-      $pb.PbList<ExternalGameResult>();
+  static $pb.PbList<ExternalGameResult> createRepeated() => $pb.PbList<ExternalGameResult>();
   @$core.pragma('dart2js:noInline')
-  static ExternalGameResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ExternalGameResult>(create);
+  static ExternalGameResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExternalGameResult>(create);
   static ExternalGameResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3403,98 +4184,51 @@ class ExternalGame extends $pb.GeneratedMessage {
     return $result;
   }
   ExternalGame._() : super();
-  factory ExternalGame.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ExternalGame.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ExternalGame.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ExternalGame.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ExternalGame',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<ExternalGameCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: ExternalGameCategoryEnum.EXTERNALGAME_CATEGORY_NULL,
-      valueOf: ExternalGameCategoryEnum.valueOf,
-      enumValues: ExternalGameCategoryEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalGame', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<ExternalGameCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: ExternalGameCategoryEnum.EXTERNALGAME_CATEGORY_NULL, valueOf: ExternalGameCategoryEnum.valueOf, enumValues: ExternalGameCategoryEnum.values)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOS(5, _omitFieldNames ? '' : 'name')
     ..aOS(6, _omitFieldNames ? '' : 'uid')
-    ..aOM<$0.Timestamp>(
-      7,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
-    ..e<ExternalGameMediaEnum>(
-      10,
-      _omitFieldNames ? '' : 'media',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: ExternalGameMediaEnum.EXTERNALGAME_MEDIA_NULL,
-      valueOf: ExternalGameMediaEnum.valueOf,
-      enumValues: ExternalGameMediaEnum.values,
-    )
-    ..aOM<Platform>(
-      11,
-      _omitFieldNames ? '' : 'platform',
-      subBuilder: Platform.create,
-    )
+    ..e<ExternalGameMediaEnum>(10, _omitFieldNames ? '' : 'media', $pb.PbFieldType.OE, defaultOrMaker: ExternalGameMediaEnum.EXTERNALGAME_MEDIA_NULL, valueOf: ExternalGameMediaEnum.valueOf, enumValues: ExternalGameMediaEnum.values)
+    ..aOM<Platform>(11, _omitFieldNames ? '' : 'platform', subBuilder: Platform.create)
     ..p<$core.int>(12, _omitFieldNames ? '' : 'countries', $pb.PbFieldType.K3)
     ..aOS(13, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ExternalGame clone() => ExternalGame()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ExternalGame copyWith(void Function(ExternalGame) updates) =>
-      super.copyWith((message) => updates(message as ExternalGame))
-          as ExternalGame;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ExternalGame copyWith(void Function(ExternalGame) updates) => super.copyWith((message) => updates(message as ExternalGame)) as ExternalGame;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ExternalGame create() => ExternalGame._();
   ExternalGame createEmptyInstance() => create();
-  static $pb.PbList<ExternalGame> createRepeated() =>
-      $pb.PbList<ExternalGame>();
+  static $pb.PbList<ExternalGame> createRepeated() => $pb.PbList<ExternalGame>();
   @$core.pragma('dart2js:noInline')
-  static ExternalGame getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ExternalGame>(create);
+  static ExternalGame getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExternalGame>(create);
   static ExternalGame? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -3503,10 +4237,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ExternalGameCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(ExternalGameCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(ExternalGameCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -3515,10 +4246,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -3529,10 +4257,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -3543,10 +4268,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get name => $_getSZ(4);
   @$pb.TagNumber(5)
-  set name($core.String v) {
-    $_setString(4, v);
-  }
-
+  set name($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasName() => $_has(4);
   @$pb.TagNumber(5)
@@ -3555,10 +4277,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get uid => $_getSZ(5);
   @$pb.TagNumber(6)
-  set uid($core.String v) {
-    $_setString(5, v);
-  }
-
+  set uid($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(6)
@@ -3567,10 +4286,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $0.Timestamp get updatedAt => $_getN(6);
   @$pb.TagNumber(7)
-  set updatedAt($0.Timestamp v) {
-    setField(7, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdatedAt() => $_has(6);
   @$pb.TagNumber(7)
@@ -3581,10 +4297,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get url => $_getSZ(7);
   @$pb.TagNumber(8)
-  set url($core.String v) {
-    $_setString(7, v);
-  }
-
+  set url($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasUrl() => $_has(7);
   @$pb.TagNumber(8)
@@ -3593,10 +4306,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get year => $_getIZ(8);
   @$pb.TagNumber(9)
-  set year($core.int v) {
-    $_setSignedInt32(8, v);
-  }
-
+  set year($core.int v) { $_setSignedInt32(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasYear() => $_has(8);
   @$pb.TagNumber(9)
@@ -3605,10 +4315,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   ExternalGameMediaEnum get media => $_getN(9);
   @$pb.TagNumber(10)
-  set media(ExternalGameMediaEnum v) {
-    setField(10, v);
-  }
-
+  set media(ExternalGameMediaEnum v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMedia() => $_has(9);
   @$pb.TagNumber(10)
@@ -3617,10 +4324,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Platform get platform => $_getN(10);
   @$pb.TagNumber(11)
-  set platform(Platform v) {
-    setField(11, v);
-  }
-
+  set platform(Platform v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPlatform() => $_has(10);
   @$pb.TagNumber(11)
@@ -3634,10 +4338,7 @@ class ExternalGame extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get checksum => $_getSZ(12);
   @$pb.TagNumber(13)
-  set checksum($core.String v) {
-    $_setString(12, v);
-  }
-
+  set checksum($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasChecksum() => $_has(12);
   @$pb.TagNumber(13)
@@ -3655,51 +4356,33 @@ class FranchiseResult extends $pb.GeneratedMessage {
     return $result;
   }
   FranchiseResult._() : super();
-  factory FranchiseResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory FranchiseResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory FranchiseResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FranchiseResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'FranchiseResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Franchise>(
-      1,
-      _omitFieldNames ? '' : 'franchises',
-      $pb.PbFieldType.PM,
-      subBuilder: Franchise.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FranchiseResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Franchise>(1, _omitFieldNames ? '' : 'franchises', $pb.PbFieldType.PM, subBuilder: Franchise.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   FranchiseResult clone() => FranchiseResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  FranchiseResult copyWith(void Function(FranchiseResult) updates) =>
-      super.copyWith((message) => updates(message as FranchiseResult))
-          as FranchiseResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FranchiseResult copyWith(void Function(FranchiseResult) updates) => super.copyWith((message) => updates(message as FranchiseResult)) as FranchiseResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FranchiseResult create() => FranchiseResult._();
   FranchiseResult createEmptyInstance() => create();
-  static $pb.PbList<FranchiseResult> createRepeated() =>
-      $pb.PbList<FranchiseResult>();
+  static $pb.PbList<FranchiseResult> createRepeated() => $pb.PbList<FranchiseResult>();
   @$core.pragma('dart2js:noInline')
-  static FranchiseResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<FranchiseResult>(create);
+  static FranchiseResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FranchiseResult>(create);
   static FranchiseResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3745,59 +4428,31 @@ class Franchise extends $pb.GeneratedMessage {
     return $result;
   }
   Franchise._() : super();
-  factory Franchise.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Franchise.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Franchise.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Franchise.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Franchise',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..pc<Game>(
-      3,
-      _omitFieldNames ? '' : 'games',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Franchise', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..pc<Game>(3, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Franchise clone() => Franchise()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Franchise copyWith(void Function(Franchise) updates) =>
-      super.copyWith((message) => updates(message as Franchise)) as Franchise;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Franchise copyWith(void Function(Franchise) updates) => super.copyWith((message) => updates(message as Franchise)) as Franchise;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3806,17 +4461,13 @@ class Franchise extends $pb.GeneratedMessage {
   Franchise createEmptyInstance() => create();
   static $pb.PbList<Franchise> createRepeated() => $pb.PbList<Franchise>();
   @$core.pragma('dart2js:noInline')
-  static Franchise getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Franchise>(create);
+  static Franchise getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Franchise>(create);
   static Franchise? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -3825,10 +4476,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -3842,10 +4490,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get name => $_getSZ(3);
   @$pb.TagNumber(4)
-  set name($core.String v) {
-    $_setString(3, v);
-  }
-
+  set name($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
@@ -3854,10 +4499,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get slug => $_getSZ(4);
   @$pb.TagNumber(5)
-  set slug($core.String v) {
-    $_setString(4, v);
-  }
-
+  set slug($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasSlug() => $_has(4);
   @$pb.TagNumber(5)
@@ -3866,10 +4508,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -3880,10 +4519,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -3892,10 +4528,7 @@ class Franchise extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -3913,39 +4546,24 @@ class GameResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameResult._() : super();
-  factory GameResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Game>(
-      1,
-      _omitFieldNames ? '' : 'games',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Game>(1, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameResult clone() => GameResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameResult copyWith(void Function(GameResult) updates) =>
-      super.copyWith((message) => updates(message as GameResult)) as GameResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameResult copyWith(void Function(GameResult) updates) => super.copyWith((message) => updates(message as GameResult)) as GameResult;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -3954,8 +4572,7 @@ class GameResult extends $pb.GeneratedMessage {
   GameResult createEmptyInstance() => create();
   static $pb.PbList<GameResult> createRepeated() => $pb.PbList<GameResult>();
   @$core.pragma('dart2js:noInline')
-  static GameResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameResult>(create);
+  static GameResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameResult>(create);
   static GameResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3979,6 +4596,7 @@ class Game extends $pb.GeneratedMessage {
     $core.Iterable<Game>? expansions,
     $core.Iterable<ExternalGame>? externalGames,
     $0.Timestamp? firstReleaseDate,
+  @$core.Deprecated('This field is deprecated.')
     $core.int? follows,
     Franchise? franchise,
     $core.Iterable<Franchise>? franchises,
@@ -4021,6 +4639,7 @@ class Game extends $pb.GeneratedMessage {
     $core.Iterable<Game>? forks,
     $core.Iterable<LanguageSupport>? languageSupports,
     $core.Iterable<GameLocalization>? gameLocalizations,
+    $core.Iterable<Collection>? collections,
   }) {
     final $result = create();
     if (id != null) {
@@ -4069,6 +4688,7 @@ class Game extends $pb.GeneratedMessage {
       $result.firstReleaseDate = firstReleaseDate;
     }
     if (follows != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.follows = follows;
     }
     if (franchise != null) {
@@ -4194,306 +4814,87 @@ class Game extends $pb.GeneratedMessage {
     if (gameLocalizations != null) {
       $result.gameLocalizations.addAll(gameLocalizations);
     }
+    if (collections != null) {
+      $result.collections.addAll(collections);
+    }
     return $result;
   }
   Game._() : super();
-  factory Game.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Game.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Game.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Game.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Game',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..pc<AgeRating>(
-      2,
-      _omitFieldNames ? '' : 'ageRatings',
-      $pb.PbFieldType.PM,
-      subBuilder: AgeRating.create,
-    )
-    ..a<$core.double>(
-      3,
-      _omitFieldNames ? '' : 'aggregatedRating',
-      $pb.PbFieldType.OD,
-    )
-    ..a<$core.int>(
-      4,
-      _omitFieldNames ? '' : 'aggregatedRatingCount',
-      $pb.PbFieldType.O3,
-    )
-    ..pc<AlternativeName>(
-      5,
-      _omitFieldNames ? '' : 'alternativeNames',
-      $pb.PbFieldType.PM,
-      subBuilder: AlternativeName.create,
-    )
-    ..pc<Artwork>(
-      6,
-      _omitFieldNames ? '' : 'artworks',
-      $pb.PbFieldType.PM,
-      subBuilder: Artwork.create,
-    )
-    ..pc<Game>(
-      7,
-      _omitFieldNames ? '' : 'bundles',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..e<GameCategoryEnum>(
-      8,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: GameCategoryEnum.MAIN_GAME,
-      valueOf: GameCategoryEnum.valueOf,
-      enumValues: GameCategoryEnum.values,
-    )
-    ..aOM<Collection>(
-      9,
-      _omitFieldNames ? '' : 'collection',
-      subBuilder: Collection.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Game', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..pc<AgeRating>(2, _omitFieldNames ? '' : 'ageRatings', $pb.PbFieldType.PM, subBuilder: AgeRating.create)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'aggregatedRating', $pb.PbFieldType.OD)
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'aggregatedRatingCount', $pb.PbFieldType.O3)
+    ..pc<AlternativeName>(5, _omitFieldNames ? '' : 'alternativeNames', $pb.PbFieldType.PM, subBuilder: AlternativeName.create)
+    ..pc<Artwork>(6, _omitFieldNames ? '' : 'artworks', $pb.PbFieldType.PM, subBuilder: Artwork.create)
+    ..pc<Game>(7, _omitFieldNames ? '' : 'bundles', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..e<GameCategoryEnum>(8, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: GameCategoryEnum.MAIN_GAME, valueOf: GameCategoryEnum.valueOf, enumValues: GameCategoryEnum.values)
+    ..aOM<Collection>(9, _omitFieldNames ? '' : 'collection', subBuilder: Collection.create)
     ..aOM<Cover>(10, _omitFieldNames ? '' : 'cover', subBuilder: Cover.create)
-    ..aOM<$0.Timestamp>(
-      11,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..pc<Game>(
-      12,
-      _omitFieldNames ? '' : 'dlcs',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<Game>(
-      13,
-      _omitFieldNames ? '' : 'expansions',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<ExternalGame>(
-      14,
-      _omitFieldNames ? '' : 'externalGames',
-      $pb.PbFieldType.PM,
-      subBuilder: ExternalGame.create,
-    )
-    ..aOM<$0.Timestamp>(
-      15,
-      _omitFieldNames ? '' : 'firstReleaseDate',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(11, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..pc<Game>(12, _omitFieldNames ? '' : 'dlcs', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<Game>(13, _omitFieldNames ? '' : 'expansions', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<ExternalGame>(14, _omitFieldNames ? '' : 'externalGames', $pb.PbFieldType.PM, subBuilder: ExternalGame.create)
+    ..aOM<$0.Timestamp>(15, _omitFieldNames ? '' : 'firstReleaseDate', subBuilder: $0.Timestamp.create)
     ..a<$core.int>(16, _omitFieldNames ? '' : 'follows', $pb.PbFieldType.O3)
-    ..aOM<Franchise>(
-      17,
-      _omitFieldNames ? '' : 'franchise',
-      subBuilder: Franchise.create,
-    )
-    ..pc<Franchise>(
-      18,
-      _omitFieldNames ? '' : 'franchises',
-      $pb.PbFieldType.PM,
-      subBuilder: Franchise.create,
-    )
-    ..pc<GameEngine>(
-      19,
-      _omitFieldNames ? '' : 'gameEngines',
-      $pb.PbFieldType.PM,
-      subBuilder: GameEngine.create,
-    )
-    ..pc<GameMode>(
-      20,
-      _omitFieldNames ? '' : 'gameModes',
-      $pb.PbFieldType.PM,
-      subBuilder: GameMode.create,
-    )
-    ..pc<Genre>(
-      21,
-      _omitFieldNames ? '' : 'genres',
-      $pb.PbFieldType.PM,
-      subBuilder: Genre.create,
-    )
+    ..aOM<Franchise>(17, _omitFieldNames ? '' : 'franchise', subBuilder: Franchise.create)
+    ..pc<Franchise>(18, _omitFieldNames ? '' : 'franchises', $pb.PbFieldType.PM, subBuilder: Franchise.create)
+    ..pc<GameEngine>(19, _omitFieldNames ? '' : 'gameEngines', $pb.PbFieldType.PM, subBuilder: GameEngine.create)
+    ..pc<GameMode>(20, _omitFieldNames ? '' : 'gameModes', $pb.PbFieldType.PM, subBuilder: GameMode.create)
+    ..pc<Genre>(21, _omitFieldNames ? '' : 'genres', $pb.PbFieldType.PM, subBuilder: Genre.create)
     ..a<$core.int>(22, _omitFieldNames ? '' : 'hypes', $pb.PbFieldType.O3)
-    ..pc<InvolvedCompany>(
-      23,
-      _omitFieldNames ? '' : 'involvedCompanies',
-      $pb.PbFieldType.PM,
-      subBuilder: InvolvedCompany.create,
-    )
-    ..pc<Keyword>(
-      24,
-      _omitFieldNames ? '' : 'keywords',
-      $pb.PbFieldType.PM,
-      subBuilder: Keyword.create,
-    )
-    ..pc<MultiplayerMode>(
-      25,
-      _omitFieldNames ? '' : 'multiplayerModes',
-      $pb.PbFieldType.PM,
-      subBuilder: MultiplayerMode.create,
-    )
+    ..pc<InvolvedCompany>(23, _omitFieldNames ? '' : 'involvedCompanies', $pb.PbFieldType.PM, subBuilder: InvolvedCompany.create)
+    ..pc<Keyword>(24, _omitFieldNames ? '' : 'keywords', $pb.PbFieldType.PM, subBuilder: Keyword.create)
+    ..pc<MultiplayerMode>(25, _omitFieldNames ? '' : 'multiplayerModes', $pb.PbFieldType.PM, subBuilder: MultiplayerMode.create)
     ..aOS(26, _omitFieldNames ? '' : 'name')
-    ..aOM<Game>(
-      27,
-      _omitFieldNames ? '' : 'parentGame',
-      subBuilder: Game.create,
-    )
-    ..pc<Platform>(
-      28,
-      _omitFieldNames ? '' : 'platforms',
-      $pb.PbFieldType.PM,
-      subBuilder: Platform.create,
-    )
-    ..pc<PlayerPerspective>(
-      29,
-      _omitFieldNames ? '' : 'playerPerspectives',
-      $pb.PbFieldType.PM,
-      subBuilder: PlayerPerspective.create,
-    )
+    ..aOM<Game>(27, _omitFieldNames ? '' : 'parentGame', subBuilder: Game.create)
+    ..pc<Platform>(28, _omitFieldNames ? '' : 'platforms', $pb.PbFieldType.PM, subBuilder: Platform.create)
+    ..pc<PlayerPerspective>(29, _omitFieldNames ? '' : 'playerPerspectives', $pb.PbFieldType.PM, subBuilder: PlayerPerspective.create)
     ..a<$core.double>(30, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OD)
     ..a<$core.int>(31, _omitFieldNames ? '' : 'ratingCount', $pb.PbFieldType.O3)
-    ..pc<ReleaseDate>(
-      32,
-      _omitFieldNames ? '' : 'releaseDates',
-      $pb.PbFieldType.PM,
-      subBuilder: ReleaseDate.create,
-    )
-    ..pc<Screenshot>(
-      33,
-      _omitFieldNames ? '' : 'screenshots',
-      $pb.PbFieldType.PM,
-      subBuilder: Screenshot.create,
-    )
-    ..pc<Game>(
-      34,
-      _omitFieldNames ? '' : 'similarGames',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
+    ..pc<ReleaseDate>(32, _omitFieldNames ? '' : 'releaseDates', $pb.PbFieldType.PM, subBuilder: ReleaseDate.create)
+    ..pc<Screenshot>(33, _omitFieldNames ? '' : 'screenshots', $pb.PbFieldType.PM, subBuilder: Screenshot.create)
+    ..pc<Game>(34, _omitFieldNames ? '' : 'similarGames', $pb.PbFieldType.PM, subBuilder: Game.create)
     ..aOS(35, _omitFieldNames ? '' : 'slug')
-    ..pc<Game>(
-      36,
-      _omitFieldNames ? '' : 'standaloneExpansions',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..e<GameStatusEnum>(
-      37,
-      _omitFieldNames ? '' : 'status',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: GameStatusEnum.RELEASED,
-      valueOf: GameStatusEnum.valueOf,
-      enumValues: GameStatusEnum.values,
-    )
+    ..pc<Game>(36, _omitFieldNames ? '' : 'standaloneExpansions', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..e<GameStatusEnum>(37, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: GameStatusEnum.RELEASED, valueOf: GameStatusEnum.valueOf, enumValues: GameStatusEnum.values)
     ..aOS(38, _omitFieldNames ? '' : 'storyline')
     ..aOS(39, _omitFieldNames ? '' : 'summary')
     ..p<$core.int>(40, _omitFieldNames ? '' : 'tags', $pb.PbFieldType.K3)
-    ..pc<Theme>(
-      41,
-      _omitFieldNames ? '' : 'themes',
-      $pb.PbFieldType.PM,
-      subBuilder: Theme.create,
-    )
-    ..a<$core.double>(
-      42,
-      _omitFieldNames ? '' : 'totalRating',
-      $pb.PbFieldType.OD,
-    )
-    ..a<$core.int>(
-      43,
-      _omitFieldNames ? '' : 'totalRatingCount',
-      $pb.PbFieldType.O3,
-    )
-    ..aOM<$0.Timestamp>(
-      44,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..pc<Theme>(41, _omitFieldNames ? '' : 'themes', $pb.PbFieldType.PM, subBuilder: Theme.create)
+    ..a<$core.double>(42, _omitFieldNames ? '' : 'totalRating', $pb.PbFieldType.OD)
+    ..a<$core.int>(43, _omitFieldNames ? '' : 'totalRatingCount', $pb.PbFieldType.O3)
+    ..aOM<$0.Timestamp>(44, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(45, _omitFieldNames ? '' : 'url')
-    ..aOM<Game>(
-      46,
-      _omitFieldNames ? '' : 'versionParent',
-      subBuilder: Game.create,
-    )
+    ..aOM<Game>(46, _omitFieldNames ? '' : 'versionParent', subBuilder: Game.create)
     ..aOS(47, _omitFieldNames ? '' : 'versionTitle')
-    ..pc<GameVideo>(
-      48,
-      _omitFieldNames ? '' : 'videos',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVideo.create,
-    )
-    ..pc<Website>(
-      49,
-      _omitFieldNames ? '' : 'websites',
-      $pb.PbFieldType.PM,
-      subBuilder: Website.create,
-    )
+    ..pc<GameVideo>(48, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: GameVideo.create)
+    ..pc<Website>(49, _omitFieldNames ? '' : 'websites', $pb.PbFieldType.PM, subBuilder: Website.create)
     ..aOS(50, _omitFieldNames ? '' : 'checksum')
-    ..pc<Game>(
-      51,
-      _omitFieldNames ? '' : 'remakes',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<Game>(
-      52,
-      _omitFieldNames ? '' : 'remasters',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<Game>(
-      53,
-      _omitFieldNames ? '' : 'expandedGames',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<Game>(
-      54,
-      _omitFieldNames ? '' : 'ports',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<Game>(
-      55,
-      _omitFieldNames ? '' : 'forks',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..pc<LanguageSupport>(
-      56,
-      _omitFieldNames ? '' : 'languageSupports',
-      $pb.PbFieldType.PM,
-      subBuilder: LanguageSupport.create,
-    )
-    ..pc<GameLocalization>(
-      57,
-      _omitFieldNames ? '' : 'gameLocalizations',
-      $pb.PbFieldType.PM,
-      subBuilder: GameLocalization.create,
-    )
-    ..hasRequiredFields = false;
+    ..pc<Game>(51, _omitFieldNames ? '' : 'remakes', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<Game>(52, _omitFieldNames ? '' : 'remasters', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<Game>(53, _omitFieldNames ? '' : 'expandedGames', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<Game>(54, _omitFieldNames ? '' : 'ports', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<Game>(55, _omitFieldNames ? '' : 'forks', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..pc<LanguageSupport>(56, _omitFieldNames ? '' : 'languageSupports', $pb.PbFieldType.PM, subBuilder: LanguageSupport.create)
+    ..pc<GameLocalization>(57, _omitFieldNames ? '' : 'gameLocalizations', $pb.PbFieldType.PM, subBuilder: GameLocalization.create)
+    ..pc<Collection>(58, _omitFieldNames ? '' : 'collections', $pb.PbFieldType.PM, subBuilder: Collection.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Game clone() => Game()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Game copyWith(void Function(Game) updates) =>
-      super.copyWith((message) => updates(message as Game)) as Game;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Game copyWith(void Function(Game) updates) => super.copyWith((message) => updates(message as Game)) as Game;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4502,17 +4903,13 @@ class Game extends $pb.GeneratedMessage {
   Game createEmptyInstance() => create();
   static $pb.PbList<Game> createRepeated() => $pb.PbList<Game>();
   @$core.pragma('dart2js:noInline')
-  static Game getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Game>(create);
+  static Game getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Game>(create);
   static Game? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -4524,10 +4921,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get aggregatedRating => $_getN(2);
   @$pb.TagNumber(3)
-  set aggregatedRating($core.double v) {
-    $_setDouble(2, v);
-  }
-
+  set aggregatedRating($core.double v) { $_setDouble(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAggregatedRating() => $_has(2);
   @$pb.TagNumber(3)
@@ -4536,10 +4930,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get aggregatedRatingCount => $_getIZ(3);
   @$pb.TagNumber(4)
-  set aggregatedRatingCount($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set aggregatedRatingCount($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasAggregatedRatingCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -4557,10 +4948,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   GameCategoryEnum get category => $_getN(7);
   @$pb.TagNumber(8)
-  set category(GameCategoryEnum v) {
-    setField(8, v);
-  }
-
+  set category(GameCategoryEnum v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCategory() => $_has(7);
   @$pb.TagNumber(8)
@@ -4569,10 +4957,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Collection get collection => $_getN(8);
   @$pb.TagNumber(9)
-  set collection(Collection v) {
-    setField(9, v);
-  }
-
+  set collection(Collection v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCollection() => $_has(8);
   @$pb.TagNumber(9)
@@ -4583,10 +4968,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Cover get cover => $_getN(9);
   @$pb.TagNumber(10)
-  set cover(Cover v) {
-    setField(10, v);
-  }
-
+  set cover(Cover v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCover() => $_has(9);
   @$pb.TagNumber(10)
@@ -4597,10 +4979,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $0.Timestamp get createdAt => $_getN(10);
   @$pb.TagNumber(11)
-  set createdAt($0.Timestamp v) {
-    setField(11, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreatedAt() => $_has(10);
   @$pb.TagNumber(11)
@@ -4620,10 +4999,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $0.Timestamp get firstReleaseDate => $_getN(14);
   @$pb.TagNumber(15)
-  set firstReleaseDate($0.Timestamp v) {
-    setField(15, v);
-  }
-
+  set firstReleaseDate($0.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasFirstReleaseDate() => $_has(14);
   @$pb.TagNumber(15)
@@ -4631,25 +5007,23 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $0.Timestamp ensureFirstReleaseDate() => $_ensure(14);
 
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(16)
   $core.int get follows => $_getIZ(15);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(16)
-  set follows($core.int v) {
-    $_setSignedInt32(15, v);
-  }
-
+  set follows($core.int v) { $_setSignedInt32(15, v); }
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(16)
   $core.bool hasFollows() => $_has(15);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(16)
   void clearFollows() => clearField(16);
 
   @$pb.TagNumber(17)
   Franchise get franchise => $_getN(16);
   @$pb.TagNumber(17)
-  set franchise(Franchise v) {
-    setField(17, v);
-  }
-
+  set franchise(Franchise v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasFranchise() => $_has(16);
   @$pb.TagNumber(17)
@@ -4672,10 +5046,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.int get hypes => $_getIZ(21);
   @$pb.TagNumber(22)
-  set hypes($core.int v) {
-    $_setSignedInt32(21, v);
-  }
-
+  set hypes($core.int v) { $_setSignedInt32(21, v); }
   @$pb.TagNumber(22)
   $core.bool hasHypes() => $_has(21);
   @$pb.TagNumber(22)
@@ -4693,10 +5064,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.String get name => $_getSZ(25);
   @$pb.TagNumber(26)
-  set name($core.String v) {
-    $_setString(25, v);
-  }
-
+  set name($core.String v) { $_setString(25, v); }
   @$pb.TagNumber(26)
   $core.bool hasName() => $_has(25);
   @$pb.TagNumber(26)
@@ -4705,10 +5073,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   Game get parentGame => $_getN(26);
   @$pb.TagNumber(27)
-  set parentGame(Game v) {
-    setField(27, v);
-  }
-
+  set parentGame(Game v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasParentGame() => $_has(26);
   @$pb.TagNumber(27)
@@ -4725,10 +5090,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $core.double get rating => $_getN(29);
   @$pb.TagNumber(30)
-  set rating($core.double v) {
-    $_setDouble(29, v);
-  }
-
+  set rating($core.double v) { $_setDouble(29, v); }
   @$pb.TagNumber(30)
   $core.bool hasRating() => $_has(29);
   @$pb.TagNumber(30)
@@ -4737,10 +5099,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.int get ratingCount => $_getIZ(30);
   @$pb.TagNumber(31)
-  set ratingCount($core.int v) {
-    $_setSignedInt32(30, v);
-  }
-
+  set ratingCount($core.int v) { $_setSignedInt32(30, v); }
   @$pb.TagNumber(31)
   $core.bool hasRatingCount() => $_has(30);
   @$pb.TagNumber(31)
@@ -4758,10 +5117,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   $core.String get slug => $_getSZ(34);
   @$pb.TagNumber(35)
-  set slug($core.String v) {
-    $_setString(34, v);
-  }
-
+  set slug($core.String v) { $_setString(34, v); }
   @$pb.TagNumber(35)
   $core.bool hasSlug() => $_has(34);
   @$pb.TagNumber(35)
@@ -4773,10 +5129,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(37)
   GameStatusEnum get status => $_getN(36);
   @$pb.TagNumber(37)
-  set status(GameStatusEnum v) {
-    setField(37, v);
-  }
-
+  set status(GameStatusEnum v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasStatus() => $_has(36);
   @$pb.TagNumber(37)
@@ -4785,10 +5138,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(38)
   $core.String get storyline => $_getSZ(37);
   @$pb.TagNumber(38)
-  set storyline($core.String v) {
-    $_setString(37, v);
-  }
-
+  set storyline($core.String v) { $_setString(37, v); }
   @$pb.TagNumber(38)
   $core.bool hasStoryline() => $_has(37);
   @$pb.TagNumber(38)
@@ -4797,10 +5147,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.String get summary => $_getSZ(38);
   @$pb.TagNumber(39)
-  set summary($core.String v) {
-    $_setString(38, v);
-  }
-
+  set summary($core.String v) { $_setString(38, v); }
   @$pb.TagNumber(39)
   $core.bool hasSummary() => $_has(38);
   @$pb.TagNumber(39)
@@ -4815,10 +5162,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(42)
   $core.double get totalRating => $_getN(41);
   @$pb.TagNumber(42)
-  set totalRating($core.double v) {
-    $_setDouble(41, v);
-  }
-
+  set totalRating($core.double v) { $_setDouble(41, v); }
   @$pb.TagNumber(42)
   $core.bool hasTotalRating() => $_has(41);
   @$pb.TagNumber(42)
@@ -4827,10 +5171,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(43)
   $core.int get totalRatingCount => $_getIZ(42);
   @$pb.TagNumber(43)
-  set totalRatingCount($core.int v) {
-    $_setSignedInt32(42, v);
-  }
-
+  set totalRatingCount($core.int v) { $_setSignedInt32(42, v); }
   @$pb.TagNumber(43)
   $core.bool hasTotalRatingCount() => $_has(42);
   @$pb.TagNumber(43)
@@ -4839,10 +5180,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(44)
   $0.Timestamp get updatedAt => $_getN(43);
   @$pb.TagNumber(44)
-  set updatedAt($0.Timestamp v) {
-    setField(44, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(44, v); }
   @$pb.TagNumber(44)
   $core.bool hasUpdatedAt() => $_has(43);
   @$pb.TagNumber(44)
@@ -4853,10 +5191,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(45)
   $core.String get url => $_getSZ(44);
   @$pb.TagNumber(45)
-  set url($core.String v) {
-    $_setString(44, v);
-  }
-
+  set url($core.String v) { $_setString(44, v); }
   @$pb.TagNumber(45)
   $core.bool hasUrl() => $_has(44);
   @$pb.TagNumber(45)
@@ -4865,10 +5200,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(46)
   Game get versionParent => $_getN(45);
   @$pb.TagNumber(46)
-  set versionParent(Game v) {
-    setField(46, v);
-  }
-
+  set versionParent(Game v) { setField(46, v); }
   @$pb.TagNumber(46)
   $core.bool hasVersionParent() => $_has(45);
   @$pb.TagNumber(46)
@@ -4879,10 +5211,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(47)
   $core.String get versionTitle => $_getSZ(46);
   @$pb.TagNumber(47)
-  set versionTitle($core.String v) {
-    $_setString(46, v);
-  }
-
+  set versionTitle($core.String v) { $_setString(46, v); }
   @$pb.TagNumber(47)
   $core.bool hasVersionTitle() => $_has(46);
   @$pb.TagNumber(47)
@@ -4897,10 +5226,7 @@ class Game extends $pb.GeneratedMessage {
   @$pb.TagNumber(50)
   $core.String get checksum => $_getSZ(49);
   @$pb.TagNumber(50)
-  set checksum($core.String v) {
-    $_setString(49, v);
-  }
-
+  set checksum($core.String v) { $_setString(49, v); }
   @$pb.TagNumber(50)
   $core.bool hasChecksum() => $_has(49);
   @$pb.TagNumber(50)
@@ -4926,6 +5252,9 @@ class Game extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(57)
   $core.List<GameLocalization> get gameLocalizations => $_getList(56);
+
+  @$pb.TagNumber(58)
+  $core.List<Collection> get collections => $_getList(57);
 }
 
 class GameEngineResult extends $pb.GeneratedMessage {
@@ -4939,51 +5268,33 @@ class GameEngineResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameEngineResult._() : super();
-  factory GameEngineResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameEngineResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameEngineResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameEngineResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameEngineResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameEngine>(
-      1,
-      _omitFieldNames ? '' : 'gameengines',
-      $pb.PbFieldType.PM,
-      subBuilder: GameEngine.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameEngineResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameEngine>(1, _omitFieldNames ? '' : 'gameengines', $pb.PbFieldType.PM, subBuilder: GameEngine.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameEngineResult clone() => GameEngineResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameEngineResult copyWith(void Function(GameEngineResult) updates) =>
-      super.copyWith((message) => updates(message as GameEngineResult))
-          as GameEngineResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameEngineResult copyWith(void Function(GameEngineResult) updates) => super.copyWith((message) => updates(message as GameEngineResult)) as GameEngineResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameEngineResult create() => GameEngineResult._();
   GameEngineResult createEmptyInstance() => create();
-  static $pb.PbList<GameEngineResult> createRepeated() =>
-      $pb.PbList<GameEngineResult>();
+  static $pb.PbList<GameEngineResult> createRepeated() => $pb.PbList<GameEngineResult>();
   @$core.pragma('dart2js:noInline')
-  static GameEngineResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameEngineResult>(create);
+  static GameEngineResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameEngineResult>(create);
   static GameEngineResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -5041,71 +5352,34 @@ class GameEngine extends $pb.GeneratedMessage {
     return $result;
   }
   GameEngine._() : super();
-  factory GameEngine.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameEngine.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameEngine.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameEngine.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameEngine',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..pc<Company>(
-      2,
-      _omitFieldNames ? '' : 'companies',
-      $pb.PbFieldType.PM,
-      subBuilder: Company.create,
-    )
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameEngine', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..pc<Company>(2, _omitFieldNames ? '' : 'companies', $pb.PbFieldType.PM, subBuilder: Company.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..aOM<GameEngineLogo>(
-      5,
-      _omitFieldNames ? '' : 'logo',
-      subBuilder: GameEngineLogo.create,
-    )
+    ..aOM<GameEngineLogo>(5, _omitFieldNames ? '' : 'logo', subBuilder: GameEngineLogo.create)
     ..aOS(6, _omitFieldNames ? '' : 'name')
-    ..pc<Platform>(
-      7,
-      _omitFieldNames ? '' : 'platforms',
-      $pb.PbFieldType.PM,
-      subBuilder: Platform.create,
-    )
+    ..pc<Platform>(7, _omitFieldNames ? '' : 'platforms', $pb.PbFieldType.PM, subBuilder: Platform.create)
     ..aOS(8, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      9,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'url')
     ..aOS(11, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameEngine clone() => GameEngine()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameEngine copyWith(void Function(GameEngine) updates) =>
-      super.copyWith((message) => updates(message as GameEngine)) as GameEngine;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameEngine copyWith(void Function(GameEngine) updates) => super.copyWith((message) => updates(message as GameEngine)) as GameEngine;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -5114,17 +5388,13 @@ class GameEngine extends $pb.GeneratedMessage {
   GameEngine createEmptyInstance() => create();
   static $pb.PbList<GameEngine> createRepeated() => $pb.PbList<GameEngine>();
   @$core.pragma('dart2js:noInline')
-  static GameEngine getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameEngine>(create);
+  static GameEngine getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameEngine>(create);
   static GameEngine? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -5136,10 +5406,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -5150,10 +5417,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get description => $_getSZ(3);
   @$pb.TagNumber(4)
-  set description($core.String v) {
-    $_setString(3, v);
-  }
-
+  set description($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
@@ -5162,10 +5426,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   GameEngineLogo get logo => $_getN(4);
   @$pb.TagNumber(5)
-  set logo(GameEngineLogo v) {
-    setField(5, v);
-  }
-
+  set logo(GameEngineLogo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLogo() => $_has(4);
   @$pb.TagNumber(5)
@@ -5176,10 +5437,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get name => $_getSZ(5);
   @$pb.TagNumber(6)
-  set name($core.String v) {
-    $_setString(5, v);
-  }
-
+  set name($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasName() => $_has(5);
   @$pb.TagNumber(6)
@@ -5191,10 +5449,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get slug => $_getSZ(7);
   @$pb.TagNumber(8)
-  set slug($core.String v) {
-    $_setString(7, v);
-  }
-
+  set slug($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasSlug() => $_has(7);
   @$pb.TagNumber(8)
@@ -5203,10 +5458,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $0.Timestamp get updatedAt => $_getN(8);
   @$pb.TagNumber(9)
-  set updatedAt($0.Timestamp v) {
-    setField(9, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdatedAt() => $_has(8);
   @$pb.TagNumber(9)
@@ -5217,10 +5469,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get url => $_getSZ(9);
   @$pb.TagNumber(10)
-  set url($core.String v) {
-    $_setString(9, v);
-  }
-
+  set url($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasUrl() => $_has(9);
   @$pb.TagNumber(10)
@@ -5229,10 +5478,7 @@ class GameEngine extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get checksum => $_getSZ(10);
   @$pb.TagNumber(11)
-  set checksum($core.String v) {
-    $_setString(10, v);
-  }
-
+  set checksum($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasChecksum() => $_has(10);
   @$pb.TagNumber(11)
@@ -5250,52 +5496,33 @@ class GameEngineLogoResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameEngineLogoResult._() : super();
-  factory GameEngineLogoResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameEngineLogoResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameEngineLogoResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameEngineLogoResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameEngineLogoResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameEngineLogo>(
-      1,
-      _omitFieldNames ? '' : 'gameenginelogos',
-      $pb.PbFieldType.PM,
-      subBuilder: GameEngineLogo.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameEngineLogoResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameEngineLogo>(1, _omitFieldNames ? '' : 'gameenginelogos', $pb.PbFieldType.PM, subBuilder: GameEngineLogo.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  GameEngineLogoResult clone() =>
-      GameEngineLogoResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameEngineLogoResult copyWith(void Function(GameEngineLogoResult) updates) =>
-      super.copyWith((message) => updates(message as GameEngineLogoResult))
-          as GameEngineLogoResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GameEngineLogoResult clone() => GameEngineLogoResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameEngineLogoResult copyWith(void Function(GameEngineLogoResult) updates) => super.copyWith((message) => updates(message as GameEngineLogoResult)) as GameEngineLogoResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameEngineLogoResult create() => GameEngineLogoResult._();
   GameEngineLogoResult createEmptyInstance() => create();
-  static $pb.PbList<GameEngineLogoResult> createRepeated() =>
-      $pb.PbList<GameEngineLogoResult>();
+  static $pb.PbList<GameEngineLogoResult> createRepeated() => $pb.PbList<GameEngineLogoResult>();
   @$core.pragma('dart2js:noInline')
-  static GameEngineLogoResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameEngineLogoResult>(create);
+  static GameEngineLogoResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameEngineLogoResult>(create);
   static GameEngineLogoResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -5341,28 +5568,11 @@ class GameEngineLogo extends $pb.GeneratedMessage {
     return $result;
   }
   GameEngineLogo._() : super();
-  factory GameEngineLogo.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameEngineLogo.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameEngineLogo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameEngineLogo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameEngineLogo',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameEngineLogo', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
@@ -5370,38 +5580,34 @@ class GameEngineLogo extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameEngineLogo clone() => GameEngineLogo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameEngineLogo copyWith(void Function(GameEngineLogo) updates) =>
-      super.copyWith((message) => updates(message as GameEngineLogo))
-          as GameEngineLogo;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameEngineLogo copyWith(void Function(GameEngineLogo) updates) => super.copyWith((message) => updates(message as GameEngineLogo)) as GameEngineLogo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameEngineLogo create() => GameEngineLogo._();
   GameEngineLogo createEmptyInstance() => create();
-  static $pb.PbList<GameEngineLogo> createRepeated() =>
-      $pb.PbList<GameEngineLogo>();
+  static $pb.PbList<GameEngineLogo> createRepeated() => $pb.PbList<GameEngineLogo>();
   @$core.pragma('dart2js:noInline')
-  static GameEngineLogo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameEngineLogo>(create);
+  static GameEngineLogo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameEngineLogo>(create);
   static GameEngineLogo? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -5410,10 +5616,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -5422,10 +5625,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -5434,10 +5634,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get height => $_getIZ(3);
   @$pb.TagNumber(4)
-  set height($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasHeight() => $_has(3);
   @$pb.TagNumber(4)
@@ -5446,10 +5643,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get imageId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set imageId($core.String v) {
-    $_setString(4, v);
-  }
-
+  set imageId($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageId() => $_has(4);
   @$pb.TagNumber(5)
@@ -5458,10 +5652,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -5470,10 +5661,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get width => $_getIZ(6);
   @$pb.TagNumber(7)
-  set width($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasWidth() => $_has(6);
   @$pb.TagNumber(7)
@@ -5482,10 +5670,7 @@ class GameEngineLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -5503,54 +5688,33 @@ class GameLocalizationResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameLocalizationResult._() : super();
-  factory GameLocalizationResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameLocalizationResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameLocalizationResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameLocalizationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameLocalizationResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameLocalization>(
-      1,
-      _omitFieldNames ? '' : 'gamelocalizations',
-      $pb.PbFieldType.PM,
-      subBuilder: GameLocalization.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameLocalizationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameLocalization>(1, _omitFieldNames ? '' : 'gamelocalizations', $pb.PbFieldType.PM, subBuilder: GameLocalization.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  GameLocalizationResult clone() =>
-      GameLocalizationResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameLocalizationResult copyWith(
-    void Function(GameLocalizationResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as GameLocalizationResult))
-          as GameLocalizationResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GameLocalizationResult clone() => GameLocalizationResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameLocalizationResult copyWith(void Function(GameLocalizationResult) updates) => super.copyWith((message) => updates(message as GameLocalizationResult)) as GameLocalizationResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameLocalizationResult create() => GameLocalizationResult._();
   GameLocalizationResult createEmptyInstance() => create();
-  static $pb.PbList<GameLocalizationResult> createRepeated() =>
-      $pb.PbList<GameLocalizationResult>();
+  static $pb.PbList<GameLocalizationResult> createRepeated() => $pb.PbList<GameLocalizationResult>();
   @$core.pragma('dart2js:noInline')
-  static GameLocalizationResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameLocalizationResult>(create);
+  static GameLocalizationResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameLocalizationResult>(create);
   static GameLocalizationResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -5596,75 +5760,46 @@ class GameLocalization extends $pb.GeneratedMessage {
     return $result;
   }
   GameLocalization._() : super();
-  factory GameLocalization.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameLocalization.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameLocalization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameLocalization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameLocalization',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameLocalization', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOM<Cover>(3, _omitFieldNames ? '' : 'cover', subBuilder: Cover.create)
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOM<Region>(5, _omitFieldNames ? '' : 'region', subBuilder: Region.create)
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      7,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameLocalization clone() => GameLocalization()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameLocalization copyWith(void Function(GameLocalization) updates) =>
-      super.copyWith((message) => updates(message as GameLocalization))
-          as GameLocalization;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameLocalization copyWith(void Function(GameLocalization) updates) => super.copyWith((message) => updates(message as GameLocalization)) as GameLocalization;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameLocalization create() => GameLocalization._();
   GameLocalization createEmptyInstance() => create();
-  static $pb.PbList<GameLocalization> createRepeated() =>
-      $pb.PbList<GameLocalization>();
+  static $pb.PbList<GameLocalization> createRepeated() => $pb.PbList<GameLocalization>();
   @$core.pragma('dart2js:noInline')
-  static GameLocalization getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameLocalization>(create);
+  static GameLocalization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameLocalization>(create);
   static GameLocalization? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -5673,10 +5808,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -5685,10 +5817,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Cover get cover => $_getN(2);
   @$pb.TagNumber(3)
-  set cover(Cover v) {
-    setField(3, v);
-  }
-
+  set cover(Cover v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCover() => $_has(2);
   @$pb.TagNumber(3)
@@ -5699,10 +5828,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -5713,10 +5839,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Region get region => $_getN(4);
   @$pb.TagNumber(5)
-  set region(Region v) {
-    setField(5, v);
-  }
-
+  set region(Region v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRegion() => $_has(4);
   @$pb.TagNumber(5)
@@ -5727,10 +5850,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get createdAt => $_getN(5);
   @$pb.TagNumber(6)
-  set createdAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -5741,10 +5861,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $0.Timestamp get updatedAt => $_getN(6);
   @$pb.TagNumber(7)
-  set updatedAt($0.Timestamp v) {
-    setField(7, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdatedAt() => $_has(6);
   @$pb.TagNumber(7)
@@ -5755,10 +5872,7 @@ class GameLocalization extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -5776,51 +5890,33 @@ class GameModeResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameModeResult._() : super();
-  factory GameModeResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameModeResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameModeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameModeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameModeResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameMode>(
-      1,
-      _omitFieldNames ? '' : 'gamemodes',
-      $pb.PbFieldType.PM,
-      subBuilder: GameMode.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameModeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameMode>(1, _omitFieldNames ? '' : 'gamemodes', $pb.PbFieldType.PM, subBuilder: GameMode.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameModeResult clone() => GameModeResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameModeResult copyWith(void Function(GameModeResult) updates) =>
-      super.copyWith((message) => updates(message as GameModeResult))
-          as GameModeResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameModeResult copyWith(void Function(GameModeResult) updates) => super.copyWith((message) => updates(message as GameModeResult)) as GameModeResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameModeResult create() => GameModeResult._();
   GameModeResult createEmptyInstance() => create();
-  static $pb.PbList<GameModeResult> createRepeated() =>
-      $pb.PbList<GameModeResult>();
+  static $pb.PbList<GameModeResult> createRepeated() => $pb.PbList<GameModeResult>();
   @$core.pragma('dart2js:noInline')
-  static GameModeResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameModeResult>(create);
+  static GameModeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameModeResult>(create);
   static GameModeResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -5862,53 +5958,30 @@ class GameMode extends $pb.GeneratedMessage {
     return $result;
   }
   GameMode._() : super();
-  factory GameMode.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameMode.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameMode',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameMode', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameMode clone() => GameMode()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameMode copyWith(void Function(GameMode) updates) =>
-      super.copyWith((message) => updates(message as GameMode)) as GameMode;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameMode copyWith(void Function(GameMode) updates) => super.copyWith((message) => updates(message as GameMode)) as GameMode;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -5917,17 +5990,13 @@ class GameMode extends $pb.GeneratedMessage {
   GameMode createEmptyInstance() => create();
   static $pb.PbList<GameMode> createRepeated() => $pb.PbList<GameMode>();
   @$core.pragma('dart2js:noInline')
-  static GameMode getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameMode>(create);
+  static GameMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameMode>(create);
   static GameMode? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -5936,10 +6005,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -5950,10 +6016,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -5962,10 +6025,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get slug => $_getSZ(3);
   @$pb.TagNumber(4)
-  set slug($core.String v) {
-    $_setString(3, v);
-  }
-
+  set slug($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlug() => $_has(3);
   @$pb.TagNumber(4)
@@ -5974,10 +6034,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -5988,10 +6045,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -6000,10 +6054,7 @@ class GameMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -6021,51 +6072,33 @@ class GameVersionResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersionResult._() : super();
-  factory GameVersionResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersionResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersionResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameVersion>(
-      1,
-      _omitFieldNames ? '' : 'gameversions',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVersion.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameVersion>(1, _omitFieldNames ? '' : 'gameversions', $pb.PbFieldType.PM, subBuilder: GameVersion.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameVersionResult clone() => GameVersionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersionResult copyWith(void Function(GameVersionResult) updates) =>
-      super.copyWith((message) => updates(message as GameVersionResult))
-          as GameVersionResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersionResult copyWith(void Function(GameVersionResult) updates) => super.copyWith((message) => updates(message as GameVersionResult)) as GameVersionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameVersionResult create() => GameVersionResult._();
   GameVersionResult createEmptyInstance() => create();
-  static $pb.PbList<GameVersionResult> createRepeated() =>
-      $pb.PbList<GameVersionResult>();
+  static $pb.PbList<GameVersionResult> createRepeated() => $pb.PbList<GameVersionResult>();
   @$core.pragma('dart2js:noInline')
-  static GameVersionResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersionResult>(create);
+  static GameVersionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersionResult>(create);
   static GameVersionResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -6111,65 +6144,31 @@ class GameVersion extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersion._() : super();
-  factory GameVersion.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersion.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersion',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..pc<GameVersionFeature>(
-      3,
-      _omitFieldNames ? '' : 'features',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVersionFeature.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..pc<GameVersionFeature>(3, _omitFieldNames ? '' : 'features', $pb.PbFieldType.PM, subBuilder: GameVersionFeature.create)
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
-    ..pc<Game>(
-      5,
-      _omitFieldNames ? '' : 'games',
-      $pb.PbFieldType.PM,
-      subBuilder: Game.create,
-    )
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..pc<Game>(5, _omitFieldNames ? '' : 'games', $pb.PbFieldType.PM, subBuilder: Game.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameVersion clone() => GameVersion()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersion copyWith(void Function(GameVersion) updates) =>
-      super.copyWith((message) => updates(message as GameVersion))
-          as GameVersion;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersion copyWith(void Function(GameVersion) updates) => super.copyWith((message) => updates(message as GameVersion)) as GameVersion;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -6178,17 +6177,13 @@ class GameVersion extends $pb.GeneratedMessage {
   GameVersion createEmptyInstance() => create();
   static $pb.PbList<GameVersion> createRepeated() => $pb.PbList<GameVersion>();
   @$core.pragma('dart2js:noInline')
-  static GameVersion getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersion>(create);
+  static GameVersion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersion>(create);
   static GameVersion? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -6197,10 +6192,7 @@ class GameVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -6214,10 +6206,7 @@ class GameVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -6231,10 +6220,7 @@ class GameVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -6245,10 +6231,7 @@ class GameVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -6257,10 +6240,7 @@ class GameVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -6278,54 +6258,33 @@ class GameVersionFeatureResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersionFeatureResult._() : super();
-  factory GameVersionFeatureResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersionFeatureResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersionFeatureResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersionFeatureResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersionFeatureResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameVersionFeature>(
-      1,
-      _omitFieldNames ? '' : 'gameversionfeatures',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVersionFeature.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersionFeatureResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameVersionFeature>(1, _omitFieldNames ? '' : 'gameversionfeatures', $pb.PbFieldType.PM, subBuilder: GameVersionFeature.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureResult clone() =>
-      GameVersionFeatureResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureResult copyWith(
-    void Function(GameVersionFeatureResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as GameVersionFeatureResult))
-          as GameVersionFeatureResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureResult clone() => GameVersionFeatureResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureResult copyWith(void Function(GameVersionFeatureResult) updates) => super.copyWith((message) => updates(message as GameVersionFeatureResult)) as GameVersionFeatureResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameVersionFeatureResult create() => GameVersionFeatureResult._();
   GameVersionFeatureResult createEmptyInstance() => create();
-  static $pb.PbList<GameVersionFeatureResult> createRepeated() =>
-      $pb.PbList<GameVersionFeatureResult>();
+  static $pb.PbList<GameVersionFeatureResult> createRepeated() => $pb.PbList<GameVersionFeatureResult>();
   @$core.pragma('dart2js:noInline')
-  static GameVersionFeatureResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureResult>(create);
+  static GameVersionFeatureResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureResult>(create);
   static GameVersionFeatureResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -6367,78 +6326,45 @@ class GameVersionFeature extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersionFeature._() : super();
-  factory GameVersionFeature.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersionFeature.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersionFeature.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersionFeature.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersionFeature',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<GameVersionFeatureCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: GameVersionFeatureCategoryEnum.BOOLEAN,
-      valueOf: GameVersionFeatureCategoryEnum.valueOf,
-      enumValues: GameVersionFeatureCategoryEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersionFeature', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<GameVersionFeatureCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: GameVersionFeatureCategoryEnum.BOOLEAN, valueOf: GameVersionFeatureCategoryEnum.valueOf, enumValues: GameVersionFeatureCategoryEnum.values)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'position', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'title')
-    ..pc<GameVersionFeatureValue>(
-      6,
-      _omitFieldNames ? '' : 'values',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVersionFeatureValue.create,
-    )
+    ..pc<GameVersionFeatureValue>(6, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: GameVersionFeatureValue.create)
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameVersionFeature clone() => GameVersionFeature()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersionFeature copyWith(void Function(GameVersionFeature) updates) =>
-      super.copyWith((message) => updates(message as GameVersionFeature))
-          as GameVersionFeature;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersionFeature copyWith(void Function(GameVersionFeature) updates) => super.copyWith((message) => updates(message as GameVersionFeature)) as GameVersionFeature;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameVersionFeature create() => GameVersionFeature._();
   GameVersionFeature createEmptyInstance() => create();
-  static $pb.PbList<GameVersionFeature> createRepeated() =>
-      $pb.PbList<GameVersionFeature>();
+  static $pb.PbList<GameVersionFeature> createRepeated() => $pb.PbList<GameVersionFeature>();
   @$core.pragma('dart2js:noInline')
-  static GameVersionFeature getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersionFeature>(create);
+  static GameVersionFeature getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersionFeature>(create);
   static GameVersionFeature? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -6447,10 +6373,7 @@ class GameVersionFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GameVersionFeatureCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(GameVersionFeatureCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(GameVersionFeatureCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -6459,10 +6382,7 @@ class GameVersionFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -6471,10 +6391,7 @@ class GameVersionFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get position => $_getIZ(3);
   @$pb.TagNumber(4)
-  set position($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set position($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasPosition() => $_has(3);
   @$pb.TagNumber(4)
@@ -6483,10 +6400,7 @@ class GameVersionFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get title => $_getSZ(4);
   @$pb.TagNumber(5)
-  set title($core.String v) {
-    $_setString(4, v);
-  }
-
+  set title($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasTitle() => $_has(4);
   @$pb.TagNumber(5)
@@ -6498,10 +6412,7 @@ class GameVersionFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -6519,61 +6430,37 @@ class GameVersionFeatureValueResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersionFeatureValueResult._() : super();
-  factory GameVersionFeatureValueResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersionFeatureValueResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersionFeatureValueResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersionFeatureValueResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersionFeatureValueResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameVersionFeatureValue>(
-      1,
-      _omitFieldNames ? '' : 'gameversionfeaturevalues',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVersionFeatureValue.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersionFeatureValueResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameVersionFeatureValue>(1, _omitFieldNames ? '' : 'gameversionfeaturevalues', $pb.PbFieldType.PM, subBuilder: GameVersionFeatureValue.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureValueResult clone() =>
-      GameVersionFeatureValueResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureValueResult copyWith(
-    void Function(GameVersionFeatureValueResult) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as GameVersionFeatureValueResult),
-      ) as GameVersionFeatureValueResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureValueResult clone() => GameVersionFeatureValueResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureValueResult copyWith(void Function(GameVersionFeatureValueResult) updates) => super.copyWith((message) => updates(message as GameVersionFeatureValueResult)) as GameVersionFeatureValueResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GameVersionFeatureValueResult create() =>
-      GameVersionFeatureValueResult._();
+  static GameVersionFeatureValueResult create() => GameVersionFeatureValueResult._();
   GameVersionFeatureValueResult createEmptyInstance() => create();
-  static $pb.PbList<GameVersionFeatureValueResult> createRepeated() =>
-      $pb.PbList<GameVersionFeatureValueResult>();
+  static $pb.PbList<GameVersionFeatureValueResult> createRepeated() => $pb.PbList<GameVersionFeatureValueResult>();
   @$core.pragma('dart2js:noInline')
-  static GameVersionFeatureValueResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureValueResult>(create);
+  static GameVersionFeatureValueResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureValueResult>(create);
   static GameVersionFeatureValueResult? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<GameVersionFeatureValue> get gameversionfeaturevalues =>
-      $_getList(0);
+  $core.List<GameVersionFeatureValue> get gameversionfeaturevalues => $_getList(0);
 }
 
 class GameVersionFeatureValue extends $pb.GeneratedMessage {
@@ -6607,79 +6494,44 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
     return $result;
   }
   GameVersionFeatureValue._() : super();
-  factory GameVersionFeatureValue.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVersionFeatureValue.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVersionFeatureValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVersionFeatureValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVersionFeatureValue',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVersionFeatureValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOM<Game>(2, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
-    ..aOM<GameVersionFeature>(
-      3,
-      _omitFieldNames ? '' : 'gameFeature',
-      subBuilder: GameVersionFeature.create,
-    )
-    ..e<GameVersionFeatureValueIncludedFeatureEnum>(
-      4,
-      _omitFieldNames ? '' : 'includedFeature',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: GameVersionFeatureValueIncludedFeatureEnum.NOT_INCLUDED,
-      valueOf: GameVersionFeatureValueIncludedFeatureEnum.valueOf,
-      enumValues: GameVersionFeatureValueIncludedFeatureEnum.values,
-    )
+    ..aOM<GameVersionFeature>(3, _omitFieldNames ? '' : 'gameFeature', subBuilder: GameVersionFeature.create)
+    ..e<GameVersionFeatureValueIncludedFeatureEnum>(4, _omitFieldNames ? '' : 'includedFeature', $pb.PbFieldType.OE, defaultOrMaker: GameVersionFeatureValueIncludedFeatureEnum.NOT_INCLUDED, valueOf: GameVersionFeatureValueIncludedFeatureEnum.valueOf, enumValues: GameVersionFeatureValueIncludedFeatureEnum.values)
     ..aOS(5, _omitFieldNames ? '' : 'note')
     ..aOS(6, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureValue clone() =>
-      GameVersionFeatureValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVersionFeatureValue copyWith(
-    void Function(GameVersionFeatureValue) updates,
-  ) =>
-      super.copyWith((message) => updates(message as GameVersionFeatureValue))
-          as GameVersionFeatureValue;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureValue clone() => GameVersionFeatureValue()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVersionFeatureValue copyWith(void Function(GameVersionFeatureValue) updates) => super.copyWith((message) => updates(message as GameVersionFeatureValue)) as GameVersionFeatureValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameVersionFeatureValue create() => GameVersionFeatureValue._();
   GameVersionFeatureValue createEmptyInstance() => create();
-  static $pb.PbList<GameVersionFeatureValue> createRepeated() =>
-      $pb.PbList<GameVersionFeatureValue>();
+  static $pb.PbList<GameVersionFeatureValue> createRepeated() => $pb.PbList<GameVersionFeatureValue>();
   @$core.pragma('dart2js:noInline')
-  static GameVersionFeatureValue getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureValue>(create);
+  static GameVersionFeatureValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVersionFeatureValue>(create);
   static GameVersionFeatureValue? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -6688,10 +6540,7 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Game get game => $_getN(1);
   @$pb.TagNumber(2)
-  set game(Game v) {
-    setField(2, v);
-  }
-
+  set game(Game v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGame() => $_has(1);
   @$pb.TagNumber(2)
@@ -6702,10 +6551,7 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   GameVersionFeature get gameFeature => $_getN(2);
   @$pb.TagNumber(3)
-  set gameFeature(GameVersionFeature v) {
-    setField(3, v);
-  }
-
+  set gameFeature(GameVersionFeature v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGameFeature() => $_has(2);
   @$pb.TagNumber(3)
@@ -6716,10 +6562,7 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   GameVersionFeatureValueIncludedFeatureEnum get includedFeature => $_getN(3);
   @$pb.TagNumber(4)
-  set includedFeature(GameVersionFeatureValueIncludedFeatureEnum v) {
-    setField(4, v);
-  }
-
+  set includedFeature(GameVersionFeatureValueIncludedFeatureEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasIncludedFeature() => $_has(3);
   @$pb.TagNumber(4)
@@ -6728,10 +6571,7 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get note => $_getSZ(4);
   @$pb.TagNumber(5)
-  set note($core.String v) {
-    $_setString(4, v);
-  }
-
+  set note($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasNote() => $_has(4);
   @$pb.TagNumber(5)
@@ -6740,10 +6580,7 @@ class GameVersionFeatureValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get checksum => $_getSZ(5);
   @$pb.TagNumber(6)
-  set checksum($core.String v) {
-    $_setString(5, v);
-  }
-
+  set checksum($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasChecksum() => $_has(5);
   @$pb.TagNumber(6)
@@ -6761,51 +6598,33 @@ class GameVideoResult extends $pb.GeneratedMessage {
     return $result;
   }
   GameVideoResult._() : super();
-  factory GameVideoResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVideoResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVideoResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVideoResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVideoResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<GameVideo>(
-      1,
-      _omitFieldNames ? '' : 'gamevideos',
-      $pb.PbFieldType.PM,
-      subBuilder: GameVideo.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVideoResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<GameVideo>(1, _omitFieldNames ? '' : 'gamevideos', $pb.PbFieldType.PM, subBuilder: GameVideo.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameVideoResult clone() => GameVideoResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVideoResult copyWith(void Function(GameVideoResult) updates) =>
-      super.copyWith((message) => updates(message as GameVideoResult))
-          as GameVideoResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVideoResult copyWith(void Function(GameVideoResult) updates) => super.copyWith((message) => updates(message as GameVideoResult)) as GameVideoResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GameVideoResult create() => GameVideoResult._();
   GameVideoResult createEmptyInstance() => create();
-  static $pb.PbList<GameVideoResult> createRepeated() =>
-      $pb.PbList<GameVideoResult>();
+  static $pb.PbList<GameVideoResult> createRepeated() => $pb.PbList<GameVideoResult>();
   @$core.pragma('dart2js:noInline')
-  static GameVideoResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GameVideoResult>(create);
+  static GameVideoResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVideoResult>(create);
   static GameVideoResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -6839,43 +6658,28 @@ class GameVideo extends $pb.GeneratedMessage {
     return $result;
   }
   GameVideo._() : super();
-  factory GameVideo.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GameVideo.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GameVideo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GameVideo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GameVideo',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GameVideo', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOM<Game>(2, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'videoId')
     ..aOS(5, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GameVideo clone() => GameVideo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GameVideo copyWith(void Function(GameVideo) updates) =>
-      super.copyWith((message) => updates(message as GameVideo)) as GameVideo;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GameVideo copyWith(void Function(GameVideo) updates) => super.copyWith((message) => updates(message as GameVideo)) as GameVideo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -6884,17 +6688,13 @@ class GameVideo extends $pb.GeneratedMessage {
   GameVideo createEmptyInstance() => create();
   static $pb.PbList<GameVideo> createRepeated() => $pb.PbList<GameVideo>();
   @$core.pragma('dart2js:noInline')
-  static GameVideo getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVideo>(create);
+  static GameVideo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GameVideo>(create);
   static GameVideo? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -6903,10 +6703,7 @@ class GameVideo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Game get game => $_getN(1);
   @$pb.TagNumber(2)
-  set game(Game v) {
-    setField(2, v);
-  }
-
+  set game(Game v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGame() => $_has(1);
   @$pb.TagNumber(2)
@@ -6917,10 +6714,7 @@ class GameVideo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -6929,10 +6723,7 @@ class GameVideo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get videoId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set videoId($core.String v) {
-    $_setString(3, v);
-  }
-
+  set videoId($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasVideoId() => $_has(3);
   @$pb.TagNumber(4)
@@ -6941,10 +6732,7 @@ class GameVideo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
   @$pb.TagNumber(5)
-  set checksum($core.String v) {
-    $_setString(4, v);
-  }
-
+  set checksum($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
@@ -6962,40 +6750,24 @@ class GenreResult extends $pb.GeneratedMessage {
     return $result;
   }
   GenreResult._() : super();
-  factory GenreResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GenreResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory GenreResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GenreResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'GenreResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Genre>(
-      1,
-      _omitFieldNames ? '' : 'genres',
-      $pb.PbFieldType.PM,
-      subBuilder: Genre.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenreResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Genre>(1, _omitFieldNames ? '' : 'genres', $pb.PbFieldType.PM, subBuilder: Genre.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   GenreResult clone() => GenreResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  GenreResult copyWith(void Function(GenreResult) updates) =>
-      super.copyWith((message) => updates(message as GenreResult))
-          as GenreResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GenreResult copyWith(void Function(GenreResult) updates) => super.copyWith((message) => updates(message as GenreResult)) as GenreResult;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -7004,8 +6776,7 @@ class GenreResult extends $pb.GeneratedMessage {
   GenreResult createEmptyInstance() => create();
   static $pb.PbList<GenreResult> createRepeated() => $pb.PbList<GenreResult>();
   @$core.pragma('dart2js:noInline')
-  static GenreResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GenreResult>(create);
+  static GenreResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GenreResult>(create);
   static GenreResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -7047,53 +6818,30 @@ class Genre extends $pb.GeneratedMessage {
     return $result;
   }
   Genre._() : super();
-  factory Genre.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Genre.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Genre.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Genre.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Genre',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Genre', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Genre clone() => Genre()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Genre copyWith(void Function(Genre) updates) =>
-      super.copyWith((message) => updates(message as Genre)) as Genre;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Genre copyWith(void Function(Genre) updates) => super.copyWith((message) => updates(message as Genre)) as Genre;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -7102,17 +6850,13 @@ class Genre extends $pb.GeneratedMessage {
   Genre createEmptyInstance() => create();
   static $pb.PbList<Genre> createRepeated() => $pb.PbList<Genre>();
   @$core.pragma('dart2js:noInline')
-  static Genre getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Genre>(create);
+  static Genre getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Genre>(create);
   static Genre? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -7121,10 +6865,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -7135,10 +6876,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -7147,10 +6885,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get slug => $_getSZ(3);
   @$pb.TagNumber(4)
-  set slug($core.String v) {
-    $_setString(3, v);
-  }
-
+  set slug($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlug() => $_has(3);
   @$pb.TagNumber(4)
@@ -7159,10 +6894,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -7173,10 +6905,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -7185,10 +6914,7 @@ class Genre extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -7206,54 +6932,33 @@ class InvolvedCompanyResult extends $pb.GeneratedMessage {
     return $result;
   }
   InvolvedCompanyResult._() : super();
-  factory InvolvedCompanyResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InvolvedCompanyResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory InvolvedCompanyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory InvolvedCompanyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'InvolvedCompanyResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<InvolvedCompany>(
-      1,
-      _omitFieldNames ? '' : 'involvedcompanies',
-      $pb.PbFieldType.PM,
-      subBuilder: InvolvedCompany.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InvolvedCompanyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<InvolvedCompany>(1, _omitFieldNames ? '' : 'involvedcompanies', $pb.PbFieldType.PM, subBuilder: InvolvedCompany.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  InvolvedCompanyResult clone() =>
-      InvolvedCompanyResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  InvolvedCompanyResult copyWith(
-    void Function(InvolvedCompanyResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as InvolvedCompanyResult))
-          as InvolvedCompanyResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  InvolvedCompanyResult clone() => InvolvedCompanyResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  InvolvedCompanyResult copyWith(void Function(InvolvedCompanyResult) updates) => super.copyWith((message) => updates(message as InvolvedCompanyResult)) as InvolvedCompanyResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InvolvedCompanyResult create() => InvolvedCompanyResult._();
   InvolvedCompanyResult createEmptyInstance() => create();
-  static $pb.PbList<InvolvedCompanyResult> createRepeated() =>
-      $pb.PbList<InvolvedCompanyResult>();
+  static $pb.PbList<InvolvedCompanyResult> createRepeated() => $pb.PbList<InvolvedCompanyResult>();
   @$core.pragma('dart2js:noInline')
-  static InvolvedCompanyResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<InvolvedCompanyResult>(create);
+  static InvolvedCompanyResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InvolvedCompanyResult>(create);
   static InvolvedCompanyResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -7307,81 +7012,48 @@ class InvolvedCompany extends $pb.GeneratedMessage {
     return $result;
   }
   InvolvedCompany._() : super();
-  factory InvolvedCompany.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InvolvedCompany.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory InvolvedCompany.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory InvolvedCompany.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'InvolvedCompany',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<Company>(
-      2,
-      _omitFieldNames ? '' : 'company',
-      subBuilder: Company.create,
-    )
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InvolvedCompany', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<Company>(2, _omitFieldNames ? '' : 'company', subBuilder: Company.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'developer')
     ..aOM<Game>(5, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOB(6, _omitFieldNames ? '' : 'porting')
     ..aOB(7, _omitFieldNames ? '' : 'publisher')
     ..aOB(8, _omitFieldNames ? '' : 'supporting')
-    ..aOM<$0.Timestamp>(
-      9,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   InvolvedCompany clone() => InvolvedCompany()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  InvolvedCompany copyWith(void Function(InvolvedCompany) updates) =>
-      super.copyWith((message) => updates(message as InvolvedCompany))
-          as InvolvedCompany;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  InvolvedCompany copyWith(void Function(InvolvedCompany) updates) => super.copyWith((message) => updates(message as InvolvedCompany)) as InvolvedCompany;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InvolvedCompany create() => InvolvedCompany._();
   InvolvedCompany createEmptyInstance() => create();
-  static $pb.PbList<InvolvedCompany> createRepeated() =>
-      $pb.PbList<InvolvedCompany>();
+  static $pb.PbList<InvolvedCompany> createRepeated() => $pb.PbList<InvolvedCompany>();
   @$core.pragma('dart2js:noInline')
-  static InvolvedCompany getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<InvolvedCompany>(create);
+  static InvolvedCompany getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InvolvedCompany>(create);
   static InvolvedCompany? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -7390,10 +7062,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Company get company => $_getN(1);
   @$pb.TagNumber(2)
-  set company(Company v) {
-    setField(2, v);
-  }
-
+  set company(Company v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCompany() => $_has(1);
   @$pb.TagNumber(2)
@@ -7404,10 +7073,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -7418,10 +7084,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get developer => $_getBF(3);
   @$pb.TagNumber(4)
-  set developer($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set developer($core.bool v) { $_setBool(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeveloper() => $_has(3);
   @$pb.TagNumber(4)
@@ -7430,10 +7093,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Game get game => $_getN(4);
   @$pb.TagNumber(5)
-  set game(Game v) {
-    setField(5, v);
-  }
-
+  set game(Game v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGame() => $_has(4);
   @$pb.TagNumber(5)
@@ -7444,10 +7104,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get porting => $_getBF(5);
   @$pb.TagNumber(6)
-  set porting($core.bool v) {
-    $_setBool(5, v);
-  }
-
+  set porting($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasPorting() => $_has(5);
   @$pb.TagNumber(6)
@@ -7456,10 +7113,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get publisher => $_getBF(6);
   @$pb.TagNumber(7)
-  set publisher($core.bool v) {
-    $_setBool(6, v);
-  }
-
+  set publisher($core.bool v) { $_setBool(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasPublisher() => $_has(6);
   @$pb.TagNumber(7)
@@ -7468,10 +7122,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get supporting => $_getBF(7);
   @$pb.TagNumber(8)
-  set supporting($core.bool v) {
-    $_setBool(7, v);
-  }
-
+  set supporting($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasSupporting() => $_has(7);
   @$pb.TagNumber(8)
@@ -7480,10 +7131,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $0.Timestamp get updatedAt => $_getN(8);
   @$pb.TagNumber(9)
-  set updatedAt($0.Timestamp v) {
-    setField(9, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdatedAt() => $_has(8);
   @$pb.TagNumber(9)
@@ -7494,10 +7142,7 @@ class InvolvedCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get checksum => $_getSZ(9);
   @$pb.TagNumber(10)
-  set checksum($core.String v) {
-    $_setString(9, v);
-  }
-
+  set checksum($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasChecksum() => $_has(9);
   @$pb.TagNumber(10)
@@ -7515,51 +7160,33 @@ class KeywordResult extends $pb.GeneratedMessage {
     return $result;
   }
   KeywordResult._() : super();
-  factory KeywordResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory KeywordResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory KeywordResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory KeywordResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'KeywordResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Keyword>(
-      1,
-      _omitFieldNames ? '' : 'keywords',
-      $pb.PbFieldType.PM,
-      subBuilder: Keyword.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Keyword>(1, _omitFieldNames ? '' : 'keywords', $pb.PbFieldType.PM, subBuilder: Keyword.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   KeywordResult clone() => KeywordResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  KeywordResult copyWith(void Function(KeywordResult) updates) =>
-      super.copyWith((message) => updates(message as KeywordResult))
-          as KeywordResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  KeywordResult copyWith(void Function(KeywordResult) updates) => super.copyWith((message) => updates(message as KeywordResult)) as KeywordResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KeywordResult create() => KeywordResult._();
   KeywordResult createEmptyInstance() => create();
-  static $pb.PbList<KeywordResult> createRepeated() =>
-      $pb.PbList<KeywordResult>();
+  static $pb.PbList<KeywordResult> createRepeated() => $pb.PbList<KeywordResult>();
   @$core.pragma('dart2js:noInline')
-  static KeywordResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<KeywordResult>(create);
+  static KeywordResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KeywordResult>(create);
   static KeywordResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -7601,53 +7228,30 @@ class Keyword extends $pb.GeneratedMessage {
     return $result;
   }
   Keyword._() : super();
-  factory Keyword.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Keyword.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Keyword.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Keyword.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Keyword',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Keyword', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Keyword clone() => Keyword()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Keyword copyWith(void Function(Keyword) updates) =>
-      super.copyWith((message) => updates(message as Keyword)) as Keyword;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Keyword copyWith(void Function(Keyword) updates) => super.copyWith((message) => updates(message as Keyword)) as Keyword;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -7656,17 +7260,13 @@ class Keyword extends $pb.GeneratedMessage {
   Keyword createEmptyInstance() => create();
   static $pb.PbList<Keyword> createRepeated() => $pb.PbList<Keyword>();
   @$core.pragma('dart2js:noInline')
-  static Keyword getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Keyword>(create);
+  static Keyword getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Keyword>(create);
   static Keyword? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -7675,10 +7275,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -7689,10 +7286,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -7701,10 +7295,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get slug => $_getSZ(3);
   @$pb.TagNumber(4)
-  set slug($core.String v) {
-    $_setString(3, v);
-  }
-
+  set slug($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlug() => $_has(3);
   @$pb.TagNumber(4)
@@ -7713,10 +7304,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -7727,10 +7315,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -7739,10 +7324,7 @@ class Keyword extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -7760,51 +7342,33 @@ class LanguageResult extends $pb.GeneratedMessage {
     return $result;
   }
   LanguageResult._() : super();
-  factory LanguageResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LanguageResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory LanguageResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LanguageResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'LanguageResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Language>(
-      1,
-      _omitFieldNames ? '' : 'languages',
-      $pb.PbFieldType.PM,
-      subBuilder: Language.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Language>(1, _omitFieldNames ? '' : 'languages', $pb.PbFieldType.PM, subBuilder: Language.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   LanguageResult clone() => LanguageResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  LanguageResult copyWith(void Function(LanguageResult) updates) =>
-      super.copyWith((message) => updates(message as LanguageResult))
-          as LanguageResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LanguageResult copyWith(void Function(LanguageResult) updates) => super.copyWith((message) => updates(message as LanguageResult)) as LanguageResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LanguageResult create() => LanguageResult._();
   LanguageResult createEmptyInstance() => create();
-  static $pb.PbList<LanguageResult> createRepeated() =>
-      $pb.PbList<LanguageResult>();
+  static $pb.PbList<LanguageResult> createRepeated() => $pb.PbList<LanguageResult>();
   @$core.pragma('dart2js:noInline')
-  static LanguageResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<LanguageResult>(create);
+  static LanguageResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LanguageResult>(create);
   static LanguageResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -7846,53 +7410,30 @@ class Language extends $pb.GeneratedMessage {
     return $result;
   }
   Language._() : super();
-  factory Language.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Language.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Language.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Language.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Language',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Language', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'nativeName')
     ..aOS(4, _omitFieldNames ? '' : 'locale')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Language clone() => Language()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Language copyWith(void Function(Language) updates) =>
-      super.copyWith((message) => updates(message as Language)) as Language;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Language copyWith(void Function(Language) updates) => super.copyWith((message) => updates(message as Language)) as Language;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -7901,17 +7442,13 @@ class Language extends $pb.GeneratedMessage {
   Language createEmptyInstance() => create();
   static $pb.PbList<Language> createRepeated() => $pb.PbList<Language>();
   @$core.pragma('dart2js:noInline')
-  static Language getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Language>(create);
+  static Language getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Language>(create);
   static Language? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -7920,10 +7457,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -7932,10 +7466,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get nativeName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set nativeName($core.String v) {
-    $_setString(2, v);
-  }
-
+  set nativeName($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasNativeName() => $_has(2);
   @$pb.TagNumber(3)
@@ -7944,10 +7475,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get locale => $_getSZ(3);
   @$pb.TagNumber(4)
-  set locale($core.String v) {
-    $_setString(3, v);
-  }
-
+  set locale($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasLocale() => $_has(3);
   @$pb.TagNumber(4)
@@ -7956,10 +7484,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get createdAt => $_getN(4);
   @$pb.TagNumber(5)
-  set createdAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -7970,10 +7495,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -7984,10 +7506,7 @@ class Language extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -8005,54 +7524,33 @@ class LanguageSupportResult extends $pb.GeneratedMessage {
     return $result;
   }
   LanguageSupportResult._() : super();
-  factory LanguageSupportResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LanguageSupportResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory LanguageSupportResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LanguageSupportResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'LanguageSupportResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<LanguageSupport>(
-      1,
-      _omitFieldNames ? '' : 'languagesupports',
-      $pb.PbFieldType.PM,
-      subBuilder: LanguageSupport.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageSupportResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<LanguageSupport>(1, _omitFieldNames ? '' : 'languagesupports', $pb.PbFieldType.PM, subBuilder: LanguageSupport.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  LanguageSupportResult clone() =>
-      LanguageSupportResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  LanguageSupportResult copyWith(
-    void Function(LanguageSupportResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as LanguageSupportResult))
-          as LanguageSupportResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  LanguageSupportResult clone() => LanguageSupportResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LanguageSupportResult copyWith(void Function(LanguageSupportResult) updates) => super.copyWith((message) => updates(message as LanguageSupportResult)) as LanguageSupportResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LanguageSupportResult create() => LanguageSupportResult._();
   LanguageSupportResult createEmptyInstance() => create();
-  static $pb.PbList<LanguageSupportResult> createRepeated() =>
-      $pb.PbList<LanguageSupportResult>();
+  static $pb.PbList<LanguageSupportResult> createRepeated() => $pb.PbList<LanguageSupportResult>();
   @$core.pragma('dart2js:noInline')
-  static LanguageSupportResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<LanguageSupportResult>(create);
+  static LanguageSupportResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LanguageSupportResult>(create);
   static LanguageSupportResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -8094,82 +7592,45 @@ class LanguageSupport extends $pb.GeneratedMessage {
     return $result;
   }
   LanguageSupport._() : super();
-  factory LanguageSupport.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LanguageSupport.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory LanguageSupport.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LanguageSupport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'LanguageSupport',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageSupport', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOM<Game>(2, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
-    ..aOM<Language>(
-      3,
-      _omitFieldNames ? '' : 'language',
-      subBuilder: Language.create,
-    )
-    ..aOM<LanguageSupportType>(
-      4,
-      _omitFieldNames ? '' : 'languageSupportType',
-      subBuilder: LanguageSupportType.create,
-    )
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<Language>(3, _omitFieldNames ? '' : 'language', subBuilder: Language.create)
+    ..aOM<LanguageSupportType>(4, _omitFieldNames ? '' : 'languageSupportType', subBuilder: LanguageSupportType.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   LanguageSupport clone() => LanguageSupport()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  LanguageSupport copyWith(void Function(LanguageSupport) updates) =>
-      super.copyWith((message) => updates(message as LanguageSupport))
-          as LanguageSupport;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LanguageSupport copyWith(void Function(LanguageSupport) updates) => super.copyWith((message) => updates(message as LanguageSupport)) as LanguageSupport;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LanguageSupport create() => LanguageSupport._();
   LanguageSupport createEmptyInstance() => create();
-  static $pb.PbList<LanguageSupport> createRepeated() =>
-      $pb.PbList<LanguageSupport>();
+  static $pb.PbList<LanguageSupport> createRepeated() => $pb.PbList<LanguageSupport>();
   @$core.pragma('dart2js:noInline')
-  static LanguageSupport getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<LanguageSupport>(create);
+  static LanguageSupport getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LanguageSupport>(create);
   static LanguageSupport? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -8178,10 +7639,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Game get game => $_getN(1);
   @$pb.TagNumber(2)
-  set game(Game v) {
-    setField(2, v);
-  }
-
+  set game(Game v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGame() => $_has(1);
   @$pb.TagNumber(2)
@@ -8192,10 +7650,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Language get language => $_getN(2);
   @$pb.TagNumber(3)
-  set language(Language v) {
-    setField(3, v);
-  }
-
+  set language(Language v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLanguage() => $_has(2);
   @$pb.TagNumber(3)
@@ -8206,10 +7661,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   LanguageSupportType get languageSupportType => $_getN(3);
   @$pb.TagNumber(4)
-  set languageSupportType(LanguageSupportType v) {
-    setField(4, v);
-  }
-
+  set languageSupportType(LanguageSupportType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLanguageSupportType() => $_has(3);
   @$pb.TagNumber(4)
@@ -8220,10 +7672,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get createdAt => $_getN(4);
   @$pb.TagNumber(5)
-  set createdAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -8234,10 +7683,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -8248,10 +7694,7 @@ class LanguageSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -8269,54 +7712,33 @@ class LanguageSupportTypeResult extends $pb.GeneratedMessage {
     return $result;
   }
   LanguageSupportTypeResult._() : super();
-  factory LanguageSupportTypeResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LanguageSupportTypeResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory LanguageSupportTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LanguageSupportTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'LanguageSupportTypeResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<LanguageSupportType>(
-      1,
-      _omitFieldNames ? '' : 'languagesupporttypes',
-      $pb.PbFieldType.PM,
-      subBuilder: LanguageSupportType.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageSupportTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<LanguageSupportType>(1, _omitFieldNames ? '' : 'languagesupporttypes', $pb.PbFieldType.PM, subBuilder: LanguageSupportType.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  LanguageSupportTypeResult clone() =>
-      LanguageSupportTypeResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  LanguageSupportTypeResult copyWith(
-    void Function(LanguageSupportTypeResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as LanguageSupportTypeResult))
-          as LanguageSupportTypeResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  LanguageSupportTypeResult clone() => LanguageSupportTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LanguageSupportTypeResult copyWith(void Function(LanguageSupportTypeResult) updates) => super.copyWith((message) => updates(message as LanguageSupportTypeResult)) as LanguageSupportTypeResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LanguageSupportTypeResult create() => LanguageSupportTypeResult._();
   LanguageSupportTypeResult createEmptyInstance() => create();
-  static $pb.PbList<LanguageSupportTypeResult> createRepeated() =>
-      $pb.PbList<LanguageSupportTypeResult>();
+  static $pb.PbList<LanguageSupportTypeResult> createRepeated() => $pb.PbList<LanguageSupportTypeResult>();
   @$core.pragma('dart2js:noInline')
-  static LanguageSupportTypeResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<LanguageSupportTypeResult>(create);
+  static LanguageSupportTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LanguageSupportTypeResult>(create);
   static LanguageSupportTypeResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -8350,72 +7772,43 @@ class LanguageSupportType extends $pb.GeneratedMessage {
     return $result;
   }
   LanguageSupportType._() : super();
-  factory LanguageSupportType.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory LanguageSupportType.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory LanguageSupportType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LanguageSupportType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'LanguageSupportType',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageSupportType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      4,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   LanguageSupportType clone() => LanguageSupportType()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  LanguageSupportType copyWith(void Function(LanguageSupportType) updates) =>
-      super.copyWith((message) => updates(message as LanguageSupportType))
-          as LanguageSupportType;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LanguageSupportType copyWith(void Function(LanguageSupportType) updates) => super.copyWith((message) => updates(message as LanguageSupportType)) as LanguageSupportType;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LanguageSupportType create() => LanguageSupportType._();
   LanguageSupportType createEmptyInstance() => create();
-  static $pb.PbList<LanguageSupportType> createRepeated() =>
-      $pb.PbList<LanguageSupportType>();
+  static $pb.PbList<LanguageSupportType> createRepeated() => $pb.PbList<LanguageSupportType>();
   @$core.pragma('dart2js:noInline')
-  static LanguageSupportType getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<LanguageSupportType>(create);
+  static LanguageSupportType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LanguageSupportType>(create);
   static LanguageSupportType? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -8424,10 +7817,7 @@ class LanguageSupportType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -8436,10 +7826,7 @@ class LanguageSupportType extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -8450,10 +7837,7 @@ class LanguageSupportType extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Timestamp get updatedAt => $_getN(3);
   @$pb.TagNumber(4)
-  set updatedAt($0.Timestamp v) {
-    setField(4, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdatedAt() => $_has(3);
   @$pb.TagNumber(4)
@@ -8464,10 +7848,7 @@ class LanguageSupportType extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
   @$pb.TagNumber(5)
-  set checksum($core.String v) {
-    $_setString(4, v);
-  }
-
+  set checksum($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
@@ -8485,54 +7866,33 @@ class MultiplayerModeResult extends $pb.GeneratedMessage {
     return $result;
   }
   MultiplayerModeResult._() : super();
-  factory MultiplayerModeResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MultiplayerModeResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory MultiplayerModeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MultiplayerModeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'MultiplayerModeResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<MultiplayerMode>(
-      1,
-      _omitFieldNames ? '' : 'multiplayermodes',
-      $pb.PbFieldType.PM,
-      subBuilder: MultiplayerMode.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MultiplayerModeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<MultiplayerMode>(1, _omitFieldNames ? '' : 'multiplayermodes', $pb.PbFieldType.PM, subBuilder: MultiplayerMode.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  MultiplayerModeResult clone() =>
-      MultiplayerModeResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  MultiplayerModeResult copyWith(
-    void Function(MultiplayerModeResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as MultiplayerModeResult))
-          as MultiplayerModeResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MultiplayerModeResult clone() => MultiplayerModeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MultiplayerModeResult copyWith(void Function(MultiplayerModeResult) updates) => super.copyWith((message) => updates(message as MultiplayerModeResult)) as MultiplayerModeResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MultiplayerModeResult create() => MultiplayerModeResult._();
   MultiplayerModeResult createEmptyInstance() => create();
-  static $pb.PbList<MultiplayerModeResult> createRepeated() =>
-      $pb.PbList<MultiplayerModeResult>();
+  static $pb.PbList<MultiplayerModeResult> createRepeated() => $pb.PbList<MultiplayerModeResult>();
   @$core.pragma('dart2js:noInline')
-  static MultiplayerModeResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<MultiplayerModeResult>(create);
+  static MultiplayerModeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MultiplayerModeResult>(create);
   static MultiplayerModeResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -8606,86 +7966,53 @@ class MultiplayerMode extends $pb.GeneratedMessage {
     return $result;
   }
   MultiplayerMode._() : super();
-  factory MultiplayerMode.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MultiplayerMode.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory MultiplayerMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MultiplayerMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'MultiplayerMode',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MultiplayerMode', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'campaigncoop')
     ..aOB(3, _omitFieldNames ? '' : 'dropin')
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOB(5, _omitFieldNames ? '' : 'lancoop')
     ..aOB(6, _omitFieldNames ? '' : 'offlinecoop')
-    ..a<$core.int>(
-      7,
-      _omitFieldNames ? '' : 'offlinecoopmax',
-      $pb.PbFieldType.O3,
-    )
+    ..a<$core.int>(7, _omitFieldNames ? '' : 'offlinecoopmax', $pb.PbFieldType.O3)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'offlinemax', $pb.PbFieldType.O3)
     ..aOB(9, _omitFieldNames ? '' : 'onlinecoop')
-    ..a<$core.int>(
-      10,
-      _omitFieldNames ? '' : 'onlinecoopmax',
-      $pb.PbFieldType.O3,
-    )
+    ..a<$core.int>(10, _omitFieldNames ? '' : 'onlinecoopmax', $pb.PbFieldType.O3)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'onlinemax', $pb.PbFieldType.O3)
-    ..aOM<Platform>(
-      12,
-      _omitFieldNames ? '' : 'platform',
-      subBuilder: Platform.create,
-    )
+    ..aOM<Platform>(12, _omitFieldNames ? '' : 'platform', subBuilder: Platform.create)
     ..aOB(13, _omitFieldNames ? '' : 'splitscreen')
     ..aOB(14, _omitFieldNames ? '' : 'splitscreenonline')
     ..aOS(15, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   MultiplayerMode clone() => MultiplayerMode()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  MultiplayerMode copyWith(void Function(MultiplayerMode) updates) =>
-      super.copyWith((message) => updates(message as MultiplayerMode))
-          as MultiplayerMode;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MultiplayerMode copyWith(void Function(MultiplayerMode) updates) => super.copyWith((message) => updates(message as MultiplayerMode)) as MultiplayerMode;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MultiplayerMode create() => MultiplayerMode._();
   MultiplayerMode createEmptyInstance() => create();
-  static $pb.PbList<MultiplayerMode> createRepeated() =>
-      $pb.PbList<MultiplayerMode>();
+  static $pb.PbList<MultiplayerMode> createRepeated() => $pb.PbList<MultiplayerMode>();
   @$core.pragma('dart2js:noInline')
-  static MultiplayerMode getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<MultiplayerMode>(create);
+  static MultiplayerMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MultiplayerMode>(create);
   static MultiplayerMode? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -8694,10 +8021,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get campaigncoop => $_getBF(1);
   @$pb.TagNumber(2)
-  set campaigncoop($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set campaigncoop($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasCampaigncoop() => $_has(1);
   @$pb.TagNumber(2)
@@ -8706,10 +8030,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get dropin => $_getBF(2);
   @$pb.TagNumber(3)
-  set dropin($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set dropin($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasDropin() => $_has(2);
   @$pb.TagNumber(3)
@@ -8718,10 +8039,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -8732,10 +8050,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get lancoop => $_getBF(4);
   @$pb.TagNumber(5)
-  set lancoop($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set lancoop($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasLancoop() => $_has(4);
   @$pb.TagNumber(5)
@@ -8744,10 +8059,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get offlinecoop => $_getBF(5);
   @$pb.TagNumber(6)
-  set offlinecoop($core.bool v) {
-    $_setBool(5, v);
-  }
-
+  set offlinecoop($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasOfflinecoop() => $_has(5);
   @$pb.TagNumber(6)
@@ -8756,10 +8068,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get offlinecoopmax => $_getIZ(6);
   @$pb.TagNumber(7)
-  set offlinecoopmax($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set offlinecoopmax($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasOfflinecoopmax() => $_has(6);
   @$pb.TagNumber(7)
@@ -8768,10 +8077,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get offlinemax => $_getIZ(7);
   @$pb.TagNumber(8)
-  set offlinemax($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set offlinemax($core.int v) { $_setSignedInt32(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasOfflinemax() => $_has(7);
   @$pb.TagNumber(8)
@@ -8780,10 +8086,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool get onlinecoop => $_getBF(8);
   @$pb.TagNumber(9)
-  set onlinecoop($core.bool v) {
-    $_setBool(8, v);
-  }
-
+  set onlinecoop($core.bool v) { $_setBool(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasOnlinecoop() => $_has(8);
   @$pb.TagNumber(9)
@@ -8792,10 +8095,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get onlinecoopmax => $_getIZ(9);
   @$pb.TagNumber(10)
-  set onlinecoopmax($core.int v) {
-    $_setSignedInt32(9, v);
-  }
-
+  set onlinecoopmax($core.int v) { $_setSignedInt32(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasOnlinecoopmax() => $_has(9);
   @$pb.TagNumber(10)
@@ -8804,10 +8104,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get onlinemax => $_getIZ(10);
   @$pb.TagNumber(11)
-  set onlinemax($core.int v) {
-    $_setSignedInt32(10, v);
-  }
-
+  set onlinemax($core.int v) { $_setSignedInt32(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasOnlinemax() => $_has(10);
   @$pb.TagNumber(11)
@@ -8816,10 +8113,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Platform get platform => $_getN(11);
   @$pb.TagNumber(12)
-  set platform(Platform v) {
-    setField(12, v);
-  }
-
+  set platform(Platform v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPlatform() => $_has(11);
   @$pb.TagNumber(12)
@@ -8830,10 +8124,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool get splitscreen => $_getBF(12);
   @$pb.TagNumber(13)
-  set splitscreen($core.bool v) {
-    $_setBool(12, v);
-  }
-
+  set splitscreen($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasSplitscreen() => $_has(12);
   @$pb.TagNumber(13)
@@ -8842,10 +8133,7 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool get splitscreenonline => $_getBF(13);
   @$pb.TagNumber(14)
-  set splitscreenonline($core.bool v) {
-    $_setBool(13, v);
-  }
-
+  set splitscreenonline($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(14)
   $core.bool hasSplitscreenonline() => $_has(13);
   @$pb.TagNumber(14)
@@ -8854,14 +8142,173 @@ class MultiplayerMode extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get checksum => $_getSZ(14);
   @$pb.TagNumber(15)
-  set checksum($core.String v) {
-    $_setString(14, v);
-  }
-
+  set checksum($core.String v) { $_setString(14, v); }
   @$pb.TagNumber(15)
   $core.bool hasChecksum() => $_has(14);
   @$pb.TagNumber(15)
   void clearChecksum() => clearField(15);
+}
+
+class NetworkTypeResult extends $pb.GeneratedMessage {
+  factory NetworkTypeResult({
+    $core.Iterable<NetworkType>? networktypes,
+  }) {
+    final $result = create();
+    if (networktypes != null) {
+      $result.networktypes.addAll(networktypes);
+    }
+    return $result;
+  }
+  NetworkTypeResult._() : super();
+  factory NetworkTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory NetworkTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<NetworkType>(1, _omitFieldNames ? '' : 'networktypes', $pb.PbFieldType.PM, subBuilder: NetworkType.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  NetworkTypeResult clone() => NetworkTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  NetworkTypeResult copyWith(void Function(NetworkTypeResult) updates) => super.copyWith((message) => updates(message as NetworkTypeResult)) as NetworkTypeResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static NetworkTypeResult create() => NetworkTypeResult._();
+  NetworkTypeResult createEmptyInstance() => create();
+  static $pb.PbList<NetworkTypeResult> createRepeated() => $pb.PbList<NetworkTypeResult>();
+  @$core.pragma('dart2js:noInline')
+  static NetworkTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NetworkTypeResult>(create);
+  static NetworkTypeResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<NetworkType> get networktypes => $_getList(0);
+}
+
+class NetworkType extends $pb.GeneratedMessage {
+  factory NetworkType({
+    $fixnum.Int64? id,
+    $core.String? name,
+    $core.Iterable<EventNetwork>? eventNetworks,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (eventNetworks != null) {
+      $result.eventNetworks.addAll(eventNetworks);
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  NetworkType._() : super();
+  factory NetworkType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory NetworkType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..pc<EventNetwork>(3, _omitFieldNames ? '' : 'eventNetworks', $pb.PbFieldType.PM, subBuilder: EventNetwork.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(6, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  NetworkType clone() => NetworkType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  NetworkType copyWith(void Function(NetworkType) updates) => super.copyWith((message) => updates(message as NetworkType)) as NetworkType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static NetworkType create() => NetworkType._();
+  NetworkType createEmptyInstance() => create();
+  static $pb.PbList<NetworkType> createRepeated() => $pb.PbList<NetworkType>();
+  @$core.pragma('dart2js:noInline')
+  static NetworkType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NetworkType>(create);
+  static NetworkType? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get name => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set name($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearName() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.List<EventNetwork> get eventNetworks => $_getList(2);
+
+  @$pb.TagNumber(4)
+  $0.Timestamp get createdAt => $_getN(3);
+  @$pb.TagNumber(4)
+  set createdAt($0.Timestamp v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasCreatedAt() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearCreatedAt() => clearField(4);
+  @$pb.TagNumber(4)
+  $0.Timestamp ensureCreatedAt() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get updatedAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set updatedAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUpdatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearUpdatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $core.String get checksum => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set checksum($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasChecksum() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearChecksum() => clearField(6);
 }
 
 class PlatformResult extends $pb.GeneratedMessage {
@@ -8875,51 +8322,33 @@ class PlatformResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformResult._() : super();
-  factory PlatformResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Platform>(
-      1,
-      _omitFieldNames ? '' : 'platforms',
-      $pb.PbFieldType.PM,
-      subBuilder: Platform.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Platform>(1, _omitFieldNames ? '' : 'platforms', $pb.PbFieldType.PM, subBuilder: Platform.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformResult clone() => PlatformResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformResult copyWith(void Function(PlatformResult) updates) =>
-      super.copyWith((message) => updates(message as PlatformResult))
-          as PlatformResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformResult copyWith(void Function(PlatformResult) updates) => super.copyWith((message) => updates(message as PlatformResult)) as PlatformResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformResult create() => PlatformResult._();
   PlatformResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformResult> createRepeated() =>
-      $pb.PbList<PlatformResult>();
+  static $pb.PbList<PlatformResult> createRepeated() => $pb.PbList<PlatformResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformResult>(create);
+  static PlatformResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformResult>(create);
   static PlatformResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -8997,87 +8426,39 @@ class Platform extends $pb.GeneratedMessage {
     return $result;
   }
   Platform._() : super();
-  factory Platform.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Platform.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Platform.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Platform.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Platform',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Platform', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'abbreviation')
     ..aOS(3, _omitFieldNames ? '' : 'alternativeName')
-    ..e<PlatformCategoryEnum>(
-      4,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: PlatformCategoryEnum.PLATFORM_CATEGORY_NULL,
-      valueOf: PlatformCategoryEnum.valueOf,
-      enumValues: PlatformCategoryEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..e<PlatformCategoryEnum>(4, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: PlatformCategoryEnum.PLATFORM_CATEGORY_NULL, valueOf: PlatformCategoryEnum.valueOf, enumValues: PlatformCategoryEnum.values)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'generation', $pb.PbFieldType.O3)
     ..aOS(7, _omitFieldNames ? '' : 'name')
-    ..aOM<PlatformLogo>(
-      8,
-      _omitFieldNames ? '' : 'platformLogo',
-      subBuilder: PlatformLogo.create,
-    )
-    ..aOM<PlatformFamily>(
-      9,
-      _omitFieldNames ? '' : 'platformFamily',
-      subBuilder: PlatformFamily.create,
-    )
+    ..aOM<PlatformLogo>(8, _omitFieldNames ? '' : 'platformLogo', subBuilder: PlatformLogo.create)
+    ..aOM<PlatformFamily>(9, _omitFieldNames ? '' : 'platformFamily', subBuilder: PlatformFamily.create)
     ..aOS(10, _omitFieldNames ? '' : 'slug')
     ..aOS(11, _omitFieldNames ? '' : 'summary')
-    ..aOM<$0.Timestamp>(
-      12,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(12, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'url')
-    ..pc<PlatformVersion>(
-      14,
-      _omitFieldNames ? '' : 'versions',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersion.create,
-    )
-    ..pc<PlatformWebsite>(
-      15,
-      _omitFieldNames ? '' : 'websites',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformWebsite.create,
-    )
+    ..pc<PlatformVersion>(14, _omitFieldNames ? '' : 'versions', $pb.PbFieldType.PM, subBuilder: PlatformVersion.create)
+    ..pc<PlatformWebsite>(15, _omitFieldNames ? '' : 'websites', $pb.PbFieldType.PM, subBuilder: PlatformWebsite.create)
     ..aOS(16, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Platform clone() => Platform()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Platform copyWith(void Function(Platform) updates) =>
-      super.copyWith((message) => updates(message as Platform)) as Platform;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Platform copyWith(void Function(Platform) updates) => super.copyWith((message) => updates(message as Platform)) as Platform;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -9086,17 +8467,13 @@ class Platform extends $pb.GeneratedMessage {
   Platform createEmptyInstance() => create();
   static $pb.PbList<Platform> createRepeated() => $pb.PbList<Platform>();
   @$core.pragma('dart2js:noInline')
-  static Platform getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Platform>(create);
+  static Platform getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Platform>(create);
   static Platform? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -9105,10 +8482,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get abbreviation => $_getSZ(1);
   @$pb.TagNumber(2)
-  set abbreviation($core.String v) {
-    $_setString(1, v);
-  }
-
+  set abbreviation($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAbbreviation() => $_has(1);
   @$pb.TagNumber(2)
@@ -9117,10 +8491,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get alternativeName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set alternativeName($core.String v) {
-    $_setString(2, v);
-  }
-
+  set alternativeName($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAlternativeName() => $_has(2);
   @$pb.TagNumber(3)
@@ -9129,10 +8500,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   PlatformCategoryEnum get category => $_getN(3);
   @$pb.TagNumber(4)
-  set category(PlatformCategoryEnum v) {
-    setField(4, v);
-  }
-
+  set category(PlatformCategoryEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCategory() => $_has(3);
   @$pb.TagNumber(4)
@@ -9141,10 +8509,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get createdAt => $_getN(4);
   @$pb.TagNumber(5)
-  set createdAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -9155,10 +8520,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get generation => $_getIZ(5);
   @$pb.TagNumber(6)
-  set generation($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set generation($core.int v) { $_setSignedInt32(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasGeneration() => $_has(5);
   @$pb.TagNumber(6)
@@ -9167,10 +8529,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get name => $_getSZ(6);
   @$pb.TagNumber(7)
-  set name($core.String v) {
-    $_setString(6, v);
-  }
-
+  set name($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasName() => $_has(6);
   @$pb.TagNumber(7)
@@ -9179,10 +8538,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   PlatformLogo get platformLogo => $_getN(7);
   @$pb.TagNumber(8)
-  set platformLogo(PlatformLogo v) {
-    setField(8, v);
-  }
-
+  set platformLogo(PlatformLogo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPlatformLogo() => $_has(7);
   @$pb.TagNumber(8)
@@ -9193,10 +8549,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   PlatformFamily get platformFamily => $_getN(8);
   @$pb.TagNumber(9)
-  set platformFamily(PlatformFamily v) {
-    setField(9, v);
-  }
-
+  set platformFamily(PlatformFamily v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPlatformFamily() => $_has(8);
   @$pb.TagNumber(9)
@@ -9207,10 +8560,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get slug => $_getSZ(9);
   @$pb.TagNumber(10)
-  set slug($core.String v) {
-    $_setString(9, v);
-  }
-
+  set slug($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasSlug() => $_has(9);
   @$pb.TagNumber(10)
@@ -9219,10 +8569,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get summary => $_getSZ(10);
   @$pb.TagNumber(11)
-  set summary($core.String v) {
-    $_setString(10, v);
-  }
-
+  set summary($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasSummary() => $_has(10);
   @$pb.TagNumber(11)
@@ -9231,10 +8578,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $0.Timestamp get updatedAt => $_getN(11);
   @$pb.TagNumber(12)
-  set updatedAt($0.Timestamp v) {
-    setField(12, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdatedAt() => $_has(11);
   @$pb.TagNumber(12)
@@ -9245,10 +8589,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get url => $_getSZ(12);
   @$pb.TagNumber(13)
-  set url($core.String v) {
-    $_setString(12, v);
-  }
-
+  set url($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasUrl() => $_has(12);
   @$pb.TagNumber(13)
@@ -9263,10 +8604,7 @@ class Platform extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get checksum => $_getSZ(15);
   @$pb.TagNumber(16)
-  set checksum($core.String v) {
-    $_setString(15, v);
-  }
-
+  set checksum($core.String v) { $_setString(15, v); }
   @$pb.TagNumber(16)
   $core.bool hasChecksum() => $_has(15);
   @$pb.TagNumber(16)
@@ -9284,52 +8622,33 @@ class PlatformFamilyResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformFamilyResult._() : super();
-  factory PlatformFamilyResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformFamilyResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformFamilyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformFamilyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformFamilyResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformFamily>(
-      1,
-      _omitFieldNames ? '' : 'platformfamilies',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformFamily.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformFamilyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformFamily>(1, _omitFieldNames ? '' : 'platformfamilies', $pb.PbFieldType.PM, subBuilder: PlatformFamily.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformFamilyResult clone() =>
-      PlatformFamilyResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformFamilyResult copyWith(void Function(PlatformFamilyResult) updates) =>
-      super.copyWith((message) => updates(message as PlatformFamilyResult))
-          as PlatformFamilyResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformFamilyResult clone() => PlatformFamilyResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformFamilyResult copyWith(void Function(PlatformFamilyResult) updates) => super.copyWith((message) => updates(message as PlatformFamilyResult)) as PlatformFamilyResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformFamilyResult create() => PlatformFamilyResult._();
   PlatformFamilyResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformFamilyResult> createRepeated() =>
-      $pb.PbList<PlatformFamilyResult>();
+  static $pb.PbList<PlatformFamilyResult> createRepeated() => $pb.PbList<PlatformFamilyResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformFamilyResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformFamilyResult>(create);
+  static PlatformFamilyResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformFamilyResult>(create);
   static PlatformFamilyResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -9359,63 +8678,42 @@ class PlatformFamily extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformFamily._() : super();
-  factory PlatformFamily.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformFamily.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformFamily.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformFamily.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformFamily',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformFamily', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'slug')
     ..aOS(4, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformFamily clone() => PlatformFamily()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformFamily copyWith(void Function(PlatformFamily) updates) =>
-      super.copyWith((message) => updates(message as PlatformFamily))
-          as PlatformFamily;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformFamily copyWith(void Function(PlatformFamily) updates) => super.copyWith((message) => updates(message as PlatformFamily)) as PlatformFamily;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformFamily create() => PlatformFamily._();
   PlatformFamily createEmptyInstance() => create();
-  static $pb.PbList<PlatformFamily> createRepeated() =>
-      $pb.PbList<PlatformFamily>();
+  static $pb.PbList<PlatformFamily> createRepeated() => $pb.PbList<PlatformFamily>();
   @$core.pragma('dart2js:noInline')
-  static PlatformFamily getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformFamily>(create);
+  static PlatformFamily getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformFamily>(create);
   static PlatformFamily? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -9424,10 +8722,7 @@ class PlatformFamily extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -9436,10 +8731,7 @@ class PlatformFamily extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get slug => $_getSZ(2);
   @$pb.TagNumber(3)
-  set slug($core.String v) {
-    $_setString(2, v);
-  }
-
+  set slug($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasSlug() => $_has(2);
   @$pb.TagNumber(3)
@@ -9448,10 +8740,7 @@ class PlatformFamily extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get checksum => $_getSZ(3);
   @$pb.TagNumber(4)
-  set checksum($core.String v) {
-    $_setString(3, v);
-  }
-
+  set checksum($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasChecksum() => $_has(3);
   @$pb.TagNumber(4)
@@ -9469,51 +8758,33 @@ class PlatformLogoResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformLogoResult._() : super();
-  factory PlatformLogoResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformLogoResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformLogoResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformLogoResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformLogoResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformLogo>(
-      1,
-      _omitFieldNames ? '' : 'platformlogos',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformLogo.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformLogoResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformLogo>(1, _omitFieldNames ? '' : 'platformlogos', $pb.PbFieldType.PM, subBuilder: PlatformLogo.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformLogoResult clone() => PlatformLogoResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformLogoResult copyWith(void Function(PlatformLogoResult) updates) =>
-      super.copyWith((message) => updates(message as PlatformLogoResult))
-          as PlatformLogoResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformLogoResult copyWith(void Function(PlatformLogoResult) updates) => super.copyWith((message) => updates(message as PlatformLogoResult)) as PlatformLogoResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformLogoResult create() => PlatformLogoResult._();
   PlatformLogoResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformLogoResult> createRepeated() =>
-      $pb.PbList<PlatformLogoResult>();
+  static $pb.PbList<PlatformLogoResult> createRepeated() => $pb.PbList<PlatformLogoResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformLogoResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformLogoResult>(create);
+  static PlatformLogoResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformLogoResult>(create);
   static PlatformLogoResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -9559,28 +8830,11 @@ class PlatformLogo extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformLogo._() : super();
-  factory PlatformLogo.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformLogo.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformLogo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformLogo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformLogo',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformLogo', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
@@ -9588,38 +8842,34 @@ class PlatformLogo extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformLogo clone() => PlatformLogo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformLogo copyWith(void Function(PlatformLogo) updates) =>
-      super.copyWith((message) => updates(message as PlatformLogo))
-          as PlatformLogo;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformLogo copyWith(void Function(PlatformLogo) updates) => super.copyWith((message) => updates(message as PlatformLogo)) as PlatformLogo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformLogo create() => PlatformLogo._();
   PlatformLogo createEmptyInstance() => create();
-  static $pb.PbList<PlatformLogo> createRepeated() =>
-      $pb.PbList<PlatformLogo>();
+  static $pb.PbList<PlatformLogo> createRepeated() => $pb.PbList<PlatformLogo>();
   @$core.pragma('dart2js:noInline')
-  static PlatformLogo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformLogo>(create);
+  static PlatformLogo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformLogo>(create);
   static PlatformLogo? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -9628,10 +8878,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -9640,10 +8887,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -9652,10 +8896,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get height => $_getIZ(3);
   @$pb.TagNumber(4)
-  set height($core.int v) {
-    $_setSignedInt32(3, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasHeight() => $_has(3);
   @$pb.TagNumber(4)
@@ -9664,10 +8905,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get imageId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set imageId($core.String v) {
-    $_setString(4, v);
-  }
-
+  set imageId($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageId() => $_has(4);
   @$pb.TagNumber(5)
@@ -9676,10 +8914,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -9688,10 +8923,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get width => $_getIZ(6);
   @$pb.TagNumber(7)
-  set width($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasWidth() => $_has(6);
   @$pb.TagNumber(7)
@@ -9700,10 +8932,7 @@ class PlatformLogo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get checksum => $_getSZ(7);
   @$pb.TagNumber(8)
-  set checksum($core.String v) {
-    $_setString(7, v);
-  }
-
+  set checksum($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasChecksum() => $_has(7);
   @$pb.TagNumber(8)
@@ -9721,54 +8950,33 @@ class PlatformVersionResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersionResult._() : super();
-  factory PlatformVersionResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersionResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersionResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformVersion>(
-      1,
-      _omitFieldNames ? '' : 'platformversions',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersion.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformVersion>(1, _omitFieldNames ? '' : 'platformversions', $pb.PbFieldType.PM, subBuilder: PlatformVersion.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformVersionResult clone() =>
-      PlatformVersionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersionResult copyWith(
-    void Function(PlatformVersionResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as PlatformVersionResult))
-          as PlatformVersionResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformVersionResult clone() => PlatformVersionResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersionResult copyWith(void Function(PlatformVersionResult) updates) => super.copyWith((message) => updates(message as PlatformVersionResult)) as PlatformVersionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformVersionResult create() => PlatformVersionResult._();
   PlatformVersionResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersionResult> createRepeated() =>
-      $pb.PbList<PlatformVersionResult>();
+  static $pb.PbList<PlatformVersionResult> createRepeated() => $pb.PbList<PlatformVersionResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformVersionResult>(create);
+  static PlatformVersionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersionResult>(create);
   static PlatformVersionResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -9866,59 +9074,24 @@ class PlatformVersion extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersion._() : super();
-  factory PlatformVersion.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersion.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersion',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..pc<PlatformVersionCompany>(
-      2,
-      _omitFieldNames ? '' : 'companies',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersionCompany.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..pc<PlatformVersionCompany>(2, _omitFieldNames ? '' : 'companies', $pb.PbFieldType.PM, subBuilder: PlatformVersionCompany.create)
     ..aOS(3, _omitFieldNames ? '' : 'connectivity')
     ..aOS(4, _omitFieldNames ? '' : 'cpu')
     ..aOS(5, _omitFieldNames ? '' : 'graphics')
-    ..aOM<PlatformVersionCompany>(
-      6,
-      _omitFieldNames ? '' : 'mainManufacturer',
-      subBuilder: PlatformVersionCompany.create,
-    )
+    ..aOM<PlatformVersionCompany>(6, _omitFieldNames ? '' : 'mainManufacturer', subBuilder: PlatformVersionCompany.create)
     ..aOS(7, _omitFieldNames ? '' : 'media')
     ..aOS(8, _omitFieldNames ? '' : 'memory')
     ..aOS(9, _omitFieldNames ? '' : 'name')
     ..aOS(10, _omitFieldNames ? '' : 'online')
     ..aOS(11, _omitFieldNames ? '' : 'os')
     ..aOS(12, _omitFieldNames ? '' : 'output')
-    ..aOM<PlatformLogo>(
-      13,
-      _omitFieldNames ? '' : 'platformLogo',
-      subBuilder: PlatformLogo.create,
-    )
-    ..pc<PlatformVersionReleaseDate>(
-      14,
-      _omitFieldNames ? '' : 'platformVersionReleaseDates',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersionReleaseDate.create,
-    )
+    ..aOM<PlatformLogo>(13, _omitFieldNames ? '' : 'platformLogo', subBuilder: PlatformLogo.create)
+    ..pc<PlatformVersionReleaseDate>(14, _omitFieldNames ? '' : 'platformVersionReleaseDates', $pb.PbFieldType.PM, subBuilder: PlatformVersionReleaseDate.create)
     ..aOS(15, _omitFieldNames ? '' : 'resolutions')
     ..aOS(16, _omitFieldNames ? '' : 'slug')
     ..aOS(17, _omitFieldNames ? '' : 'sound')
@@ -9926,38 +9099,34 @@ class PlatformVersion extends $pb.GeneratedMessage {
     ..aOS(19, _omitFieldNames ? '' : 'summary')
     ..aOS(20, _omitFieldNames ? '' : 'url')
     ..aOS(21, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformVersion clone() => PlatformVersion()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersion copyWith(void Function(PlatformVersion) updates) =>
-      super.copyWith((message) => updates(message as PlatformVersion))
-          as PlatformVersion;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersion copyWith(void Function(PlatformVersion) updates) => super.copyWith((message) => updates(message as PlatformVersion)) as PlatformVersion;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformVersion create() => PlatformVersion._();
   PlatformVersion createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersion> createRepeated() =>
-      $pb.PbList<PlatformVersion>();
+  static $pb.PbList<PlatformVersion> createRepeated() => $pb.PbList<PlatformVersion>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersion getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformVersion>(create);
+  static PlatformVersion getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersion>(create);
   static PlatformVersion? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -9969,10 +9138,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get connectivity => $_getSZ(2);
   @$pb.TagNumber(3)
-  set connectivity($core.String v) {
-    $_setString(2, v);
-  }
-
+  set connectivity($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasConnectivity() => $_has(2);
   @$pb.TagNumber(3)
@@ -9981,10 +9147,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get cpu => $_getSZ(3);
   @$pb.TagNumber(4)
-  set cpu($core.String v) {
-    $_setString(3, v);
-  }
-
+  set cpu($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasCpu() => $_has(3);
   @$pb.TagNumber(4)
@@ -9993,10 +9156,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get graphics => $_getSZ(4);
   @$pb.TagNumber(5)
-  set graphics($core.String v) {
-    $_setString(4, v);
-  }
-
+  set graphics($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasGraphics() => $_has(4);
   @$pb.TagNumber(5)
@@ -10005,10 +9165,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   PlatformVersionCompany get mainManufacturer => $_getN(5);
   @$pb.TagNumber(6)
-  set mainManufacturer(PlatformVersionCompany v) {
-    setField(6, v);
-  }
-
+  set mainManufacturer(PlatformVersionCompany v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMainManufacturer() => $_has(5);
   @$pb.TagNumber(6)
@@ -10019,10 +9176,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get media => $_getSZ(6);
   @$pb.TagNumber(7)
-  set media($core.String v) {
-    $_setString(6, v);
-  }
-
+  set media($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasMedia() => $_has(6);
   @$pb.TagNumber(7)
@@ -10031,10 +9185,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get memory => $_getSZ(7);
   @$pb.TagNumber(8)
-  set memory($core.String v) {
-    $_setString(7, v);
-  }
-
+  set memory($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasMemory() => $_has(7);
   @$pb.TagNumber(8)
@@ -10043,10 +9194,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get name => $_getSZ(8);
   @$pb.TagNumber(9)
-  set name($core.String v) {
-    $_setString(8, v);
-  }
-
+  set name($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasName() => $_has(8);
   @$pb.TagNumber(9)
@@ -10055,10 +9203,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get online => $_getSZ(9);
   @$pb.TagNumber(10)
-  set online($core.String v) {
-    $_setString(9, v);
-  }
-
+  set online($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasOnline() => $_has(9);
   @$pb.TagNumber(10)
@@ -10067,10 +9212,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get os => $_getSZ(10);
   @$pb.TagNumber(11)
-  set os($core.String v) {
-    $_setString(10, v);
-  }
-
+  set os($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasOs() => $_has(10);
   @$pb.TagNumber(11)
@@ -10079,10 +9221,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get output => $_getSZ(11);
   @$pb.TagNumber(12)
-  set output($core.String v) {
-    $_setString(11, v);
-  }
-
+  set output($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(12)
   $core.bool hasOutput() => $_has(11);
   @$pb.TagNumber(12)
@@ -10091,10 +9230,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   PlatformLogo get platformLogo => $_getN(12);
   @$pb.TagNumber(13)
-  set platformLogo(PlatformLogo v) {
-    setField(13, v);
-  }
-
+  set platformLogo(PlatformLogo v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasPlatformLogo() => $_has(12);
   @$pb.TagNumber(13)
@@ -10103,16 +9239,12 @@ class PlatformVersion extends $pb.GeneratedMessage {
   PlatformLogo ensurePlatformLogo() => $_ensure(12);
 
   @$pb.TagNumber(14)
-  $core.List<PlatformVersionReleaseDate> get platformVersionReleaseDates =>
-      $_getList(13);
+  $core.List<PlatformVersionReleaseDate> get platformVersionReleaseDates => $_getList(13);
 
   @$pb.TagNumber(15)
   $core.String get resolutions => $_getSZ(14);
   @$pb.TagNumber(15)
-  set resolutions($core.String v) {
-    $_setString(14, v);
-  }
-
+  set resolutions($core.String v) { $_setString(14, v); }
   @$pb.TagNumber(15)
   $core.bool hasResolutions() => $_has(14);
   @$pb.TagNumber(15)
@@ -10121,10 +9253,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get slug => $_getSZ(15);
   @$pb.TagNumber(16)
-  set slug($core.String v) {
-    $_setString(15, v);
-  }
-
+  set slug($core.String v) { $_setString(15, v); }
   @$pb.TagNumber(16)
   $core.bool hasSlug() => $_has(15);
   @$pb.TagNumber(16)
@@ -10133,10 +9262,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get sound => $_getSZ(16);
   @$pb.TagNumber(17)
-  set sound($core.String v) {
-    $_setString(16, v);
-  }
-
+  set sound($core.String v) { $_setString(16, v); }
   @$pb.TagNumber(17)
   $core.bool hasSound() => $_has(16);
   @$pb.TagNumber(17)
@@ -10145,10 +9271,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get storage => $_getSZ(17);
   @$pb.TagNumber(18)
-  set storage($core.String v) {
-    $_setString(17, v);
-  }
-
+  set storage($core.String v) { $_setString(17, v); }
   @$pb.TagNumber(18)
   $core.bool hasStorage() => $_has(17);
   @$pb.TagNumber(18)
@@ -10157,10 +9280,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.String get summary => $_getSZ(18);
   @$pb.TagNumber(19)
-  set summary($core.String v) {
-    $_setString(18, v);
-  }
-
+  set summary($core.String v) { $_setString(18, v); }
   @$pb.TagNumber(19)
   $core.bool hasSummary() => $_has(18);
   @$pb.TagNumber(19)
@@ -10169,10 +9289,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get url => $_getSZ(19);
   @$pb.TagNumber(20)
-  set url($core.String v) {
-    $_setString(19, v);
-  }
-
+  set url($core.String v) { $_setString(19, v); }
   @$pb.TagNumber(20)
   $core.bool hasUrl() => $_has(19);
   @$pb.TagNumber(20)
@@ -10181,10 +9298,7 @@ class PlatformVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get checksum => $_getSZ(20);
   @$pb.TagNumber(21)
-  set checksum($core.String v) {
-    $_setString(20, v);
-  }
-
+  set checksum($core.String v) { $_setString(20, v); }
   @$pb.TagNumber(21)
   $core.bool hasChecksum() => $_has(20);
   @$pb.TagNumber(21)
@@ -10202,61 +9316,37 @@ class PlatformVersionCompanyResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersionCompanyResult._() : super();
-  factory PlatformVersionCompanyResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersionCompanyResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersionCompanyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersionCompanyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersionCompanyResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformVersionCompany>(
-      1,
-      _omitFieldNames ? '' : 'platformversioncompanies',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersionCompany.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersionCompanyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformVersionCompany>(1, _omitFieldNames ? '' : 'platformversioncompanies', $pb.PbFieldType.PM, subBuilder: PlatformVersionCompany.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformVersionCompanyResult clone() =>
-      PlatformVersionCompanyResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersionCompanyResult copyWith(
-    void Function(PlatformVersionCompanyResult) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as PlatformVersionCompanyResult),
-      ) as PlatformVersionCompanyResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformVersionCompanyResult clone() => PlatformVersionCompanyResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersionCompanyResult copyWith(void Function(PlatformVersionCompanyResult) updates) => super.copyWith((message) => updates(message as PlatformVersionCompanyResult)) as PlatformVersionCompanyResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionCompanyResult create() =>
-      PlatformVersionCompanyResult._();
+  static PlatformVersionCompanyResult create() => PlatformVersionCompanyResult._();
   PlatformVersionCompanyResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersionCompanyResult> createRepeated() =>
-      $pb.PbList<PlatformVersionCompanyResult>();
+  static $pb.PbList<PlatformVersionCompanyResult> createRepeated() => $pb.PbList<PlatformVersionCompanyResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionCompanyResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformVersionCompanyResult>(create);
+  static PlatformVersionCompanyResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersionCompanyResult>(create);
   static PlatformVersionCompanyResult? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<PlatformVersionCompany> get platformversioncompanies =>
-      $_getList(0);
+  $core.List<PlatformVersionCompany> get platformversioncompanies => $_getList(0);
 }
 
 class PlatformVersionCompany extends $pb.GeneratedMessage {
@@ -10290,72 +9380,44 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersionCompany._() : super();
-  factory PlatformVersionCompany.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersionCompany.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersionCompany.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersionCompany.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersionCompany',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersionCompany', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'comment')
-    ..aOM<Company>(
-      3,
-      _omitFieldNames ? '' : 'company',
-      subBuilder: Company.create,
-    )
+    ..aOM<Company>(3, _omitFieldNames ? '' : 'company', subBuilder: Company.create)
     ..aOB(4, _omitFieldNames ? '' : 'developer')
     ..aOB(5, _omitFieldNames ? '' : 'manufacturer')
     ..aOS(6, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformVersionCompany clone() =>
-      PlatformVersionCompany()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersionCompany copyWith(
-    void Function(PlatformVersionCompany) updates,
-  ) =>
-      super.copyWith((message) => updates(message as PlatformVersionCompany))
-          as PlatformVersionCompany;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformVersionCompany clone() => PlatformVersionCompany()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersionCompany copyWith(void Function(PlatformVersionCompany) updates) => super.copyWith((message) => updates(message as PlatformVersionCompany)) as PlatformVersionCompany;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformVersionCompany create() => PlatformVersionCompany._();
   PlatformVersionCompany createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersionCompany> createRepeated() =>
-      $pb.PbList<PlatformVersionCompany>();
+  static $pb.PbList<PlatformVersionCompany> createRepeated() => $pb.PbList<PlatformVersionCompany>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionCompany getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformVersionCompany>(create);
+  static PlatformVersionCompany getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersionCompany>(create);
   static PlatformVersionCompany? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -10364,10 +9426,7 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get comment => $_getSZ(1);
   @$pb.TagNumber(2)
-  set comment($core.String v) {
-    $_setString(1, v);
-  }
-
+  set comment($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasComment() => $_has(1);
   @$pb.TagNumber(2)
@@ -10376,10 +9435,7 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Company get company => $_getN(2);
   @$pb.TagNumber(3)
-  set company(Company v) {
-    setField(3, v);
-  }
-
+  set company(Company v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCompany() => $_has(2);
   @$pb.TagNumber(3)
@@ -10390,10 +9446,7 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get developer => $_getBF(3);
   @$pb.TagNumber(4)
-  set developer($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set developer($core.bool v) { $_setBool(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeveloper() => $_has(3);
   @$pb.TagNumber(4)
@@ -10402,10 +9455,7 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool get manufacturer => $_getBF(4);
   @$pb.TagNumber(5)
-  set manufacturer($core.bool v) {
-    $_setBool(4, v);
-  }
-
+  set manufacturer($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasManufacturer() => $_has(4);
   @$pb.TagNumber(5)
@@ -10414,10 +9464,7 @@ class PlatformVersionCompany extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get checksum => $_getSZ(5);
   @$pb.TagNumber(6)
-  set checksum($core.String v) {
-    $_setString(5, v);
-  }
-
+  set checksum($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasChecksum() => $_has(5);
   @$pb.TagNumber(6)
@@ -10435,63 +9482,37 @@ class PlatformVersionReleaseDateResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersionReleaseDateResult._() : super();
-  factory PlatformVersionReleaseDateResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersionReleaseDateResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersionReleaseDateResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersionReleaseDateResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersionReleaseDateResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformVersionReleaseDate>(
-      1,
-      _omitFieldNames ? '' : 'platformversionreleasedates',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformVersionReleaseDate.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersionReleaseDateResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformVersionReleaseDate>(1, _omitFieldNames ? '' : 'platformversionreleasedates', $pb.PbFieldType.PM, subBuilder: PlatformVersionReleaseDate.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformVersionReleaseDateResult clone() =>
-      PlatformVersionReleaseDateResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersionReleaseDateResult copyWith(
-    void Function(PlatformVersionReleaseDateResult) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as PlatformVersionReleaseDateResult),
-      ) as PlatformVersionReleaseDateResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformVersionReleaseDateResult clone() => PlatformVersionReleaseDateResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersionReleaseDateResult copyWith(void Function(PlatformVersionReleaseDateResult) updates) => super.copyWith((message) => updates(message as PlatformVersionReleaseDateResult)) as PlatformVersionReleaseDateResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionReleaseDateResult create() =>
-      PlatformVersionReleaseDateResult._();
+  static PlatformVersionReleaseDateResult create() => PlatformVersionReleaseDateResult._();
   PlatformVersionReleaseDateResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersionReleaseDateResult> createRepeated() =>
-      $pb.PbList<PlatformVersionReleaseDateResult>();
+  static $pb.PbList<PlatformVersionReleaseDateResult> createRepeated() => $pb.PbList<PlatformVersionReleaseDateResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionReleaseDateResult getDefault() => _defaultInstance ??=
-          $pb.GeneratedMessage.$_defaultFor<PlatformVersionReleaseDateResult>(
-        create,
-      );
+  static PlatformVersionReleaseDateResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersionReleaseDateResult>(create);
   static PlatformVersionReleaseDateResult? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<PlatformVersionReleaseDate> get platformversionreleasedates =>
-      $_getList(0);
+  $core.List<PlatformVersionReleaseDate> get platformversionreleasedates => $_getList(0);
 }
 
 class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
@@ -10545,104 +9566,49 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformVersionReleaseDate._() : super();
-  factory PlatformVersionReleaseDate.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformVersionReleaseDate.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformVersionReleaseDate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformVersionReleaseDate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformVersionReleaseDate',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<DateFormatChangeDateCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD,
-      valueOf: DateFormatChangeDateCategoryEnum.valueOf,
-      enumValues: DateFormatChangeDateCategoryEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      4,
-      _omitFieldNames ? '' : 'date',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformVersionReleaseDate', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<DateFormatChangeDateCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD, valueOf: DateFormatChangeDateCategoryEnum.valueOf, enumValues: DateFormatChangeDateCategoryEnum.values)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'date', subBuilder: $0.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'human')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'm', $pb.PbFieldType.O3)
-    ..aOM<PlatformVersion>(
-      7,
-      _omitFieldNames ? '' : 'platformVersion',
-      subBuilder: PlatformVersion.create,
-    )
-    ..e<RegionRegionEnum>(
-      8,
-      _omitFieldNames ? '' : 'region',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: RegionRegionEnum.REGION_REGION_NULL,
-      valueOf: RegionRegionEnum.valueOf,
-      enumValues: RegionRegionEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      9,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<PlatformVersion>(7, _omitFieldNames ? '' : 'platformVersion', subBuilder: PlatformVersion.create)
+    ..e<RegionRegionEnum>(8, _omitFieldNames ? '' : 'region', $pb.PbFieldType.OE, defaultOrMaker: RegionRegionEnum.REGION_REGION_NULL, valueOf: RegionRegionEnum.valueOf, enumValues: RegionRegionEnum.values)
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'y', $pb.PbFieldType.O3)
     ..aOS(11, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformVersionReleaseDate clone() =>
-      PlatformVersionReleaseDate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformVersionReleaseDate copyWith(
-    void Function(PlatformVersionReleaseDate) updates,
-  ) =>
-      super.copyWith(
-        (message) => updates(message as PlatformVersionReleaseDate),
-      ) as PlatformVersionReleaseDate;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformVersionReleaseDate clone() => PlatformVersionReleaseDate()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformVersionReleaseDate copyWith(void Function(PlatformVersionReleaseDate) updates) => super.copyWith((message) => updates(message as PlatformVersionReleaseDate)) as PlatformVersionReleaseDate;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformVersionReleaseDate create() => PlatformVersionReleaseDate._();
   PlatformVersionReleaseDate createEmptyInstance() => create();
-  static $pb.PbList<PlatformVersionReleaseDate> createRepeated() =>
-      $pb.PbList<PlatformVersionReleaseDate>();
+  static $pb.PbList<PlatformVersionReleaseDate> createRepeated() => $pb.PbList<PlatformVersionReleaseDate>();
   @$core.pragma('dart2js:noInline')
-  static PlatformVersionReleaseDate getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformVersionReleaseDate>(create);
+  static PlatformVersionReleaseDate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformVersionReleaseDate>(create);
   static PlatformVersionReleaseDate? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -10651,10 +9617,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DateFormatChangeDateCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(DateFormatChangeDateCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(DateFormatChangeDateCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -10663,10 +9626,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -10677,10 +9637,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Timestamp get date => $_getN(3);
   @$pb.TagNumber(4)
-  set date($0.Timestamp v) {
-    setField(4, v);
-  }
-
+  set date($0.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDate() => $_has(3);
   @$pb.TagNumber(4)
@@ -10691,10 +9648,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get human => $_getSZ(4);
   @$pb.TagNumber(5)
-  set human($core.String v) {
-    $_setString(4, v);
-  }
-
+  set human($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasHuman() => $_has(4);
   @$pb.TagNumber(5)
@@ -10703,10 +9657,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.int get m => $_getIZ(5);
   @$pb.TagNumber(6)
-  set m($core.int v) {
-    $_setSignedInt32(5, v);
-  }
-
+  set m($core.int v) { $_setSignedInt32(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasM() => $_has(5);
   @$pb.TagNumber(6)
@@ -10715,10 +9666,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   PlatformVersion get platformVersion => $_getN(6);
   @$pb.TagNumber(7)
-  set platformVersion(PlatformVersion v) {
-    setField(7, v);
-  }
-
+  set platformVersion(PlatformVersion v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPlatformVersion() => $_has(6);
   @$pb.TagNumber(7)
@@ -10729,10 +9677,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   RegionRegionEnum get region => $_getN(7);
   @$pb.TagNumber(8)
-  set region(RegionRegionEnum v) {
-    setField(8, v);
-  }
-
+  set region(RegionRegionEnum v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRegion() => $_has(7);
   @$pb.TagNumber(8)
@@ -10741,10 +9686,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $0.Timestamp get updatedAt => $_getN(8);
   @$pb.TagNumber(9)
-  set updatedAt($0.Timestamp v) {
-    setField(9, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdatedAt() => $_has(8);
   @$pb.TagNumber(9)
@@ -10755,10 +9697,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get y => $_getIZ(9);
   @$pb.TagNumber(10)
-  set y($core.int v) {
-    $_setSignedInt32(9, v);
-  }
-
+  set y($core.int v) { $_setSignedInt32(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasY() => $_has(9);
   @$pb.TagNumber(10)
@@ -10767,10 +9706,7 @@ class PlatformVersionReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get checksum => $_getSZ(10);
   @$pb.TagNumber(11)
-  set checksum($core.String v) {
-    $_setString(10, v);
-  }
-
+  set checksum($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasChecksum() => $_has(10);
   @$pb.TagNumber(11)
@@ -10788,54 +9724,33 @@ class PlatformWebsiteResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformWebsiteResult._() : super();
-  factory PlatformWebsiteResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformWebsiteResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformWebsiteResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformWebsiteResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformWebsiteResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlatformWebsite>(
-      1,
-      _omitFieldNames ? '' : 'platformwebsites',
-      $pb.PbFieldType.PM,
-      subBuilder: PlatformWebsite.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformWebsiteResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlatformWebsite>(1, _omitFieldNames ? '' : 'platformwebsites', $pb.PbFieldType.PM, subBuilder: PlatformWebsite.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlatformWebsiteResult clone() =>
-      PlatformWebsiteResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformWebsiteResult copyWith(
-    void Function(PlatformWebsiteResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as PlatformWebsiteResult))
-          as PlatformWebsiteResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformWebsiteResult clone() => PlatformWebsiteResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformWebsiteResult copyWith(void Function(PlatformWebsiteResult) updates) => super.copyWith((message) => updates(message as PlatformWebsiteResult)) as PlatformWebsiteResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformWebsiteResult create() => PlatformWebsiteResult._();
   PlatformWebsiteResult createEmptyInstance() => create();
-  static $pb.PbList<PlatformWebsiteResult> createRepeated() =>
-      $pb.PbList<PlatformWebsiteResult>();
+  static $pb.PbList<PlatformWebsiteResult> createRepeated() => $pb.PbList<PlatformWebsiteResult>();
   @$core.pragma('dart2js:noInline')
-  static PlatformWebsiteResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformWebsiteResult>(create);
+  static PlatformWebsiteResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformWebsiteResult>(create);
   static PlatformWebsiteResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -10869,71 +9784,43 @@ class PlatformWebsite extends $pb.GeneratedMessage {
     return $result;
   }
   PlatformWebsite._() : super();
-  factory PlatformWebsite.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlatformWebsite.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlatformWebsite.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformWebsite.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlatformWebsite',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<WebsiteCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL,
-      valueOf: WebsiteCategoryEnum.valueOf,
-      enumValues: WebsiteCategoryEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformWebsite', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<WebsiteCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL, valueOf: WebsiteCategoryEnum.valueOf, enumValues: WebsiteCategoryEnum.values)
     ..aOB(3, _omitFieldNames ? '' : 'trusted')
     ..aOS(4, _omitFieldNames ? '' : 'url')
     ..aOS(5, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlatformWebsite clone() => PlatformWebsite()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlatformWebsite copyWith(void Function(PlatformWebsite) updates) =>
-      super.copyWith((message) => updates(message as PlatformWebsite))
-          as PlatformWebsite;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformWebsite copyWith(void Function(PlatformWebsite) updates) => super.copyWith((message) => updates(message as PlatformWebsite)) as PlatformWebsite;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlatformWebsite create() => PlatformWebsite._();
   PlatformWebsite createEmptyInstance() => create();
-  static $pb.PbList<PlatformWebsite> createRepeated() =>
-      $pb.PbList<PlatformWebsite>();
+  static $pb.PbList<PlatformWebsite> createRepeated() => $pb.PbList<PlatformWebsite>();
   @$core.pragma('dart2js:noInline')
-  static PlatformWebsite getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlatformWebsite>(create);
+  static PlatformWebsite getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformWebsite>(create);
   static PlatformWebsite? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -10942,10 +9829,7 @@ class PlatformWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   WebsiteCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(WebsiteCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(WebsiteCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -10954,10 +9838,7 @@ class PlatformWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get trusted => $_getBF(2);
   @$pb.TagNumber(3)
-  set trusted($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set trusted($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasTrusted() => $_has(2);
   @$pb.TagNumber(3)
@@ -10966,10 +9847,7 @@ class PlatformWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get url => $_getSZ(3);
   @$pb.TagNumber(4)
-  set url($core.String v) {
-    $_setString(3, v);
-  }
-
+  set url($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasUrl() => $_has(3);
   @$pb.TagNumber(4)
@@ -10978,10 +9856,7 @@ class PlatformWebsite extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
   @$pb.TagNumber(5)
-  set checksum($core.String v) {
-    $_setString(4, v);
-  }
-
+  set checksum($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
@@ -10999,54 +9874,33 @@ class PlayerPerspectiveResult extends $pb.GeneratedMessage {
     return $result;
   }
   PlayerPerspectiveResult._() : super();
-  factory PlayerPerspectiveResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlayerPerspectiveResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlayerPerspectiveResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlayerPerspectiveResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlayerPerspectiveResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<PlayerPerspective>(
-      1,
-      _omitFieldNames ? '' : 'playerperspectives',
-      $pb.PbFieldType.PM,
-      subBuilder: PlayerPerspective.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlayerPerspectiveResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PlayerPerspective>(1, _omitFieldNames ? '' : 'playerperspectives', $pb.PbFieldType.PM, subBuilder: PlayerPerspective.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  PlayerPerspectiveResult clone() =>
-      PlayerPerspectiveResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlayerPerspectiveResult copyWith(
-    void Function(PlayerPerspectiveResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as PlayerPerspectiveResult))
-          as PlayerPerspectiveResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlayerPerspectiveResult clone() => PlayerPerspectiveResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlayerPerspectiveResult copyWith(void Function(PlayerPerspectiveResult) updates) => super.copyWith((message) => updates(message as PlayerPerspectiveResult)) as PlayerPerspectiveResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlayerPerspectiveResult create() => PlayerPerspectiveResult._();
   PlayerPerspectiveResult createEmptyInstance() => create();
-  static $pb.PbList<PlayerPerspectiveResult> createRepeated() =>
-      $pb.PbList<PlayerPerspectiveResult>();
+  static $pb.PbList<PlayerPerspectiveResult> createRepeated() => $pb.PbList<PlayerPerspectiveResult>();
   @$core.pragma('dart2js:noInline')
-  static PlayerPerspectiveResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlayerPerspectiveResult>(create);
+  static PlayerPerspectiveResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlayerPerspectiveResult>(create);
   static PlayerPerspectiveResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -11088,74 +9942,45 @@ class PlayerPerspective extends $pb.GeneratedMessage {
     return $result;
   }
   PlayerPerspective._() : super();
-  factory PlayerPerspective.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PlayerPerspective.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory PlayerPerspective.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlayerPerspective.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'PlayerPerspective',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlayerPerspective', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   PlayerPerspective clone() => PlayerPerspective()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  PlayerPerspective copyWith(void Function(PlayerPerspective) updates) =>
-      super.copyWith((message) => updates(message as PlayerPerspective))
-          as PlayerPerspective;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlayerPerspective copyWith(void Function(PlayerPerspective) updates) => super.copyWith((message) => updates(message as PlayerPerspective)) as PlayerPerspective;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PlayerPerspective create() => PlayerPerspective._();
   PlayerPerspective createEmptyInstance() => create();
-  static $pb.PbList<PlayerPerspective> createRepeated() =>
-      $pb.PbList<PlayerPerspective>();
+  static $pb.PbList<PlayerPerspective> createRepeated() => $pb.PbList<PlayerPerspective>();
   @$core.pragma('dart2js:noInline')
-  static PlayerPerspective getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<PlayerPerspective>(create);
+  static PlayerPerspective getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlayerPerspective>(create);
   static PlayerPerspective? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -11164,10 +9989,7 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -11178,10 +10000,7 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -11190,10 +10009,7 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get slug => $_getSZ(3);
   @$pb.TagNumber(4)
-  set slug($core.String v) {
-    $_setString(3, v);
-  }
-
+  set slug($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlug() => $_has(3);
   @$pb.TagNumber(4)
@@ -11202,10 +10018,7 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -11216,10 +10029,7 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -11228,14 +10038,393 @@ class PlayerPerspective extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
   void clearChecksum() => clearField(7);
+}
+
+class PopularityPrimitiveResult extends $pb.GeneratedMessage {
+  factory PopularityPrimitiveResult({
+    $core.Iterable<PopularityPrimitive>? popularityprimitives,
+  }) {
+    final $result = create();
+    if (popularityprimitives != null) {
+      $result.popularityprimitives.addAll(popularityprimitives);
+    }
+    return $result;
+  }
+  PopularityPrimitiveResult._() : super();
+  factory PopularityPrimitiveResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PopularityPrimitiveResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PopularityPrimitiveResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PopularityPrimitive>(1, _omitFieldNames ? '' : 'popularityprimitives', $pb.PbFieldType.PM, subBuilder: PopularityPrimitive.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PopularityPrimitiveResult clone() => PopularityPrimitiveResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PopularityPrimitiveResult copyWith(void Function(PopularityPrimitiveResult) updates) => super.copyWith((message) => updates(message as PopularityPrimitiveResult)) as PopularityPrimitiveResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PopularityPrimitiveResult create() => PopularityPrimitiveResult._();
+  PopularityPrimitiveResult createEmptyInstance() => create();
+  static $pb.PbList<PopularityPrimitiveResult> createRepeated() => $pb.PbList<PopularityPrimitiveResult>();
+  @$core.pragma('dart2js:noInline')
+  static PopularityPrimitiveResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PopularityPrimitiveResult>(create);
+  static PopularityPrimitiveResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<PopularityPrimitive> get popularityprimitives => $_getList(0);
+}
+
+class PopularityPrimitive extends $pb.GeneratedMessage {
+  factory PopularityPrimitive({
+    $fixnum.Int64? id,
+    $core.int? gameId,
+    PopularityType? popularityType,
+    PopularitySourcePopularitySourceEnum? popularitySource,
+    $core.double? value,
+    $0.Timestamp? calculatedAt,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (gameId != null) {
+      $result.gameId = gameId;
+    }
+    if (popularityType != null) {
+      $result.popularityType = popularityType;
+    }
+    if (popularitySource != null) {
+      $result.popularitySource = popularitySource;
+    }
+    if (value != null) {
+      $result.value = value;
+    }
+    if (calculatedAt != null) {
+      $result.calculatedAt = calculatedAt;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  PopularityPrimitive._() : super();
+  factory PopularityPrimitive.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PopularityPrimitive.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PopularityPrimitive', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'gameId', $pb.PbFieldType.O3)
+    ..aOM<PopularityType>(3, _omitFieldNames ? '' : 'popularityType', subBuilder: PopularityType.create)
+    ..e<PopularitySourcePopularitySourceEnum>(4, _omitFieldNames ? '' : 'popularitySource', $pb.PbFieldType.OE, defaultOrMaker: PopularitySourcePopularitySourceEnum.POPULARITYSOURCE_POPULARITY_SOURCE_NULL, valueOf: PopularitySourcePopularitySourceEnum.valueOf, enumValues: PopularitySourcePopularitySourceEnum.values)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'calculatedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(7, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(8, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(9, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PopularityPrimitive clone() => PopularityPrimitive()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PopularityPrimitive copyWith(void Function(PopularityPrimitive) updates) => super.copyWith((message) => updates(message as PopularityPrimitive)) as PopularityPrimitive;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PopularityPrimitive create() => PopularityPrimitive._();
+  PopularityPrimitive createEmptyInstance() => create();
+  static $pb.PbList<PopularityPrimitive> createRepeated() => $pb.PbList<PopularityPrimitive>();
+  @$core.pragma('dart2js:noInline')
+  static PopularityPrimitive getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PopularityPrimitive>(create);
+  static PopularityPrimitive? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.int get gameId => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set gameId($core.int v) { $_setSignedInt32(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasGameId() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearGameId() => clearField(2);
+
+  @$pb.TagNumber(3)
+  PopularityType get popularityType => $_getN(2);
+  @$pb.TagNumber(3)
+  set popularityType(PopularityType v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPopularityType() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPopularityType() => clearField(3);
+  @$pb.TagNumber(3)
+  PopularityType ensurePopularityType() => $_ensure(2);
+
+  @$pb.TagNumber(4)
+  PopularitySourcePopularitySourceEnum get popularitySource => $_getN(3);
+  @$pb.TagNumber(4)
+  set popularitySource(PopularitySourcePopularitySourceEnum v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPopularitySource() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearPopularitySource() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get value => $_getN(4);
+  @$pb.TagNumber(5)
+  set value($core.double v) { $_setDouble(4, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasValue() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearValue() => clearField(5);
+
+  @$pb.TagNumber(6)
+  $0.Timestamp get calculatedAt => $_getN(5);
+  @$pb.TagNumber(6)
+  set calculatedAt($0.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasCalculatedAt() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearCalculatedAt() => clearField(6);
+  @$pb.TagNumber(6)
+  $0.Timestamp ensureCalculatedAt() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $0.Timestamp get createdAt => $_getN(6);
+  @$pb.TagNumber(7)
+  set createdAt($0.Timestamp v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasCreatedAt() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearCreatedAt() => clearField(7);
+  @$pb.TagNumber(7)
+  $0.Timestamp ensureCreatedAt() => $_ensure(6);
+
+  @$pb.TagNumber(8)
+  $0.Timestamp get updatedAt => $_getN(7);
+  @$pb.TagNumber(8)
+  set updatedAt($0.Timestamp v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasUpdatedAt() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearUpdatedAt() => clearField(8);
+  @$pb.TagNumber(8)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(7);
+
+  @$pb.TagNumber(9)
+  $core.String get checksum => $_getSZ(8);
+  @$pb.TagNumber(9)
+  set checksum($core.String v) { $_setString(8, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasChecksum() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearChecksum() => clearField(9);
+}
+
+class PopularityTypeResult extends $pb.GeneratedMessage {
+  factory PopularityTypeResult({
+    $core.Iterable<PopularityType>? popularitytypes,
+  }) {
+    final $result = create();
+    if (popularitytypes != null) {
+      $result.popularitytypes.addAll(popularitytypes);
+    }
+    return $result;
+  }
+  PopularityTypeResult._() : super();
+  factory PopularityTypeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PopularityTypeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PopularityTypeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<PopularityType>(1, _omitFieldNames ? '' : 'popularitytypes', $pb.PbFieldType.PM, subBuilder: PopularityType.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PopularityTypeResult clone() => PopularityTypeResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PopularityTypeResult copyWith(void Function(PopularityTypeResult) updates) => super.copyWith((message) => updates(message as PopularityTypeResult)) as PopularityTypeResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PopularityTypeResult create() => PopularityTypeResult._();
+  PopularityTypeResult createEmptyInstance() => create();
+  static $pb.PbList<PopularityTypeResult> createRepeated() => $pb.PbList<PopularityTypeResult>();
+  @$core.pragma('dart2js:noInline')
+  static PopularityTypeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PopularityTypeResult>(create);
+  static PopularityTypeResult? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<PopularityType> get popularitytypes => $_getList(0);
+}
+
+class PopularityType extends $pb.GeneratedMessage {
+  factory PopularityType({
+    $fixnum.Int64? id,
+    PopularitySourcePopularitySourceEnum? popularitySource,
+    $core.String? name,
+    $0.Timestamp? createdAt,
+    $0.Timestamp? updatedAt,
+    $core.String? checksum,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (popularitySource != null) {
+      $result.popularitySource = popularitySource;
+    }
+    if (name != null) {
+      $result.name = name;
+    }
+    if (createdAt != null) {
+      $result.createdAt = createdAt;
+    }
+    if (updatedAt != null) {
+      $result.updatedAt = updatedAt;
+    }
+    if (checksum != null) {
+      $result.checksum = checksum;
+    }
+    return $result;
+  }
+  PopularityType._() : super();
+  factory PopularityType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PopularityType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PopularityType', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<PopularitySourcePopularitySourceEnum>(2, _omitFieldNames ? '' : 'popularitySource', $pb.PbFieldType.OE, defaultOrMaker: PopularitySourcePopularitySourceEnum.POPULARITYSOURCE_POPULARITY_SOURCE_NULL, valueOf: PopularitySourcePopularitySourceEnum.valueOf, enumValues: PopularitySourcePopularitySourceEnum.values)
+    ..aOS(3, _omitFieldNames ? '' : 'name')
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
+    ..aOS(6, _omitFieldNames ? '' : 'checksum')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PopularityType clone() => PopularityType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PopularityType copyWith(void Function(PopularityType) updates) => super.copyWith((message) => updates(message as PopularityType)) as PopularityType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PopularityType create() => PopularityType._();
+  PopularityType createEmptyInstance() => create();
+  static $pb.PbList<PopularityType> createRepeated() => $pb.PbList<PopularityType>();
+  @$core.pragma('dart2js:noInline')
+  static PopularityType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PopularityType>(create);
+  static PopularityType? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get id => $_getI64(0);
+  @$pb.TagNumber(1)
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  @$pb.TagNumber(2)
+  PopularitySourcePopularitySourceEnum get popularitySource => $_getN(1);
+  @$pb.TagNumber(2)
+  set popularitySource(PopularitySourcePopularitySourceEnum v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasPopularitySource() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearPopularitySource() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get name => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set name($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasName() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearName() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $0.Timestamp get createdAt => $_getN(3);
+  @$pb.TagNumber(4)
+  set createdAt($0.Timestamp v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasCreatedAt() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearCreatedAt() => clearField(4);
+  @$pb.TagNumber(4)
+  $0.Timestamp ensureCreatedAt() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.Timestamp get updatedAt => $_getN(4);
+  @$pb.TagNumber(5)
+  set updatedAt($0.Timestamp v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUpdatedAt() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearUpdatedAt() => clearField(5);
+  @$pb.TagNumber(5)
+  $0.Timestamp ensureUpdatedAt() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $core.String get checksum => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set checksum($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasChecksum() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearChecksum() => clearField(6);
 }
 
 class RegionResult extends $pb.GeneratedMessage {
@@ -11249,51 +10438,33 @@ class RegionResult extends $pb.GeneratedMessage {
     return $result;
   }
   RegionResult._() : super();
-  factory RegionResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RegionResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory RegionResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory RegionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'RegionResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Region>(
-      1,
-      _omitFieldNames ? '' : 'regions',
-      $pb.PbFieldType.PM,
-      subBuilder: Region.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Region>(1, _omitFieldNames ? '' : 'regions', $pb.PbFieldType.PM, subBuilder: Region.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   RegionResult clone() => RegionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  RegionResult copyWith(void Function(RegionResult) updates) =>
-      super.copyWith((message) => updates(message as RegionResult))
-          as RegionResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  RegionResult copyWith(void Function(RegionResult) updates) => super.copyWith((message) => updates(message as RegionResult)) as RegionResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RegionResult create() => RegionResult._();
   RegionResult createEmptyInstance() => create();
-  static $pb.PbList<RegionResult> createRepeated() =>
-      $pb.PbList<RegionResult>();
+  static $pb.PbList<RegionResult> createRepeated() => $pb.PbList<RegionResult>();
   @$core.pragma('dart2js:noInline')
-  static RegionResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<RegionResult>(create);
+  static RegionResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegionResult>(create);
   static RegionResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -11335,53 +10506,30 @@ class Region extends $pb.GeneratedMessage {
     return $result;
   }
   Region._() : super();
-  factory Region.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Region.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Region.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Region.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Region',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Region', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'category')
     ..aOS(4, _omitFieldNames ? '' : 'identifier')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      6,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Region clone() => Region()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Region copyWith(void Function(Region) updates) =>
-      super.copyWith((message) => updates(message as Region)) as Region;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Region copyWith(void Function(Region) updates) => super.copyWith((message) => updates(message as Region)) as Region;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -11390,17 +10538,13 @@ class Region extends $pb.GeneratedMessage {
   Region createEmptyInstance() => create();
   static $pb.PbList<Region> createRepeated() => $pb.PbList<Region>();
   @$core.pragma('dart2js:noInline')
-  static Region getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region>(create);
+  static Region getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Region>(create);
   static Region? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -11409,10 +10553,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -11421,10 +10562,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get category => $_getSZ(2);
   @$pb.TagNumber(3)
-  set category($core.String v) {
-    $_setString(2, v);
-  }
-
+  set category($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasCategory() => $_has(2);
   @$pb.TagNumber(3)
@@ -11433,10 +10571,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get identifier => $_getSZ(3);
   @$pb.TagNumber(4)
-  set identifier($core.String v) {
-    $_setString(3, v);
-  }
-
+  set identifier($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasIdentifier() => $_has(3);
   @$pb.TagNumber(4)
@@ -11445,10 +10580,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get createdAt => $_getN(4);
   @$pb.TagNumber(5)
-  set createdAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -11459,10 +10591,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $0.Timestamp get updatedAt => $_getN(5);
   @$pb.TagNumber(6)
-  set updatedAt($0.Timestamp v) {
-    setField(6, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdatedAt() => $_has(5);
   @$pb.TagNumber(6)
@@ -11473,10 +10602,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -11494,51 +10620,33 @@ class ReleaseDateResult extends $pb.GeneratedMessage {
     return $result;
   }
   ReleaseDateResult._() : super();
-  factory ReleaseDateResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReleaseDateResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ReleaseDateResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ReleaseDateResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ReleaseDateResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<ReleaseDate>(
-      1,
-      _omitFieldNames ? '' : 'releasedates',
-      $pb.PbFieldType.PM,
-      subBuilder: ReleaseDate.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseDateResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<ReleaseDate>(1, _omitFieldNames ? '' : 'releasedates', $pb.PbFieldType.PM, subBuilder: ReleaseDate.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ReleaseDateResult clone() => ReleaseDateResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ReleaseDateResult copyWith(void Function(ReleaseDateResult) updates) =>
-      super.copyWith((message) => updates(message as ReleaseDateResult))
-          as ReleaseDateResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ReleaseDateResult copyWith(void Function(ReleaseDateResult) updates) => super.copyWith((message) => updates(message as ReleaseDateResult)) as ReleaseDateResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReleaseDateResult create() => ReleaseDateResult._();
   ReleaseDateResult createEmptyInstance() => create();
-  static $pb.PbList<ReleaseDateResult> createRepeated() =>
-      $pb.PbList<ReleaseDateResult>();
+  static $pb.PbList<ReleaseDateResult> createRepeated() => $pb.PbList<ReleaseDateResult>();
   @$core.pragma('dart2js:noInline')
-  static ReleaseDateResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ReleaseDateResult>(create);
+  static ReleaseDateResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReleaseDateResult>(create);
   static ReleaseDateResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -11604,86 +10712,36 @@ class ReleaseDate extends $pb.GeneratedMessage {
     return $result;
   }
   ReleaseDate._() : super();
-  factory ReleaseDate.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReleaseDate.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ReleaseDate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ReleaseDate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ReleaseDate',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<DateFormatChangeDateCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD,
-      valueOf: DateFormatChangeDateCategoryEnum.valueOf,
-      enumValues: DateFormatChangeDateCategoryEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      4,
-      _omitFieldNames ? '' : 'date',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseDate', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<DateFormatChangeDateCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: DateFormatChangeDateCategoryEnum.YYYYMMMMDD, valueOf: DateFormatChangeDateCategoryEnum.valueOf, enumValues: DateFormatChangeDateCategoryEnum.values)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'date', subBuilder: $0.Timestamp.create)
     ..aOM<Game>(5, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOS(6, _omitFieldNames ? '' : 'human')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'm', $pb.PbFieldType.O3)
-    ..aOM<Platform>(
-      8,
-      _omitFieldNames ? '' : 'platform',
-      subBuilder: Platform.create,
-    )
-    ..e<RegionRegionEnum>(
-      9,
-      _omitFieldNames ? '' : 'region',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: RegionRegionEnum.REGION_REGION_NULL,
-      valueOf: RegionRegionEnum.valueOf,
-      enumValues: RegionRegionEnum.values,
-    )
-    ..aOM<$0.Timestamp>(
-      10,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<Platform>(8, _omitFieldNames ? '' : 'platform', subBuilder: Platform.create)
+    ..e<RegionRegionEnum>(9, _omitFieldNames ? '' : 'region', $pb.PbFieldType.OE, defaultOrMaker: RegionRegionEnum.REGION_REGION_NULL, valueOf: RegionRegionEnum.valueOf, enumValues: RegionRegionEnum.values)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'y', $pb.PbFieldType.O3)
     ..aOS(12, _omitFieldNames ? '' : 'checksum')
-    ..aOM<ReleaseDateStatus>(
-      13,
-      _omitFieldNames ? '' : 'status',
-      subBuilder: ReleaseDateStatus.create,
-    )
-    ..hasRequiredFields = false;
+    ..aOM<ReleaseDateStatus>(13, _omitFieldNames ? '' : 'status', subBuilder: ReleaseDateStatus.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ReleaseDate clone() => ReleaseDate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ReleaseDate copyWith(void Function(ReleaseDate) updates) =>
-      super.copyWith((message) => updates(message as ReleaseDate))
-          as ReleaseDate;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ReleaseDate copyWith(void Function(ReleaseDate) updates) => super.copyWith((message) => updates(message as ReleaseDate)) as ReleaseDate;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -11692,17 +10750,13 @@ class ReleaseDate extends $pb.GeneratedMessage {
   ReleaseDate createEmptyInstance() => create();
   static $pb.PbList<ReleaseDate> createRepeated() => $pb.PbList<ReleaseDate>();
   @$core.pragma('dart2js:noInline')
-  static ReleaseDate getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ReleaseDate>(create);
+  static ReleaseDate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReleaseDate>(create);
   static ReleaseDate? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -11711,10 +10765,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DateFormatChangeDateCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(DateFormatChangeDateCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(DateFormatChangeDateCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -11723,10 +10774,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -11737,10 +10785,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Timestamp get date => $_getN(3);
   @$pb.TagNumber(4)
-  set date($0.Timestamp v) {
-    setField(4, v);
-  }
-
+  set date($0.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDate() => $_has(3);
   @$pb.TagNumber(4)
@@ -11751,10 +10796,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Game get game => $_getN(4);
   @$pb.TagNumber(5)
-  set game(Game v) {
-    setField(5, v);
-  }
-
+  set game(Game v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGame() => $_has(4);
   @$pb.TagNumber(5)
@@ -11765,10 +10807,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get human => $_getSZ(5);
   @$pb.TagNumber(6)
-  set human($core.String v) {
-    $_setString(5, v);
-  }
-
+  set human($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasHuman() => $_has(5);
   @$pb.TagNumber(6)
@@ -11777,10 +10816,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get m => $_getIZ(6);
   @$pb.TagNumber(7)
-  set m($core.int v) {
-    $_setSignedInt32(6, v);
-  }
-
+  set m($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasM() => $_has(6);
   @$pb.TagNumber(7)
@@ -11789,10 +10825,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Platform get platform => $_getN(7);
   @$pb.TagNumber(8)
-  set platform(Platform v) {
-    setField(8, v);
-  }
-
+  set platform(Platform v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPlatform() => $_has(7);
   @$pb.TagNumber(8)
@@ -11803,10 +10836,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RegionRegionEnum get region => $_getN(8);
   @$pb.TagNumber(9)
-  set region(RegionRegionEnum v) {
-    setField(9, v);
-  }
-
+  set region(RegionRegionEnum v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasRegion() => $_has(8);
   @$pb.TagNumber(9)
@@ -11815,10 +10845,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $0.Timestamp get updatedAt => $_getN(9);
   @$pb.TagNumber(10)
-  set updatedAt($0.Timestamp v) {
-    setField(10, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdatedAt() => $_has(9);
   @$pb.TagNumber(10)
@@ -11829,10 +10856,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get y => $_getIZ(10);
   @$pb.TagNumber(11)
-  set y($core.int v) {
-    $_setSignedInt32(10, v);
-  }
-
+  set y($core.int v) { $_setSignedInt32(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasY() => $_has(10);
   @$pb.TagNumber(11)
@@ -11841,10 +10865,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get checksum => $_getSZ(11);
   @$pb.TagNumber(12)
-  set checksum($core.String v) {
-    $_setString(11, v);
-  }
-
+  set checksum($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(12)
   $core.bool hasChecksum() => $_has(11);
   @$pb.TagNumber(12)
@@ -11853,10 +10874,7 @@ class ReleaseDate extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ReleaseDateStatus get status => $_getN(12);
   @$pb.TagNumber(13)
-  set status(ReleaseDateStatus v) {
-    setField(13, v);
-  }
-
+  set status(ReleaseDateStatus v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasStatus() => $_has(12);
   @$pb.TagNumber(13)
@@ -11876,54 +10894,33 @@ class ReleaseDateStatusResult extends $pb.GeneratedMessage {
     return $result;
   }
   ReleaseDateStatusResult._() : super();
-  factory ReleaseDateStatusResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReleaseDateStatusResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ReleaseDateStatusResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ReleaseDateStatusResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ReleaseDateStatusResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<ReleaseDateStatus>(
-      1,
-      _omitFieldNames ? '' : 'releasedatestatuses',
-      $pb.PbFieldType.PM,
-      subBuilder: ReleaseDateStatus.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseDateStatusResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<ReleaseDateStatus>(1, _omitFieldNames ? '' : 'releasedatestatuses', $pb.PbFieldType.PM, subBuilder: ReleaseDateStatus.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  ReleaseDateStatusResult clone() =>
-      ReleaseDateStatusResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ReleaseDateStatusResult copyWith(
-    void Function(ReleaseDateStatusResult) updates,
-  ) =>
-      super.copyWith((message) => updates(message as ReleaseDateStatusResult))
-          as ReleaseDateStatusResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ReleaseDateStatusResult clone() => ReleaseDateStatusResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ReleaseDateStatusResult copyWith(void Function(ReleaseDateStatusResult) updates) => super.copyWith((message) => updates(message as ReleaseDateStatusResult)) as ReleaseDateStatusResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReleaseDateStatusResult create() => ReleaseDateStatusResult._();
   ReleaseDateStatusResult createEmptyInstance() => create();
-  static $pb.PbList<ReleaseDateStatusResult> createRepeated() =>
-      $pb.PbList<ReleaseDateStatusResult>();
+  static $pb.PbList<ReleaseDateStatusResult> createRepeated() => $pb.PbList<ReleaseDateStatusResult>();
   @$core.pragma('dart2js:noInline')
-  static ReleaseDateStatusResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ReleaseDateStatusResult>(create);
+  static ReleaseDateStatusResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReleaseDateStatusResult>(create);
   static ReleaseDateStatusResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -11961,73 +10958,44 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
     return $result;
   }
   ReleaseDateStatus._() : super();
-  factory ReleaseDateStatus.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReleaseDateStatus.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ReleaseDateStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ReleaseDateStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ReleaseDateStatus',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseDateStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$0.Timestamp>(
-      4,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ReleaseDateStatus clone() => ReleaseDateStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ReleaseDateStatus copyWith(void Function(ReleaseDateStatus) updates) =>
-      super.copyWith((message) => updates(message as ReleaseDateStatus))
-          as ReleaseDateStatus;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ReleaseDateStatus copyWith(void Function(ReleaseDateStatus) updates) => super.copyWith((message) => updates(message as ReleaseDateStatus)) as ReleaseDateStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ReleaseDateStatus create() => ReleaseDateStatus._();
   ReleaseDateStatus createEmptyInstance() => create();
-  static $pb.PbList<ReleaseDateStatus> createRepeated() =>
-      $pb.PbList<ReleaseDateStatus>();
+  static $pb.PbList<ReleaseDateStatus> createRepeated() => $pb.PbList<ReleaseDateStatus>();
   @$core.pragma('dart2js:noInline')
-  static ReleaseDateStatus getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ReleaseDateStatus>(create);
+  static ReleaseDateStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ReleaseDateStatus>(create);
   static ReleaseDateStatus? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -12036,10 +11004,7 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
-  set name($core.String v) {
-    $_setString(1, v);
-  }
-
+  set name($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
@@ -12048,10 +11013,7 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) {
-    $_setString(2, v);
-  }
-
+  set description($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -12060,10 +11022,7 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Timestamp get createdAt => $_getN(3);
   @$pb.TagNumber(4)
-  set createdAt($0.Timestamp v) {
-    setField(4, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreatedAt() => $_has(3);
   @$pb.TagNumber(4)
@@ -12074,10 +11033,7 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -12088,10 +11044,7 @@ class ReleaseDateStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get checksum => $_getSZ(5);
   @$pb.TagNumber(6)
-  set checksum($core.String v) {
-    $_setString(5, v);
-  }
-
+  set checksum($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasChecksum() => $_has(5);
   @$pb.TagNumber(6)
@@ -12109,51 +11062,33 @@ class ScreenshotResult extends $pb.GeneratedMessage {
     return $result;
   }
   ScreenshotResult._() : super();
-  factory ScreenshotResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ScreenshotResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ScreenshotResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ScreenshotResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ScreenshotResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Screenshot>(
-      1,
-      _omitFieldNames ? '' : 'screenshots',
-      $pb.PbFieldType.PM,
-      subBuilder: Screenshot.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScreenshotResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Screenshot>(1, _omitFieldNames ? '' : 'screenshots', $pb.PbFieldType.PM, subBuilder: Screenshot.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ScreenshotResult clone() => ScreenshotResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ScreenshotResult copyWith(void Function(ScreenshotResult) updates) =>
-      super.copyWith((message) => updates(message as ScreenshotResult))
-          as ScreenshotResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ScreenshotResult copyWith(void Function(ScreenshotResult) updates) => super.copyWith((message) => updates(message as ScreenshotResult)) as ScreenshotResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScreenshotResult create() => ScreenshotResult._();
   ScreenshotResult createEmptyInstance() => create();
-  static $pb.PbList<ScreenshotResult> createRepeated() =>
-      $pb.PbList<ScreenshotResult>();
+  static $pb.PbList<ScreenshotResult> createRepeated() => $pb.PbList<ScreenshotResult>();
   @$core.pragma('dart2js:noInline')
-  static ScreenshotResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ScreenshotResult>(create);
+  static ScreenshotResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ScreenshotResult>(create);
   static ScreenshotResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -12203,28 +11138,11 @@ class Screenshot extends $pb.GeneratedMessage {
     return $result;
   }
   Screenshot._() : super();
-  factory Screenshot.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Screenshot.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Screenshot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Screenshot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Screenshot',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Screenshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'alphaChannel')
     ..aOB(3, _omitFieldNames ? '' : 'animated')
     ..aOM<Game>(4, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
@@ -12233,17 +11151,19 @@ class Screenshot extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Screenshot clone() => Screenshot()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Screenshot copyWith(void Function(Screenshot) updates) =>
-      super.copyWith((message) => updates(message as Screenshot)) as Screenshot;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Screenshot copyWith(void Function(Screenshot) updates) => super.copyWith((message) => updates(message as Screenshot)) as Screenshot;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -12252,17 +11172,13 @@ class Screenshot extends $pb.GeneratedMessage {
   Screenshot createEmptyInstance() => create();
   static $pb.PbList<Screenshot> createRepeated() => $pb.PbList<Screenshot>();
   @$core.pragma('dart2js:noInline')
-  static Screenshot getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<Screenshot>(create);
+  static Screenshot getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Screenshot>(create);
   static Screenshot? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -12271,10 +11187,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get alphaChannel => $_getBF(1);
   @$pb.TagNumber(2)
-  set alphaChannel($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set alphaChannel($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlphaChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -12283,10 +11196,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get animated => $_getBF(2);
   @$pb.TagNumber(3)
-  set animated($core.bool v) {
-    $_setBool(2, v);
-  }
-
+  set animated($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimated() => $_has(2);
   @$pb.TagNumber(3)
@@ -12295,10 +11205,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Game get game => $_getN(3);
   @$pb.TagNumber(4)
-  set game(Game v) {
-    setField(4, v);
-  }
-
+  set game(Game v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGame() => $_has(3);
   @$pb.TagNumber(4)
@@ -12309,10 +11216,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.int get height => $_getIZ(4);
   @$pb.TagNumber(5)
-  set height($core.int v) {
-    $_setSignedInt32(4, v);
-  }
-
+  set height($core.int v) { $_setSignedInt32(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(5)
@@ -12321,10 +11225,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get imageId => $_getSZ(5);
   @$pb.TagNumber(6)
-  set imageId($core.String v) {
-    $_setString(5, v);
-  }
-
+  set imageId($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasImageId() => $_has(5);
   @$pb.TagNumber(6)
@@ -12333,10 +11234,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get url => $_getSZ(6);
   @$pb.TagNumber(7)
-  set url($core.String v) {
-    $_setString(6, v);
-  }
-
+  set url($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasUrl() => $_has(6);
   @$pb.TagNumber(7)
@@ -12345,10 +11243,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get width => $_getIZ(7);
   @$pb.TagNumber(8)
-  set width($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set width($core.int v) { $_setSignedInt32(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasWidth() => $_has(7);
   @$pb.TagNumber(8)
@@ -12357,10 +11252,7 @@ class Screenshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get checksum => $_getSZ(8);
   @$pb.TagNumber(9)
-  set checksum($core.String v) {
-    $_setString(8, v);
-  }
-
+  set checksum($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasChecksum() => $_has(8);
   @$pb.TagNumber(9)
@@ -12378,51 +11270,33 @@ class SearchResult extends $pb.GeneratedMessage {
     return $result;
   }
   SearchResult._() : super();
-  factory SearchResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SearchResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory SearchResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory SearchResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'SearchResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Search>(
-      1,
-      _omitFieldNames ? '' : 'searches',
-      $pb.PbFieldType.PM,
-      subBuilder: Search.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Search>(1, _omitFieldNames ? '' : 'searches', $pb.PbFieldType.PM, subBuilder: Search.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   SearchResult clone() => SearchResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  SearchResult copyWith(void Function(SearchResult) updates) =>
-      super.copyWith((message) => updates(message as SearchResult))
-          as SearchResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  SearchResult copyWith(void Function(SearchResult) updates) => super.copyWith((message) => updates(message as SearchResult)) as SearchResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SearchResult create() => SearchResult._();
   SearchResult createEmptyInstance() => create();
-  static $pb.PbList<SearchResult> createRepeated() =>
-      $pb.PbList<SearchResult>();
+  static $pb.PbList<SearchResult> createRepeated() => $pb.PbList<SearchResult>();
   @$core.pragma('dart2js:noInline')
-  static SearchResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<SearchResult>(create);
+  static SearchResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchResult>(create);
   static SearchResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -12488,75 +11362,36 @@ class Search extends $pb.GeneratedMessage {
     return $result;
   }
   Search._() : super();
-  factory Search.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Search.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Search.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Search.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Search',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Search', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(2, _omitFieldNames ? '' : 'alternativeName')
-    ..aOM<Character>(
-      3,
-      _omitFieldNames ? '' : 'character',
-      subBuilder: Character.create,
-    )
-    ..aOM<Collection>(
-      4,
-      _omitFieldNames ? '' : 'collection',
-      subBuilder: Collection.create,
-    )
-    ..aOM<Company>(
-      5,
-      _omitFieldNames ? '' : 'company',
-      subBuilder: Company.create,
-    )
+    ..aOM<Character>(3, _omitFieldNames ? '' : 'character', subBuilder: Character.create)
+    ..aOM<Collection>(4, _omitFieldNames ? '' : 'collection', subBuilder: Collection.create)
+    ..aOM<Company>(5, _omitFieldNames ? '' : 'company', subBuilder: Company.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOM<Game>(7, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOS(8, _omitFieldNames ? '' : 'name')
-    ..aOM<Platform>(
-      9,
-      _omitFieldNames ? '' : 'platform',
-      subBuilder: Platform.create,
-    )
-    ..aOM<$0.Timestamp>(
-      10,
-      _omitFieldNames ? '' : 'publishedAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..aOM<TestDummy>(
-      11,
-      _omitFieldNames ? '' : 'testDummy',
-      subBuilder: TestDummy.create,
-    )
+    ..aOM<Platform>(9, _omitFieldNames ? '' : 'platform', subBuilder: Platform.create)
+    ..aOM<$0.Timestamp>(10, _omitFieldNames ? '' : 'publishedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<TestDummy>(11, _omitFieldNames ? '' : 'testDummy', subBuilder: TestDummy.create)
     ..aOM<Theme>(12, _omitFieldNames ? '' : 'theme', subBuilder: Theme.create)
     ..aOS(13, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Search clone() => Search()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Search copyWith(void Function(Search) updates) =>
-      super.copyWith((message) => updates(message as Search)) as Search;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Search copyWith(void Function(Search) updates) => super.copyWith((message) => updates(message as Search)) as Search;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -12565,17 +11400,13 @@ class Search extends $pb.GeneratedMessage {
   Search createEmptyInstance() => create();
   static $pb.PbList<Search> createRepeated() => $pb.PbList<Search>();
   @$core.pragma('dart2js:noInline')
-  static Search getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Search>(create);
+  static Search getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Search>(create);
   static Search? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -12584,10 +11415,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get alternativeName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set alternativeName($core.String v) {
-    $_setString(1, v);
-  }
-
+  set alternativeName($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlternativeName() => $_has(1);
   @$pb.TagNumber(2)
@@ -12596,10 +11424,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Character get character => $_getN(2);
   @$pb.TagNumber(3)
-  set character(Character v) {
-    setField(3, v);
-  }
-
+  set character(Character v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCharacter() => $_has(2);
   @$pb.TagNumber(3)
@@ -12610,10 +11435,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Collection get collection => $_getN(3);
   @$pb.TagNumber(4)
-  set collection(Collection v) {
-    setField(4, v);
-  }
-
+  set collection(Collection v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCollection() => $_has(3);
   @$pb.TagNumber(4)
@@ -12624,10 +11446,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Company get company => $_getN(4);
   @$pb.TagNumber(5)
-  set company(Company v) {
-    setField(5, v);
-  }
-
+  set company(Company v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCompany() => $_has(4);
   @$pb.TagNumber(5)
@@ -12638,10 +11457,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) {
-    $_setString(5, v);
-  }
-
+  set description($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -12650,10 +11466,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Game get game => $_getN(6);
   @$pb.TagNumber(7)
-  set game(Game v) {
-    setField(7, v);
-  }
-
+  set game(Game v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGame() => $_has(6);
   @$pb.TagNumber(7)
@@ -12664,10 +11477,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get name => $_getSZ(7);
   @$pb.TagNumber(8)
-  set name($core.String v) {
-    $_setString(7, v);
-  }
-
+  set name($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasName() => $_has(7);
   @$pb.TagNumber(8)
@@ -12676,10 +11486,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Platform get platform => $_getN(8);
   @$pb.TagNumber(9)
-  set platform(Platform v) {
-    setField(9, v);
-  }
-
+  set platform(Platform v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPlatform() => $_has(8);
   @$pb.TagNumber(9)
@@ -12690,10 +11497,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $0.Timestamp get publishedAt => $_getN(9);
   @$pb.TagNumber(10)
-  set publishedAt($0.Timestamp v) {
-    setField(10, v);
-  }
-
+  set publishedAt($0.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasPublishedAt() => $_has(9);
   @$pb.TagNumber(10)
@@ -12704,10 +11508,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   TestDummy get testDummy => $_getN(10);
   @$pb.TagNumber(11)
-  set testDummy(TestDummy v) {
-    setField(11, v);
-  }
-
+  set testDummy(TestDummy v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTestDummy() => $_has(10);
   @$pb.TagNumber(11)
@@ -12718,10 +11519,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Theme get theme => $_getN(11);
   @$pb.TagNumber(12)
-  set theme(Theme v) {
-    setField(12, v);
-  }
-
+  set theme(Theme v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasTheme() => $_has(11);
   @$pb.TagNumber(12)
@@ -12732,10 +11530,7 @@ class Search extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get checksum => $_getSZ(12);
   @$pb.TagNumber(13)
-  set checksum($core.String v) {
-    $_setString(12, v);
-  }
-
+  set checksum($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(13)
   $core.bool hasChecksum() => $_has(12);
   @$pb.TagNumber(13)
@@ -12753,51 +11548,33 @@ class TestDummyResult extends $pb.GeneratedMessage {
     return $result;
   }
   TestDummyResult._() : super();
-  factory TestDummyResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TestDummyResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory TestDummyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory TestDummyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'TestDummyResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<TestDummy>(
-      1,
-      _omitFieldNames ? '' : 'testdummies',
-      $pb.PbFieldType.PM,
-      subBuilder: TestDummy.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestDummyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<TestDummy>(1, _omitFieldNames ? '' : 'testdummies', $pb.PbFieldType.PM, subBuilder: TestDummy.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   TestDummyResult clone() => TestDummyResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  TestDummyResult copyWith(void Function(TestDummyResult) updates) =>
-      super.copyWith((message) => updates(message as TestDummyResult))
-          as TestDummyResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  TestDummyResult copyWith(void Function(TestDummyResult) updates) => super.copyWith((message) => updates(message as TestDummyResult)) as TestDummyResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TestDummyResult create() => TestDummyResult._();
   TestDummyResult createEmptyInstance() => create();
-  static $pb.PbList<TestDummyResult> createRepeated() =>
-      $pb.PbList<TestDummyResult>();
+  static $pb.PbList<TestDummyResult> createRepeated() => $pb.PbList<TestDummyResult>();
   @$core.pragma('dart2js:noInline')
-  static TestDummyResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TestDummyResult>(create);
+  static TestDummyResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestDummyResult>(create);
   static TestDummyResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -12883,88 +11660,41 @@ class TestDummy extends $pb.GeneratedMessage {
     return $result;
   }
   TestDummy._() : super();
-  factory TestDummy.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TestDummy.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory TestDummy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory TestDummy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'TestDummy',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestDummy', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOB(2, _omitFieldNames ? '' : 'boolValue')
-    ..aOM<$0.Timestamp>(
-      3,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
-    ..e<TestDummyEnumTestEnum>(
-      4,
-      _omitFieldNames ? '' : 'enumTest',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: TestDummyEnumTestEnum.TESTDUMMY_ENUM_TEST_NULL,
-      valueOf: TestDummyEnumTestEnum.valueOf,
-      enumValues: TestDummyEnumTestEnum.values,
-    )
-    ..a<$core.double>(
-      5,
-      _omitFieldNames ? '' : 'floatValue',
-      $pb.PbFieldType.OD,
-    )
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..e<TestDummyEnumTestEnum>(4, _omitFieldNames ? '' : 'enumTest', $pb.PbFieldType.OE, defaultOrMaker: TestDummyEnumTestEnum.TESTDUMMY_ENUM_TEST_NULL, valueOf: TestDummyEnumTestEnum.valueOf, enumValues: TestDummyEnumTestEnum.values)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'floatValue', $pb.PbFieldType.OD)
     ..aOM<Game>(6, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..p<$core.int>(7, _omitFieldNames ? '' : 'integerArray', $pb.PbFieldType.K3)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'integerValue', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'name')
-    ..a<$core.int>(
-      10,
-      _omitFieldNames ? '' : 'newIntegerValue',
-      $pb.PbFieldType.O3,
-    )
+    ..a<$core.int>(10, _omitFieldNames ? '' : 'newIntegerValue', $pb.PbFieldType.O3)
     ..aOB(11, _omitFieldNames ? '' : 'private')
     ..aOS(12, _omitFieldNames ? '' : 'slug')
     ..pPS(13, _omitFieldNames ? '' : 'stringArray')
-    ..pc<TestDummy>(
-      14,
-      _omitFieldNames ? '' : 'testDummies',
-      $pb.PbFieldType.PM,
-      subBuilder: TestDummy.create,
-    )
-    ..aOM<TestDummy>(
-      15,
-      _omitFieldNames ? '' : 'testDummy',
-      subBuilder: TestDummy.create,
-    )
-    ..aOM<$0.Timestamp>(
-      16,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..pc<TestDummy>(14, _omitFieldNames ? '' : 'testDummies', $pb.PbFieldType.PM, subBuilder: TestDummy.create)
+    ..aOM<TestDummy>(15, _omitFieldNames ? '' : 'testDummy', subBuilder: TestDummy.create)
+    ..aOM<$0.Timestamp>(16, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(17, _omitFieldNames ? '' : 'url')
     ..aOS(18, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   TestDummy clone() => TestDummy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  TestDummy copyWith(void Function(TestDummy) updates) =>
-      super.copyWith((message) => updates(message as TestDummy)) as TestDummy;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  TestDummy copyWith(void Function(TestDummy) updates) => super.copyWith((message) => updates(message as TestDummy)) as TestDummy;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -12973,17 +11703,13 @@ class TestDummy extends $pb.GeneratedMessage {
   TestDummy createEmptyInstance() => create();
   static $pb.PbList<TestDummy> createRepeated() => $pb.PbList<TestDummy>();
   @$core.pragma('dart2js:noInline')
-  static TestDummy getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestDummy>(create);
+  static TestDummy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestDummy>(create);
   static TestDummy? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -12992,10 +11718,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get boolValue => $_getBF(1);
   @$pb.TagNumber(2)
-  set boolValue($core.bool v) {
-    $_setBool(1, v);
-  }
-
+  set boolValue($core.bool v) { $_setBool(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoolValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -13004,10 +11727,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $0.Timestamp get createdAt => $_getN(2);
   @$pb.TagNumber(3)
-  set createdAt($0.Timestamp v) {
-    setField(3, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreatedAt() => $_has(2);
   @$pb.TagNumber(3)
@@ -13018,10 +11738,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   TestDummyEnumTestEnum get enumTest => $_getN(3);
   @$pb.TagNumber(4)
-  set enumTest(TestDummyEnumTestEnum v) {
-    setField(4, v);
-  }
-
+  set enumTest(TestDummyEnumTestEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEnumTest() => $_has(3);
   @$pb.TagNumber(4)
@@ -13030,10 +11747,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get floatValue => $_getN(4);
   @$pb.TagNumber(5)
-  set floatValue($core.double v) {
-    $_setDouble(4, v);
-  }
-
+  set floatValue($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasFloatValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -13042,10 +11756,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Game get game => $_getN(5);
   @$pb.TagNumber(6)
-  set game(Game v) {
-    setField(6, v);
-  }
-
+  set game(Game v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasGame() => $_has(5);
   @$pb.TagNumber(6)
@@ -13059,10 +11770,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.int get integerValue => $_getIZ(7);
   @$pb.TagNumber(8)
-  set integerValue($core.int v) {
-    $_setSignedInt32(7, v);
-  }
-
+  set integerValue($core.int v) { $_setSignedInt32(7, v); }
   @$pb.TagNumber(8)
   $core.bool hasIntegerValue() => $_has(7);
   @$pb.TagNumber(8)
@@ -13071,10 +11779,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get name => $_getSZ(8);
   @$pb.TagNumber(9)
-  set name($core.String v) {
-    $_setString(8, v);
-  }
-
+  set name($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(9)
   $core.bool hasName() => $_has(8);
   @$pb.TagNumber(9)
@@ -13083,10 +11788,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get newIntegerValue => $_getIZ(9);
   @$pb.TagNumber(10)
-  set newIntegerValue($core.int v) {
-    $_setSignedInt32(9, v);
-  }
-
+  set newIntegerValue($core.int v) { $_setSignedInt32(9, v); }
   @$pb.TagNumber(10)
   $core.bool hasNewIntegerValue() => $_has(9);
   @$pb.TagNumber(10)
@@ -13095,10 +11797,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool get private => $_getBF(10);
   @$pb.TagNumber(11)
-  set private($core.bool v) {
-    $_setBool(10, v);
-  }
-
+  set private($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(11)
   $core.bool hasPrivate() => $_has(10);
   @$pb.TagNumber(11)
@@ -13107,10 +11806,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get slug => $_getSZ(11);
   @$pb.TagNumber(12)
-  set slug($core.String v) {
-    $_setString(11, v);
-  }
-
+  set slug($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(12)
   $core.bool hasSlug() => $_has(11);
   @$pb.TagNumber(12)
@@ -13125,10 +11821,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   TestDummy get testDummy => $_getN(14);
   @$pb.TagNumber(15)
-  set testDummy(TestDummy v) {
-    setField(15, v);
-  }
-
+  set testDummy(TestDummy v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasTestDummy() => $_has(14);
   @$pb.TagNumber(15)
@@ -13139,10 +11832,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $0.Timestamp get updatedAt => $_getN(15);
   @$pb.TagNumber(16)
-  set updatedAt($0.Timestamp v) {
-    setField(16, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasUpdatedAt() => $_has(15);
   @$pb.TagNumber(16)
@@ -13153,10 +11843,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get url => $_getSZ(16);
   @$pb.TagNumber(17)
-  set url($core.String v) {
-    $_setString(16, v);
-  }
-
+  set url($core.String v) { $_setString(16, v); }
   @$pb.TagNumber(17)
   $core.bool hasUrl() => $_has(16);
   @$pb.TagNumber(17)
@@ -13165,10 +11852,7 @@ class TestDummy extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.String get checksum => $_getSZ(17);
   @$pb.TagNumber(18)
-  set checksum($core.String v) {
-    $_setString(17, v);
-  }
-
+  set checksum($core.String v) { $_setString(17, v); }
   @$pb.TagNumber(18)
   $core.bool hasChecksum() => $_has(17);
   @$pb.TagNumber(18)
@@ -13186,40 +11870,24 @@ class ThemeResult extends $pb.GeneratedMessage {
     return $result;
   }
   ThemeResult._() : super();
-  factory ThemeResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ThemeResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory ThemeResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ThemeResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'ThemeResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Theme>(
-      1,
-      _omitFieldNames ? '' : 'themes',
-      $pb.PbFieldType.PM,
-      subBuilder: Theme.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThemeResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Theme>(1, _omitFieldNames ? '' : 'themes', $pb.PbFieldType.PM, subBuilder: Theme.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   ThemeResult clone() => ThemeResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  ThemeResult copyWith(void Function(ThemeResult) updates) =>
-      super.copyWith((message) => updates(message as ThemeResult))
-          as ThemeResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ThemeResult copyWith(void Function(ThemeResult) updates) => super.copyWith((message) => updates(message as ThemeResult)) as ThemeResult;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -13228,8 +11896,7 @@ class ThemeResult extends $pb.GeneratedMessage {
   ThemeResult createEmptyInstance() => create();
   static $pb.PbList<ThemeResult> createRepeated() => $pb.PbList<ThemeResult>();
   @$core.pragma('dart2js:noInline')
-  static ThemeResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ThemeResult>(create);
+  static ThemeResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ThemeResult>(create);
   static ThemeResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -13271,53 +11938,30 @@ class Theme extends $pb.GeneratedMessage {
     return $result;
   }
   Theme._() : super();
-  factory Theme.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Theme.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Theme.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Theme.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Theme',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..aOM<$0.Timestamp>(
-      2,
-      _omitFieldNames ? '' : 'createdAt',
-      subBuilder: $0.Timestamp.create,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Theme', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'slug')
-    ..aOM<$0.Timestamp>(
-      5,
-      _omitFieldNames ? '' : 'updatedAt',
-      subBuilder: $0.Timestamp.create,
-    )
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'url')
     ..aOS(7, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Theme clone() => Theme()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Theme copyWith(void Function(Theme) updates) =>
-      super.copyWith((message) => updates(message as Theme)) as Theme;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Theme copyWith(void Function(Theme) updates) => super.copyWith((message) => updates(message as Theme)) as Theme;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -13326,17 +11970,13 @@ class Theme extends $pb.GeneratedMessage {
   Theme createEmptyInstance() => create();
   static $pb.PbList<Theme> createRepeated() => $pb.PbList<Theme>();
   @$core.pragma('dart2js:noInline')
-  static Theme getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Theme>(create);
+  static Theme getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Theme>(create);
   static Theme? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -13345,10 +11985,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $0.Timestamp get createdAt => $_getN(1);
   @$pb.TagNumber(2)
-  set createdAt($0.Timestamp v) {
-    setField(2, v);
-  }
-
+  set createdAt($0.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedAt() => $_has(1);
   @$pb.TagNumber(2)
@@ -13359,10 +11996,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
-  set name($core.String v) {
-    $_setString(2, v);
-  }
-
+  set name($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
@@ -13371,10 +12005,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get slug => $_getSZ(3);
   @$pb.TagNumber(4)
-  set slug($core.String v) {
-    $_setString(3, v);
-  }
-
+  set slug($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlug() => $_has(3);
   @$pb.TagNumber(4)
@@ -13383,10 +12014,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $0.Timestamp get updatedAt => $_getN(4);
   @$pb.TagNumber(5)
-  set updatedAt($0.Timestamp v) {
-    setField(5, v);
-  }
-
+  set updatedAt($0.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdatedAt() => $_has(4);
   @$pb.TagNumber(5)
@@ -13397,10 +12025,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get url => $_getSZ(5);
   @$pb.TagNumber(6)
-  set url($core.String v) {
-    $_setString(5, v);
-  }
-
+  set url($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasUrl() => $_has(5);
   @$pb.TagNumber(6)
@@ -13409,10 +12034,7 @@ class Theme extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get checksum => $_getSZ(6);
   @$pb.TagNumber(7)
-  set checksum($core.String v) {
-    $_setString(6, v);
-  }
-
+  set checksum($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(7)
   $core.bool hasChecksum() => $_has(6);
   @$pb.TagNumber(7)
@@ -13430,51 +12052,33 @@ class WebsiteResult extends $pb.GeneratedMessage {
     return $result;
   }
   WebsiteResult._() : super();
-  factory WebsiteResult.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory WebsiteResult.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory WebsiteResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory WebsiteResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'WebsiteResult',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..pc<Website>(
-      1,
-      _omitFieldNames ? '' : 'websites',
-      $pb.PbFieldType.PM,
-      subBuilder: Website.create,
-    )
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WebsiteResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..pc<Website>(1, _omitFieldNames ? '' : 'websites', $pb.PbFieldType.PM, subBuilder: Website.create)
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   WebsiteResult clone() => WebsiteResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  WebsiteResult copyWith(void Function(WebsiteResult) updates) =>
-      super.copyWith((message) => updates(message as WebsiteResult))
-          as WebsiteResult;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  WebsiteResult copyWith(void Function(WebsiteResult) updates) => super.copyWith((message) => updates(message as WebsiteResult)) as WebsiteResult;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WebsiteResult create() => WebsiteResult._();
   WebsiteResult createEmptyInstance() => create();
-  static $pb.PbList<WebsiteResult> createRepeated() =>
-      $pb.PbList<WebsiteResult>();
+  static $pb.PbList<WebsiteResult> createRepeated() => $pb.PbList<WebsiteResult>();
   @$core.pragma('dart2js:noInline')
-  static WebsiteResult getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<WebsiteResult>(create);
+  static WebsiteResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WebsiteResult>(create);
   static WebsiteResult? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -13512,51 +12116,29 @@ class Website extends $pb.GeneratedMessage {
     return $result;
   }
   Website._() : super();
-  factory Website.fromBuffer(
-    $core.List<$core.int> i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Website.fromJson(
-    $core.String i, [
-    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
-  ]) =>
-      create()..mergeFromJson(i, r);
+  factory Website.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Website.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Website',
-    package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'),
-    createEmptyInstance: create,
-  )
-    ..a<$fixnum.Int64>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.OU6,
-      defaultOrMaker: $fixnum.Int64.ZERO,
-    )
-    ..e<WebsiteCategoryEnum>(
-      2,
-      _omitFieldNames ? '' : 'category',
-      $pb.PbFieldType.OE,
-      defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL,
-      valueOf: WebsiteCategoryEnum.valueOf,
-      enumValues: WebsiteCategoryEnum.values,
-    )
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Website', package: const $pb.PackageName(_omitMessageNames ? '' : 'proto'), createEmptyInstance: create)
+    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<WebsiteCategoryEnum>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: WebsiteCategoryEnum.WEBSITE_CATEGORY_NULL, valueOf: WebsiteCategoryEnum.valueOf, enumValues: WebsiteCategoryEnum.values)
     ..aOM<Game>(3, _omitFieldNames ? '' : 'game', subBuilder: Game.create)
     ..aOB(4, _omitFieldNames ? '' : 'trusted')
     ..aOS(5, _omitFieldNames ? '' : 'url')
     ..aOS(6, _omitFieldNames ? '' : 'checksum')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
   Website clone() => Website()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
-  Website copyWith(void Function(Website) updates) =>
-      super.copyWith((message) => updates(message as Website)) as Website;
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Website copyWith(void Function(Website) updates) => super.copyWith((message) => updates(message as Website)) as Website;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -13565,17 +12147,13 @@ class Website extends $pb.GeneratedMessage {
   Website createEmptyInstance() => create();
   static $pb.PbList<Website> createRepeated() => $pb.PbList<Website>();
   @$core.pragma('dart2js:noInline')
-  static Website getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Website>(create);
+  static Website getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Website>(create);
   static Website? _defaultInstance;
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get id => $_getI64(0);
   @$pb.TagNumber(1)
-  set id($fixnum.Int64 v) {
-    $_setInt64(0, v);
-  }
-
+  set id($fixnum.Int64 v) { $_setInt64(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -13584,10 +12162,7 @@ class Website extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   WebsiteCategoryEnum get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category(WebsiteCategoryEnum v) {
-    setField(2, v);
-  }
-
+  set category(WebsiteCategoryEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -13596,10 +12171,7 @@ class Website extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Game get game => $_getN(2);
   @$pb.TagNumber(3)
-  set game(Game v) {
-    setField(3, v);
-  }
-
+  set game(Game v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGame() => $_has(2);
   @$pb.TagNumber(3)
@@ -13610,10 +12182,7 @@ class Website extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get trusted => $_getBF(3);
   @$pb.TagNumber(4)
-  set trusted($core.bool v) {
-    $_setBool(3, v);
-  }
-
+  set trusted($core.bool v) { $_setBool(3, v); }
   @$pb.TagNumber(4)
   $core.bool hasTrusted() => $_has(3);
   @$pb.TagNumber(4)
@@ -13622,10 +12191,7 @@ class Website extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get url => $_getSZ(4);
   @$pb.TagNumber(5)
-  set url($core.String v) {
-    $_setString(4, v);
-  }
-
+  set url($core.String v) { $_setString(4, v); }
   @$pb.TagNumber(5)
   $core.bool hasUrl() => $_has(4);
   @$pb.TagNumber(5)
@@ -13634,16 +12200,13 @@ class Website extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get checksum => $_getSZ(5);
   @$pb.TagNumber(6)
-  set checksum($core.String v) {
-    $_setString(5, v);
-  }
-
+  set checksum($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(6)
   $core.bool hasChecksum() => $_has(5);
   @$pb.TagNumber(6)
   void clearChecksum() => clearField(6);
 }
 
+
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

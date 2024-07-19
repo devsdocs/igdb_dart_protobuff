@@ -1,16 +1,15 @@
 name: igdb_dart_protobuff
 description: IGDB Generated Protobuf for Dart
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/devsdocs/igdb_dart_protobuff
 
 environment:
   sdk: ^3.0.5
 
-# Add regular dependencies here.
 dependencies:
   fixnum: ^1.1.0
-  protobuf: ^3.0.0
-  protoc_plugin: ^21.0.2
+  protobuf: ^3.1.0
+  protoc_plugin: ^21.1.2
 
 dev_dependencies:
   lint: ^2.1.2

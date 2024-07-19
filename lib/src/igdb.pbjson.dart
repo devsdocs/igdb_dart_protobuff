@@ -95,8 +95,7 @@ final $typed_data.Uint8List ageRatingRatingEnumDescriptor = $convert.base64Decod
     'VBQ0JfRxAiEgoKBkFDQl9QRxAjEgkKBUFDQl9NECQSDAoIQUNCX01BMTUQJRILCgdBQ0JfUjE4'
     'ECYSCgoGQUNCX1JDECc=');
 
-@$core
-    .Deprecated('Use ageRatingContentDescriptionCategoryEnumDescriptor instead')
+@$core.Deprecated('Use ageRatingContentDescriptionCategoryEnumDescriptor instead')
 const AgeRatingContentDescriptionCategoryEnum$json = {
   '1': 'AgeRatingContentDescriptionCategoryEnum',
   '2': [
@@ -245,8 +244,7 @@ const GenderGenderEnum$json = {
 
 /// Descriptor for `GenderGenderEnum`. Decode as a `google.protobuf.EnumDescriptorProto`.
 final $typed_data.Uint8List genderGenderEnumDescriptor = $convert.base64Decode(
-  'ChBHZW5kZXJHZW5kZXJFbnVtEggKBE1BTEUQABIKCgZGRU1BTEUQARIJCgVPVEhFUhAC',
-);
+    'ChBHZW5kZXJHZW5kZXJFbnVtEggKBE1BTEUQABIKCgZGRU1BTEUQARIJCgVPVEhFUhAC');
 
 @$core.Deprecated('Use characterSpeciesEnumDescriptor instead')
 const CharacterSpeciesEnum$json = {
@@ -282,11 +280,10 @@ const DateFormatChangeDateCategoryEnum$json = {
 };
 
 /// Descriptor for `DateFormatChangeDateCategoryEnum`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List dateFormatChangeDateCategoryEnumDescriptor =
-    $convert.base64Decode(
-        'CiBEYXRlRm9ybWF0Q2hhbmdlRGF0ZUNhdGVnb3J5RW51bRIOCgpZWVlZTU1NTUREEAASDAoIWV'
-        'lZWU1NTU0QARIICgRZWVlZEAISCgoGWVlZWVExEAMSCgoGWVlZWVEyEAQSCgoGWVlZWVEzEAUS'
-        'CgoGWVlZWVE0EAYSBwoDVEJEEAc=');
+final $typed_data.Uint8List dateFormatChangeDateCategoryEnumDescriptor = $convert.base64Decode(
+    'CiBEYXRlRm9ybWF0Q2hhbmdlRGF0ZUNhdGVnb3J5RW51bRIOCgpZWVlZTU1NTUREEAASDAoIWV'
+    'lZWU1NTU0QARIICgRZWVlZEAISCgoGWVlZWVExEAMSCgoGWVlZWVEyEAQSCgoGWVlZWVEzEAUS'
+    'CgoGWVlZWVE0EAYSBwoDVEJEEAc=');
 
 @$core.Deprecated('Use websiteCategoryEnumDescriptor instead')
 const WebsiteCategoryEnum$json = {
@@ -442,14 +439,11 @@ const GameVersionFeatureCategoryEnum$json = {
 };
 
 /// Descriptor for `GameVersionFeatureCategoryEnum`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List gameVersionFeatureCategoryEnumDescriptor =
-    $convert.base64Decode(
-        'Ch5HYW1lVmVyc2lvbkZlYXR1cmVDYXRlZ29yeUVudW0SCwoHQk9PTEVBThAAEg8KC0RFU0NSSV'
-        'BUSU9OEAE=');
+final $typed_data.Uint8List gameVersionFeatureCategoryEnumDescriptor = $convert.base64Decode(
+    'Ch5HYW1lVmVyc2lvbkZlYXR1cmVDYXRlZ29yeUVudW0SCwoHQk9PTEVBThAAEg8KC0RFU0NSSV'
+    'BUSU9OEAE=');
 
-@$core.Deprecated(
-  'Use gameVersionFeatureValueIncludedFeatureEnumDescriptor instead',
-)
+@$core.Deprecated('Use gameVersionFeatureValueIncludedFeatureEnumDescriptor instead')
 const GameVersionFeatureValueIncludedFeatureEnum$json = {
   '1': 'GameVersionFeatureValueIncludedFeatureEnum',
   '2': [
@@ -460,11 +454,9 @@ const GameVersionFeatureValueIncludedFeatureEnum$json = {
 };
 
 /// Descriptor for `GameVersionFeatureValueIncludedFeatureEnum`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List
-    gameVersionFeatureValueIncludedFeatureEnumDescriptor =
-    $convert.base64Decode(
-        'CipHYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZUluY2x1ZGVkRmVhdHVyZUVudW0SEAoMTk9UX0lOQ0'
-        'xVREVEEAASDAoISU5DTFVERUQQARISCg5QUkVfT1JERVJfT05MWRAC');
+final $typed_data.Uint8List gameVersionFeatureValueIncludedFeatureEnumDescriptor = $convert.base64Decode(
+    'CipHYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZUluY2x1ZGVkRmVhdHVyZUVudW0SEAoMTk9UX0lOQ0'
+    'xVREVEEAASDAoISU5DTFVERUQQARISCg5QUkVfT1JERVJfT05MWRAC');
 
 @$core.Deprecated('Use platformCategoryEnumDescriptor instead')
 const PlatformCategoryEnum$json = {
@@ -511,6 +503,20 @@ final $typed_data.Uint8List regionRegionEnumDescriptor = $convert.base64Decode(
     'UEFOEAUSCQoFQ0hJTkEQBhIICgRBU0lBEAcSDQoJV09STERXSURFEAgSCQoFS09SRUEQCRIKCg'
     'ZCUkFaSUwQCg==');
 
+@$core.Deprecated('Use popularitySourcePopularitySourceEnumDescriptor instead')
+const PopularitySourcePopularitySourceEnum$json = {
+  '1': 'PopularitySourcePopularitySourceEnum',
+  '2': [
+    {'1': 'POPULARITYSOURCE_POPULARITY_SOURCE_NULL', '2': 0},
+    {'1': 'IGDB', '2': 121},
+  ],
+};
+
+/// Descriptor for `PopularitySourcePopularitySourceEnum`. Decode as a `google.protobuf.EnumDescriptorProto`.
+final $typed_data.Uint8List popularitySourcePopularitySourceEnumDescriptor = $convert.base64Decode(
+    'CiRQb3B1bGFyaXR5U291cmNlUG9wdWxhcml0eVNvdXJjZUVudW0SKwonUE9QVUxBUklUWVNPVV'
+    'JDRV9QT1BVTEFSSVRZX1NPVVJDRV9OVUxMEAASCAoESUdEQhB5');
+
 @$core.Deprecated('Use testDummyEnumTestEnumDescriptor instead')
 const TestDummyEnumTestEnum$json = {
   '1': 'TestDummyEnumTestEnum',
@@ -536,8 +542,7 @@ const Count$json = {
 
 /// Descriptor for `Count`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List countDescriptor = $convert.base64Decode(
-  'CgVDb3VudBIUCgVjb3VudBgBIAEoA1IFY291bnQ=',
-);
+    'CgVDb3VudBIUCgVjb3VudBgBIAEoA1IFY291bnQ=');
 
 @$core.Deprecated('Use multiQueryResultDescriptor instead')
 const MultiQueryResult$json = {
@@ -558,14 +563,7 @@ final $typed_data.Uint8List multiQueryResultDescriptor = $convert.base64Decode(
 const MultiQueryResultArray$json = {
   '1': 'MultiQueryResultArray',
   '2': [
-    {
-      '1': 'result',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.MultiQueryResult',
-      '10': 'result',
-    },
+    {'1': 'result', '3': 1, '4': 3, '5': 11, '6': '.proto.MultiQueryResult', '10': 'result'},
   ],
 };
 
@@ -578,14 +576,7 @@ final $typed_data.Uint8List multiQueryResultArrayDescriptor = $convert.base64Dec
 const AgeRatingResult$json = {
   '1': 'AgeRatingResult',
   '2': [
-    {
-      '1': 'ageratings',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AgeRating',
-      '10': 'ageratings',
-    },
+    {'1': 'ageratings', '3': 1, '4': 3, '5': 11, '6': '.proto.AgeRating', '10': 'ageratings'},
   ],
 };
 
@@ -599,30 +590,9 @@ const AgeRating$json = {
   '1': 'AgeRating',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.AgeRatingCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'content_descriptions',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AgeRatingContentDescription',
-      '10': 'contentDescriptions',
-    },
-    {
-      '1': 'rating',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.AgeRatingRatingEnum',
-      '10': 'rating',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.AgeRatingCategoryEnum', '10': 'category'},
+    {'1': 'content_descriptions', '3': 3, '4': 3, '5': 11, '6': '.proto.AgeRatingContentDescription', '10': 'contentDescriptions'},
+    {'1': 'rating', '3': 4, '4': 1, '5': 14, '6': '.proto.AgeRatingRatingEnum', '10': 'rating'},
     {'1': 'rating_cover_url', '3': 5, '4': 1, '5': 9, '10': 'ratingCoverUrl'},
     {'1': 'synopsis', '3': 6, '4': 1, '5': 9, '10': 'synopsis'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
@@ -642,37 +612,22 @@ final $typed_data.Uint8List ageRatingDescriptor = $convert.base64Decode(
 const AgeRatingContentDescriptionResult$json = {
   '1': 'AgeRatingContentDescriptionResult',
   '2': [
-    {
-      '1': 'ageratingcontentdescriptions',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AgeRatingContentDescription',
-      '10': 'ageratingcontentdescriptions',
-    },
+    {'1': 'ageratingcontentdescriptions', '3': 1, '4': 3, '5': 11, '6': '.proto.AgeRatingContentDescription', '10': 'ageratingcontentdescriptions'},
   ],
 };
 
 /// Descriptor for `AgeRatingContentDescriptionResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List ageRatingContentDescriptionResultDescriptor =
-    $convert.base64Decode(
-        'CiFBZ2VSYXRpbmdDb250ZW50RGVzY3JpcHRpb25SZXN1bHQSZgocYWdlcmF0aW5nY29udGVudG'
-        'Rlc2NyaXB0aW9ucxgBIAMoCzIiLnByb3RvLkFnZVJhdGluZ0NvbnRlbnREZXNjcmlwdGlvblIc'
-        'YWdlcmF0aW5nY29udGVudGRlc2NyaXB0aW9ucw==');
+final $typed_data.Uint8List ageRatingContentDescriptionResultDescriptor = $convert.base64Decode(
+    'CiFBZ2VSYXRpbmdDb250ZW50RGVzY3JpcHRpb25SZXN1bHQSZgocYWdlcmF0aW5nY29udGVudG'
+    'Rlc2NyaXB0aW9ucxgBIAMoCzIiLnByb3RvLkFnZVJhdGluZ0NvbnRlbnREZXNjcmlwdGlvblIc'
+    'YWdlcmF0aW5nY29udGVudGRlc2NyaXB0aW9ucw==');
 
 @$core.Deprecated('Use ageRatingContentDescriptionDescriptor instead')
 const AgeRatingContentDescription$json = {
   '1': 'AgeRatingContentDescription',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.AgeRatingContentDescriptionCategoryEnum',
-      '10': 'category',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.AgeRatingContentDescriptionCategoryEnum', '10': 'category'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'checksum', '3': 4, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -689,14 +644,7 @@ final $typed_data.Uint8List ageRatingContentDescriptionDescriptor = $convert.bas
 const AlternativeNameResult$json = {
   '1': 'AlternativeNameResult',
   '2': [
-    {
-      '1': 'alternativenames',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AlternativeName',
-      '10': 'alternativenames',
-    },
+    {'1': 'alternativenames', '3': 1, '4': 3, '5': 11, '6': '.proto.AlternativeName', '10': 'alternativenames'},
   ],
 };
 
@@ -727,14 +675,7 @@ final $typed_data.Uint8List alternativeNameDescriptor = $convert.base64Decode(
 const ArtworkResult$json = {
   '1': 'ArtworkResult',
   '2': [
-    {
-      '1': 'artworks',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Artwork',
-      '10': 'artworks',
-    },
+    {'1': 'artworks', '3': 1, '4': 3, '5': 11, '6': '.proto.Artwork', '10': 'artworks'},
   ],
 };
 
@@ -771,14 +712,7 @@ final $typed_data.Uint8List artworkDescriptor = $convert.base64Decode(
 const CharacterResult$json = {
   '1': 'CharacterResult',
   '2': [
-    {
-      '1': 'characters',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Character',
-      '10': 'characters',
-    },
+    {'1': 'characters', '3': 1, '4': 3, '5': 11, '6': '.proto.Character', '10': 'characters'},
   ],
 };
 
@@ -794,50 +728,15 @@ const Character$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'akas', '3': 2, '4': 3, '5': 9, '10': 'akas'},
     {'1': 'country_name', '3': 3, '4': 1, '5': 9, '10': 'countryName'},
-    {
-      '1': 'created_at',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'games', '3': 6, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
-    {
-      '1': 'gender',
-      '3': 7,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.GenderGenderEnum',
-      '10': 'gender',
-    },
-    {
-      '1': 'mug_shot',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.CharacterMugShot',
-      '10': 'mugShot',
-    },
+    {'1': 'gender', '3': 7, '4': 1, '5': 14, '6': '.proto.GenderGenderEnum', '10': 'gender'},
+    {'1': 'mug_shot', '3': 8, '4': 1, '5': 11, '6': '.proto.CharacterMugShot', '10': 'mugShot'},
     {'1': 'name', '3': 9, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 10, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'species',
-      '3': 11,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.CharacterSpeciesEnum',
-      '10': 'species',
-    },
-    {
-      '1': 'updated_at',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'species', '3': 11, '4': 1, '5': 14, '6': '.proto.CharacterSpeciesEnum', '10': 'species'},
+    {'1': 'updated_at', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 13, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 14, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -860,22 +759,14 @@ final $typed_data.Uint8List characterDescriptor = $convert.base64Decode(
 const CharacterMugShotResult$json = {
   '1': 'CharacterMugShotResult',
   '2': [
-    {
-      '1': 'charactermugshots',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.CharacterMugShot',
-      '10': 'charactermugshots',
-    },
+    {'1': 'charactermugshots', '3': 1, '4': 3, '5': 11, '6': '.proto.CharacterMugShot', '10': 'charactermugshots'},
   ],
 };
 
 /// Descriptor for `CharacterMugShotResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List characterMugShotResultDescriptor =
-    $convert.base64Decode(
-        'ChZDaGFyYWN0ZXJNdWdTaG90UmVzdWx0EkUKEWNoYXJhY3Rlcm11Z3Nob3RzGAEgAygLMhcucH'
-        'JvdG8uQ2hhcmFjdGVyTXVnU2hvdFIRY2hhcmFjdGVybXVnc2hvdHM=');
+final $typed_data.Uint8List characterMugShotResultDescriptor = $convert.base64Decode(
+    'ChZDaGFyYWN0ZXJNdWdTaG90UmVzdWx0EkUKEWNoYXJhY3Rlcm11Z3Nob3RzGAEgAygLMhcucH'
+    'JvdG8uQ2hhcmFjdGVyTXVnU2hvdFIRY2hhcmFjdGVybXVnc2hvdHM=');
 
 @$core.Deprecated('Use characterMugShotDescriptor instead')
 const CharacterMugShot$json = {
@@ -903,14 +794,7 @@ final $typed_data.Uint8List characterMugShotDescriptor = $convert.base64Decode(
 const CollectionResult$json = {
   '1': 'CollectionResult',
   '2': [
-    {
-      '1': 'collections',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Collection',
-      '10': 'collections',
-    },
+    {'1': 'collections', '3': 1, '4': 3, '5': 11, '6': '.proto.Collection', '10': 'collections'},
   ],
 };
 
@@ -924,27 +808,16 @@ const Collection$json = {
   '1': 'Collection',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'games', '3': 3, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 5, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
+    {'1': 'type', '3': 9, '4': 1, '5': 11, '6': '.proto.CollectionType', '10': 'type'},
+    {'1': 'as_parent_relations', '3': 10, '4': 3, '5': 11, '6': '.proto.CollectionRelation', '10': 'asParentRelations'},
+    {'1': 'as_child_relations', '3': 11, '4': 3, '5': 11, '6': '.proto.CollectionRelation', '10': 'asChildRelations'},
   ],
 };
 
@@ -954,20 +827,200 @@ final $typed_data.Uint8List collectionDescriptor = $convert.base64Decode(
     'xlLnByb3RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZEF0EiEKBWdhbWVzGAMgAygLMgsucHJvdG8u'
     'R2FtZVIFZ2FtZXMSEgoEbmFtZRgEIAEoCVIEbmFtZRISCgRzbHVnGAUgASgJUgRzbHVnEjkKCn'
     'VwZGF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgl1cGRhdGVkQXQS'
-    'EAoDdXJsGAcgASgJUgN1cmwSGgoIY2hlY2tzdW0YCCABKAlSCGNoZWNrc3Vt');
+    'EAoDdXJsGAcgASgJUgN1cmwSGgoIY2hlY2tzdW0YCCABKAlSCGNoZWNrc3VtEikKBHR5cGUYCS'
+    'ABKAsyFS5wcm90by5Db2xsZWN0aW9uVHlwZVIEdHlwZRJJChNhc19wYXJlbnRfcmVsYXRpb25z'
+    'GAogAygLMhkucHJvdG8uQ29sbGVjdGlvblJlbGF0aW9uUhFhc1BhcmVudFJlbGF0aW9ucxJHCh'
+    'Jhc19jaGlsZF9yZWxhdGlvbnMYCyADKAsyGS5wcm90by5Db2xsZWN0aW9uUmVsYXRpb25SEGFz'
+    'Q2hpbGRSZWxhdGlvbnM=');
+
+@$core.Deprecated('Use collectionMembershipResultDescriptor instead')
+const CollectionMembershipResult$json = {
+  '1': 'CollectionMembershipResult',
+  '2': [
+    {'1': 'collectionmemberships', '3': 1, '4': 3, '5': 11, '6': '.proto.CollectionMembership', '10': 'collectionmemberships'},
+  ],
+};
+
+/// Descriptor for `CollectionMembershipResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionMembershipResultDescriptor = $convert.base64Decode(
+    'ChpDb2xsZWN0aW9uTWVtYmVyc2hpcFJlc3VsdBJRChVjb2xsZWN0aW9ubWVtYmVyc2hpcHMYAS'
+    'ADKAsyGy5wcm90by5Db2xsZWN0aW9uTWVtYmVyc2hpcFIVY29sbGVjdGlvbm1lbWJlcnNoaXBz');
+
+@$core.Deprecated('Use collectionMembershipDescriptor instead')
+const CollectionMembership$json = {
+  '1': 'CollectionMembership',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'game', '3': 2, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
+    {'1': 'collection', '3': 3, '4': 1, '5': 11, '6': '.proto.Collection', '10': 'collection'},
+    {'1': 'type', '3': 4, '4': 1, '5': 11, '6': '.proto.CollectionMembershipType', '10': 'type'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `CollectionMembership`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionMembershipDescriptor = $convert.base64Decode(
+    'ChRDb2xsZWN0aW9uTWVtYmVyc2hpcBIOCgJpZBgBIAEoBFICaWQSHwoEZ2FtZRgCIAEoCzILLn'
+    'Byb3RvLkdhbWVSBGdhbWUSMQoKY29sbGVjdGlvbhgDIAEoCzIRLnByb3RvLkNvbGxlY3Rpb25S'
+    'CmNvbGxlY3Rpb24SMwoEdHlwZRgEIAEoCzIfLnByb3RvLkNvbGxlY3Rpb25NZW1iZXJzaGlwVH'
+    'lwZVIEdHlwZRI5Cgp1cGRhdGVkX2F0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt'
+    'cFIJdXBkYXRlZEF0EjkKCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
+    'N0YW1wUgljcmVhdGVkQXQSGgoIY2hlY2tzdW0YByABKAlSCGNoZWNrc3Vt');
+
+@$core.Deprecated('Use collectionMembershipTypeResultDescriptor instead')
+const CollectionMembershipTypeResult$json = {
+  '1': 'CollectionMembershipTypeResult',
+  '2': [
+    {'1': 'collectionmembershiptypes', '3': 1, '4': 3, '5': 11, '6': '.proto.CollectionMembershipType', '10': 'collectionmembershiptypes'},
+  ],
+};
+
+/// Descriptor for `CollectionMembershipTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionMembershipTypeResultDescriptor = $convert.base64Decode(
+    'Ch5Db2xsZWN0aW9uTWVtYmVyc2hpcFR5cGVSZXN1bHQSXQoZY29sbGVjdGlvbm1lbWJlcnNoaX'
+    'B0eXBlcxgBIAMoCzIfLnByb3RvLkNvbGxlY3Rpb25NZW1iZXJzaGlwVHlwZVIZY29sbGVjdGlv'
+    'bm1lbWJlcnNoaXB0eXBlcw==');
+
+@$core.Deprecated('Use collectionMembershipTypeDescriptor instead')
+const CollectionMembershipType$json = {
+  '1': 'CollectionMembershipType',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
+    {'1': 'allowed_collection_type', '3': 4, '4': 1, '5': 11, '6': '.proto.CollectionType', '10': 'allowedCollectionType'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `CollectionMembershipType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionMembershipTypeDescriptor = $convert.base64Decode(
+    'ChhDb2xsZWN0aW9uTWVtYmVyc2hpcFR5cGUSDgoCaWQYASABKARSAmlkEhIKBG5hbWUYAiABKA'
+    'lSBG5hbWUSIAoLZGVzY3JpcHRpb24YAyABKAlSC2Rlc2NyaXB0aW9uEk0KF2FsbG93ZWRfY29s'
+    'bGVjdGlvbl90eXBlGAQgASgLMhUucHJvdG8uQ29sbGVjdGlvblR5cGVSFWFsbG93ZWRDb2xsZW'
+    'N0aW9uVHlwZRI5Cgp1cGRhdGVkX2F0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt'
+    'cFIJdXBkYXRlZEF0EjkKCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
+    'N0YW1wUgljcmVhdGVkQXQSGgoIY2hlY2tzdW0YByABKAlSCGNoZWNrc3Vt');
+
+@$core.Deprecated('Use collectionRelationResultDescriptor instead')
+const CollectionRelationResult$json = {
+  '1': 'CollectionRelationResult',
+  '2': [
+    {'1': 'collectionrelations', '3': 1, '4': 3, '5': 11, '6': '.proto.CollectionRelation', '10': 'collectionrelations'},
+  ],
+};
+
+/// Descriptor for `CollectionRelationResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionRelationResultDescriptor = $convert.base64Decode(
+    'ChhDb2xsZWN0aW9uUmVsYXRpb25SZXN1bHQSSwoTY29sbGVjdGlvbnJlbGF0aW9ucxgBIAMoCz'
+    'IZLnByb3RvLkNvbGxlY3Rpb25SZWxhdGlvblITY29sbGVjdGlvbnJlbGF0aW9ucw==');
+
+@$core.Deprecated('Use collectionRelationDescriptor instead')
+const CollectionRelation$json = {
+  '1': 'CollectionRelation',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'child_collection', '3': 2, '4': 1, '5': 11, '6': '.proto.Collection', '10': 'childCollection'},
+    {'1': 'parent_collection', '3': 3, '4': 1, '5': 11, '6': '.proto.Collection', '10': 'parentCollection'},
+    {'1': 'type', '3': 4, '4': 1, '5': 11, '6': '.proto.CollectionRelationType', '10': 'type'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `CollectionRelation`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionRelationDescriptor = $convert.base64Decode(
+    'ChJDb2xsZWN0aW9uUmVsYXRpb24SDgoCaWQYASABKARSAmlkEjwKEGNoaWxkX2NvbGxlY3Rpb2'
+    '4YAiABKAsyES5wcm90by5Db2xsZWN0aW9uUg9jaGlsZENvbGxlY3Rpb24SPgoRcGFyZW50X2Nv'
+    'bGxlY3Rpb24YAyABKAsyES5wcm90by5Db2xsZWN0aW9uUhBwYXJlbnRDb2xsZWN0aW9uEjEKBH'
+    'R5cGUYBCABKAsyHS5wcm90by5Db2xsZWN0aW9uUmVsYXRpb25UeXBlUgR0eXBlEjkKCnVwZGF0'
+    'ZWRfYXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgl1cGRhdGVkQXQSOQoKY3'
+    'JlYXRlZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCWNyZWF0ZWRBdBIa'
+    'CghjaGVja3N1bRgHIAEoCVIIY2hlY2tzdW0=');
+
+@$core.Deprecated('Use collectionRelationTypeResultDescriptor instead')
+const CollectionRelationTypeResult$json = {
+  '1': 'CollectionRelationTypeResult',
+  '2': [
+    {'1': 'collectionrelationtypes', '3': 1, '4': 3, '5': 11, '6': '.proto.CollectionRelationType', '10': 'collectionrelationtypes'},
+  ],
+};
+
+/// Descriptor for `CollectionRelationTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionRelationTypeResultDescriptor = $convert.base64Decode(
+    'ChxDb2xsZWN0aW9uUmVsYXRpb25UeXBlUmVzdWx0ElcKF2NvbGxlY3Rpb25yZWxhdGlvbnR5cG'
+    'VzGAEgAygLMh0ucHJvdG8uQ29sbGVjdGlvblJlbGF0aW9uVHlwZVIXY29sbGVjdGlvbnJlbGF0'
+    'aW9udHlwZXM=');
+
+@$core.Deprecated('Use collectionRelationTypeDescriptor instead')
+const CollectionRelationType$json = {
+  '1': 'CollectionRelationType',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
+    {'1': 'allowed_child_type', '3': 4, '4': 1, '5': 11, '6': '.proto.CollectionType', '10': 'allowedChildType'},
+    {'1': 'allowed_parent_type', '3': 5, '4': 1, '5': 11, '6': '.proto.CollectionType', '10': 'allowedParentType'},
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'created_at', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `CollectionRelationType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionRelationTypeDescriptor = $convert.base64Decode(
+    'ChZDb2xsZWN0aW9uUmVsYXRpb25UeXBlEg4KAmlkGAEgASgEUgJpZBISCgRuYW1lGAIgASgJUg'
+    'RuYW1lEiAKC2Rlc2NyaXB0aW9uGAMgASgJUgtkZXNjcmlwdGlvbhJDChJhbGxvd2VkX2NoaWxk'
+    'X3R5cGUYBCABKAsyFS5wcm90by5Db2xsZWN0aW9uVHlwZVIQYWxsb3dlZENoaWxkVHlwZRJFCh'
+    'NhbGxvd2VkX3BhcmVudF90eXBlGAUgASgLMhUucHJvdG8uQ29sbGVjdGlvblR5cGVSEWFsbG93'
+    'ZWRQYXJlbnRUeXBlEjkKCnVwZGF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
+    'N0YW1wUgl1cGRhdGVkQXQSOQoKY3JlYXRlZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U'
+    'aW1lc3RhbXBSCWNyZWF0ZWRBdBIaCghjaGVja3N1bRgIIAEoCVIIY2hlY2tzdW0=');
+
+@$core.Deprecated('Use collectionTypeResultDescriptor instead')
+const CollectionTypeResult$json = {
+  '1': 'CollectionTypeResult',
+  '2': [
+    {'1': 'collectiontypes', '3': 1, '4': 3, '5': 11, '6': '.proto.CollectionType', '10': 'collectiontypes'},
+  ],
+};
+
+/// Descriptor for `CollectionTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionTypeResultDescriptor = $convert.base64Decode(
+    'ChRDb2xsZWN0aW9uVHlwZVJlc3VsdBI/Cg9jb2xsZWN0aW9udHlwZXMYASADKAsyFS5wcm90by'
+    '5Db2xsZWN0aW9uVHlwZVIPY29sbGVjdGlvbnR5cGVz');
+
+@$core.Deprecated('Use collectionTypeDescriptor instead')
+const CollectionType$json = {
+  '1': 'CollectionType',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
+    {'1': 'updated_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `CollectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List collectionTypeDescriptor = $convert.base64Decode(
+    'Cg5Db2xsZWN0aW9uVHlwZRIOCgJpZBgBIAEoBFICaWQSEgoEbmFtZRgCIAEoCVIEbmFtZRIgCg'
+    'tkZXNjcmlwdGlvbhgDIAEoCVILZGVzY3JpcHRpb24SOQoKdXBkYXRlZF9hdBgEIAEoCzIaLmdv'
+    'b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXVwZGF0ZWRBdBI5CgpjcmVhdGVkX2F0GAUgASgLMh'
+    'ouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZEF0EhoKCGNoZWNrc3VtGAYgASgJ'
+    'UghjaGVja3N1bQ==');
 
 @$core.Deprecated('Use companyResultDescriptor instead')
 const CompanyResult$json = {
   '1': 'CompanyResult',
   '2': [
-    {
-      '1': 'companies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'companies',
-    },
+    {'1': 'companies', '3': 1, '4': 3, '5': 11, '6': '.proto.Company', '10': 'companies'},
   ],
 };
 
@@ -981,107 +1034,23 @@ const Company$json = {
   '1': 'Company',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'change_date',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'changeDate',
-    },
-    {
-      '1': 'change_date_category',
-      '3': 3,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'changeDateCategory',
-    },
-    {
-      '1': 'changed_company_id',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'changedCompanyId',
-    },
+    {'1': 'change_date', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'changeDate'},
+    {'1': 'change_date_category', '3': 3, '4': 1, '5': 14, '6': '.proto.DateFormatChangeDateCategoryEnum', '10': 'changeDateCategory'},
+    {'1': 'changed_company_id', '3': 4, '4': 1, '5': 11, '6': '.proto.Company', '10': 'changedCompanyId'},
     {'1': 'country', '3': 5, '4': 1, '5': 5, '10': 'country'},
-    {
-      '1': 'created_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {
-      '1': 'developed',
-      '3': 8,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'developed',
-    },
-    {
-      '1': 'logo',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.CompanyLogo',
-      '10': 'logo',
-    },
+    {'1': 'developed', '3': 8, '4': 3, '5': 11, '6': '.proto.Game', '10': 'developed'},
+    {'1': 'logo', '3': 9, '4': 1, '5': 11, '6': '.proto.CompanyLogo', '10': 'logo'},
     {'1': 'name', '3': 10, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'parent',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'parent',
-    },
-    {
-      '1': 'published',
-      '3': 12,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'published',
-    },
+    {'1': 'parent', '3': 11, '4': 1, '5': 11, '6': '.proto.Company', '10': 'parent'},
+    {'1': 'published', '3': 12, '4': 3, '5': 11, '6': '.proto.Game', '10': 'published'},
     {'1': 'slug', '3': 13, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'start_date',
-      '3': 14,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'startDate',
-    },
-    {
-      '1': 'start_date_category',
-      '3': 15,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'startDateCategory',
-    },
-    {
-      '1': 'updated_at',
-      '3': 16,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'start_date', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startDate'},
+    {'1': 'start_date_category', '3': 15, '4': 1, '5': 14, '6': '.proto.DateFormatChangeDateCategoryEnum', '10': 'startDateCategory'},
+    {'1': 'updated_at', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 17, '4': 1, '5': 9, '10': 'url'},
-    {
-      '1': 'websites',
-      '3': 18,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.CompanyWebsite',
-      '10': 'websites',
-    },
+    {'1': 'websites', '3': 18, '4': 3, '5': 11, '6': '.proto.CompanyWebsite', '10': 'websites'},
     {'1': 'checksum', '3': 19, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -1109,14 +1078,7 @@ final $typed_data.Uint8List companyDescriptor = $convert.base64Decode(
 const CompanyLogoResult$json = {
   '1': 'CompanyLogoResult',
   '2': [
-    {
-      '1': 'companylogos',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.CompanyLogo',
-      '10': 'companylogos',
-    },
+    {'1': 'companylogos', '3': 1, '4': 3, '5': 11, '6': '.proto.CompanyLogo', '10': 'companylogos'},
   ],
 };
 
@@ -1151,14 +1113,7 @@ final $typed_data.Uint8List companyLogoDescriptor = $convert.base64Decode(
 const CompanyWebsiteResult$json = {
   '1': 'CompanyWebsiteResult',
   '2': [
-    {
-      '1': 'companywebsites',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.CompanyWebsite',
-      '10': 'companywebsites',
-    },
+    {'1': 'companywebsites', '3': 1, '4': 3, '5': 11, '6': '.proto.CompanyWebsite', '10': 'companywebsites'},
   ],
 };
 
@@ -1172,14 +1127,7 @@ const CompanyWebsite$json = {
   '1': 'CompanyWebsite',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.WebsiteCategoryEnum', '10': 'category'},
     {'1': 'trusted', '3': 3, '4': 1, '5': 8, '10': 'trusted'},
     {'1': 'url', '3': 4, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 5, '4': 1, '5': 9, '10': 'checksum'},
@@ -1196,21 +1144,13 @@ final $typed_data.Uint8List companyWebsiteDescriptor = $convert.base64Decode(
 const CoverResult$json = {
   '1': 'CoverResult',
   '2': [
-    {
-      '1': 'covers',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Cover',
-      '10': 'covers',
-    },
+    {'1': 'covers', '3': 1, '4': 3, '5': 11, '6': '.proto.Cover', '10': 'covers'},
   ],
 };
 
 /// Descriptor for `CoverResult`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List coverResultDescriptor = $convert.base64Decode(
-  'CgtDb3ZlclJlc3VsdBIkCgZjb3ZlcnMYASADKAsyDC5wcm90by5Db3ZlclIGY292ZXJz',
-);
+    'CgtDb3ZlclJlc3VsdBIkCgZjb3ZlcnMYASADKAsyDC5wcm90by5Db3ZlclIGY292ZXJz');
 
 @$core.Deprecated('Use coverDescriptor instead')
 const Cover$json = {
@@ -1225,14 +1165,7 @@ const Cover$json = {
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'width', '3': 8, '4': 1, '5': 5, '10': 'width'},
     {'1': 'checksum', '3': 9, '4': 1, '5': 9, '10': 'checksum'},
-    {
-      '1': 'game_localization',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.GameLocalization',
-      '10': 'gameLocalization',
-    },
+    {'1': 'game_localization', '3': 10, '4': 1, '5': 11, '6': '.proto.GameLocalization', '10': 'gameLocalization'},
   ],
 };
 
@@ -1245,18 +1178,137 @@ final $typed_data.Uint8List coverDescriptor = $convert.base64Decode(
     'dW0YCSABKAlSCGNoZWNrc3VtEkQKEWdhbWVfbG9jYWxpemF0aW9uGAogASgLMhcucHJvdG8uR2'
     'FtZUxvY2FsaXphdGlvblIQZ2FtZUxvY2FsaXphdGlvbg==');
 
+@$core.Deprecated('Use eventResultDescriptor instead')
+const EventResult$json = {
+  '1': 'EventResult',
+  '2': [
+    {'1': 'events', '3': 1, '4': 3, '5': 11, '6': '.proto.Event', '10': 'events'},
+  ],
+};
+
+/// Descriptor for `EventResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventResultDescriptor = $convert.base64Decode(
+    'CgtFdmVudFJlc3VsdBIkCgZldmVudHMYASADKAsyDC5wcm90by5FdmVudFIGZXZlbnRz');
+
+@$core.Deprecated('Use eventDescriptor instead')
+const Event$json = {
+  '1': 'Event',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
+    {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
+    {'1': 'event_logo', '3': 5, '4': 1, '5': 11, '6': '.proto.EventLogo', '10': 'eventLogo'},
+    {'1': 'start_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {'1': 'time_zone', '3': 7, '4': 1, '5': 9, '10': 'timeZone'},
+    {'1': 'end_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {'1': 'live_stream_url', '3': 9, '4': 1, '5': 9, '10': 'liveStreamUrl'},
+    {'1': 'games', '3': 10, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
+    {'1': 'videos', '3': 11, '4': 3, '5': 11, '6': '.proto.GameVideo', '10': 'videos'},
+    {'1': 'event_networks', '3': 12, '4': 3, '5': 11, '6': '.proto.EventNetwork', '10': 'eventNetworks'},
+    {'1': 'created_at', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 15, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `Event`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventDescriptor = $convert.base64Decode(
+    'CgVFdmVudBIOCgJpZBgBIAEoBFICaWQSEgoEbmFtZRgCIAEoCVIEbmFtZRIgCgtkZXNjcmlwdG'
+    'lvbhgDIAEoCVILZGVzY3JpcHRpb24SEgoEc2x1ZxgEIAEoCVIEc2x1ZxIvCgpldmVudF9sb2dv'
+    'GAUgASgLMhAucHJvdG8uRXZlbnRMb2dvUglldmVudExvZ28SOQoKc3RhcnRfdGltZRgGIAEoCz'
+    'IaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXN0YXJ0VGltZRIbCgl0aW1lX3pvbmUYByAB'
+    'KAlSCHRpbWVab25lEjUKCGVuZF90aW1lGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdG'
+    'FtcFIHZW5kVGltZRImCg9saXZlX3N0cmVhbV91cmwYCSABKAlSDWxpdmVTdHJlYW1VcmwSIQoF'
+    'Z2FtZXMYCiADKAsyCy5wcm90by5HYW1lUgVnYW1lcxIoCgZ2aWRlb3MYCyADKAsyEC5wcm90by'
+    '5HYW1lVmlkZW9SBnZpZGVvcxI6Cg5ldmVudF9uZXR3b3JrcxgMIAMoCzITLnByb3RvLkV2ZW50'
+    'TmV0d29ya1INZXZlbnROZXR3b3JrcxI5CgpjcmVhdGVkX2F0GA0gASgLMhouZ29vZ2xlLnByb3'
+    'RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZEF0EjkKCnVwZGF0ZWRfYXQYDiABKAsyGi5nb29nbGUu'
+    'cHJvdG9idWYuVGltZXN0YW1wUgl1cGRhdGVkQXQSGgoIY2hlY2tzdW0YDyABKAlSCGNoZWNrc3'
+    'Vt');
+
+@$core.Deprecated('Use eventLogoResultDescriptor instead')
+const EventLogoResult$json = {
+  '1': 'EventLogoResult',
+  '2': [
+    {'1': 'eventlogos', '3': 1, '4': 3, '5': 11, '6': '.proto.EventLogo', '10': 'eventlogos'},
+  ],
+};
+
+/// Descriptor for `EventLogoResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventLogoResultDescriptor = $convert.base64Decode(
+    'Cg9FdmVudExvZ29SZXN1bHQSMAoKZXZlbnRsb2dvcxgBIAMoCzIQLnByb3RvLkV2ZW50TG9nb1'
+    'IKZXZlbnRsb2dvcw==');
+
+@$core.Deprecated('Use eventLogoDescriptor instead')
+const EventLogo$json = {
+  '1': 'EventLogo',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'event', '3': 2, '4': 1, '5': 11, '6': '.proto.Event', '10': 'event'},
+    {'1': 'alpha_channel', '3': 3, '4': 1, '5': 8, '10': 'alphaChannel'},
+    {'1': 'animated', '3': 4, '4': 1, '5': 8, '10': 'animated'},
+    {'1': 'height', '3': 5, '4': 1, '5': 5, '10': 'height'},
+    {'1': 'image_id', '3': 6, '4': 1, '5': 9, '10': 'imageId'},
+    {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
+    {'1': 'width', '3': 8, '4': 1, '5': 5, '10': 'width'},
+    {'1': 'created_at', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 11, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `EventLogo`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventLogoDescriptor = $convert.base64Decode(
+    'CglFdmVudExvZ28SDgoCaWQYASABKARSAmlkEiIKBWV2ZW50GAIgASgLMgwucHJvdG8uRXZlbn'
+    'RSBWV2ZW50EiMKDWFscGhhX2NoYW5uZWwYAyABKAhSDGFscGhhQ2hhbm5lbBIaCghhbmltYXRl'
+    'ZBgEIAEoCFIIYW5pbWF0ZWQSFgoGaGVpZ2h0GAUgASgFUgZoZWlnaHQSGQoIaW1hZ2VfaWQYBi'
+    'ABKAlSB2ltYWdlSWQSEAoDdXJsGAcgASgJUgN1cmwSFAoFd2lkdGgYCCABKAVSBXdpZHRoEjkK'
+    'CmNyZWF0ZWRfYXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgljcmVhdGVkQX'
+    'QSOQoKdXBkYXRlZF9hdBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXVwZGF0'
+    'ZWRBdBIaCghjaGVja3N1bRgLIAEoCVIIY2hlY2tzdW0=');
+
+@$core.Deprecated('Use eventNetworkResultDescriptor instead')
+const EventNetworkResult$json = {
+  '1': 'EventNetworkResult',
+  '2': [
+    {'1': 'eventnetworks', '3': 1, '4': 3, '5': 11, '6': '.proto.EventNetwork', '10': 'eventnetworks'},
+  ],
+};
+
+/// Descriptor for `EventNetworkResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventNetworkResultDescriptor = $convert.base64Decode(
+    'ChJFdmVudE5ldHdvcmtSZXN1bHQSOQoNZXZlbnRuZXR3b3JrcxgBIAMoCzITLnByb3RvLkV2ZW'
+    '50TmV0d29ya1INZXZlbnRuZXR3b3Jrcw==');
+
+@$core.Deprecated('Use eventNetworkDescriptor instead')
+const EventNetwork$json = {
+  '1': 'EventNetwork',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'event', '3': 2, '4': 1, '5': 11, '6': '.proto.Event', '10': 'event'},
+    {'1': 'url', '3': 3, '4': 1, '5': 9, '10': 'url'},
+    {'1': 'network_type', '3': 4, '4': 1, '5': 11, '6': '.proto.NetworkType', '10': 'networkType'},
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `EventNetwork`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventNetworkDescriptor = $convert.base64Decode(
+    'CgxFdmVudE5ldHdvcmsSDgoCaWQYASABKARSAmlkEiIKBWV2ZW50GAIgASgLMgwucHJvdG8uRX'
+    'ZlbnRSBWV2ZW50EhAKA3VybBgDIAEoCVIDdXJsEjUKDG5ldHdvcmtfdHlwZRgEIAEoCzISLnBy'
+    'b3RvLk5ldHdvcmtUeXBlUgtuZXR3b3JrVHlwZRI5CgpjcmVhdGVkX2F0GAUgASgLMhouZ29vZ2'
+    'xlLnByb3RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZEF0EjkKCnVwZGF0ZWRfYXQYBiABKAsyGi5n'
+    'b29nbGUucHJvdG9idWYuVGltZXN0YW1wUgl1cGRhdGVkQXQSGgoIY2hlY2tzdW0YByABKAlSCG'
+    'NoZWNrc3Vt');
+
 @$core.Deprecated('Use externalGameResultDescriptor instead')
 const ExternalGameResult$json = {
   '1': 'ExternalGameResult',
   '2': [
-    {
-      '1': 'externalgames',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.ExternalGame',
-      '10': 'externalgames',
-    },
+    {'1': 'externalgames', '3': 1, '4': 3, '5': 11, '6': '.proto.ExternalGame', '10': 'externalgames'},
   ],
 };
 
@@ -1270,51 +1322,16 @@ const ExternalGame$json = {
   '1': 'ExternalGame',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.ExternalGameCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.ExternalGameCategoryEnum', '10': 'category'},
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'game', '3': 4, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'name', '3': 5, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 6, '4': 1, '5': 9, '10': 'uid'},
-    {
-      '1': 'updated_at',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 8, '4': 1, '5': 9, '10': 'url'},
     {'1': 'year', '3': 9, '4': 1, '5': 5, '10': 'year'},
-    {
-      '1': 'media',
-      '3': 10,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.ExternalGameMediaEnum',
-      '10': 'media',
-    },
-    {
-      '1': 'platform',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platform',
-    },
+    {'1': 'media', '3': 10, '4': 1, '5': 14, '6': '.proto.ExternalGameMediaEnum', '10': 'media'},
+    {'1': 'platform', '3': 11, '4': 1, '5': 11, '6': '.proto.Platform', '10': 'platform'},
     {'1': 'countries', '3': 12, '4': 3, '5': 5, '10': 'countries'},
     {'1': 'checksum', '3': 13, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -1336,14 +1353,7 @@ final $typed_data.Uint8List externalGameDescriptor = $convert.base64Decode(
 const FranchiseResult$json = {
   '1': 'FranchiseResult',
   '2': [
-    {
-      '1': 'franchises',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Franchise',
-      '10': 'franchises',
-    },
+    {'1': 'franchises', '3': 1, '4': 3, '5': 11, '6': '.proto.Franchise', '10': 'franchises'},
   ],
 };
 
@@ -1357,25 +1367,11 @@ const Franchise$json = {
   '1': 'Franchise',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'games', '3': 3, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
     {'1': 'name', '3': 4, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 5, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -1399,347 +1395,77 @@ const GameResult$json = {
 
 /// Descriptor for `GameResult`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List gameResultDescriptor = $convert.base64Decode(
-  'CgpHYW1lUmVzdWx0EiEKBWdhbWVzGAEgAygLMgsucHJvdG8uR2FtZVIFZ2FtZXM=',
-);
+    'CgpHYW1lUmVzdWx0EiEKBWdhbWVzGAEgAygLMgsucHJvdG8uR2FtZVIFZ2FtZXM=');
 
 @$core.Deprecated('Use gameDescriptor instead')
 const Game$json = {
   '1': 'Game',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'age_ratings', '3': 2, '4': 3, '5': 11, '6': '.proto.AgeRating', '10': 'ageRatings'},
+    {'1': 'aggregated_rating', '3': 3, '4': 1, '5': 1, '10': 'aggregatedRating'},
+    {'1': 'aggregated_rating_count', '3': 4, '4': 1, '5': 5, '10': 'aggregatedRatingCount'},
+    {'1': 'alternative_names', '3': 5, '4': 3, '5': 11, '6': '.proto.AlternativeName', '10': 'alternativeNames'},
+    {'1': 'artworks', '3': 6, '4': 3, '5': 11, '6': '.proto.Artwork', '10': 'artworks'},
+    {'1': 'bundles', '3': 7, '4': 3, '5': 11, '6': '.proto.Game', '10': 'bundles'},
+    {'1': 'category', '3': 8, '4': 1, '5': 14, '6': '.proto.GameCategoryEnum', '10': 'category'},
+    {'1': 'collection', '3': 9, '4': 1, '5': 11, '6': '.proto.Collection', '10': 'collection'},
+    {'1': 'cover', '3': 10, '4': 1, '5': 11, '6': '.proto.Cover', '10': 'cover'},
+    {'1': 'created_at', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'dlcs', '3': 12, '4': 3, '5': 11, '6': '.proto.Game', '10': 'dlcs'},
+    {'1': 'expansions', '3': 13, '4': 3, '5': 11, '6': '.proto.Game', '10': 'expansions'},
+    {'1': 'external_games', '3': 14, '4': 3, '5': 11, '6': '.proto.ExternalGame', '10': 'externalGames'},
+    {'1': 'first_release_date', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'firstReleaseDate'},
     {
-      '1': 'age_ratings',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AgeRating',
-      '10': 'ageRatings',
-    },
-    {
-      '1': 'aggregated_rating',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '10': 'aggregatedRating',
-    },
-    {
-      '1': 'aggregated_rating_count',
-      '3': 4,
+      '1': 'follows',
+      '3': 16,
       '4': 1,
       '5': 5,
-      '10': 'aggregatedRatingCount',
+      '8': {'3': true},
+      '10': 'follows',
     },
-    {
-      '1': 'alternative_names',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.AlternativeName',
-      '10': 'alternativeNames',
-    },
-    {
-      '1': 'artworks',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Artwork',
-      '10': 'artworks',
-    },
-    {
-      '1': 'bundles',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'bundles',
-    },
-    {
-      '1': 'category',
-      '3': 8,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.GameCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'collection',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Collection',
-      '10': 'collection',
-    },
-    {
-      '1': 'cover',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Cover',
-      '10': 'cover',
-    },
-    {
-      '1': 'created_at',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {'1': 'dlcs', '3': 12, '4': 3, '5': 11, '6': '.proto.Game', '10': 'dlcs'},
-    {
-      '1': 'expansions',
-      '3': 13,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'expansions',
-    },
-    {
-      '1': 'external_games',
-      '3': 14,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.ExternalGame',
-      '10': 'externalGames',
-    },
-    {
-      '1': 'first_release_date',
-      '3': 15,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'firstReleaseDate',
-    },
-    {'1': 'follows', '3': 16, '4': 1, '5': 5, '10': 'follows'},
-    {
-      '1': 'franchise',
-      '3': 17,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Franchise',
-      '10': 'franchise',
-    },
-    {
-      '1': 'franchises',
-      '3': 18,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Franchise',
-      '10': 'franchises',
-    },
-    {
-      '1': 'game_engines',
-      '3': 19,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameEngine',
-      '10': 'gameEngines',
-    },
-    {
-      '1': 'game_modes',
-      '3': 20,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameMode',
-      '10': 'gameModes',
-    },
-    {
-      '1': 'genres',
-      '3': 21,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Genre',
-      '10': 'genres',
-    },
+    {'1': 'franchise', '3': 17, '4': 1, '5': 11, '6': '.proto.Franchise', '10': 'franchise'},
+    {'1': 'franchises', '3': 18, '4': 3, '5': 11, '6': '.proto.Franchise', '10': 'franchises'},
+    {'1': 'game_engines', '3': 19, '4': 3, '5': 11, '6': '.proto.GameEngine', '10': 'gameEngines'},
+    {'1': 'game_modes', '3': 20, '4': 3, '5': 11, '6': '.proto.GameMode', '10': 'gameModes'},
+    {'1': 'genres', '3': 21, '4': 3, '5': 11, '6': '.proto.Genre', '10': 'genres'},
     {'1': 'hypes', '3': 22, '4': 1, '5': 5, '10': 'hypes'},
-    {
-      '1': 'involved_companies',
-      '3': 23,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.InvolvedCompany',
-      '10': 'involvedCompanies',
-    },
-    {
-      '1': 'keywords',
-      '3': 24,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Keyword',
-      '10': 'keywords',
-    },
-    {
-      '1': 'multiplayer_modes',
-      '3': 25,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.MultiplayerMode',
-      '10': 'multiplayerModes',
-    },
+    {'1': 'involved_companies', '3': 23, '4': 3, '5': 11, '6': '.proto.InvolvedCompany', '10': 'involvedCompanies'},
+    {'1': 'keywords', '3': 24, '4': 3, '5': 11, '6': '.proto.Keyword', '10': 'keywords'},
+    {'1': 'multiplayer_modes', '3': 25, '4': 3, '5': 11, '6': '.proto.MultiplayerMode', '10': 'multiplayerModes'},
     {'1': 'name', '3': 26, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'parent_game',
-      '3': 27,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'parentGame',
-    },
-    {
-      '1': 'platforms',
-      '3': 28,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platforms',
-    },
-    {
-      '1': 'player_perspectives',
-      '3': 29,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlayerPerspective',
-      '10': 'playerPerspectives',
-    },
+    {'1': 'parent_game', '3': 27, '4': 1, '5': 11, '6': '.proto.Game', '10': 'parentGame'},
+    {'1': 'platforms', '3': 28, '4': 3, '5': 11, '6': '.proto.Platform', '10': 'platforms'},
+    {'1': 'player_perspectives', '3': 29, '4': 3, '5': 11, '6': '.proto.PlayerPerspective', '10': 'playerPerspectives'},
     {'1': 'rating', '3': 30, '4': 1, '5': 1, '10': 'rating'},
     {'1': 'rating_count', '3': 31, '4': 1, '5': 5, '10': 'ratingCount'},
-    {
-      '1': 'release_dates',
-      '3': 32,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.ReleaseDate',
-      '10': 'releaseDates',
-    },
-    {
-      '1': 'screenshots',
-      '3': 33,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Screenshot',
-      '10': 'screenshots',
-    },
-    {
-      '1': 'similar_games',
-      '3': 34,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'similarGames',
-    },
+    {'1': 'release_dates', '3': 32, '4': 3, '5': 11, '6': '.proto.ReleaseDate', '10': 'releaseDates'},
+    {'1': 'screenshots', '3': 33, '4': 3, '5': 11, '6': '.proto.Screenshot', '10': 'screenshots'},
+    {'1': 'similar_games', '3': 34, '4': 3, '5': 11, '6': '.proto.Game', '10': 'similarGames'},
     {'1': 'slug', '3': 35, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'standalone_expansions',
-      '3': 36,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'standaloneExpansions',
-    },
-    {
-      '1': 'status',
-      '3': 37,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.GameStatusEnum',
-      '10': 'status',
-    },
+    {'1': 'standalone_expansions', '3': 36, '4': 3, '5': 11, '6': '.proto.Game', '10': 'standaloneExpansions'},
+    {'1': 'status', '3': 37, '4': 1, '5': 14, '6': '.proto.GameStatusEnum', '10': 'status'},
     {'1': 'storyline', '3': 38, '4': 1, '5': 9, '10': 'storyline'},
     {'1': 'summary', '3': 39, '4': 1, '5': 9, '10': 'summary'},
     {'1': 'tags', '3': 40, '4': 3, '5': 5, '10': 'tags'},
-    {
-      '1': 'themes',
-      '3': 41,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Theme',
-      '10': 'themes',
-    },
+    {'1': 'themes', '3': 41, '4': 3, '5': 11, '6': '.proto.Theme', '10': 'themes'},
     {'1': 'total_rating', '3': 42, '4': 1, '5': 1, '10': 'totalRating'},
-    {
-      '1': 'total_rating_count',
-      '3': 43,
-      '4': 1,
-      '5': 5,
-      '10': 'totalRatingCount',
-    },
-    {
-      '1': 'updated_at',
-      '3': 44,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'total_rating_count', '3': 43, '4': 1, '5': 5, '10': 'totalRatingCount'},
+    {'1': 'updated_at', '3': 44, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 45, '4': 1, '5': 9, '10': 'url'},
-    {
-      '1': 'version_parent',
-      '3': 46,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'versionParent',
-    },
+    {'1': 'version_parent', '3': 46, '4': 1, '5': 11, '6': '.proto.Game', '10': 'versionParent'},
     {'1': 'version_title', '3': 47, '4': 1, '5': 9, '10': 'versionTitle'},
-    {
-      '1': 'videos',
-      '3': 48,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVideo',
-      '10': 'videos',
-    },
-    {
-      '1': 'websites',
-      '3': 49,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Website',
-      '10': 'websites',
-    },
+    {'1': 'videos', '3': 48, '4': 3, '5': 11, '6': '.proto.GameVideo', '10': 'videos'},
+    {'1': 'websites', '3': 49, '4': 3, '5': 11, '6': '.proto.Website', '10': 'websites'},
     {'1': 'checksum', '3': 50, '4': 1, '5': 9, '10': 'checksum'},
-    {
-      '1': 'remakes',
-      '3': 51,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'remakes',
-    },
-    {
-      '1': 'remasters',
-      '3': 52,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'remasters',
-    },
-    {
-      '1': 'expanded_games',
-      '3': 53,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Game',
-      '10': 'expandedGames',
-    },
+    {'1': 'remakes', '3': 51, '4': 3, '5': 11, '6': '.proto.Game', '10': 'remakes'},
+    {'1': 'remasters', '3': 52, '4': 3, '5': 11, '6': '.proto.Game', '10': 'remasters'},
+    {'1': 'expanded_games', '3': 53, '4': 3, '5': 11, '6': '.proto.Game', '10': 'expandedGames'},
     {'1': 'ports', '3': 54, '4': 3, '5': 11, '6': '.proto.Game', '10': 'ports'},
     {'1': 'forks', '3': 55, '4': 3, '5': 11, '6': '.proto.Game', '10': 'forks'},
-    {
-      '1': 'language_supports',
-      '3': 56,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.LanguageSupport',
-      '10': 'languageSupports',
-    },
-    {
-      '1': 'game_localizations',
-      '3': 57,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameLocalization',
-      '10': 'gameLocalizations',
-    },
+    {'1': 'language_supports', '3': 56, '4': 3, '5': 11, '6': '.proto.LanguageSupport', '10': 'languageSupports'},
+    {'1': 'game_localizations', '3': 57, '4': 3, '5': 11, '6': '.proto.GameLocalization', '10': 'gameLocalizations'},
+    {'1': 'collections', '3': 58, '4': 3, '5': 11, '6': '.proto.Collection', '10': 'collections'},
   ],
 };
 
@@ -1758,53 +1484,47 @@ final $typed_data.Uint8List gameDescriptor = $convert.base64Decode(
     'bGNzEisKCmV4cGFuc2lvbnMYDSADKAsyCy5wcm90by5HYW1lUgpleHBhbnNpb25zEjoKDmV4dG'
     'VybmFsX2dhbWVzGA4gAygLMhMucHJvdG8uRXh0ZXJuYWxHYW1lUg1leHRlcm5hbEdhbWVzEkgK'
     'EmZpcnN0X3JlbGVhc2VfZGF0ZRgPIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSEG'
-    'ZpcnN0UmVsZWFzZURhdGUSGAoHZm9sbG93cxgQIAEoBVIHZm9sbG93cxIuCglmcmFuY2hpc2UY'
-    'ESABKAsyEC5wcm90by5GcmFuY2hpc2VSCWZyYW5jaGlzZRIwCgpmcmFuY2hpc2VzGBIgAygLMh'
-    'AucHJvdG8uRnJhbmNoaXNlUgpmcmFuY2hpc2VzEjQKDGdhbWVfZW5naW5lcxgTIAMoCzIRLnBy'
-    'b3RvLkdhbWVFbmdpbmVSC2dhbWVFbmdpbmVzEi4KCmdhbWVfbW9kZXMYFCADKAsyDy5wcm90by'
-    '5HYW1lTW9kZVIJZ2FtZU1vZGVzEiQKBmdlbnJlcxgVIAMoCzIMLnByb3RvLkdlbnJlUgZnZW5y'
-    'ZXMSFAoFaHlwZXMYFiABKAVSBWh5cGVzEkUKEmludm9sdmVkX2NvbXBhbmllcxgXIAMoCzIWLn'
-    'Byb3RvLkludm9sdmVkQ29tcGFueVIRaW52b2x2ZWRDb21wYW5pZXMSKgoIa2V5d29yZHMYGCAD'
-    'KAsyDi5wcm90by5LZXl3b3JkUghrZXl3b3JkcxJDChFtdWx0aXBsYXllcl9tb2RlcxgZIAMoCz'
-    'IWLnByb3RvLk11bHRpcGxheWVyTW9kZVIQbXVsdGlwbGF5ZXJNb2RlcxISCgRuYW1lGBogASgJ'
-    'UgRuYW1lEiwKC3BhcmVudF9nYW1lGBsgASgLMgsucHJvdG8uR2FtZVIKcGFyZW50R2FtZRItCg'
-    'lwbGF0Zm9ybXMYHCADKAsyDy5wcm90by5QbGF0Zm9ybVIJcGxhdGZvcm1zEkkKE3BsYXllcl9w'
-    'ZXJzcGVjdGl2ZXMYHSADKAsyGC5wcm90by5QbGF5ZXJQZXJzcGVjdGl2ZVIScGxheWVyUGVyc3'
-    'BlY3RpdmVzEhYKBnJhdGluZxgeIAEoAVIGcmF0aW5nEiEKDHJhdGluZ19jb3VudBgfIAEoBVIL'
-    'cmF0aW5nQ291bnQSNwoNcmVsZWFzZV9kYXRlcxggIAMoCzISLnByb3RvLlJlbGVhc2VEYXRlUg'
-    'xyZWxlYXNlRGF0ZXMSMwoLc2NyZWVuc2hvdHMYISADKAsyES5wcm90by5TY3JlZW5zaG90Ugtz'
-    'Y3JlZW5zaG90cxIwCg1zaW1pbGFyX2dhbWVzGCIgAygLMgsucHJvdG8uR2FtZVIMc2ltaWxhck'
-    'dhbWVzEhIKBHNsdWcYIyABKAlSBHNsdWcSQAoVc3RhbmRhbG9uZV9leHBhbnNpb25zGCQgAygL'
-    'MgsucHJvdG8uR2FtZVIUc3RhbmRhbG9uZUV4cGFuc2lvbnMSLQoGc3RhdHVzGCUgASgOMhUucH'
-    'JvdG8uR2FtZVN0YXR1c0VudW1SBnN0YXR1cxIcCglzdG9yeWxpbmUYJiABKAlSCXN0b3J5bGlu'
-    'ZRIYCgdzdW1tYXJ5GCcgASgJUgdzdW1tYXJ5EhIKBHRhZ3MYKCADKAVSBHRhZ3MSJAoGdGhlbW'
-    'VzGCkgAygLMgwucHJvdG8uVGhlbWVSBnRoZW1lcxIhCgx0b3RhbF9yYXRpbmcYKiABKAFSC3Rv'
-    'dGFsUmF0aW5nEiwKEnRvdGFsX3JhdGluZ19jb3VudBgrIAEoBVIQdG90YWxSYXRpbmdDb3VudB'
-    'I5Cgp1cGRhdGVkX2F0GCwgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJdXBkYXRl'
-    'ZEF0EhAKA3VybBgtIAEoCVIDdXJsEjIKDnZlcnNpb25fcGFyZW50GC4gASgLMgsucHJvdG8uR2'
-    'FtZVINdmVyc2lvblBhcmVudBIjCg12ZXJzaW9uX3RpdGxlGC8gASgJUgx2ZXJzaW9uVGl0bGUS'
-    'KAoGdmlkZW9zGDAgAygLMhAucHJvdG8uR2FtZVZpZGVvUgZ2aWRlb3MSKgoId2Vic2l0ZXMYMS'
-    'ADKAsyDi5wcm90by5XZWJzaXRlUgh3ZWJzaXRlcxIaCghjaGVja3N1bRgyIAEoCVIIY2hlY2tz'
-    'dW0SJQoHcmVtYWtlcxgzIAMoCzILLnByb3RvLkdhbWVSB3JlbWFrZXMSKQoJcmVtYXN0ZXJzGD'
-    'QgAygLMgsucHJvdG8uR2FtZVIJcmVtYXN0ZXJzEjIKDmV4cGFuZGVkX2dhbWVzGDUgAygLMgsu'
-    'cHJvdG8uR2FtZVINZXhwYW5kZWRHYW1lcxIhCgVwb3J0cxg2IAMoCzILLnByb3RvLkdhbWVSBX'
-    'BvcnRzEiEKBWZvcmtzGDcgAygLMgsucHJvdG8uR2FtZVIFZm9ya3MSQwoRbGFuZ3VhZ2Vfc3Vw'
-    'cG9ydHMYOCADKAsyFi5wcm90by5MYW5ndWFnZVN1cHBvcnRSEGxhbmd1YWdlU3VwcG9ydHMSRg'
-    'oSZ2FtZV9sb2NhbGl6YXRpb25zGDkgAygLMhcucHJvdG8uR2FtZUxvY2FsaXphdGlvblIRZ2Ft'
-    'ZUxvY2FsaXphdGlvbnM=');
+    'ZpcnN0UmVsZWFzZURhdGUSHAoHZm9sbG93cxgQIAEoBUICGAFSB2ZvbGxvd3MSLgoJZnJhbmNo'
+    'aXNlGBEgASgLMhAucHJvdG8uRnJhbmNoaXNlUglmcmFuY2hpc2USMAoKZnJhbmNoaXNlcxgSIA'
+    'MoCzIQLnByb3RvLkZyYW5jaGlzZVIKZnJhbmNoaXNlcxI0CgxnYW1lX2VuZ2luZXMYEyADKAsy'
+    'ES5wcm90by5HYW1lRW5naW5lUgtnYW1lRW5naW5lcxIuCgpnYW1lX21vZGVzGBQgAygLMg8ucH'
+    'JvdG8uR2FtZU1vZGVSCWdhbWVNb2RlcxIkCgZnZW5yZXMYFSADKAsyDC5wcm90by5HZW5yZVIG'
+    'Z2VucmVzEhQKBWh5cGVzGBYgASgFUgVoeXBlcxJFChJpbnZvbHZlZF9jb21wYW5pZXMYFyADKA'
+    'syFi5wcm90by5JbnZvbHZlZENvbXBhbnlSEWludm9sdmVkQ29tcGFuaWVzEioKCGtleXdvcmRz'
+    'GBggAygLMg4ucHJvdG8uS2V5d29yZFIIa2V5d29yZHMSQwoRbXVsdGlwbGF5ZXJfbW9kZXMYGS'
+    'ADKAsyFi5wcm90by5NdWx0aXBsYXllck1vZGVSEG11bHRpcGxheWVyTW9kZXMSEgoEbmFtZRga'
+    'IAEoCVIEbmFtZRIsCgtwYXJlbnRfZ2FtZRgbIAEoCzILLnByb3RvLkdhbWVSCnBhcmVudEdhbW'
+    'USLQoJcGxhdGZvcm1zGBwgAygLMg8ucHJvdG8uUGxhdGZvcm1SCXBsYXRmb3JtcxJJChNwbGF5'
+    'ZXJfcGVyc3BlY3RpdmVzGB0gAygLMhgucHJvdG8uUGxheWVyUGVyc3BlY3RpdmVSEnBsYXllcl'
+    'BlcnNwZWN0aXZlcxIWCgZyYXRpbmcYHiABKAFSBnJhdGluZxIhCgxyYXRpbmdfY291bnQYHyAB'
+    'KAVSC3JhdGluZ0NvdW50EjcKDXJlbGVhc2VfZGF0ZXMYICADKAsyEi5wcm90by5SZWxlYXNlRG'
+    'F0ZVIMcmVsZWFzZURhdGVzEjMKC3NjcmVlbnNob3RzGCEgAygLMhEucHJvdG8uU2NyZWVuc2hv'
+    'dFILc2NyZWVuc2hvdHMSMAoNc2ltaWxhcl9nYW1lcxgiIAMoCzILLnByb3RvLkdhbWVSDHNpbW'
+    'lsYXJHYW1lcxISCgRzbHVnGCMgASgJUgRzbHVnEkAKFXN0YW5kYWxvbmVfZXhwYW5zaW9ucxgk'
+    'IAMoCzILLnByb3RvLkdhbWVSFHN0YW5kYWxvbmVFeHBhbnNpb25zEi0KBnN0YXR1cxglIAEoDj'
+    'IVLnByb3RvLkdhbWVTdGF0dXNFbnVtUgZzdGF0dXMSHAoJc3RvcnlsaW5lGCYgASgJUglzdG9y'
+    'eWxpbmUSGAoHc3VtbWFyeRgnIAEoCVIHc3VtbWFyeRISCgR0YWdzGCggAygFUgR0YWdzEiQKBn'
+    'RoZW1lcxgpIAMoCzIMLnByb3RvLlRoZW1lUgZ0aGVtZXMSIQoMdG90YWxfcmF0aW5nGCogASgB'
+    'Ugt0b3RhbFJhdGluZxIsChJ0b3RhbF9yYXRpbmdfY291bnQYKyABKAVSEHRvdGFsUmF0aW5nQ2'
+    '91bnQSOQoKdXBkYXRlZF9hdBgsIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXVw'
+    'ZGF0ZWRBdBIQCgN1cmwYLSABKAlSA3VybBIyCg52ZXJzaW9uX3BhcmVudBguIAEoCzILLnByb3'
+    'RvLkdhbWVSDXZlcnNpb25QYXJlbnQSIwoNdmVyc2lvbl90aXRsZRgvIAEoCVIMdmVyc2lvblRp'
+    'dGxlEigKBnZpZGVvcxgwIAMoCzIQLnByb3RvLkdhbWVWaWRlb1IGdmlkZW9zEioKCHdlYnNpdG'
+    'VzGDEgAygLMg4ucHJvdG8uV2Vic2l0ZVIId2Vic2l0ZXMSGgoIY2hlY2tzdW0YMiABKAlSCGNo'
+    'ZWNrc3VtEiUKB3JlbWFrZXMYMyADKAsyCy5wcm90by5HYW1lUgdyZW1ha2VzEikKCXJlbWFzdG'
+    'Vycxg0IAMoCzILLnByb3RvLkdhbWVSCXJlbWFzdGVycxIyCg5leHBhbmRlZF9nYW1lcxg1IAMo'
+    'CzILLnByb3RvLkdhbWVSDWV4cGFuZGVkR2FtZXMSIQoFcG9ydHMYNiADKAsyCy5wcm90by5HYW'
+    '1lUgVwb3J0cxIhCgVmb3Jrcxg3IAMoCzILLnByb3RvLkdhbWVSBWZvcmtzEkMKEWxhbmd1YWdl'
+    'X3N1cHBvcnRzGDggAygLMhYucHJvdG8uTGFuZ3VhZ2VTdXBwb3J0UhBsYW5ndWFnZVN1cHBvcn'
+    'RzEkYKEmdhbWVfbG9jYWxpemF0aW9ucxg5IAMoCzIXLnByb3RvLkdhbWVMb2NhbGl6YXRpb25S'
+    'EWdhbWVMb2NhbGl6YXRpb25zEjMKC2NvbGxlY3Rpb25zGDogAygLMhEucHJvdG8uQ29sbGVjdG'
+    'lvblILY29sbGVjdGlvbnM=');
 
 @$core.Deprecated('Use gameEngineResultDescriptor instead')
 const GameEngineResult$json = {
   '1': 'GameEngineResult',
   '2': [
-    {
-      '1': 'gameengines',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameEngine',
-      '10': 'gameengines',
-    },
+    {'1': 'gameengines', '3': 1, '4': 3, '5': 11, '6': '.proto.GameEngine', '10': 'gameengines'},
   ],
 };
 
@@ -1818,49 +1538,14 @@ const GameEngine$json = {
   '1': 'GameEngine',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'companies',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'companies',
-    },
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'companies', '3': 2, '4': 3, '5': 11, '6': '.proto.Company', '10': 'companies'},
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {
-      '1': 'logo',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.GameEngineLogo',
-      '10': 'logo',
-    },
+    {'1': 'logo', '3': 5, '4': 1, '5': 11, '6': '.proto.GameEngineLogo', '10': 'logo'},
     {'1': 'name', '3': 6, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'platforms',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platforms',
-    },
+    {'1': 'platforms', '3': 7, '4': 3, '5': 11, '6': '.proto.Platform', '10': 'platforms'},
     {'1': 'slug', '3': 8, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 10, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 11, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -1881,14 +1566,7 @@ final $typed_data.Uint8List gameEngineDescriptor = $convert.base64Decode(
 const GameEngineLogoResult$json = {
   '1': 'GameEngineLogoResult',
   '2': [
-    {
-      '1': 'gameenginelogos',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameEngineLogo',
-      '10': 'gameenginelogos',
-    },
+    {'1': 'gameenginelogos', '3': 1, '4': 3, '5': 11, '6': '.proto.GameEngineLogo', '10': 'gameenginelogos'},
   ],
 };
 
@@ -1923,22 +1601,14 @@ final $typed_data.Uint8List gameEngineLogoDescriptor = $convert.base64Decode(
 const GameLocalizationResult$json = {
   '1': 'GameLocalizationResult',
   '2': [
-    {
-      '1': 'gamelocalizations',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameLocalization',
-      '10': 'gamelocalizations',
-    },
+    {'1': 'gamelocalizations', '3': 1, '4': 3, '5': 11, '6': '.proto.GameLocalization', '10': 'gamelocalizations'},
   ],
 };
 
 /// Descriptor for `GameLocalizationResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gameLocalizationResultDescriptor =
-    $convert.base64Decode(
-        'ChZHYW1lTG9jYWxpemF0aW9uUmVzdWx0EkUKEWdhbWVsb2NhbGl6YXRpb25zGAEgAygLMhcucH'
-        'JvdG8uR2FtZUxvY2FsaXphdGlvblIRZ2FtZWxvY2FsaXphdGlvbnM=');
+final $typed_data.Uint8List gameLocalizationResultDescriptor = $convert.base64Decode(
+    'ChZHYW1lTG9jYWxpemF0aW9uUmVzdWx0EkUKEWdhbWVsb2NhbGl6YXRpb25zGAEgAygLMhcucH'
+    'JvdG8uR2FtZUxvY2FsaXphdGlvblIRZ2FtZWxvY2FsaXphdGlvbnM=');
 
 @$core.Deprecated('Use gameLocalizationDescriptor instead')
 const GameLocalization$json = {
@@ -1948,30 +1618,9 @@ const GameLocalization$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'cover', '3': 3, '4': 1, '5': 11, '6': '.proto.Cover', '10': 'cover'},
     {'1': 'game', '3': 4, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
-    {
-      '1': 'region',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Region',
-      '10': 'region',
-    },
-    {
-      '1': 'created_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'region', '3': 5, '4': 1, '5': 11, '6': '.proto.Region', '10': 'region'},
+    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -1989,14 +1638,7 @@ final $typed_data.Uint8List gameLocalizationDescriptor = $convert.base64Decode(
 const GameModeResult$json = {
   '1': 'GameModeResult',
   '2': [
-    {
-      '1': 'gamemodes',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameMode',
-      '10': 'gamemodes',
-    },
+    {'1': 'gamemodes', '3': 1, '4': 3, '5': 11, '6': '.proto.GameMode', '10': 'gamemodes'},
   ],
 };
 
@@ -2010,24 +1652,10 @@ const GameMode$json = {
   '1': 'GameMode',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2045,14 +1673,7 @@ final $typed_data.Uint8List gameModeDescriptor = $convert.base64Decode(
 const GameVersionResult$json = {
   '1': 'GameVersionResult',
   '2': [
-    {
-      '1': 'gameversions',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVersion',
-      '10': 'gameversions',
-    },
+    {'1': 'gameversions', '3': 1, '4': 3, '5': 11, '6': '.proto.GameVersion', '10': 'gameversions'},
   ],
 };
 
@@ -2066,32 +1687,11 @@ const GameVersion$json = {
   '1': 'GameVersion',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'features',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVersionFeature',
-      '10': 'features',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'features', '3': 3, '4': 3, '5': 11, '6': '.proto.GameVersionFeature', '10': 'features'},
     {'1': 'game', '3': 4, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'games', '3': 5, '4': 3, '5': 11, '6': '.proto.Game', '10': 'games'},
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 7, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 8, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2110,47 +1710,25 @@ final $typed_data.Uint8List gameVersionDescriptor = $convert.base64Decode(
 const GameVersionFeatureResult$json = {
   '1': 'GameVersionFeatureResult',
   '2': [
-    {
-      '1': 'gameversionfeatures',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVersionFeature',
-      '10': 'gameversionfeatures',
-    },
+    {'1': 'gameversionfeatures', '3': 1, '4': 3, '5': 11, '6': '.proto.GameVersionFeature', '10': 'gameversionfeatures'},
   ],
 };
 
 /// Descriptor for `GameVersionFeatureResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gameVersionFeatureResultDescriptor =
-    $convert.base64Decode(
-        'ChhHYW1lVmVyc2lvbkZlYXR1cmVSZXN1bHQSSwoTZ2FtZXZlcnNpb25mZWF0dXJlcxgBIAMoCz'
-        'IZLnByb3RvLkdhbWVWZXJzaW9uRmVhdHVyZVITZ2FtZXZlcnNpb25mZWF0dXJlcw==');
+final $typed_data.Uint8List gameVersionFeatureResultDescriptor = $convert.base64Decode(
+    'ChhHYW1lVmVyc2lvbkZlYXR1cmVSZXN1bHQSSwoTZ2FtZXZlcnNpb25mZWF0dXJlcxgBIAMoCz'
+    'IZLnByb3RvLkdhbWVWZXJzaW9uRmVhdHVyZVITZ2FtZXZlcnNpb25mZWF0dXJlcw==');
 
 @$core.Deprecated('Use gameVersionFeatureDescriptor instead')
 const GameVersionFeature$json = {
   '1': 'GameVersionFeature',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.GameVersionFeatureCategoryEnum',
-      '10': 'category',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.GameVersionFeatureCategoryEnum', '10': 'category'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'position', '3': 4, '4': 1, '5': 5, '10': 'position'},
     {'1': 'title', '3': 5, '4': 1, '5': 9, '10': 'title'},
-    {
-      '1': 'values',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVersionFeatureValue',
-      '10': 'values',
-    },
+    {'1': 'values', '3': 6, '4': 3, '5': 11, '6': '.proto.GameVersionFeatureValue', '10': 'values'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2167,23 +1745,15 @@ final $typed_data.Uint8List gameVersionFeatureDescriptor = $convert.base64Decode
 const GameVersionFeatureValueResult$json = {
   '1': 'GameVersionFeatureValueResult',
   '2': [
-    {
-      '1': 'gameversionfeaturevalues',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVersionFeatureValue',
-      '10': 'gameversionfeaturevalues',
-    },
+    {'1': 'gameversionfeaturevalues', '3': 1, '4': 3, '5': 11, '6': '.proto.GameVersionFeatureValue', '10': 'gameversionfeaturevalues'},
   ],
 };
 
 /// Descriptor for `GameVersionFeatureValueResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gameVersionFeatureValueResultDescriptor =
-    $convert.base64Decode(
-        'Ch1HYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZVJlc3VsdBJaChhnYW1ldmVyc2lvbmZlYXR1cmV2YW'
-        'x1ZXMYASADKAsyHi5wcm90by5HYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZVIYZ2FtZXZlcnNpb25m'
-        'ZWF0dXJldmFsdWVz');
+final $typed_data.Uint8List gameVersionFeatureValueResultDescriptor = $convert.base64Decode(
+    'Ch1HYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZVJlc3VsdBJaChhnYW1ldmVyc2lvbmZlYXR1cmV2YW'
+    'x1ZXMYASADKAsyHi5wcm90by5HYW1lVmVyc2lvbkZlYXR1cmVWYWx1ZVIYZ2FtZXZlcnNpb25m'
+    'ZWF0dXJldmFsdWVz');
 
 @$core.Deprecated('Use gameVersionFeatureValueDescriptor instead')
 const GameVersionFeatureValue$json = {
@@ -2191,22 +1761,8 @@ const GameVersionFeatureValue$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'game', '3': 2, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
-    {
-      '1': 'game_feature',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.GameVersionFeature',
-      '10': 'gameFeature',
-    },
-    {
-      '1': 'included_feature',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.GameVersionFeatureValueIncludedFeatureEnum',
-      '10': 'includedFeature',
-    },
+    {'1': 'game_feature', '3': 3, '4': 1, '5': 11, '6': '.proto.GameVersionFeature', '10': 'gameFeature'},
+    {'1': 'included_feature', '3': 4, '4': 1, '5': 14, '6': '.proto.GameVersionFeatureValueIncludedFeatureEnum', '10': 'includedFeature'},
     {'1': 'note', '3': 5, '4': 1, '5': 9, '10': 'note'},
     {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2225,14 +1781,7 @@ final $typed_data.Uint8List gameVersionFeatureValueDescriptor = $convert.base64D
 const GameVideoResult$json = {
   '1': 'GameVideoResult',
   '2': [
-    {
-      '1': 'gamevideos',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.GameVideo',
-      '10': 'gamevideos',
-    },
+    {'1': 'gamevideos', '3': 1, '4': 3, '5': 11, '6': '.proto.GameVideo', '10': 'gamevideos'},
   ],
 };
 
@@ -2263,45 +1812,23 @@ final $typed_data.Uint8List gameVideoDescriptor = $convert.base64Decode(
 const GenreResult$json = {
   '1': 'GenreResult',
   '2': [
-    {
-      '1': 'genres',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Genre',
-      '10': 'genres',
-    },
+    {'1': 'genres', '3': 1, '4': 3, '5': 11, '6': '.proto.Genre', '10': 'genres'},
   ],
 };
 
 /// Descriptor for `GenreResult`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List genreResultDescriptor = $convert.base64Decode(
-  'CgtHZW5yZVJlc3VsdBIkCgZnZW5yZXMYASADKAsyDC5wcm90by5HZW5yZVIGZ2VucmVz',
-);
+    'CgtHZW5yZVJlc3VsdBIkCgZnZW5yZXMYASADKAsyDC5wcm90by5HZW5yZVIGZ2VucmVz');
 
 @$core.Deprecated('Use genreDescriptor instead')
 const Genre$json = {
   '1': 'Genre',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2319,14 +1846,7 @@ final $typed_data.Uint8List genreDescriptor = $convert.base64Decode(
 const InvolvedCompanyResult$json = {
   '1': 'InvolvedCompanyResult',
   '2': [
-    {
-      '1': 'involvedcompanies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.InvolvedCompany',
-      '10': 'involvedcompanies',
-    },
+    {'1': 'involvedcompanies', '3': 1, '4': 3, '5': 11, '6': '.proto.InvolvedCompany', '10': 'involvedcompanies'},
   ],
 };
 
@@ -2340,35 +1860,14 @@ const InvolvedCompany$json = {
   '1': 'InvolvedCompany',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'company',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'company',
-    },
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'company', '3': 2, '4': 1, '5': 11, '6': '.proto.Company', '10': 'company'},
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'developer', '3': 4, '4': 1, '5': 8, '10': 'developer'},
     {'1': 'game', '3': 5, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'porting', '3': 6, '4': 1, '5': 8, '10': 'porting'},
     {'1': 'publisher', '3': 7, '4': 1, '5': 8, '10': 'publisher'},
     {'1': 'supporting', '3': 8, '4': 1, '5': 8, '10': 'supporting'},
-    {
-      '1': 'updated_at',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 10, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2387,14 +1886,7 @@ final $typed_data.Uint8List involvedCompanyDescriptor = $convert.base64Decode(
 const KeywordResult$json = {
   '1': 'KeywordResult',
   '2': [
-    {
-      '1': 'keywords',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Keyword',
-      '10': 'keywords',
-    },
+    {'1': 'keywords', '3': 1, '4': 3, '5': 11, '6': '.proto.Keyword', '10': 'keywords'},
   ],
 };
 
@@ -2408,24 +1900,10 @@ const Keyword$json = {
   '1': 'Keyword',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -2443,14 +1921,7 @@ final $typed_data.Uint8List keywordDescriptor = $convert.base64Decode(
 const LanguageResult$json = {
   '1': 'LanguageResult',
   '2': [
-    {
-      '1': 'languages',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Language',
-      '10': 'languages',
-    },
+    {'1': 'languages', '3': 1, '4': 3, '5': 11, '6': '.proto.Language', '10': 'languages'},
   ],
 };
 
@@ -2467,22 +1938,8 @@ const Language$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'native_name', '3': 3, '4': 1, '5': 9, '10': 'nativeName'},
     {'1': 'locale', '3': 4, '4': 1, '5': 9, '10': 'locale'},
-    {
-      '1': 'created_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2499,14 +1956,7 @@ final $typed_data.Uint8List languageDescriptor = $convert.base64Decode(
 const LanguageSupportResult$json = {
   '1': 'LanguageSupportResult',
   '2': [
-    {
-      '1': 'languagesupports',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.LanguageSupport',
-      '10': 'languagesupports',
-    },
+    {'1': 'languagesupports', '3': 1, '4': 3, '5': 11, '6': '.proto.LanguageSupport', '10': 'languagesupports'},
   ],
 };
 
@@ -2521,38 +1971,10 @@ const LanguageSupport$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'game', '3': 2, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
-    {
-      '1': 'language',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Language',
-      '10': 'language',
-    },
-    {
-      '1': 'language_support_type',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.LanguageSupportType',
-      '10': 'languageSupportType',
-    },
-    {
-      '1': 'created_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'language', '3': 3, '4': 1, '5': 11, '6': '.proto.Language', '10': 'language'},
+    {'1': 'language_support_type', '3': 4, '4': 1, '5': 11, '6': '.proto.LanguageSupportType', '10': 'languageSupportType'},
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2571,22 +1993,14 @@ final $typed_data.Uint8List languageSupportDescriptor = $convert.base64Decode(
 const LanguageSupportTypeResult$json = {
   '1': 'LanguageSupportTypeResult',
   '2': [
-    {
-      '1': 'languagesupporttypes',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.LanguageSupportType',
-      '10': 'languagesupporttypes',
-    },
+    {'1': 'languagesupporttypes', '3': 1, '4': 3, '5': 11, '6': '.proto.LanguageSupportType', '10': 'languagesupporttypes'},
   ],
 };
 
 /// Descriptor for `LanguageSupportTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List languageSupportTypeResultDescriptor =
-    $convert.base64Decode(
-        'ChlMYW5ndWFnZVN1cHBvcnRUeXBlUmVzdWx0Ek4KFGxhbmd1YWdlc3VwcG9ydHR5cGVzGAEgAy'
-        'gLMhoucHJvdG8uTGFuZ3VhZ2VTdXBwb3J0VHlwZVIUbGFuZ3VhZ2VzdXBwb3J0dHlwZXM=');
+final $typed_data.Uint8List languageSupportTypeResultDescriptor = $convert.base64Decode(
+    'ChlMYW5ndWFnZVN1cHBvcnRUeXBlUmVzdWx0Ek4KFGxhbmd1YWdlc3VwcG9ydHR5cGVzGAEgAy'
+    'gLMhoucHJvdG8uTGFuZ3VhZ2VTdXBwb3J0VHlwZVIUbGFuZ3VhZ2VzdXBwb3J0dHlwZXM=');
 
 @$core.Deprecated('Use languageSupportTypeDescriptor instead')
 const LanguageSupportType$json = {
@@ -2594,22 +2008,8 @@ const LanguageSupportType$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 5, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2625,14 +2025,7 @@ final $typed_data.Uint8List languageSupportTypeDescriptor = $convert.base64Decod
 const MultiplayerModeResult$json = {
   '1': 'MultiplayerModeResult',
   '2': [
-    {
-      '1': 'multiplayermodes',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.MultiplayerMode',
-      '10': 'multiplayermodes',
-    },
+    {'1': 'multiplayermodes', '3': 1, '4': 3, '5': 11, '6': '.proto.MultiplayerMode', '10': 'multiplayermodes'},
   ],
 };
 
@@ -2656,22 +2049,9 @@ const MultiplayerMode$json = {
     {'1': 'onlinecoop', '3': 9, '4': 1, '5': 8, '10': 'onlinecoop'},
     {'1': 'onlinecoopmax', '3': 10, '4': 1, '5': 5, '10': 'onlinecoopmax'},
     {'1': 'onlinemax', '3': 11, '4': 1, '5': 5, '10': 'onlinemax'},
-    {
-      '1': 'platform',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platform',
-    },
+    {'1': 'platform', '3': 12, '4': 1, '5': 11, '6': '.proto.Platform', '10': 'platform'},
     {'1': 'splitscreen', '3': 13, '4': 1, '5': 8, '10': 'splitscreen'},
-    {
-      '1': 'splitscreenonline',
-      '3': 14,
-      '4': 1,
-      '5': 8,
-      '10': 'splitscreenonline',
-    },
+    {'1': 'splitscreenonline', '3': 14, '4': 1, '5': 8, '10': 'splitscreenonline'},
     {'1': 'checksum', '3': 15, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2689,18 +2069,45 @@ final $typed_data.Uint8List multiplayerModeDescriptor = $convert.base64Decode(
     'aXRzY3JlZW5vbmxpbmUYDiABKAhSEXNwbGl0c2NyZWVub25saW5lEhoKCGNoZWNrc3VtGA8gAS'
     'gJUghjaGVja3N1bQ==');
 
+@$core.Deprecated('Use networkTypeResultDescriptor instead')
+const NetworkTypeResult$json = {
+  '1': 'NetworkTypeResult',
+  '2': [
+    {'1': 'networktypes', '3': 1, '4': 3, '5': 11, '6': '.proto.NetworkType', '10': 'networktypes'},
+  ],
+};
+
+/// Descriptor for `NetworkTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List networkTypeResultDescriptor = $convert.base64Decode(
+    'ChFOZXR3b3JrVHlwZVJlc3VsdBI2CgxuZXR3b3JrdHlwZXMYASADKAsyEi5wcm90by5OZXR3b3'
+    'JrVHlwZVIMbmV0d29ya3R5cGVz');
+
+@$core.Deprecated('Use networkTypeDescriptor instead')
+const NetworkType$json = {
+  '1': 'NetworkType',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'event_networks', '3': 3, '4': 3, '5': 11, '6': '.proto.EventNetwork', '10': 'eventNetworks'},
+    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `NetworkType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List networkTypeDescriptor = $convert.base64Decode(
+    'CgtOZXR3b3JrVHlwZRIOCgJpZBgBIAEoBFICaWQSEgoEbmFtZRgCIAEoCVIEbmFtZRI6Cg5ldm'
+    'VudF9uZXR3b3JrcxgDIAMoCzITLnByb3RvLkV2ZW50TmV0d29ya1INZXZlbnROZXR3b3JrcxI5'
+    'CgpjcmVhdGVkX2F0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZE'
+    'F0EjkKCnVwZGF0ZWRfYXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgl1cGRh'
+    'dGVkQXQSGgoIY2hlY2tzdW0YBiABKAlSCGNoZWNrc3Vt');
+
 @$core.Deprecated('Use platformResultDescriptor instead')
 const PlatformResult$json = {
   '1': 'PlatformResult',
   '2': [
-    {
-      '1': 'platforms',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platforms',
-    },
+    {'1': 'platforms', '3': 1, '4': 3, '5': 11, '6': '.proto.Platform', '10': 'platforms'},
   ],
 };
 
@@ -2716,67 +2123,18 @@ const Platform$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'abbreviation', '3': 2, '4': 1, '5': 9, '10': 'abbreviation'},
     {'1': 'alternative_name', '3': 3, '4': 1, '5': 9, '10': 'alternativeName'},
-    {
-      '1': 'category',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.PlatformCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'created_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'category', '3': 4, '4': 1, '5': 14, '6': '.proto.PlatformCategoryEnum', '10': 'category'},
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'generation', '3': 6, '4': 1, '5': 5, '10': 'generation'},
     {'1': 'name', '3': 7, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'platform_logo',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.PlatformLogo',
-      '10': 'platformLogo',
-    },
-    {
-      '1': 'platform_family',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.PlatformFamily',
-      '10': 'platformFamily',
-    },
+    {'1': 'platform_logo', '3': 8, '4': 1, '5': 11, '6': '.proto.PlatformLogo', '10': 'platformLogo'},
+    {'1': 'platform_family', '3': 9, '4': 1, '5': 11, '6': '.proto.PlatformFamily', '10': 'platformFamily'},
     {'1': 'slug', '3': 10, '4': 1, '5': 9, '10': 'slug'},
     {'1': 'summary', '3': 11, '4': 1, '5': 9, '10': 'summary'},
-    {
-      '1': 'updated_at',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 13, '4': 1, '5': 9, '10': 'url'},
-    {
-      '1': 'versions',
-      '3': 14,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersion',
-      '10': 'versions',
-    },
-    {
-      '1': 'websites',
-      '3': 15,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformWebsite',
-      '10': 'websites',
-    },
+    {'1': 'versions', '3': 14, '4': 3, '5': 11, '6': '.proto.PlatformVersion', '10': 'versions'},
+    {'1': 'websites', '3': 15, '4': 3, '5': 11, '6': '.proto.PlatformWebsite', '10': 'websites'},
     {'1': 'checksum', '3': 16, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -2800,14 +2158,7 @@ final $typed_data.Uint8List platformDescriptor = $convert.base64Decode(
 const PlatformFamilyResult$json = {
   '1': 'PlatformFamilyResult',
   '2': [
-    {
-      '1': 'platformfamilies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformFamily',
-      '10': 'platformfamilies',
-    },
+    {'1': 'platformfamilies', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformFamily', '10': 'platformfamilies'},
   ],
 };
 
@@ -2836,14 +2187,7 @@ final $typed_data.Uint8List platformFamilyDescriptor = $convert.base64Decode(
 const PlatformLogoResult$json = {
   '1': 'PlatformLogoResult',
   '2': [
-    {
-      '1': 'platformlogos',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformLogo',
-      '10': 'platformlogos',
-    },
+    {'1': 'platformlogos', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformLogo', '10': 'platformlogos'},
   ],
 };
 
@@ -2878,14 +2222,7 @@ final $typed_data.Uint8List platformLogoDescriptor = $convert.base64Decode(
 const PlatformVersionResult$json = {
   '1': 'PlatformVersionResult',
   '2': [
-    {
-      '1': 'platformversions',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersion',
-      '10': 'platformversions',
-    },
+    {'1': 'platformversions', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformVersion', '10': 'platformversions'},
   ],
 };
 
@@ -2899,47 +2236,19 @@ const PlatformVersion$json = {
   '1': 'PlatformVersion',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'companies',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersionCompany',
-      '10': 'companies',
-    },
+    {'1': 'companies', '3': 2, '4': 3, '5': 11, '6': '.proto.PlatformVersionCompany', '10': 'companies'},
     {'1': 'connectivity', '3': 3, '4': 1, '5': 9, '10': 'connectivity'},
     {'1': 'cpu', '3': 4, '4': 1, '5': 9, '10': 'cpu'},
     {'1': 'graphics', '3': 5, '4': 1, '5': 9, '10': 'graphics'},
-    {
-      '1': 'main_manufacturer',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.PlatformVersionCompany',
-      '10': 'mainManufacturer',
-    },
+    {'1': 'main_manufacturer', '3': 6, '4': 1, '5': 11, '6': '.proto.PlatformVersionCompany', '10': 'mainManufacturer'},
     {'1': 'media', '3': 7, '4': 1, '5': 9, '10': 'media'},
     {'1': 'memory', '3': 8, '4': 1, '5': 9, '10': 'memory'},
     {'1': 'name', '3': 9, '4': 1, '5': 9, '10': 'name'},
     {'1': 'online', '3': 10, '4': 1, '5': 9, '10': 'online'},
     {'1': 'os', '3': 11, '4': 1, '5': 9, '10': 'os'},
     {'1': 'output', '3': 12, '4': 1, '5': 9, '10': 'output'},
-    {
-      '1': 'platform_logo',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.PlatformLogo',
-      '10': 'platformLogo',
-    },
-    {
-      '1': 'platform_version_release_dates',
-      '3': 14,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersionReleaseDate',
-      '10': 'platformVersionReleaseDates',
-    },
+    {'1': 'platform_logo', '3': 13, '4': 1, '5': 11, '6': '.proto.PlatformLogo', '10': 'platformLogo'},
+    {'1': 'platform_version_release_dates', '3': 14, '4': 3, '5': 11, '6': '.proto.PlatformVersionReleaseDate', '10': 'platformVersionReleaseDates'},
     {'1': 'resolutions', '3': 15, '4': 1, '5': 9, '10': 'resolutions'},
     {'1': 'slug', '3': 16, '4': 1, '5': 9, '10': 'slug'},
     {'1': 'sound', '3': 17, '4': 1, '5': 9, '10': 'sound'},
@@ -2970,23 +2279,15 @@ final $typed_data.Uint8List platformVersionDescriptor = $convert.base64Decode(
 const PlatformVersionCompanyResult$json = {
   '1': 'PlatformVersionCompanyResult',
   '2': [
-    {
-      '1': 'platformversioncompanies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersionCompany',
-      '10': 'platformversioncompanies',
-    },
+    {'1': 'platformversioncompanies', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformVersionCompany', '10': 'platformversioncompanies'},
   ],
 };
 
 /// Descriptor for `PlatformVersionCompanyResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List platformVersionCompanyResultDescriptor =
-    $convert.base64Decode(
-        'ChxQbGF0Zm9ybVZlcnNpb25Db21wYW55UmVzdWx0ElkKGHBsYXRmb3JtdmVyc2lvbmNvbXBhbm'
-        'llcxgBIAMoCzIdLnByb3RvLlBsYXRmb3JtVmVyc2lvbkNvbXBhbnlSGHBsYXRmb3JtdmVyc2lv'
-        'bmNvbXBhbmllcw==');
+final $typed_data.Uint8List platformVersionCompanyResultDescriptor = $convert.base64Decode(
+    'ChxQbGF0Zm9ybVZlcnNpb25Db21wYW55UmVzdWx0ElkKGHBsYXRmb3JtdmVyc2lvbmNvbXBhbm'
+    'llcxgBIAMoCzIdLnByb3RvLlBsYXRmb3JtVmVyc2lvbkNvbXBhbnlSGHBsYXRmb3JtdmVyc2lv'
+    'bmNvbXBhbmllcw==');
 
 @$core.Deprecated('Use platformVersionCompanyDescriptor instead')
 const PlatformVersionCompany$json = {
@@ -2994,14 +2295,7 @@ const PlatformVersionCompany$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'comment', '3': 2, '4': 1, '5': 9, '10': 'comment'},
-    {
-      '1': 'company',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'company',
-    },
+    {'1': 'company', '3': 3, '4': 1, '5': 11, '6': '.proto.Company', '10': 'company'},
     {'1': 'developer', '3': 4, '4': 1, '5': 8, '10': 'developer'},
     {'1': 'manufacturer', '3': 5, '4': 1, '5': 8, '10': 'manufacturer'},
     {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
@@ -3019,79 +2313,29 @@ final $typed_data.Uint8List platformVersionCompanyDescriptor = $convert.base64De
 const PlatformVersionReleaseDateResult$json = {
   '1': 'PlatformVersionReleaseDateResult',
   '2': [
-    {
-      '1': 'platformversionreleasedates',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformVersionReleaseDate',
-      '10': 'platformversionreleasedates',
-    },
+    {'1': 'platformversionreleasedates', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformVersionReleaseDate', '10': 'platformversionreleasedates'},
   ],
 };
 
 /// Descriptor for `PlatformVersionReleaseDateResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List platformVersionReleaseDateResultDescriptor =
-    $convert.base64Decode(
-        'CiBQbGF0Zm9ybVZlcnNpb25SZWxlYXNlRGF0ZVJlc3VsdBJjChtwbGF0Zm9ybXZlcnNpb25yZW'
-        'xlYXNlZGF0ZXMYASADKAsyIS5wcm90by5QbGF0Zm9ybVZlcnNpb25SZWxlYXNlRGF0ZVIbcGxh'
-        'dGZvcm12ZXJzaW9ucmVsZWFzZWRhdGVz');
+final $typed_data.Uint8List platformVersionReleaseDateResultDescriptor = $convert.base64Decode(
+    'CiBQbGF0Zm9ybVZlcnNpb25SZWxlYXNlRGF0ZVJlc3VsdBJjChtwbGF0Zm9ybXZlcnNpb25yZW'
+    'xlYXNlZGF0ZXMYASADKAsyIS5wcm90by5QbGF0Zm9ybVZlcnNpb25SZWxlYXNlRGF0ZVIbcGxh'
+    'dGZvcm12ZXJzaW9ucmVsZWFzZWRhdGVz');
 
 @$core.Deprecated('Use platformVersionReleaseDateDescriptor instead')
 const PlatformVersionReleaseDate$json = {
   '1': 'PlatformVersionReleaseDate',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'date',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'date',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.DateFormatChangeDateCategoryEnum', '10': 'category'},
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'date', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'date'},
     {'1': 'human', '3': 5, '4': 1, '5': 9, '10': 'human'},
     {'1': 'm', '3': 6, '4': 1, '5': 5, '10': 'm'},
-    {
-      '1': 'platform_version',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.PlatformVersion',
-      '10': 'platformVersion',
-    },
-    {
-      '1': 'region',
-      '3': 8,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.RegionRegionEnum',
-      '10': 'region',
-    },
-    {
-      '1': 'updated_at',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'platform_version', '3': 7, '4': 1, '5': 11, '6': '.proto.PlatformVersion', '10': 'platformVersion'},
+    {'1': 'region', '3': 8, '4': 1, '5': 14, '6': '.proto.RegionRegionEnum', '10': 'region'},
+    {'1': 'updated_at', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'y', '3': 10, '4': 1, '5': 5, '10': 'y'},
     {'1': 'checksum', '3': 11, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3113,14 +2357,7 @@ final $typed_data.Uint8List platformVersionReleaseDateDescriptor = $convert.base
 const PlatformWebsiteResult$json = {
   '1': 'PlatformWebsiteResult',
   '2': [
-    {
-      '1': 'platformwebsites',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlatformWebsite',
-      '10': 'platformwebsites',
-    },
+    {'1': 'platformwebsites', '3': 1, '4': 3, '5': 11, '6': '.proto.PlatformWebsite', '10': 'platformwebsites'},
   ],
 };
 
@@ -3134,14 +2371,7 @@ const PlatformWebsite$json = {
   '1': 'PlatformWebsite',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.WebsiteCategoryEnum', '10': 'category'},
     {'1': 'trusted', '3': 3, '4': 1, '5': 8, '10': 'trusted'},
     {'1': 'url', '3': 4, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 5, '4': 1, '5': 9, '10': 'checksum'},
@@ -3158,46 +2388,24 @@ final $typed_data.Uint8List platformWebsiteDescriptor = $convert.base64Decode(
 const PlayerPerspectiveResult$json = {
   '1': 'PlayerPerspectiveResult',
   '2': [
-    {
-      '1': 'playerperspectives',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.PlayerPerspective',
-      '10': 'playerperspectives',
-    },
+    {'1': 'playerperspectives', '3': 1, '4': 3, '5': 11, '6': '.proto.PlayerPerspective', '10': 'playerperspectives'},
   ],
 };
 
 /// Descriptor for `PlayerPerspectiveResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List playerPerspectiveResultDescriptor =
-    $convert.base64Decode(
-        'ChdQbGF5ZXJQZXJzcGVjdGl2ZVJlc3VsdBJIChJwbGF5ZXJwZXJzcGVjdGl2ZXMYASADKAsyGC'
-        '5wcm90by5QbGF5ZXJQZXJzcGVjdGl2ZVIScGxheWVycGVyc3BlY3RpdmVz');
+final $typed_data.Uint8List playerPerspectiveResultDescriptor = $convert.base64Decode(
+    'ChdQbGF5ZXJQZXJzcGVjdGl2ZVJlc3VsdBJIChJwbGF5ZXJwZXJzcGVjdGl2ZXMYASADKAsyGC'
+    '5wcm90by5QbGF5ZXJQZXJzcGVjdGl2ZVIScGxheWVycGVyc3BlY3RpdmVz');
 
 @$core.Deprecated('Use playerPerspectiveDescriptor instead')
 const PlayerPerspective$json = {
   '1': 'PlayerPerspective',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3211,18 +2419,87 @@ final $typed_data.Uint8List playerPerspectiveDescriptor = $convert.base64Decode(
     '90b2J1Zi5UaW1lc3RhbXBSCXVwZGF0ZWRBdBIQCgN1cmwYBiABKAlSA3VybBIaCghjaGVja3N1'
     'bRgHIAEoCVIIY2hlY2tzdW0=');
 
+@$core.Deprecated('Use popularityPrimitiveResultDescriptor instead')
+const PopularityPrimitiveResult$json = {
+  '1': 'PopularityPrimitiveResult',
+  '2': [
+    {'1': 'popularityprimitives', '3': 1, '4': 3, '5': 11, '6': '.proto.PopularityPrimitive', '10': 'popularityprimitives'},
+  ],
+};
+
+/// Descriptor for `PopularityPrimitiveResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List popularityPrimitiveResultDescriptor = $convert.base64Decode(
+    'ChlQb3B1bGFyaXR5UHJpbWl0aXZlUmVzdWx0Ek4KFHBvcHVsYXJpdHlwcmltaXRpdmVzGAEgAy'
+    'gLMhoucHJvdG8uUG9wdWxhcml0eVByaW1pdGl2ZVIUcG9wdWxhcml0eXByaW1pdGl2ZXM=');
+
+@$core.Deprecated('Use popularityPrimitiveDescriptor instead')
+const PopularityPrimitive$json = {
+  '1': 'PopularityPrimitive',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'game_id', '3': 2, '4': 1, '5': 5, '10': 'gameId'},
+    {'1': 'popularity_type', '3': 3, '4': 1, '5': 11, '6': '.proto.PopularityType', '10': 'popularityType'},
+    {'1': 'popularity_source', '3': 4, '4': 1, '5': 14, '6': '.proto.PopularitySourcePopularitySourceEnum', '10': 'popularitySource'},
+    {'1': 'value', '3': 5, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'calculated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'calculatedAt'},
+    {'1': 'created_at', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 9, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `PopularityPrimitive`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List popularityPrimitiveDescriptor = $convert.base64Decode(
+    'ChNQb3B1bGFyaXR5UHJpbWl0aXZlEg4KAmlkGAEgASgEUgJpZBIXCgdnYW1lX2lkGAIgASgFUg'
+    'ZnYW1lSWQSPgoPcG9wdWxhcml0eV90eXBlGAMgASgLMhUucHJvdG8uUG9wdWxhcml0eVR5cGVS'
+    'DnBvcHVsYXJpdHlUeXBlElgKEXBvcHVsYXJpdHlfc291cmNlGAQgASgOMisucHJvdG8uUG9wdW'
+    'xhcml0eVNvdXJjZVBvcHVsYXJpdHlTb3VyY2VFbnVtUhBwb3B1bGFyaXR5U291cmNlEhQKBXZh'
+    'bHVlGAUgASgBUgV2YWx1ZRI/Cg1jYWxjdWxhdGVkX2F0GAYgASgLMhouZ29vZ2xlLnByb3RvYn'
+    'VmLlRpbWVzdGFtcFIMY2FsY3VsYXRlZEF0EjkKCmNyZWF0ZWRfYXQYByABKAsyGi5nb29nbGUu'
+    'cHJvdG9idWYuVGltZXN0YW1wUgljcmVhdGVkQXQSOQoKdXBkYXRlZF9hdBgIIAEoCzIaLmdvb2'
+    'dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXVwZGF0ZWRBdBIaCghjaGVja3N1bRgJIAEoCVIIY2hl'
+    'Y2tzdW0=');
+
+@$core.Deprecated('Use popularityTypeResultDescriptor instead')
+const PopularityTypeResult$json = {
+  '1': 'PopularityTypeResult',
+  '2': [
+    {'1': 'popularitytypes', '3': 1, '4': 3, '5': 11, '6': '.proto.PopularityType', '10': 'popularitytypes'},
+  ],
+};
+
+/// Descriptor for `PopularityTypeResult`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List popularityTypeResultDescriptor = $convert.base64Decode(
+    'ChRQb3B1bGFyaXR5VHlwZVJlc3VsdBI/Cg9wb3B1bGFyaXR5dHlwZXMYASADKAsyFS5wcm90by'
+    '5Qb3B1bGFyaXR5VHlwZVIPcG9wdWxhcml0eXR5cGVz');
+
+@$core.Deprecated('Use popularityTypeDescriptor instead')
+const PopularityType$json = {
+  '1': 'PopularityType',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
+    {'1': 'popularity_source', '3': 2, '4': 1, '5': 14, '6': '.proto.PopularitySourcePopularitySourceEnum', '10': 'popularitySource'},
+    {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
+    {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
+  ],
+};
+
+/// Descriptor for `PopularityType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List popularityTypeDescriptor = $convert.base64Decode(
+    'Cg5Qb3B1bGFyaXR5VHlwZRIOCgJpZBgBIAEoBFICaWQSWAoRcG9wdWxhcml0eV9zb3VyY2UYAi'
+    'ABKA4yKy5wcm90by5Qb3B1bGFyaXR5U291cmNlUG9wdWxhcml0eVNvdXJjZUVudW1SEHBvcHVs'
+    'YXJpdHlTb3VyY2USEgoEbmFtZRgDIAEoCVIEbmFtZRI5CgpjcmVhdGVkX2F0GAQgASgLMhouZ2'
+    '9vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIJY3JlYXRlZEF0EjkKCnVwZGF0ZWRfYXQYBSABKAsy'
+    'Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgl1cGRhdGVkQXQSGgoIY2hlY2tzdW0YBiABKA'
+    'lSCGNoZWNrc3Vt');
+
 @$core.Deprecated('Use regionResultDescriptor instead')
 const RegionResult$json = {
   '1': 'RegionResult',
   '2': [
-    {
-      '1': 'regions',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Region',
-      '10': 'regions',
-    },
+    {'1': 'regions', '3': 1, '4': 3, '5': 11, '6': '.proto.Region', '10': 'regions'},
   ],
 };
 
@@ -3239,22 +2516,8 @@ const Region$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'category', '3': 3, '4': 1, '5': 9, '10': 'category'},
     {'1': 'identifier', '3': 4, '4': 1, '5': 9, '10': 'identifier'},
-    {
-      '1': 'created_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'created_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -3271,14 +2534,7 @@ final $typed_data.Uint8List regionDescriptor = $convert.base64Decode(
 const ReleaseDateResult$json = {
   '1': 'ReleaseDateResult',
   '2': [
-    {
-      '1': 'releasedates',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.ReleaseDate',
-      '10': 'releasedates',
-    },
+    {'1': 'releasedates', '3': 1, '4': 3, '5': 11, '6': '.proto.ReleaseDate', '10': 'releasedates'},
   ],
 };
 
@@ -3292,67 +2548,18 @@ const ReleaseDate$json = {
   '1': 'ReleaseDate',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.DateFormatChangeDateCategoryEnum',
-      '10': 'category',
-    },
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'date',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'date',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.DateFormatChangeDateCategoryEnum', '10': 'category'},
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'date', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'date'},
     {'1': 'game', '3': 5, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'human', '3': 6, '4': 1, '5': 9, '10': 'human'},
     {'1': 'm', '3': 7, '4': 1, '5': 5, '10': 'm'},
-    {
-      '1': 'platform',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platform',
-    },
-    {
-      '1': 'region',
-      '3': 9,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.RegionRegionEnum',
-      '10': 'region',
-    },
-    {
-      '1': 'updated_at',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'platform', '3': 8, '4': 1, '5': 11, '6': '.proto.Platform', '10': 'platform'},
+    {'1': 'region', '3': 9, '4': 1, '5': 14, '6': '.proto.RegionRegionEnum', '10': 'region'},
+    {'1': 'updated_at', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'y', '3': 11, '4': 1, '5': 5, '10': 'y'},
     {'1': 'checksum', '3': 12, '4': 1, '5': 9, '10': 'checksum'},
-    {
-      '1': 'status',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.ReleaseDateStatus',
-      '10': 'status',
-    },
+    {'1': 'status', '3': 13, '4': 1, '5': 11, '6': '.proto.ReleaseDateStatus', '10': 'status'},
   ],
 };
 
@@ -3373,22 +2580,14 @@ final $typed_data.Uint8List releaseDateDescriptor = $convert.base64Decode(
 const ReleaseDateStatusResult$json = {
   '1': 'ReleaseDateStatusResult',
   '2': [
-    {
-      '1': 'releasedatestatuses',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.ReleaseDateStatus',
-      '10': 'releasedatestatuses',
-    },
+    {'1': 'releasedatestatuses', '3': 1, '4': 3, '5': 11, '6': '.proto.ReleaseDateStatus', '10': 'releasedatestatuses'},
   ],
 };
 
 /// Descriptor for `ReleaseDateStatusResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List releaseDateStatusResultDescriptor =
-    $convert.base64Decode(
-        'ChdSZWxlYXNlRGF0ZVN0YXR1c1Jlc3VsdBJKChNyZWxlYXNlZGF0ZXN0YXR1c2VzGAEgAygLMh'
-        'gucHJvdG8uUmVsZWFzZURhdGVTdGF0dXNSE3JlbGVhc2VkYXRlc3RhdHVzZXM=');
+final $typed_data.Uint8List releaseDateStatusResultDescriptor = $convert.base64Decode(
+    'ChdSZWxlYXNlRGF0ZVN0YXR1c1Jlc3VsdBJKChNyZWxlYXNlZGF0ZXN0YXR1c2VzGAEgAygLMh'
+    'gucHJvdG8uUmVsZWFzZURhdGVTdGF0dXNSE3JlbGVhc2VkYXRlc3RhdHVzZXM=');
 
 @$core.Deprecated('Use releaseDateStatusDescriptor instead')
 const ReleaseDateStatus$json = {
@@ -3397,22 +2596,8 @@ const ReleaseDateStatus$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {
-      '1': 'created_at',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'checksum', '3': 6, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -3429,14 +2614,7 @@ final $typed_data.Uint8List releaseDateStatusDescriptor = $convert.base64Decode(
 const ScreenshotResult$json = {
   '1': 'ScreenshotResult',
   '2': [
-    {
-      '1': 'screenshots',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Screenshot',
-      '10': 'screenshots',
-    },
+    {'1': 'screenshots', '3': 1, '4': 3, '5': 11, '6': '.proto.Screenshot', '10': 'screenshots'},
   ],
 };
 
@@ -3473,14 +2651,7 @@ final $typed_data.Uint8List screenshotDescriptor = $convert.base64Decode(
 const SearchResult$json = {
   '1': 'SearchResult',
   '2': [
-    {
-      '1': 'searches',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Search',
-      '10': 'searches',
-    },
+    {'1': 'searches', '3': 1, '4': 3, '5': 11, '6': '.proto.Search', '10': 'searches'},
   ],
 };
 
@@ -3495,65 +2666,16 @@ const Search$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'alternative_name', '3': 2, '4': 1, '5': 9, '10': 'alternativeName'},
-    {
-      '1': 'character',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Character',
-      '10': 'character',
-    },
-    {
-      '1': 'collection',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Collection',
-      '10': 'collection',
-    },
-    {
-      '1': 'company',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Company',
-      '10': 'company',
-    },
+    {'1': 'character', '3': 3, '4': 1, '5': 11, '6': '.proto.Character', '10': 'character'},
+    {'1': 'collection', '3': 4, '4': 1, '5': 11, '6': '.proto.Collection', '10': 'collection'},
+    {'1': 'company', '3': 5, '4': 1, '5': 11, '6': '.proto.Company', '10': 'company'},
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
     {'1': 'game', '3': 7, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'name', '3': 8, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'platform',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Platform',
-      '10': 'platform',
-    },
-    {
-      '1': 'published_at',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'publishedAt',
-    },
-    {
-      '1': 'test_dummy',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.TestDummy',
-      '10': 'testDummy',
-    },
-    {
-      '1': 'theme',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.Theme',
-      '10': 'theme',
-    },
+    {'1': 'platform', '3': 9, '4': 1, '5': 11, '6': '.proto.Platform', '10': 'platform'},
+    {'1': 'published_at', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'publishedAt'},
+    {'1': 'test_dummy', '3': 11, '4': 1, '5': 11, '6': '.proto.TestDummy', '10': 'testDummy'},
+    {'1': 'theme', '3': 12, '4': 1, '5': 11, '6': '.proto.Theme', '10': 'theme'},
     {'1': 'checksum', '3': 13, '4': 1, '5': 9, '10': 'checksum'},
   ],
 };
@@ -3575,14 +2697,7 @@ final $typed_data.Uint8List searchDescriptor = $convert.base64Decode(
 const TestDummyResult$json = {
   '1': 'TestDummyResult',
   '2': [
-    {
-      '1': 'testdummies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.TestDummy',
-      '10': 'testdummies',
-    },
+    {'1': 'testdummies', '3': 1, '4': 3, '5': 11, '6': '.proto.TestDummy', '10': 'testdummies'},
   ],
 };
 
@@ -3597,61 +2712,20 @@ const TestDummy$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
     {'1': 'bool_value', '3': 2, '4': 1, '5': 8, '10': 'boolValue'},
-    {
-      '1': 'created_at',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
-    {
-      '1': 'enum_test',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.TestDummyEnumTestEnum',
-      '10': 'enumTest',
-    },
+    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {'1': 'enum_test', '3': 4, '4': 1, '5': 14, '6': '.proto.TestDummyEnumTestEnum', '10': 'enumTest'},
     {'1': 'float_value', '3': 5, '4': 1, '5': 1, '10': 'floatValue'},
     {'1': 'game', '3': 6, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'integer_array', '3': 7, '4': 3, '5': 5, '10': 'integerArray'},
     {'1': 'integer_value', '3': 8, '4': 1, '5': 5, '10': 'integerValue'},
     {'1': 'name', '3': 9, '4': 1, '5': 9, '10': 'name'},
-    {
-      '1': 'new_integer_value',
-      '3': 10,
-      '4': 1,
-      '5': 5,
-      '10': 'newIntegerValue',
-    },
+    {'1': 'new_integer_value', '3': 10, '4': 1, '5': 5, '10': 'newIntegerValue'},
     {'1': 'private', '3': 11, '4': 1, '5': 8, '10': 'private'},
     {'1': 'slug', '3': 12, '4': 1, '5': 9, '10': 'slug'},
     {'1': 'string_array', '3': 13, '4': 3, '5': 9, '10': 'stringArray'},
-    {
-      '1': 'test_dummies',
-      '3': 14,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.TestDummy',
-      '10': 'testDummies',
-    },
-    {
-      '1': 'test_dummy',
-      '3': 15,
-      '4': 1,
-      '5': 11,
-      '6': '.proto.TestDummy',
-      '10': 'testDummy',
-    },
-    {
-      '1': 'updated_at',
-      '3': 16,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'test_dummies', '3': 14, '4': 3, '5': 11, '6': '.proto.TestDummy', '10': 'testDummies'},
+    {'1': 'test_dummy', '3': 15, '4': 1, '5': 11, '6': '.proto.TestDummy', '10': 'testDummy'},
+    {'1': 'updated_at', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 17, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 18, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3677,45 +2751,23 @@ final $typed_data.Uint8List testDummyDescriptor = $convert.base64Decode(
 const ThemeResult$json = {
   '1': 'ThemeResult',
   '2': [
-    {
-      '1': 'themes',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Theme',
-      '10': 'themes',
-    },
+    {'1': 'themes', '3': 1, '4': 3, '5': 11, '6': '.proto.Theme', '10': 'themes'},
   ],
 };
 
 /// Descriptor for `ThemeResult`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List themeResultDescriptor = $convert.base64Decode(
-  'CgtUaGVtZVJlc3VsdBIkCgZ0aGVtZXMYASADKAsyDC5wcm90by5UaGVtZVIGdGhlbWVz',
-);
+    'CgtUaGVtZVJlc3VsdBIkCgZ0aGVtZXMYASADKAsyDC5wcm90by5UaGVtZVIGdGhlbWVz');
 
 @$core.Deprecated('Use themeDescriptor instead')
 const Theme$json = {
   '1': 'Theme',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'created_at',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'createdAt',
-    },
+    {'1': 'created_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'slug', '3': 4, '4': 1, '5': 9, '10': 'slug'},
-    {
-      '1': 'updated_at',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.google.protobuf.Timestamp',
-      '10': 'updatedAt',
-    },
+    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
     {'1': 'url', '3': 6, '4': 1, '5': 9, '10': 'url'},
     {'1': 'checksum', '3': 7, '4': 1, '5': 9, '10': 'checksum'},
   ],
@@ -3733,14 +2785,7 @@ final $typed_data.Uint8List themeDescriptor = $convert.base64Decode(
 const WebsiteResult$json = {
   '1': 'WebsiteResult',
   '2': [
-    {
-      '1': 'websites',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.proto.Website',
-      '10': 'websites',
-    },
+    {'1': 'websites', '3': 1, '4': 3, '5': 11, '6': '.proto.Website', '10': 'websites'},
   ],
 };
 
@@ -3754,14 +2799,7 @@ const Website$json = {
   '1': 'Website',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 4, '10': 'id'},
-    {
-      '1': 'category',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.proto.WebsiteCategoryEnum',
-      '10': 'category',
-    },
+    {'1': 'category', '3': 2, '4': 1, '5': 14, '6': '.proto.WebsiteCategoryEnum', '10': 'category'},
     {'1': 'game', '3': 3, '4': 1, '5': 11, '6': '.proto.Game', '10': 'game'},
     {'1': 'trusted', '3': 4, '4': 1, '5': 8, '10': 'trusted'},
     {'1': 'url', '3': 5, '4': 1, '5': 9, '10': 'url'},
@@ -3775,3 +2813,4 @@ final $typed_data.Uint8List websiteDescriptor = $convert.base64Decode(
     'NpdGVDYXRlZ29yeUVudW1SCGNhdGVnb3J5Eh8KBGdhbWUYAyABKAsyCy5wcm90by5HYW1lUgRn'
     'YW1lEhgKB3RydXN0ZWQYBCABKAhSB3RydXN0ZWQSEAoDdXJsGAUgASgJUgN1cmwSGgoIY2hlY2'
     'tzdW0YBiABKAlSCGNoZWNrc3Vt');
+
